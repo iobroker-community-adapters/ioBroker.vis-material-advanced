@@ -1,0 +1,77 @@
+{
+    "common": {
+        "name": "vis-material-advanced",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Material Advanced",
+        "titleLang": {
+            "en": "Material Advanced",
+            "de": "Material Advanced",
+            "ru": "Расширенный материал",
+            "pt": "Material Avançado",
+            "nl": "Materiaal geavanceerd",
+            "fr": "Matériel avancé",
+            "it": "Materiale avanzato",
+            "es": "Material avanzado",
+            "pl": "Materiał zaawansowany",
+            "zh-cn": "材料先进"
+        },
+        "desc": {
+            "en": "This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets",
+            "de": "Dieser Adapter bietet standardisierte Widgets für vis in ioBroker. ",
+            "ru": "Этот адаптер предоставляет стандартизированные виджеты для vis в ioBroker. ",
+            "pt": "Este adaptador fornece Widgets padronizados para visualização no ioBroker. ",
+            "nl": "Deze adapter biedt gestandaardiseerde widgets voor vis in ioBroker. ",
+            "fr": "Cet adaptateur fournit des widgets standardisés pour la visibilité dans ioBroker. ",
+            "it": "Questo adattatore fornisce widget standardizzati per vis in ioBroker. ",
+            "es": "Este adaptador proporciona widgets estandarizados para vis in ioBroker. ",
+            "pl": "Ten adapter zapewnia ustandaryzowane widżety dla vis w ioBroker. ",
+            "zh-cn": "该适配器为ioBroker中的vis提供了标准化的小部件。"
+        },
+        "authors": [
+            "EdgarM73 <edgar.miller@gmail.com>"
+        ],
+        "keywords": [
+            "vis material widget"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "vis-material-advanced.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/EdgarM73/ioBroker.vis-material-advanced/master/admin/vis-material-advanced.png",
+        "readme": "https://github.com/EdgarM73/ioBroker.vis-material-advanced/blob/master/README.md",
+        "loglevel": "info",
+        "restartAdapters": [
+            "vis"
+        ],
+        "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "onlyWWW": true,
+        "noConfig": true,
+        "singleton": true,
+        "type": "visualization-widgets",
+        "mode": "once",
+        "dependencies": [
+            "vis"
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": []
+}
