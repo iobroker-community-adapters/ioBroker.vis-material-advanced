@@ -14,19 +14,29 @@
 
 This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets
 
-## Developer manual
-This section is intended for the developer. It can be deleted later
+the basics of this adapter has been created by :
+* (nisio) https://github.com/iobroker-community-adapters/ioBroker.vis-material
+* (pix---) https://github.com/Pix---/ioBroker.vis-material
+
+but rewritten in 90% 
+
+Several bugfixes and lots of new widgets added 
+
 
 ### Getting started
 
-You are almost done, only a few steps left:
-1. Create a new repository on GitHub with the name `ioBroker.vis-material-advanced`
+install the Adapter and start VIS in Edit mode.
+On left side choose vis-material-adapter and than all widgets are shown in preview.
 
-1. Push all files to the GitHub repo. The creator has already set up the local repository for you:  
-    ```bash
-    git push origin master
-    ```
-1. Head over to [widgets/vis-material-advanced.html](widgets/vis-material-advanced.html) and start programming!
+............. lots of docu missing ......................
+
+## Changelog
+
+### 0.1.0
+* (EdgarM73) copied all functionality to new git and new Adapter
+### 0.0.1
+* (EdgarM73) initial release
+
 
 ### Best Practices
 We've collected some [best practices](https://github.com/ioBroker/ioBroker.repositories#development-and-coding-best-practices) regarding ioBroker development and coding in general. If you're new to ioBroker or Node.js, you should
