@@ -32,6 +32,25 @@ On left side choose vis-material-adapter and than all widgets are shown in previ
 
 ## Changelog
 
+### 0.3.2
+* npm ist erstellt, Pull Request für latest Repo gestellt
+* volume widget hinzugrfügt
+* erste Version vom Garagentor Widget ist erstellt, infos fehlen noch
+* migration von vis-material zu vis-material-advanced ist bestätigt 
+    Wer es sich traut, hier eine "Anleitung" für den Umzug:
+
+    In vis alle widgets markieren und dann auf widgets exportieren klicken.
+
+    Im Editor öffnen und folgende 2 "Suchen und ersetzen" ausführen:
+
+    suchen: widgets/material
+    ersetzen: widgets/vis-material-advanced
+
+    suchen: "widgetSet": "material"
+    ersetzen: "widgetSet": "vis-material-advanced"
+
+    wieder importieren in vis.
+
 ### 0.1.0
 * (EdgarM73) copied all functionality to new git and new Adapter
 ### 0.0.1

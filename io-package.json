@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.1",
+        "version": "0.3.2",
         "news": {
+            "0.3.2": {
+                "en": "bugfix naming convention, added Volume Widget, beta Garaga widget",
+                "de": "Namenskonvention für Bugfix, hinzugefügtes Volume-Widget, Beta-Garaga-Widget",
+                "ru": "исправление ошибок в соглашении об именах, добавлен виджет Volume, виджет beta Garaga",
+                "pt": "convenção de nomenclatura de correção de bugs, widget de volume adicionado, widget Garaga beta",
+                "nl": "bugfix naamgevingsconventie, Volume Widget, beta Garaga widget toegevoegd",
+                "fr": "convention de dénomination de correction de bogue, ajout du widget Volume, widget bêta Garaga",
+                "it": "convenzione di denominazione bugfix, aggiunto Volume Widget, beta Garaga widget",
+                "es": "convención de nomenclatura de corrección de errores, widget de volumen agregado, widget beta de Garaga",
+                "pl": "konwencja nazewnictwa poprawek, dodany widget głośności, widget beta Garaga",
+                "zh-cn": "bugfix命名约定，添加了Volume Widget，beta Garaga Widget"
+            },
             "0.3.1": {
                 "en": "renamed elements ",
                 "de": "umbenannte Elemente",

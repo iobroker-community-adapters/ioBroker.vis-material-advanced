@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.1"
+    version: "0.3.2"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -142,7 +142,7 @@ $.extend(
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
-    version: "0.3.1",
+    version: "0.3.2",
     showVersion: function() {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
@@ -527,6 +527,87 @@ vis.binds["vis-material-advanced"] = {
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         } */
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListVolume: function(widgetID, view, data) {
+        const srcOff = 'widgets/vis-material-advanced/img/volume-low.png';
+        const srcMedium = 'widgets/vis-material-advanced/img/volume-medium.png';
+        const srcOn = 'widgets/vis-material-advanced/img/volume-high.png';
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListVolume(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+
+            if (state == 0) {
+                $div.find('.md-list-icon').find('img').attr('src', srcOff);
+            } else if (state >= 80 * data.attr('Max') / 100) {
+                $div.find('.md-list-icon').find('img').attr('src', srcOn);
+            } else {
+                $div.find('.md-list-icon').find('img').attr('src', srcMedium);
+            }
+            //var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
+            //$div.find('.md-list-icon').find('img').attr('src', src);
+        }
+
+        /* if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_slider');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        } */
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListGarage: function(widgetID, view, data) {
+        const srcOff = 'widgets/material/img/garage.png';
+        const srcOn = 'widgets/material/img/garage-open.png';
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListGarage(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function() {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
 
         if (data.oid) {
             // subscribe on updates of value
