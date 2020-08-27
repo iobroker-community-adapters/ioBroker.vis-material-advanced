@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "news": {
+            "0.1.0": {
+                "en": "all current functionality copied from vis-material original git",
+                "de": "Alle aktuellen Funktionen wurden von vis-material original git kopiert",
+                "ru": "все текущие функции скопированы из исходного материала vis-material оригинального git",
+                "pt": "todas as funcionalidades atuais copiadas do git original vis-material",
+                "nl": "alle huidige functionaliteit gekopieerd van vis-materiaal originele git",
+                "fr": "toutes les fonctionnalités actuelles copiées à partir du git original vis-material",
+                "it": "tutte le funzionalità correnti copiate da git originale di vis-material",
+                "es": "toda la funcionalidad actual copiada de vis-material original git",
+                "pl": "wszystkie obecne funkcje skopiowane z oryginalnego git vis-material",
+                "zh-cn": "从视觉原始git复制的所有当前功能"
+            },
             "0.0.1": {
                 "en": "initial release",
                 "de": "Erstveröffentlichung",

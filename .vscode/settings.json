@@ -1,0 +1,11 @@
+{
+    "html.format.enable": false,
+    "html.format.unformatted": "script",
+    "html.format.wrapAttributes": "aligned-multiple",
+    "html.format.extraLiners": "data-vis-prev,data-vis-attrs,data-vis-set",
+    "html.preview.scrollEditorWithPreview": false,
+    "html.preview.scrollPreviewWithEditor": false,
+    "html.validate.scripts": false,
+    "html.format.wrapAttributes": true,
+    "html.format.preserveNewLines": false
+}

@@ -66,6 +66,8 @@ For later updates, the above procedure is not necessary. Just do the following:
 
 ## Changelog
 
+### 0.1.0
+* (EdgarM73) copied all functionality to new git and new Adapter
 ### 0.0.1
 * (EdgarM73) initial release
 
