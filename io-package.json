@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.2",
+        "version": "0.3.3",
         "news": {
+            "0.3.3": {
+                "en": "added air pressure widget",
+                "de": "Luftdruck-Widget hinzugefügt",
+                "ru": "добавлен виджет давления воздуха",
+                "pt": "adicionado widget de pressão de ar",
+                "nl": "toegevoegde luchtdruk widget",
+                "fr": "widget de pression d'air ajouté",
+                "it": "aggiunto widget di pressione dell'aria",
+                "es": "widget de presión de aire añadido",
+                "pl": "dodano widżet ciśnienia powietrza",
+                "zh-cn": "添加气压小部件"
+            },
             "0.3.2": {
                 "en": "bugfix naming convention, added Volume Widget, beta Garaga widget",
                 "de": "Namenskonvention für Bugfix, hinzugefügtes Volume-Widget, Beta-Garaga-Widget",

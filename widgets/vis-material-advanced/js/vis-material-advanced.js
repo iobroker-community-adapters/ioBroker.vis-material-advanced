@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.2"
+    version: "0.3.3"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -142,7 +142,7 @@ $.extend(
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
-    version: "0.3.2",
+    version: "0.3.3",
     showVersion: function() {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
@@ -607,6 +607,57 @@ vis.binds["vis-material-advanced"] = {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListPressure: function(widgetID, view, data) {
+        var $div = $('#' + widgetID);
+        const $colorize = data.attr('colorizeByTemp');
+        const $low = data.attr('below');
+        // const $normal = data.attr('normal');
+        const $high = data.attr('above');
+        const $original_class = data.attr('opacity-color');
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListPressure(widgetID, view, data);
+            }, 100);
+        }
+
+        // grey out the value in case the last change is more than 24h ago
+        var curTime = new Date().getTime();
+        var lcTime = vis.states[data.oid + '.lc'];
+        var seconds = (curTime - lcTime) / 1000;
+        if (seconds > 86400) {
+            $div.find('.md-list-value').css('opacity', '0.5');
+        }
+
+        function update(state) {
+            if (typeof state === 'number') {
+                $div.find('.md-list-value').html(state.toFixed(1) + ' hPa');
+            }
+            if ($colorize == true) {
+                if (state <= $low) {
+                    console.log('Temperatur ist niedrig ');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
+                } else if (state >= $high) {
+                    console.log('Temperatur ist hoch');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+                } else {
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                }
+            }
+
         }
 
         if (data.oid) {

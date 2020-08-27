@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.2"
+    version: "0.3.3"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -393,11 +393,35 @@ data-vis-name="ListWindowShutter" >
 </script>
 
 
+<script id="tplMaListPressure" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListPressure" style="position: relative; text-align: initial;padding: 4px ">
+    <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <img src="widgets/vis-material-advanced/img/pressure.png" style="width: 100px; height: 100px;"></div></div>' 
+        data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
+    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;colorizeByTemp[true]/checkbox;below[920]/number;above[1000]/number;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListTemperature">
+    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body my_child">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=this.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+        </div>
+        <div class=" vis-widget-body ms-button-op my_child overlay <%= this.data.attr('opacity-color') %> " style=""></div>
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListPressure(this.data.wid, this.view, this.data);  %>
+</script>
 
 <script id="tplMaListGarage" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListGarage" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
         <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title[not wokring yet]/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/garage.png]/image;"
-    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-set="vis-material-advanced" data-vis-type="val"  data-vis-beta="true" data-vis-name="ListGarage">
+    data-vis-attrs0="oid2/id;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-set="vis-material-advanced" data-vis-type="val"  data-vis-beta="true" data-vis-name="ListGarage">
     <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
