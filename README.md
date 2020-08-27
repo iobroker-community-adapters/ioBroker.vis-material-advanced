@@ -30,6 +30,9 @@ On left side choose vis-material-adapter and than all widgets are shown in previ
 
 ............. lots of docu missing ......................
 
+**you can import the example.json file into vis**
+thanks to @sigi234
+
 ## Changelog
 
 ### 0.3.2
