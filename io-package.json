@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.0",
+        "version": "0.3.1",
         "news": {
+            "0.3.1": {
+                "en": "renamed elements ",
+                "de": "umbenannte Elemente",
+                "ru": "переименованные элементы",
+                "pt": "elementos renomeados",
+                "nl": "hernoemde elementen",
+                "fr": "éléments renommés",
+                "it": "elementi rinominati",
+                "es": "elementos renombrados",
+                "pl": "zmieniono nazwy elementów",
+                "zh-cn": "重命名元素"
+            },
             "0.1.0": {
                 "en": "all current functionality copied from vis-material original git",
                 "de": "Alle aktuellen Funktionen wurden von vis-material original git kopiert",
@@ -57,7 +69,10 @@
             "EdgarM73 <edgar.miller@gmail.com>"
         ],
         "keywords": [
-            "vis material widget"
+            "vis",
+            "material",
+            "widget",
+            "iobroker"
         ],
         "license": "MIT",
         "platform": "Javascript/Node.js",

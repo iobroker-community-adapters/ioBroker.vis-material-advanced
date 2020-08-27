@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.1.0"
+    version: "0.3.1"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -142,7 +142,7 @@ $.extend(
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
-    version: "0.1.0",
+    version: "0.3.1",
     showVersion: function() {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
