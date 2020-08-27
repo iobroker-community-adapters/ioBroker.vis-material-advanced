@@ -377,9 +377,9 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
             var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
+            var $tmp = $('#' + widgetID + '_button');
             $tmp.prop('checked', state);
-            $div.find('.md-list-icon').find('img').attr('src', src);
+            //  $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
         if (!vis.editMode) {
@@ -658,6 +658,43 @@ vis.binds["vis-material-advanced"] = {
                 }
             }
 
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListRadio: function(widgetID, view, data) {
+        const srcOff = 'widgets/material/img/light_light_dim_00.png';
+        const srcOn = 'widgets/material/img/light_light_dim_100.png';
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListRadio(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function() {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
         }
 
         if (data.oid) {
