@@ -15,6 +15,7 @@
         "type": "git",
         "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced"
     },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
     "dependencies": {},
     "devDependencies": {
         "@iobroker/testing": "^2.3.0",
