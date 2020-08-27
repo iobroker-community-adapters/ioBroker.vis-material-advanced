@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
             "0.1.0": {
                 "en": "all current functionality copied from vis-material original git",
