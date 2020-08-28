@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.3"
+    version: "0.3.4"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -235,7 +235,7 @@
 <script id="tplMaListLight" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListLight" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
-    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListLight">
+    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-attrs1="readOnly/checkbox;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListLight">
     <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
@@ -251,8 +251,13 @@
             </div>
             <div class="md-list-value" style="color: <%= this.data.attr('Text-color') %>;">
                 <div class=" mduiw-switch ">
-                    <input type="checkbox" name="<%=this.data.attr( 'wid') %>_checkbox" id="<%= this.data.attr('wid') %>_checkbox" data-oid="<%= this.data.attr('oid') %>" />
-                    <label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                    <% if(!this.data.readOnly) { %>
+
+                        <input type="checkbox" name="<%=this.data.attr( 'wid') %>_checkbox" id="<%= this.data.attr('wid') %>_checkbox" data-oid="<%= this.data.attr('oid') %>" />
+                        <label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                        <% } else {%>
+                        <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+                        <% }  %>
         </div>
     </div>
 </div>
@@ -265,7 +270,7 @@
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
 data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;" data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
-data-vis-set="vis-material-advanced" 
+data-vis-attrs1="readOnly/checkbox" data-vis-set="vis-material-advanced" 
 data-vis-type="val"
 data-vis-name="ListLightDim">
 <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
@@ -283,7 +288,11 @@ data-vis-name="ListLightDim">
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
+            <% if(!this.data.readOnly) { %>
+                <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
+            <% } else {%>
+                <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <% }  %>            
         </div>
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
@@ -298,6 +307,7 @@ data-vis-name="ListLightDim">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png" style="width: 100px; height: 100px;"></div></div>'
 data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png]/image;" data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;min[2700]/number;max[6500]/number;" 
+data-vis-attrs1="readOnly/checkbox;"
 data-vis-set="vis-material-advanced" 
 data-vis-type="val"
 data-vis-name="ListLightKelvin"> 
@@ -316,7 +326,11 @@ data-vis-name="ListLightKelvin">
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min),max:parseFloat(data.max),step:100,inverted:false}) %> /></div>
+            <% if(!this.data.readOnly) { %>
+                <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min),max:parseFloat(data.max),step:100,inverted:false}) %> /></div>
+            <% } else {%>
+                <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <% }  %>              
         </div> 
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
@@ -330,6 +344,7 @@ data-vis-name="ListLightKelvin">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>'
 data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/fts_shutter_100.png]/image;" data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;inverted[true]/checkbox;" 
+data-vis-attrs1="readOnly/checkbox;"
 data-vis-set="vis-material-advanced" 
 data-vis-type="val"
 data-vis-name="ListWindowShutter" > 
@@ -348,7 +363,11 @@ data-vis-name="ListWindowShutter" >
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: 0,max:100,step:10,inverted:false}) %> /></div>
+            <% if(!this.data.readOnly) { %>
+                <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: 0,max:100,step:10,inverted:false}) %> /></div>
+            <% } else {%>
+                <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <% }  %>                     
         </div> 
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
@@ -363,7 +382,8 @@ data-vis-name="ListWindowShutter" >
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/volume-high.png" style="width: 100px; height: 100px;"></div></div>'
     data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/volume-high.png]/image;" 
-    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;Min[0]/number;Max[100]/number;"
+    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;Min[0]/number;Max[100]/number;step[5]/select,1,5;"
+    data-vis-attrs1="readOnly/checkbox"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"
     data-vis-name="ListVolume" > 
@@ -382,7 +402,11 @@ data-vis-name="ListWindowShutter" >
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: this.data.attr('Min'),max:this.data.attr('Max'),step:5,inverted:false}) %> /></div>
+            <% if(!this.data.readOnly) { %>
+                <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: this.data.attr('Min'),max:this.data.attr('Max'),step:parseInt(this.data.attr('step')),inverted:false}) %> /></div>
+            <% } else {%>
+                <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <% }  %>              
         </div> 
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
@@ -420,8 +444,13 @@ data-vis-name="ListWindowShutter" >
 
 <script id="tplMaListGarage" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListGarage" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
-        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title[not wokring yet]/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/garage.png]/image;"
-    data-vis-attrs0="oid2/id;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-set="vis-material-advanced" data-vis-type="val"  data-vis-beta="true" data-vis-name="ListGarage">
+        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
+        data-vis-attrs="oid/id;title[not wokring yet]/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/garage.png]/image;"
+        data-vis-attrs0="oid2/id;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
+        data-vis-set="vis-material-advanced" 
+        data-vis-type="val"  
+        data-vis-beta="true" 
+        data-vis-name="ListGarage">
     <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
@@ -447,7 +476,7 @@ data-vis-name="ListWindowShutter" >
 <% vis.binds['vis-material-advanced'].tplMdListGarage(this.data.wid, this.view, this.data);  %>
 </script>
 
-<!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">
+ <!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/radio.png" style="width: 100px; height: 100px;"></div></div>' 
         data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
@@ -461,7 +490,7 @@ data-vis-name="ListWindowShutter" >
                 <img src="<%= this.data.attr('oid') %>">
             </div>
             <div class="md-list-desc">
-                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
+                <div class="md-list-title mduiw-title" style="color: <%=  this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
                 <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=this.data.attr( 'Text-color') %>;">

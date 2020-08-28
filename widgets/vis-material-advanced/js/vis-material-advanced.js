@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.3"
+    version: "0.3.4"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -377,9 +377,16 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
             var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_button');
+            var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
-            //  $div.find('.md-list-icon').find('img').attr('src', src);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+            if (data.attr('readOnly')) {
+                if (state) {
+                    $div.find('.md-list-value').html("on");
+                } else {
+                    $div.find('.md-list-value').html("off");
+                }
+            }
         }
 
         if (!vis.editMode) {
@@ -416,6 +423,11 @@ vis.binds["vis-material-advanced"] = {
 
             var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
             $div.find('.md-list-icon').find('img').attr('src', src);
+            if (data.attr('readOnly')) {
+
+                $div.find('.md-list-value').html(state + "%");
+
+            }
         }
 
         /* if (!vis.editMode) {
@@ -465,6 +477,11 @@ vis.binds["vis-material-advanced"] = {
             var src = 'widgets/vis-material-advanced/img/fts_shutter_' + name + '0.png';
             console.log(' name : ' + name + " Icon : " + src);
             $div.find('.md-list-icon').find('img').attr('src', src);
+            if (data.attr('readOnly')) {
+
+                $div.find('.md-list-value').html(state + "%");
+
+            }
         }
 
         /* if (!vis.editMode) {
@@ -518,6 +535,11 @@ vis.binds["vis-material-advanced"] = {
                 src = 'Fehler';
             }
             $div.find('.md-list-icon').find('img').attr('src', src);
+            if (data.attr('readOnly')) {
+
+                $div.find('.md-list-value').html(state + " K");
+
+            }
         }
 
         /* if (!vis.editMode) {
@@ -559,6 +581,11 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.md-list-icon').find('img').attr('src', srcOn);
             } else {
                 $div.find('.md-list-icon').find('img').attr('src', srcMedium);
+            }
+            if (data.attr('readOnly')) {
+
+                $div.find('.md-list-value').html(state);
+
             }
             //var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
             //$div.find('.md-list-icon').find('img').attr('src', src);
@@ -686,7 +713,7 @@ vis.binds["vis-material-advanced"] = {
             var src = (state) ? srcOn : srcOff;
             var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
-            $div.find('.md-list-icon').find('img').attr('src', src);
+            //$div.find('.md-list-icon').find('img').attr('src', data.attr('oid'));
         }
 
         if (!vis.editMode) {

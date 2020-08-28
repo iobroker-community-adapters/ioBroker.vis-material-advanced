@@ -35,6 +35,9 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.3.4
+* Folgende Readonly Widgets: Light,LightDim,LightTemperature,Volume,Shutter
+
 ### 0.3.2
 * npm ist erstellt, Pull Request für latest Repo gestellt
 * volume widget hinzugrfügt

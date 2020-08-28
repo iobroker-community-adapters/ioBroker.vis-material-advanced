@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.3",
+        "version": "0.3.4",
         "news": {
+            "0.3.4": {
+                "en": "new functionality readOnly widgets",
+                "de": "neue Funktionalität readOnly Widgets",
+                "ru": "новый функционал readOnly widgets",
+                "pt": "nova funcionalidade widgets somente leitura",
+                "nl": "nieuwe functionaliteit readOnly widgets",
+                "fr": "nouvelle fonctionnalité widgets readOnly",
+                "it": "nuova funzionalità readOnly widget",
+                "es": "nueva funcionalidad readOnly widgets",
+                "pl": "nowa funkcjonalność readOnly widżety",
+                "zh-cn": "新功能readOnly小部件"
+            },
             "0.3.3": {
                 "en": "added air pressure widget",
                 "de": "Luftdruck-Widget hinzugefügt",
