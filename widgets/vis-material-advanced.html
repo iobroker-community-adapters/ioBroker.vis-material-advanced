@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.4"
+    version: "0.3.5"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -420,8 +420,10 @@ data-vis-name="ListWindowShutter" >
 <script id="tplMaListPressure" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListPressure" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/pressure.png" style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
-    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;colorizeByTemp[true]/checkbox;below[920]/number;above[1000]/number;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListPressure">
+    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
+    data-vis-attrs0="opacity2/color;colorizeByTemp[true]/checkbox;below[920]/number;above[1000]/number;" 
+    data-vis-attrs2="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;"
+    data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListPressure">
     <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
@@ -437,7 +439,7 @@ data-vis-name="ListWindowShutter" >
             </div>
             <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
-        <div class=" vis-widget-body ms-button-op my_child overlay <%= this.data.attr('opacity-color') %> " style=""></div>
+        <div class=" vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color: <%= this.data.attr('opacity2') %>; "></div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListPressure(this.data.wid, this.view, this.data);  %>
 </script>

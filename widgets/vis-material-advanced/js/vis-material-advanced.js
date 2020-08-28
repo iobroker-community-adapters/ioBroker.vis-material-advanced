@@ -673,6 +673,8 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' hPa');
             }
+            $div.find('.overlay').css('background-color', data.attr('opacity2'));
+            console.log('Farbe sollte sein ' + data.attr('opacity2'));
             if ($colorize == true) {
                 if (state <= $low) {
                     console.log('Temperatur ist niedrig ');

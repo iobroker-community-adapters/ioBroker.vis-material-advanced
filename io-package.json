@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.4",
+        "version": "0.3.5",
         "news": {
+            "0.3.5": {
+                "en": "testing customizable opacity color",
+                "de": "Testen der anpassbaren Deckkraftfarbe",
+                "ru": "тестирование настраиваемого цвета непрозрачности",
+                "pt": "testando cor de opacidade personalizável",
+                "nl": "aanpasbare dekkingskleur testen",
+                "fr": "test de la couleur d'opacité personnalisable",
+                "it": "testare il colore dell'opacità personalizzabile",
+                "es": "prueba de color de opacidad personalizable",
+                "pl": "testowanie dostosowywanego koloru krycia",
+                "zh-cn": "测试可定制的不透明颜色"
+            },
             "0.3.4": {
                 "en": "new functionality readOnly widgets",
                 "de": "neue Funktionalität readOnly Widgets",
