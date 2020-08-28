@@ -35,6 +35,9 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.4.0
+* keine Änderungen, nur ein Label für Latest repository
+
 ### 0.3.5
 * opacity kann beim Luftdruck frei geählt werden. Erstmal nur um es testen zu können
 

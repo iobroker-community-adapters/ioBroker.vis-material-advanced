@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.3.7",
+        "version": "0.4.0",
         "news": {
+            "0.4.0": {
+                "en": "new version for latest repo",
+                "de": "neue Version für das latest Repo",
+                "ru": "новая версия для последнего репо",
+                "pt": "nova versão para o repo mais recente",
+                "nl": "nieuwe versie voor de nieuwste opslagplaats",
+                "fr": "nouvelle version pour le dernier dépôt",
+                "it": "nuova versione per l'ultimo repo",
+                "es": "nueva versión para el último repositorio",
+                "pl": "nowa wersja najnowszego repozytorium",
+                "zh-cn": "最新版本的最新版本"
+            },
             "0.3.5": {
                 "en": "testing customizable opacity color",
                 "de": "Testen der anpassbaren Deckkraftfarbe",
