@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.4.0",
+        "version": "0.4.1",
         "news": {
-            "0.4.0": {
+            "0.4.1": {
                 "en": "new version for latest repo",
                 "de": "neue Version für das latest Repo",
                 "ru": "новая версия для последнего репо",
