@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.4.2",
+        "version": "0.4.3",
         "news": {
+            "0.4.3": {
+
+                "en": "added new widget Boolean",
+                "de": "neues Widget Boolean hinzugefügt",
+                "ru": "добавлен новый виджет Boolean",
+                "pt": "adicionado novo widget booleano",
+                "nl": "nieuwe widget Boolean toegevoegd",
+                "fr": "ajout d'un nouveau widget booléen",
+                "it": "aggiunto nuovo widget Boolean",
+                "es": "agregado nuevo widget booleano",
+                "pl": "dodano nowy widget Boolean",
+                "zh-cn": "添加了新的小部件布尔"
+            },
             "0.4.2": {
                 "en": "new version for latest repo",
                 "de": "neue Version für das latest Repo",

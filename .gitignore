@@ -15,3 +15,4 @@ admin/i18n/*/flat.txt
 widgets/test.json
 widgets/.jsbeautifyrc
 .vscode
+widgets/widget.html

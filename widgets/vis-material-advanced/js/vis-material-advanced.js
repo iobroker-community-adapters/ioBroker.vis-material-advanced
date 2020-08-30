@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.3.4"
+    version: "0.4.3"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -649,10 +649,10 @@ vis.binds["vis-material-advanced"] = {
     tplMdListPressure: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
         const $colorize = data.attr('colorizeByTemp');
-        const $low = data.attr('below');
-        // const $normal = data.attr('normal');
-        const $high = data.attr('above');
         const $original_class = data.attr('opacity-color');
+        const $low = data.attr('below');
+        const $high = data.attr('above');
+
 
         // if nothing found => wait
         if (!$div.length) {
@@ -724,6 +724,53 @@ vis.binds["vis-material-advanced"] = {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListBoolean: function(widgetID, view, data) {
+        const srcTrue = 'widgets/vis-material-advanced/img/ma_checkbox_checked.png';
+        const srcFalse = 'widgets/vis-material-advanced/img/ma_checkbox_unchecked.png';
+        const valTrue = data.attr('true');
+        const valFalse = data.attr('false');
+        const colorize = data.attr('colorizeByTemp');
+        const colTrue = data.attr('color-true');
+        const colFalse = data.attr('color-false');
+        const $original_class = data.attr('opacity-color');
+
+
+        var $div = $('#' + widgetID);
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListBoolean(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var value = (state) ? valTrue : valFalse;
+            var src = (state) ? srcTrue : srcFalse;
+            $div.find('.md-list-value').html(value);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+
+            if (colorize) {
+                if (state) {
+                    $div.find('.overlay').css('background-color', colTrue);
+                } else if (!state) {
+                    $div.find('.overlay').css('background-color', colFalse);
+                }
+            } else {
+                $div.find('.overlay').css('background-color', data.attr('opacity-color'));
+            }
+
         }
 
         if (data.oid) {
