@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.0"
+    version: "0.5.1"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -718,8 +718,8 @@ vis.binds["vis-material-advanced"] = {
         }
     },
     tplMdListBoolean: function(widgetID, view, data) {
-        const srcTrue = 'widgets/vis-material-advanced/img/ma_checkbox_checked.png';
-        const srcFalse = 'widgets/vis-material-advanced/img/ma_checkbox_unchecked.png';
+        const srcTrue = 'widgets/vis-material-advanced/img/checked.png';
+        const srcFalse = 'widgets/vis-material-advanced/img/unchecked.png';
         const valTrue = data.attr('true');
         const valFalse = data.attr('false');
         const colorize = data.attr('colorizeByValue');

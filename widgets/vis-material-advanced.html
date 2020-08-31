@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.0"
+    version: "0.5.1"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -253,7 +253,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListOccupancy">
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list " id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -522,8 +522,8 @@
     class="vis-tpl"
     data-vis-prev='<div id="prev_tplVis-material-advancedListBoolean" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
-            <img src="widgets/vis-material-advanced/img/ma_checkbox_checked.png" style="width: 100px;  height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;" 
-    data-vis-attrs0="Text-color[white]/color;card-icon[widgets/vis-material-advanced/img/ma_checkbox_checked.png]/image;" 
+            <img src="widgets/vis-material-advanced/img/checked.png" style="width: 100px;  height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;" 
+    data-vis-attrs0="Text-color[white]/color;card-icon[widgets/vis-material-advanced/img/checked.png]/image;" 
     data-vis-attrs1="opacity-color[opac-white]/color;true[Wahr]/text;false[Falsch]/text;"
     data-vis-attrs2="colorizeByValue[true]/checkbox;color-true/color;color-false/color;"
     data-vis-set="vis-material-advanced" 
@@ -563,7 +563,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListValve">
-    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%==this.data.attr( 'class')  %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
