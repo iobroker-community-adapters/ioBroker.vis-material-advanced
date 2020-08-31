@@ -22,6 +22,50 @@ but rewritten in 90%
 
 Several bugfixes and lots of new widgets added 
 
+## Attention, old widgets ( < 0.5.0 will be corrupted a little bit)
+    you can repair them manually in vis or export them, edit them, and import them again.
+    for manual : replace "opacity-color": "opac-<somecolor>" with "opacity-color": "<somecolor>". replace colorizeByTemp with colorizeByValue
+
+    Example from sigi234 ( example.json ) and my example2.json are in the github for everybody who wants to test them
+
+    Sorry for the inconveniance, but these changes were neccessary to keep code clean and understandable.
+
+    this should not happen very often any more :)
+
+## following widgets are present right now:
+
+### current
+ - Temperature
+ - Humidity
+ - Door
+ - Window
+ - Occupacy
+ - Volume
+ - Shutter
+ - Light
+ - Dimmer
+ - Light-temperature
+ - Boolean
+
+### in progress
+not yet final:
+ - Garagedoor
+ - Radiostation 
+
+
+ lot of widgets still in plan
+
+## Options
+    following options are available in most of the widgets:
+    
+    - text-color
+    - cord-icon ( does not yet make sense everywhere, e.g. dimmer )
+    - opacity color ( the standard opacity color )
+    - colorizeByValue ( depending on some values the opacity color can be changed e.g. if it is too hot make it red, to cold blue )
+    - below,above, min, max ( the values for colorieByValue )
+    - color-low/high,medium... ( the color to use if border is raised)
+    - read-only ( some widgets can be set to read only mode for display only)
+
 
 ### Getting started
 

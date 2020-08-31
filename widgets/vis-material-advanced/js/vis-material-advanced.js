@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.4.7"
+    version: "0.5.0"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -101,9 +101,9 @@ $.extend(
             "de": "Transparenz Farbe",
             "ru": "na"
         },
-        "colorizeByTemp": {
-            "en": "colorize By Temp",
-            "de": "einfärben durch Temp",
+        "colorizeByValue": {
+            "en": "colorize By Value",
+            "de": "einfärben durch Wert",
             "ru": "раскрасить по температуре",
             "pt": "colorir por Temp",
             "nl": "inkleuren door temp",
@@ -155,6 +155,11 @@ vis.binds["vis-material-advanced"] = {
         const valOpen = _('open');
         const valClosed = _('closed');
 
+        const colorize = data.attr('colorizeByValue');
+        const colorOpen = data.attr('color-open');
+        const colorClosed = data.attr('opacity-color');
+
+
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
@@ -168,6 +173,13 @@ vis.binds["vis-material-advanced"] = {
             var src = (state) ? srcOpen : srcClosed;
             $div.find('.md-list-value').html(value);
             $div.find('.md-list-icon').find('img').attr('src', src);
+            if (colorize) {
+                if (state) {                 
+                    $div.find('.overlay').css('background-color', colorOpen);                                       
+                } else {
+                    $div.find('.overlay').css('background-color', colorClosed);   
+                }
+            }
         }
 
         if (data.oid) {
@@ -185,6 +197,10 @@ vis.binds["vis-material-advanced"] = {
         const srcClosed = 'widgets/vis-material-advanced/img/fts_window_2w.png';
         const valOpen = _('open');
         const valClosed = _('closed');
+        const colorize = data.attr('colorizeByValue');
+        const colorOpen = data.attr('color-open');
+        const colorClosed = data.attr('opacity-color');
+
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -199,6 +215,13 @@ vis.binds["vis-material-advanced"] = {
             var src = (state) ? srcOpen : srcClosed;
             $div.find('.md-list-value').html(value);
             $div.find('.md-list-icon').find('img').attr('src', src);
+            if (colorize) {
+                if (state) {                 
+                    $div.find('.overlay').css('background-color', colorOpen);                                       
+                } else {
+                    $div.find('.overlay').css('background-color', colorClosed);   
+                }
+            }
         }
 
         if (data.oid) {
@@ -213,11 +236,13 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListTemp: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
-        const $colorize = data.attr('colorizeByTemp');
-        const $low = data.attr('below');
+        const colorize = data.attr('colorizeByValue');
+        const low = data.attr('below');
         // const $normal = data.attr('normal');
-        const $high = data.attr('above');
-        const $original_class = data.attr('opacity-color');
+        const high = data.attr('above');
+        const original_class = data.attr('opacity-color');
+        const colorLow = data.attr('color-low');
+        const colorHigh = data.attr('color-high');
 
         // if nothing found => wait
         if (!$div.length) {
@@ -238,15 +263,13 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
             }
-            if ($colorize == true) {
-                if (state <= $low) {
-                    console.log('Temperatur ist niedrig ');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
-                } else if (state >= $high) {
-                    console.log('Temperatur ist hoch');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+            if (colorize) {
+                if (state <= low) {                 
+                    $div.find('.overlay').css('background-color', colorLow);                       
+                } else if (state >= high) {
+                    $div.find('.overlay').css('background-color', colorHigh);   
                 } else {
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').css('background-color', original_class);   
                 }
             }
 
@@ -264,11 +287,15 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListHumid: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
-        const $colorize = data.attr('colorizeByTemp');
-        const $low = data.attr('below');
+        const colorize = data.attr('colorizeByValue');
+        const low = data.attr('below');
         // const $normal = data.attr('normal');
-        const $high = data.attr('above');
-        const $original_class = data.attr('opacity-color');
+        const high = data.attr('above');
+
+        const original_class = data.attr('opacity-color');
+        const colorLow = data.attr('color-low');
+        const colorHigh = data.attr('color-high');
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
@@ -288,15 +315,13 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' %');
             }
-            if ($colorize == true) {
-                if (state <= $low) {
-                    console.log('Temperatur ist niedrig ');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
-                } else if (state >= $high) {
-                    console.log('Temperatur ist hoch');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+            if (colorize) {
+                if (state <= low) {                 
+                    $div.find('.overlay').css('background-color', colorLow);                       
+                } else if (state >= high) {
+                    $div.find('.overlay').css('background-color', colorHigh);   
                 } else {
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').css('background-color', original_class);   
                 }
             }
         }
@@ -316,9 +341,9 @@ vis.binds["vis-material-advanced"] = {
         const srcNoMotion = data.attr('iconNoMotion');
         const valMotion = _('motion');
         const valNoMotion = _('nomotion');
-        const $colorize = data.attr('colorizeByValue');
-        const $motionColor = data.attr('motionColor');
-        const $original_class = data.attr('opacity-color');
+        const colorize = data.attr('colorizeByValue');
+        const motionColor = data.attr('motionColor');
+        const original_class = data.attr('opacity-color');
 
         var $div = $('#' + widgetID);
 
@@ -342,12 +367,13 @@ vis.binds["vis-material-advanced"] = {
             var src = (state) ? srcMotion : srcNoMotion;
             $div.find('.md-list-value').html(value);
             $div.find('.md-list-icon').find('img').attr('src', src);
-            if ($colorize == true) {
-                if (state == true) {
-                    $div.find('.vis-widget-body').css('background-color', $motionColor);
+            if (colorize) {
+                if (state) {
+                    $div.find('.overlay').css('background-color', motionColor);
+                   
                 } else {
-                    $div.find('.vis-widget-body').css('background-color', '');
-                    //$div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').css('background-color', original_class);
+                   
                 }
             }
 
@@ -428,15 +454,7 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.md-list-value').html(state + "%");
 
             }
-        }
-
-        /* if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_slider');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        } */
+        }       
 
         if (data.oid) {
             // subscribe on updates of value
@@ -648,11 +666,13 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListPressure: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
-        const $colorize = data.attr('colorizeByTemp');
-        const $original_class = data.attr('opacity-color');
-        const $low = data.attr('below');
-        const $high = data.attr('above');
+        const colorize = data.attr('colorizeByValue');
+        const original_class = data.attr('opacity-color');
+        const low = data.attr('below');
+        const high = data.attr('above');
 
+        const colorLow = data.attr('color-low');
+        const colorHigh= data.attr('color-high');
 
         // if nothing found => wait
         if (!$div.length) {
@@ -673,57 +693,18 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' hPa');
             }
-            $div.find('.overlay').css('background-color', data.attr('opacity2'));
-            console.log('Farbe sollte sein ' + data.attr('opacity2'));
-            if ($colorize == true) {
-                if (state <= $low) {
-                    console.log('Temperatur ist niedrig ');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
-                } else if (state >= $high) {
-                    console.log('Temperatur ist hoch');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+            //$div.find('.overlay').css('background-color', data.attr('opacity2'));
+            
+            if ( colorize) {
+                if (state <= low) {                    
+                    $div.find('.overlay').css('background-color', colorLow);
+                } else if (state >= high) {                    
+                    $div.find('.overlay').css('background-color', colorHigh);
                 } else {
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').css('background-color', original_class);
                 }
             }
 
-        }
-
-        if (data.oid) {
-            // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
-                update(newVal);
-            });
-
-            // set current value
-            update(vis.states[data.oid + '.val']);
-        }
-    },
-    tplMdListRadio: function(widgetID, view, data) {
-        const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
-        const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png';
-        var $div = $('#' + widgetID);
-
-        // if nothing found => wait
-        if (!$div.length) {
-            return setTimeout(function() {
-                vis.binds['vis-material-advanced'].tplMdListRadio(widgetID, view, data);
-            }, 100);
-        }
-
-        function update(state) {
-            var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
-            $tmp.prop('checked', state);
-            //$div.find('.md-list-icon').find('img').attr('src', data.attr('oid'));
-        }
-
-        if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
-            $this.change(function() {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
         }
 
         if (data.oid) {
@@ -741,7 +722,7 @@ vis.binds["vis-material-advanced"] = {
         const srcFalse = 'widgets/vis-material-advanced/img/ma_checkbox_unchecked.png';
         const valTrue = data.attr('true');
         const valFalse = data.attr('false');
-        const colorize = data.attr('colorizeByTemp');
+        const colorize = data.attr('colorizeByValue');
         const colTrue = data.attr('color-true');
         const colFalse = data.attr('color-false');
         const $original_class = data.attr('opacity-color');
@@ -785,11 +766,16 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListValve: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
-        const $colorize = data.attr('colorizeByTemp');
-        const $low = data.attr('below');
+        const colorize = data.attr('colorizeByValue');
+        const low = data.attr('below');
         // const $normal = data.attr('normal');
-        const $high = data.attr('above');
-        const $original_class = data.attr('opacity-color');
+        const high = data.attr('above');
+        const original_class = data.attr('opacity-color');
+        
+        const colorMedium = data.attr('color-medium');
+        const colorHigh   = data.attr('color-high');
+
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
@@ -809,16 +795,18 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' %');
             }
-            if ($colorize == true) {
-                if (state <= $low) {
-                    console.log('Temperatur ist niedrig ');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
-                } else if (state >= $high) {
-                    console.log('Temperatur ist hoch');
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+            
+            if (colorize) {
+                if (state  <= low ) {                    
+                    $div.find('.overlay').css('background-color', original_class);
+                } else if (state <= high) {                    
+                    $div.find('.overlay').css('background-color', colorMedium);
                 } else {
-                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').css('background-color', colorHigh);
                 }
+            }
+            else {
+                $div.find('.overlay').css('background-color', original_class);
             }
         }
 
@@ -829,6 +817,43 @@ vis.binds["vis-material-advanced"] = {
             });
 
             // set current value 
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListRadio: function(widgetID, view, data) {
+        const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
+        const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png';
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListRadio(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            //$div.find('.md-list-icon').find('img').attr('src', data.attr('oid'));
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function() {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
             update(vis.states[data.oid + '.val']);
         }
     }
