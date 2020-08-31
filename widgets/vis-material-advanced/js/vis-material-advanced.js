@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.4.6"
+    version: "0.4.7"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
