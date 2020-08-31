@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.4.3"
+    version: "0.4.4"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/style.css" />
 <!-- here you can include so many js-files as you want -->
 <script type="text/javascript" src="widgets/vis-material-advanced/js/vis-material-advanced.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
 <!-- the full description of format in data-vis-attrs can be found here:
     https://github.com/ioBroker/ioBroker.vis/blob/master/www/js/visEditInspect.js#L39
@@ -234,8 +236,13 @@
 
 <script id="tplMaListLight" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListLight" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
-        <img src="widgets/vis-material-advanced/img/light_light_dim_100.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
-    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" data-vis-attrs1="readOnly/checkbox;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListLight">
+        <img src="widgets/vis-material-advanced/img/light_light_dim_100.png " style="width: 100px; height: 100px; "></div></div>' 
+    data-vis-attrs="oid/id,switch;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
+    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
+    data-vis-attrs1="readOnly/checkbox;" 
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val" 
+    data-vis-name="ListLight">
     <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
@@ -269,7 +276,7 @@
 <script id="tplMaListLightDim" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListLightDim" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
-data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;" data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
+data-vis-attrs="oid/id,level.dimmer;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;" data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
 data-vis-attrs1="readOnly/checkbox" data-vis-set="vis-material-advanced" 
 data-vis-type="val"
 data-vis-name="ListLightDim">
@@ -488,7 +495,7 @@ data-vis-name="ListWindowShutter" >
         data-vis-set="vis-material-advanced" 
         data-vis-type="val" 
         data-vis-name="ListBoolean">
-    <div class="vis-widget   <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget   <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> ">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -498,14 +505,41 @@ data-vis-name="ListWindowShutter" >
                     <%= this.data.attr('title') %>
                 </div>
                 <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
-                    <%= this.data.attr('subtitle') %>
+                    <%= this.data.attr('subtitle') %>                   
                 </div>
             </div>
             <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
         <div class="vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
     </div>
-    <% vis.binds['vis-material-advanced'].tplMdListBoolean(this.data.wid, this.view, this.data);  %>
+    <% vis.binds['vis-material-advanced'].tplMdListBoolean(this.data.wid,  this.view, this.data);  %>
+</script>
+
+
+<script id="tplMaListValve" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListValve" style="position: relative; text-align: initial;padding: 4px ">
+    <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
+        <img src="widgets/vis-material-advanced/img/valve.png" style="width: 100px; height: 100px; "></div></div>' 
+        data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/valve.png]/image;"
+    data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;colorizeByTemp[true]/checkbox;below[40]/number;above[60]/number;" data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListValve">
+    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body my_child">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title " style="color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=this.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%=  this.data.attr('Text-color') %>;"></div>
+        </div>
+        <div class="vis-widget-body ms-button-op my_child overlay <%= this.data.attr('opacity-color') %> "></div>
+    </div>
+
+    <% vis.binds['vis-material-advanced'].tplMdListValve(this.data.wid, this.view, this.data);  %>
 </script>
 
 

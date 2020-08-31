@@ -35,6 +35,10 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.4.4
+* bugfix alter pfade
+* neues Valve Widget für Thermostate
+
 ### 0.4.3
 * neues Boolean widget
 

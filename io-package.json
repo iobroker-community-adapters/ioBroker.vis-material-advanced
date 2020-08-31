@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.4.3",
-        "news": {
+        "version": "0.4.4",
+        "news": {        
+            "0.4.4": {
+                  "en": "bugfix for icons, added new widget valve",
+                  "de": "Bugfix für Symbole, neues Widget-Ventil hinzugefügt",
+                  "ru": "исправление ошибок для иконок, добавлен новый клапан виджета",
+                  "pt": "correção de bug para ícones, adição de nova válvula de widget",
+                  "nl": "bugfix voor pictogrammen, nieuwe widgetklep toegevoegd",
+                  "fr": "correction de bogue pour les icônes, ajout d'une nouvelle valve de widget",
+                  "it": "bugfix per icone, aggiunta nuova valvola widget",
+                  "es": "corrección de errores para iconos, nueva válvula de widget agregada",
+                  "pl": "naprawiono błąd ikon, dodano nowy zawór widżetu",
+                  "zh-cn": "图标的错误修正，添加了新的小部件阀门"
+            },
             "0.4.3": {
 
                 "en": "added new widget Boolean",

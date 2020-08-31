@@ -1,6 +1,6 @@
 {
     "name": "iobroker.vis-material-advanced",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "description": "This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets",
     "author": "EdgarM73 <edgar.miller@gmail.com>",
     "homepage": "https://github.com/EdgarM73/ioBroker.vis-material-advanced",
@@ -16,7 +16,9 @@
         "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced.git"
     },
     "dependencies": {
-        "@iobroker/adapter-core": "^1.0.3"
+        "@iobroker/adapter-core": "^1.0.3",
+        "@material/button" : "^7.0.0",
+        "@material/switch" : "^7.0.0"
     },
     "devDependencies": {
         "@iobroker/testing": "^2.3.0",
