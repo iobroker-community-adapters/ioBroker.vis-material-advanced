@@ -35,7 +35,7 @@ thanks to @sigi234
 
 ## Changelog
 
-### 0.4.4
+### 0.4.6
 * bugfix alter pfade
 * neues Valve Widget für Thermostate
 
