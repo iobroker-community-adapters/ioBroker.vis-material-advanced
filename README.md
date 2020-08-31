@@ -79,6 +79,11 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.5.0
+* opacity now flexible
+* reorg code
+
+
 ### 0.4.8
 * bugfix alter pfade
 * neues Valve Widget für Thermostate
