@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.4.7",
+        "version": "0.4.8",
         "news": {        
-            "0.4.7": {
+            "0.4.8": {
                   "en": "bugfix for icons, added new widget valve",
                   "de": "Bugfix für Symbole, neues Widget-Ventil hinzugefügt",
                   "ru": "исправление ошибок для иконок, добавлен новый клапан виджета",
