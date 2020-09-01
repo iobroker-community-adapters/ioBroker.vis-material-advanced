@@ -4,8 +4,17 @@
         "version": "0.5.1",
         "news": {    
             "0.5.1": {
-
-            },
+                "en": "bugfix: all widgets have now default background-color #121212 but can be changed in settings. new widgets number and text",
+                "de": "Bugfix: Alle Widgets haben jetzt die Standard-Hintergrundfarbe # 121212, können aber in den Einstellungen geändert werden. neue Widgets Nummer und Text",
+                "ru": "исправление: теперь все виджеты имеют цвет фона по умолчанию # 121212, но его можно изменить в настройках. количество новых виджетов и текст",
+                "pt": "correção de bug: todos os widgets agora têm a cor de fundo padrão # 121212, mas podem ser alterados nas configurações. número e texto de novos widgets",
+                "nl": "bugfix: alle widgets hebben nu standaard achtergrondkleur # 121212 maar kunnen worden gewijzigd in instellingen. nieuwe widgets nummer en tekst",
+                "fr": "correction de bogue: tous les widgets ont maintenant la couleur d'arrière-plan par défaut # 121212 mais peuvent être modifiés dans les paramètres. nouveau nombre de widgets et texte",
+                "it": "bugfix: tutti i widget hanno ora il colore di sfondo predefinito # 121212 ma possono essere modificati nelle impostazioni. nuovo numero di widget e testo",
+                "es": "corrección de errores: todos los widgets tienen ahora el color de fondo predeterminado # 121212, pero se pueden cambiar en la configuración. nuevo número de widgets y texto",
+                "pl": "poprawka: wszystkie widżety mają teraz domyślny kolor tła # 121212, ale można je zmienić w ustawieniach. nowy numer i tekst widżetów",
+                "zh-cn": "错误修正：所有小部件现在都具有默认的背景色＃121212，但可以在设置中进行更改。新的小部件编号和文本"
+              },
             "0.5.0": {
                 "en": "reorganized code. added flexible opacity to all widgets. added some colorizeOptions to some widgets",
                 "de": "reorganisierter Code. allen Widgets wurde eine flexible Deckkraft hinzugefügt. Einige Widgets wurden mit colorizeOptions versehen",

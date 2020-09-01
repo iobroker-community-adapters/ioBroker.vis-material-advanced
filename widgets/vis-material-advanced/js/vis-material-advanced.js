@@ -725,7 +725,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const colTrue = data.attr('color-true');
         const colFalse = data.attr('color-false');
-        const $original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacity-color');
 
 
         var $div = $('#' + widgetID);
@@ -749,7 +749,99 @@ vis.binds["vis-material-advanced"] = {
                     $div.find('.overlay').css('background-color', colFalse);
                 }
             } else {
-                $div.find('.overlay').css('background-color', data.attr('opacity-color'));
+                $div.find('.overlay').css('background-color', original_class);
+            }
+
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListNumber: function(widgetID, view, data) {        
+        const valLow = data.attr('low');
+        const valHigh = data.attr('high');
+        const colorize = data.attr('colorizeByValue');
+        const colLow = data.attr('color-low');
+        const colHigh = data.attr('color-high');
+        const original_class = data.attr('opacity-color');
+
+
+        var $div = $('#' + widgetID);
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListNumber(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            
+            $div.find('.md-list-value').html(state);
+            
+
+            if (colorize) {
+                if (state <= valLow) {
+                    $div.find('.overlay').css('background-color', colLow);
+                } else if (state >= valHigh ) {
+                    $div.find('.overlay').css('background-color', colHigh);
+                }
+                else
+                {
+                    $div.find('.overlay').css('background-color',original_class);    
+                }
+            } else {
+                $div.find('.overlay').css('background-color',original_class);
+            }
+
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListText: function(widgetID, view, data) {                
+        const valSearchString = data.attr('searchString');
+        const colorize = data.attr('colorizeByValue');        
+        const colStringFound = data.attr('stringFoundColor');
+        const original_class = data.attr('opacity-color');
+
+
+        var $div = $('#' + widgetID);
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function() {
+                vis.binds['vis-material-advanced'].tplMdListText(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            
+            $div.find('.md-list-value').html(state);
+            
+
+            if (colorize) {
+                if (state == valSearchString) {
+                    $div.find('.overlay').css('background-color', colStringFound);
+                } 
+                else
+                {
+                    $div.find('.overlay').css('background-color',original_class);    
+                }
+            } else {
+                $div.find('.overlay').css('background-color',original_class);
             }
 
         }

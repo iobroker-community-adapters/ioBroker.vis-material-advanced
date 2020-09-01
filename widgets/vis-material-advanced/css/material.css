@@ -41,6 +41,10 @@
    ----- */
 
 
+.mduiw-dark-background {
+    background-color: #121212;
+}
+
 /* nur zur Laufzeit anwenden, nicht im Editor */
 
 .mduiw-runtime .mduiw-hide {
@@ -64,20 +68,6 @@
 
 .mduiw-float-right {
     float: right !important;
-}
-
-.vis-view,
-.vis-view .ui-widget {
-    font-family: Roboto, Arial;
-    font-size: 16px !important;
-    color: #ffffff;
-}
-
-.vis_container_edit>.vis-view {
-    background: #000;
-    color: #ffffff;
-    font-family: Roboto, Arial;
-    font-size: 16px !important;
 }
 
 

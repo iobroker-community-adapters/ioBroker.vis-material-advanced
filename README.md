@@ -81,6 +81,10 @@ thanks to @sigi234
 
 ### 0.5.1
 * some icons resized
+* bugfix: all widgets have now default background-color #121212 but can be changed in settings.
+* reorganized the settings to have some common order
+* new Number and Text Widget ( similar to boolean )
+
 
 ### 0.5.0
 * opacity now flexible

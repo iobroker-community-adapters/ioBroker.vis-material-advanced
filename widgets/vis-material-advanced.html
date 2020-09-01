@@ -113,15 +113,15 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListWindow" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/fts_door.png" style="width: 100px;  height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;" 
-    data-vis-attrs0="Text-color[red]/color;card-icon[widgets/vis-material-advanced/img/fts_door.png]/image;"
-    data-vis-attrs1="opacity-color[white]/color;colorizeByValue[false]/checkbox;color-open[orange]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color; "
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/fts_door.png]/image;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;color-open[orange]/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListDoor">
-    <div class="vis-widget   <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget  <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;" >
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -146,14 +146,15 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListWindow" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/fts_window_2w.png" style="width: 100px; height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/fts_window_2w.png]/image;"
-    data-vis-attrs0="opacity-color[white]/color;colorizeByValue[false]/checkbox;color-open[orange]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color; "    
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/fts_window_2w.png]/image;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;color-open[orange]/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListWindow">
-    <div class="vis-widget <%= this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget  <%= this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -179,15 +180,15 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListTemp" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/temp_temperature.png" style="width: 100px; height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/temp_temperature.png]/image;"
-    data-vis-attrs0="opacity-color[white]/color;colorizeByValue[true]/checkbox;below[18]/number;above[24]/number;" 
-    data-vis-attrs1="color-low[blue]/color;color-high[red]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/temp_temperature.png]/image;opacity-color[white]/color;" 
+    data-vis-attrs1="colorizeByValue/checkbox;below[18]/number;above[24]/number;color-low[blue]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListTemperature">
-    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -212,15 +213,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListHumid" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/humid_humidity.png" style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/humid_humidity.png]/image;"
-    data-vis-attrs0="opacity-color[white]/color;colorizeByValue[true]/checkbox;below[40]/number;above[60]/number;" 
-    data-vis-attrs1="color-low[blue]/color;color-high[red]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/humid_humidity.png]/image;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[40]/number;above[60]/number;" 
+    data-vis-attrs2="color-low[blue]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListHumidity">
-    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget  <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -245,15 +247,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListOccupancy" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/motion.png" style="width: 100px; height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color;iconMotion[widgets/vis-material-advanced/img/motion.png]/image;"
-    data-vis-attrs0="iconNoMotion[widgets/vis-material-advanced/img/no-motion.png]/image;"
-    data-vis-attrs1="opacity-color[white]/color;colorizeByValue[false]/checkbox;motionColor[yellow]/color" 
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="iconMotion[widgets/vis-material-advanced/img/motion.png]/image;"
+    data-vis-attrs1="iconNoMotion[widgets/vis-material-advanced/img/no-motion.png]/image;"
+    data-vis-attrs2="opacity-color[white]/color;colorizeByValue/checkbox;motionColor[yellow]/color" 
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListOccupancy">
-    <div class="vis-widget <%== this.data.attr('class') %> md-list " id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget  <%== this.data.attr('class') %> md-list " id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -279,15 +282,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListLight" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png " style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id,switch;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
-    data-vis-attrs0="opacity-color[white]/color;" 
-    data-vis-attrs1="readOnly/checkbox;" 
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
+    data-vis-attrs1="opacity-color[white]/color;" 
+    data-vis-attrs2="readOnly/checkbox;" 
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListLight">
-    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -321,15 +325,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListLightDim" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
-    data-vis-attrs="oid/id,level.dimmer;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;" 
-    data-vis-attrs0="opacity-color[white]/color;" 
-    data-vis-attrs1="readOnly/checkbox" 
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;" 
+    data-vis-attrs2="readOnly/checkbox" 
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"
     data-vis-name="ListLightDim">
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+    <div class="vis-widget  <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child  " >
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -363,15 +368,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListLightKelvin" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png" style="width: 100px; height: 100px;"></div></div>'
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png]/image;" 
-    data-vis-attrs0="opacity-color[white]/color;min[2700]/number;max[6500]/number;" 
-    data-vis-attrs1="readOnly/checkbox;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;min[2700]/number;max[6500]/number;" 
+    data-vis-attrs2="readOnly/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"
     data-vis-name="ListLightKelvin"> 
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="width:350px;">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="width:350px;" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child  " >
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -404,15 +410,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListWindowShutter" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>'
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/fts_shutter_100.png]/image;" 
-    data-vis-attrs0="opacity-color[white]/color;inverted[true]/checkbox;" 
-    data-vis-attrs1="readOnly/checkbox;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/fts_shutter_100.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;inverted[checked]/checkbox;" 
+    data-vis-attrs2="readOnly/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"
     data-vis-name="ListWindowShutter" > 
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child  " >
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -446,15 +453,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListVolume" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/volume-high.png" style="width: 100px; height: 100px;"></div></div>'
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/volume-high.png]/image;" 
-    data-vis-attrs0="opacity-color[white]/color;Min[0]/number;Max[100]/number;step[5]/select,1,5,10;"
-    data-vis-attrs1="readOnly/checkbox"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/volume-high.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;Min[0]/number;Max[100]/number;step[5]/select,1,5,10;"
+    data-vis-attrs2="readOnly/checkbox"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"
     data-vis-name="ListVolume" > 
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget  <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child  " >
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -488,13 +496,14 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListPressure" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/pressure.png" style="width: 100px; height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
-    data-vis-attrs0="colorizeByValue[true]/checkbox;below[920]/number;above[1000]/number;" 
-    data-vis-attrs1="opacity-color[white]/color;color-low[blue]/color;color-high[red]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
+    data-vis-attrs1="colorizeByValue/checkbox;below[920]/number;above[1000]/number;" 
+    data-vis-attrs2="opacity-color[white]/color;color-low[blue]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListPressure">
-    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget my_parent  <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -521,15 +530,16 @@
     type="text/ejs" 
     class="vis-tpl"
     data-vis-prev='<div id="prev_tplVis-material-advancedListBoolean" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
-            <img src="widgets/vis-material-advanced/img/checked.png" style="width: 100px;  height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;" 
-    data-vis-attrs0="Text-color[white]/color;card-icon[widgets/vis-material-advanced/img/checked.png]/image;" 
-    data-vis-attrs1="opacity-color[opac-white]/color;true[Wahr]/text;false[Falsch]/text;"
-    data-vis-attrs2="colorizeByValue[true]/checkbox;color-true/color;color-false/color;"
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
+            <img src="widgets/vis-material-advanced/img/checked.png" style="width: 100px;  height: 100px;"></div></div>'
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"         
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/checked.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;true[Wahr]/text;false[Falsch]/text;"
+    data-vis-attrs2="colorizeByValue/checkbox;color-true/color;color-false/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListBoolean">
-    <div class="vis-widget   <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> ">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> " style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -550,20 +560,91 @@
 </script>
 
 
+
+<script 
+    id="tplMaListNumber" 
+    type="text/ejs" 
+    class="vis-tpl"
+    data-vis-prev='<div id="prev_tplVis-material-advancedListNumber" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
+            <img src="widgets/vis-material-advanced/img/123.png" style="width: 100px;  height: 100px;"></div></div>'
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"          
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/123.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;low/number;high/number;"
+    data-vis-attrs2="colorizeByValue/checkbox;color-low/color;color-high/color;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val" 
+    data-vis-name="ListNumber">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> " style="background-color:<%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body my_child">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%=  this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>                   
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+        </div>
+        <div class="vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListNumber(this.data.wid,  this.view, this.data);  %>
+</script>
+
+
+<script 
+    id="tplMaListText" 
+    type="text/ejs" 
+    class="vis-tpl"
+    data-vis-prev='<div id="prev_tplVis-material-advancedListText" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
+            <img src="widgets/vis-material-advanced/img/abc.png" style="width: 100px;  height: 100px;"></div></div>'
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"      
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/abc.png]/image;" 
+    data-vis-attrs1="opacity-color[white]/color;"
+    data-vis-attrs2="colorizeByValue/checkbox;searchString/text;stringFoundColor/color;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val" 
+    data-vis-name="ListText">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> " style="background-color:<%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body my_child">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%=  this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>                   
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+        </div>
+        <div class="vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListText(this.data.wid,  this.view, this.data);  %>
+</script>
+
 <script 
     id="tplMaListValve" 
     type="text/ejs" 
     class="vis-tpl" 
-    data-vis-prev='<div id="prev_tplVis-material-advancedListValve" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListValve" style="position: relative; text-align: initial;padding: 4px; ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/valve.png" style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/valve.png]/image;"
-    data-vis-attrs0="opacity-color[white]/color;colorizeByValue[true]/checkbox;below[20]/number;above[40]/number;" 
-    data-vis-attrs1="color-medium[darkyellow]/color;color-high[red]/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/valve.png]/image;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[20]/number;above[40]/number;" 
+    data-vis-attrs2="color-medium[darkyellow]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListValve">
-    <div class="vis-widget <%==this.data.attr( 'class')  %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%==this.data.attr( 'class')  %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -590,15 +671,16 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListGarage" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id;title[not wokring yet]/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/garage.png]/image;"
-    data-vis-attrs0="oid2/id;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;" 
+    data-vis-attrs="oid/id;title[not working yet]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/garage.png]/image;"
+    data-vis-attrs1="oid2/id;opacity-color[white]/color;" 
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"  
     data-vis-beta="true" 
     data-vis-name="ListGarage">
-    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget <%==this.data.attr( 'class') %> md-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body my_child ">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -618,20 +700,20 @@
                 </div>
             </div>
         </div>
-        <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
+        <div class="vis-widget-body ms-button-op my_child overlay opac-template8" style="background-color:<%= this.data.attr('opacity-color') %>" ></div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListGarage(this.data.wid, this.view, this.data);  %>
 </script>
 
  <!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">
-    <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+    <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
         <img src="widgets/vis-material-advanced/img/radio.png" style="width: 100px; height: 100px;"></div></div>' 
         data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"
     data-vis-attrs0="opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;colorizeByValue[true]/checkbox;below[920]/number;above[1000]/number;" 
     data-vis-attrs1="objekt/id;" 
     data-vis-beta="true"
     data-vis-set="vis-material-advanced" data-vis-type="val" data-vis-name="ListRadio">
-    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+    <div class="vis-widget my_parent  mduiw-dark-background <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
                 <img src="<%= this.data.attr('oid') %>">
