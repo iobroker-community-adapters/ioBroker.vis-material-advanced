@@ -3,7 +3,7 @@
         "name": "vis-material-advanced",
         "version": "0.5.4",
         "news": {    
-            "0.5.4":: {
+            "0.5.4": {
                 "en": "bugfix, changed wrong class",
                 "de": "Bugfix, falsche Klasse geändert",
                 "ru": "исправление, неверный класс изменен",
