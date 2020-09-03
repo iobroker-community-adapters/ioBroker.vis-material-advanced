@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.5.3",
+        "version": "0.5.4",
         "news": {    
+            "0.5.4":: {
+                "en": "bugfix, changed wrong class",
+                "de": "Bugfix, falsche Klasse geändert",
+                "ru": "исправление, неверный класс изменен",
+                "pt": "correção de bug, classe errada alterada",
+                "nl": "bugfix, verkeerde klasse gewijzigd",
+                "fr": "correction de bogue, mauvaise classe modifiée",
+                "it": "bugfix, cambiato classe sbagliata",
+                "es": "corrección de errores, cambio de clase incorrecta",
+                "pl": "poprawka, zmieniono złą klasę",
+                "zh-cn": "错误修正，更改了错误的类"
+              },
             "0.5.3":{
                 "en": "Number and Text Widgets now better to use, no icon anymore",
                 "de": "Zahlen- und Text-Widgets sind jetzt besser zu verwenden, kein Symbol mehr",

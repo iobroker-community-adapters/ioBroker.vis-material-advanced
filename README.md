@@ -79,8 +79,8 @@ thanks to @sigi234
 
 ## Changelog
 
-### 0.5.3
-*
+### 0.5.4
+* no icons anymore for text and number
 
 ### 0.5.2
 * removed (obsolete) class which caused Problems in other widgets
