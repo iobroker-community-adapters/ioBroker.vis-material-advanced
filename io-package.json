@@ -4,7 +4,16 @@
         "version": "0.5.3",
         "news": {    
             "0.5.3":{
-                
+                "en": "Number and Text Widgets now better to use, no icon anymore",
+                "de": "Zahlen- und Text-Widgets sind jetzt besser zu verwenden, kein Symbol mehr",
+                "ru": "Числовые и текстовые виджеты теперь лучше использовать, иконки больше нет",
+                "pt": "Widgets de número e texto agora melhores de usar, sem ícone mais",
+                "nl": "Nummer- en tekstwidgets nu beter te gebruiken, geen pictogram meer",
+                "fr": "Les widgets numériques et texte sont désormais plus faciles à utiliser, plus d'icône",
+                "it": "I widget numerici e di testo ora sono migliori da usare, nessuna icona più",
+                "es": "Los widgets de números y texto ahora son mejores de usar, ya no hay íconos",
+                "pl": "Widżety numeryczne i tekstowe są teraz lepsze w użyciu, nie ma już ikon",
+                "zh-cn": "数字和文本小部件现在更易于使用，不再有图标"
             },
             "0.5.2": {
                 "en": "bugfix for style interference with material design widgets. All icons are now changable except dimmer",
