@@ -72,21 +72,6 @@
 
 
 /* -----
-   application bar
-   ----- */
-
-.mduiw-abar {
-    background: #1A237E !important;
-    z-index: 99;
-    border: none !important;
-}
-
-.mduiw-abar .vis-view {
-    background: none !important;
-}
-
-
-/* -----
    top navigation
    ----- */
 

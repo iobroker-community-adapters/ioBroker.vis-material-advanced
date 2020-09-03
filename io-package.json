@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.5.1",
+        "version": "0.5.2",
         "news": {    
+            "0.5.2": {
+                "en": "bugfix for style interference with material design widgets. All icons are now changable except dimmer",
+                "de": "Bugfix für Stilstörungen bei Materialdesign-Widgets. Alle Symbole außer Dimmer können jetzt geändert werden",
+                "ru": "исправление ошибок стиля в виджетах материального дизайна. Изменены все значки, кроме диммера.",
+                "pt": "correção de bug para interferência de estilo com widgets de design de material. Todos os ícones agora podem ser alterados, exceto dimmer",
+                "nl": "bugfix voor stijlinterferentie met widgets voor materiaalontwerp. Alle pictogrammen zijn nu veranderlijk behalve dimmer",
+                "fr": "correction de bogue pour l'interférence de style avec les widgets de conception matérielle. Toutes les icônes sont désormais modifiables sauf le gradateur",
+                "it": "bugfix per l'interferenza di stile con i widget di material design. Tutte le icone sono ora modificabili tranne il dimmer",
+                "es": "corrección de errores por interferencia de estilo con widgets de diseño de materiales. Todos los iconos ahora se pueden cambiar excepto el atenuador",
+                "pl": "poprawka dotycząca ingerencji stylu w widżety Material Design. Wszystkie ikony z wyjątkiem ściemniacza można teraz zmieniać",
+                "zh-cn": "修正了材料设计小部件的样式错误。除调光器外，所有图标现在均可更改"
+              },
             "0.5.1": {
                 "en": "bugfix: all widgets have now default background-color #121212 but can be changed in settings. new widgets number and text",
                 "de": "Bugfix: Alle Widgets haben jetzt die Standard-Hintergrundfarbe # 121212, können aber in den Einstellungen geändert werden. neue Widgets Nummer und Text",

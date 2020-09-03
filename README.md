@@ -79,6 +79,10 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.5.2
+* removed (obsolete) class which caused Problems in other widgets
+* added possibility to change the icons for the widgets ( except dimmer )
+
 ### 0.5.1
 * some icons resized
 * bugfix: all widgets have now default background-color #121212 but can be changed in settings.
