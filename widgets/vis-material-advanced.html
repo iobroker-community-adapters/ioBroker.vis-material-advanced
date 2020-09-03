@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.2"
+    version: "0.5.3"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -572,19 +572,15 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListNumber" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
             <img src="widgets/vis-material-advanced/img/123.png" style="width: 100px;  height: 100px;"></div></div>'
-    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"          
-    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/123.png]/image;" 
-    data-vis-attrs1="opacity-color[white]/color;low/number;high/number;"
-    data-vis-attrs2="colorizeByValue/checkbox;color-low/color;color-high/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"              
+    data-vis-attrs0="opacity-color[white]/color;low/number;high/number;"
+    data-vis-attrs1="colorizeByValue/checkbox;color-low/color;color-high/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListNumber">
     <div class="vis-widget <%== this.data.attr('class') %> mdw-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> " style="background-color:<%= this.data.attr('widget-background') %>;">
-        <div class="vis-widget-body my_child">
-            <div class="mdw-list-icon">
-                <img src="<%= this.data.attr('card-icon') %>">
-            </div>
-            <div class="mdw-list-desc">
+        <div class="vis-widget-body my_child">            
+            <div class="mdw-list-desc-no-icon">
                 <div class="mdw-list-title mduiw-title" style="color: <%=  this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
@@ -592,7 +588,7 @@
                     <%= this.data.attr('subtitle') %>                   
                 </div>
             </div>
-            <div class="mdw-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <div class="mdw-text-field" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
         <div class="vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
     </div>
@@ -605,21 +601,17 @@
     type="text/ejs" 
     class="vis-tpl"
     data-vis-prev='<div id="prev_tplVis-material-advancedListText" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
+        <div class="vis-widget_prev " style="width: 100px; min-height: 100px; padding:2px; background-color: #121212" > 
             <img src="widgets/vis-material-advanced/img/abc.png" style="width: 100px;  height: 100px;"></div></div>'
-    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"      
-    data-vis-attrs0="card-icon[widgets/vis-material-advanced/img/abc.png]/image;" 
-    data-vis-attrs1="opacity-color[white]/color;"
-    data-vis-attrs2="colorizeByValue/checkbox;searchString/text;stringFoundColor/color;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"          
+    data-vis-attrs0="opacity-color[white]/color;"
+    data-vis-attrs1="colorizeByValue/checkbox;searchString/text;stringFoundColor/color;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListText">
     <div class="vis-widget <%== this.data.attr('class') %> mdw-list" id="<%= this.data.attr('wid') %>" data-oid="<%= this.data.attr('oid'); %> " style="background-color:<%= this.data.attr('widget-background') %>;">
-        <div class="vis-widget-body my_child">
-            <div class="mdw-list-icon">
-                <img src="<%= this.data.attr('card-icon') %>">
-            </div>
-            <div class="mdw-list-desc">
+        <div class="vis-widget-body my_child">           
+            <div class="mdw-list-desc-no-icon">
                 <div class="mdw-list-title mduiw-title" style="color: <%=  this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
@@ -627,9 +619,9 @@
                     <%= this.data.attr('subtitle') %>                   
                 </div>
             </div>
-            <div class="mdw-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <div class="mdw-number-field" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
-        <div class="vis-widget-body ms-button-op my_child overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
+        <div class="vis-widget-body ms-button-op my_child  overlay opac-template8 " style="background-color:  <%= this.data.attr('opacity-color') %>; "></div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListText(this.data.wid,  this.view, this.data);  %>
 </script>

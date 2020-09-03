@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.2"
+    version: "0.5.3"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -783,7 +783,7 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
             
-            $div.find('.mdw-list-value').html(state);
+            $div.find('.mdw-text-field').html(state);
             
 
             if (colorize) {
@@ -829,7 +829,7 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
             
-            $div.find('.mdw-list-value').html(state);
+            $div.find('.mdw-text-field').html(state);
             
 
             if (colorize) {

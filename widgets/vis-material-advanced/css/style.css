@@ -28,11 +28,35 @@
     margin-top: 10px;
 }
 
+.mdw-list-desc-no-icon {
+    float: left;
+    width: 30%;
+    height: calc ( 100% - 8px );
+    margin-top: 10px;
+    word-break: break-word;
+}
+
 .mdw-list-value {
     float: left;
     width: 100px !important;
     text-align: right;
     margin-top: 16px;
+}
+
+.mdw-text-field {
+    float: left;
+    width: calc(70% - 10px);
+    text-align: left;
+    margin-top: 12px;
+    margin-left:10px;
+}
+
+.mdw-number-field {
+    float: left;
+    width: calc(70% - 25px);
+    text-align: right;
+    margin-top: 12px;
+    margin-left:10px;
 }
 
 .mdw-list-value .mduiw-switch {

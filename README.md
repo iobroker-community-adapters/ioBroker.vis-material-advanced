@@ -79,6 +79,9 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.5.3
+*
+
 ### 0.5.2
 * removed (obsolete) class which caused Problems in other widgets
 * added possibility to change the icons for the widgets ( except dimmer )
