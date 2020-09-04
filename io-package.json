@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.5.5",
+        "version": "0.5.6",
         "news": {    
+            "0.5.6": {
+                "en": "bugfix in Volume Widget due to a typo",
+                "de": "Bugfix im Volume Widget aufgrund eines Tippfehlers",
+                "ru": "исправление ошибки в Volume Widget из-за опечатки",
+                "pt": "correção de bug no Volume Widget devido a um erro de digitação",
+                "nl": "bugfix in Volume Widget vanwege een typefout",
+                "fr": "correction de bogue dans Volume Widget en raison d'une faute de frappe",
+                "it": "bugfix in Volume Widget a causa di un errore di battitura",
+                "es": "corrección de errores en el widget de volumen debido a un error tipográfico",
+                "pl": "poprawka w Volume Widget z powodu literówki",
+                "zh-cn": "由于拼写错误，在体积小部件中的错误修正"
+              },
             "0.5.5": {
                 "en": "bugfix, changed wrong class",
                 "de": "Bugfix, falsche Klasse geändert",

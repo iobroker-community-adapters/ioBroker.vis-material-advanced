@@ -79,6 +79,9 @@ thanks to @sigi234
 
 ## Changelog
 
+### 0.5.6
+* type in volume
+
 ### 0.5.5
 * no icons anymore for text and number
 
