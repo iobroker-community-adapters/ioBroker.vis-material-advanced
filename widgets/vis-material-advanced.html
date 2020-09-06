@@ -7,6 +7,7 @@
 -->
 <!-- here you can include so many css as you want -->
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/style.css" />
+<link rel="stylesheet" href="widgets/vis-material-advanced/css/vma.css" />
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/material.css" />
 <!-- here you can include so many js-files as you want -->
 
@@ -238,6 +239,41 @@
         <div class="vis-widget-body ms-button-op my_child overlay opac-template8" style="background-color:<%= this.data.attr('opacity-color') %> "></div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListHumid(this.data.wid, this.view, this.data);  %>
+</script>
+
+<script id="tplMaListTempHumid" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListTempHumid" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 
+        <img src="widgets/vis-material-advanced/img/temp_temperature.png" style="width: 100px; height: 100px;"></div></div>' 
+    data-vis-attrs="oid/id;obj_hum/id;"
+    data-vis-attrs0="title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs1="card-icon[widgets/vis-material-advanced/img/temp_temperature.png]/image;opacity-color[white]/color;" 
+    data-vis-attrs2="colorizeByValue/checkbox;below[18]/number;above[24]/number;color-low[blue]/color;color-high[red]/color;"
+    data-vis-attrs4=""
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val" 
+    data-vis-name="ListTemperatureHumid">
+    <div class="vis-widget my_parent <%== this.data.attr('class') %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body my_child">
+            <div class="mdw-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="mdw-list-desc">
+                <div class="mdw-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class=" mdw-list-subtitle mduiw-subtitle " style="color: <%=this.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="mdw-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <div class="mdw-list-value2 mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+        </div>
+        <div class=" vis-widget-body ms-button-op my_child overlay opac-template8" style="background-color:<%= this.data.attr('opacity-color') %> " style=""></div>        
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListTempHumid(this.data.wid, this.view, this.data);  %>
 </script>
 
 <script 
@@ -638,12 +674,7 @@
     data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[20]/number;above[40]/number;" 
     data-vis-attrs2="color-medium[darkyellow]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" 
-    data-vis-type="val" 
-    data-vis-name="ListValve">
-    <div class="vis-widget <%==this.data.attr( 'class')  %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
-        <div class="vis-widget-body my_child">
-            <div class="mdw-list-icon">
-                <img src="<%= this.data.attr('card-icon') %>">
+    data-vis-type="val" Text'card-icon') %>">
             </div>
             <div class="mdw-list-desc">
                 <div class="mdw-list-title mduiw-title " style="color: <%= this.data.attr('Text-color') %>;">
@@ -700,6 +731,101 @@
         <div class="vis-widget-body ms-button-op my_child overlay opac-template8" style="background-color:<%= this.data.attr('opacity-color') %>" ></div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListGarage(this.data.wid, this.view, this.data);  %>
+</script>
+<!--
+<script 
+    id="tplMaListNew" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListNew" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
+    data-vis-attrs="oid/id;title[not working yet]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs1="opacity-color[white]/color;" 
+    data-vis-attrs2="border_radius[10]/number;"
+    data-vis-attrs3="group.icons;"
+    data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
+    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/garage.png]/image;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"  
+    data-vis-beta="true" 
+    data-vis-name="ListNew">
+<div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
+    <div id="inner_container" class="vma_inner_container_div" > 
+        <div id="bild" class="vma_picture">
+            <img class="vma_icon" src="<%= this.data.attr('card-icon') %>">
+        </div>
+        <div id="tunds" class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
+            <div id="titel" class="vma_title">
+                <%= this.data.attr('title') %>
+            </div>
+            <div id="sub" class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
+                <%= this.data.attr('subtitle') %>
+            </div>
+        </div>
+        <div id="cont" class="vma_value_container">
+            <div class="vma_vertical_topspacer">
+            </div>
+            <div id="value"  class="vma_value" 
+                style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+            </div>        
+            <div class="vma_vertical_bottomspacer">
+            </div>            
+            
+        </div>
+    <div id="overlay" class="vma_overlay"  onmouseover=""></div>
+</div>
+<% vis.binds['vis-material-advanced'].tplMdListNew(this.data.wid, this.view, this.data);  %>
+</script>
+
+<script 
+    id="tplMaListNew2" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListNew2" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
+    data-vis-attrs="oid/id;oid2/id;title[not working yet]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs1="opacity-color[white]/color;" 
+    data-vis-attrs2="border_radius[10]/number,1,20,1;"
+    data-vis-attrs3="group.icons;"
+    data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
+    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/garage.png]/image;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"  
+    data-vis-beta="true" 
+    data-vis-name="ListNew2"  >
+<div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
+    <div id="inner_container" class="vma_inner_container_div" > 
+        <div id="bild" class="vma_picture">
+            <img class="vma_icon" src="<%= this.data.attr('card-icon') %>">
+        </div>
+        <div id="tunds" class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
+            <div id="titel" class="vma_title">
+                <%= this.data.attr('title') %>
+            </div>
+            <div id="sub" class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
+                <%= this.data.attr('subtitle') %>
+            </div>
+        </div>
+        <div id="cont" class="vma_value_container">
+            <div class="vma_vertical_topspacer">
+            </div>
+            <div id="value"  class="vma_value2_1" 
+                style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+            </div>        
+            <div id="value"  class="vma_value2_2" 
+            style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+            </div>        
+            <div class="vma_vertical_bottomspacer">
+            </div>            
+            
+        </div>
+    <div id="overlay" class="vma_overlay"  onmouseover=""></div>
+</div>
+<% vis.binds['vis-material-advanced'].tplMdListNew2(this.data.wid, this.view, this.data);  %>
 </script>
 
  <!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">

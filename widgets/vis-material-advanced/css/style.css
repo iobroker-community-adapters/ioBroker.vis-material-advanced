@@ -64,6 +64,11 @@
     height: 24px;
     margin-left: 52px;
 }
+.mdw-list-value2 .mduiw-switch {
+    width: 48px;
+    height: 24px;
+    margin-left: 52px;
+}
 
 .mdw-button-op {
     background-color: white;

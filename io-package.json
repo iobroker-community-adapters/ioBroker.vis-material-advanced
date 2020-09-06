@@ -1,8 +1,8 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.5.6",
-        "news": {    
+        "version": "0.5.7",
+        "news": {
             "0.5.6": {
                 "en": "bugfix in Volume Widget due to a typo",
                 "de": "Bugfix im Volume Widget aufgrund eines Tippfehlers",
@@ -14,7 +14,7 @@
                 "es": "corrección de errores en el widget de volumen debido a un error tipográfico",
                 "pl": "poprawka w Volume Widget z powodu literówki",
                 "zh-cn": "由于拼写错误，在体积小部件中的错误修正"
-              },
+            },
             "0.5.5": {
                 "en": "bugfix, changed wrong class",
                 "de": "Bugfix, falsche Klasse geändert",
@@ -26,8 +26,8 @@
                 "es": "corrección de errores, cambio de clase incorrecta",
                 "pl": "poprawka, zmieniono złą klasę",
                 "zh-cn": "错误修正，更改了错误的类"
-              },
-            "0.5.3":{
+            },
+            "0.5.3": {
                 "en": "Number and Text Widgets now better to use, no icon anymore",
                 "de": "Zahlen- und Text-Widgets sind jetzt besser zu verwenden, kein Symbol mehr",
                 "ru": "Числовые и текстовые виджеты теперь лучше использовать, иконки больше нет",
@@ -50,7 +50,7 @@
                 "es": "corrección de errores por interferencia de estilo con widgets de diseño de materiales. Todos los iconos ahora se pueden cambiar excepto el atenuador",
                 "pl": "poprawka dotycząca ingerencji stylu w widżety Material Design. Wszystkie ikony z wyjątkiem ściemniacza można teraz zmieniać",
                 "zh-cn": "修正了材料设计小部件的样式错误。除调光器外，所有图标现在均可更改"
-              },
+            },
             "0.5.1": {
                 "en": "bugfix: all widgets have now default background-color #121212 but can be changed in settings. new widgets number and text",
                 "de": "Bugfix: Alle Widgets haben jetzt die Standard-Hintergrundfarbe # 121212, können aber in den Einstellungen geändert werden. neue Widgets Nummer und Text",
@@ -62,7 +62,7 @@
                 "es": "corrección de errores: todos los widgets tienen ahora el color de fondo predeterminado # 121212, pero se pueden cambiar en la configuración. nuevo número de widgets y texto",
                 "pl": "poprawka: wszystkie widżety mają teraz domyślny kolor tła # 121212, ale można je zmienić w ustawieniach. nowy numer i tekst widżetów",
                 "zh-cn": "错误修正：所有小部件现在都具有默认的背景色＃121212，但可以在设置中进行更改。新的小部件编号和文本"
-              },
+            },
             "0.5.0": {
                 "en": "reorganized code. added flexible opacity to all widgets. added some colorizeOptions to some widgets",
                 "de": "reorganisierter Code. allen Widgets wurde eine flexible Deckkraft hinzugefügt. Einige Widgets wurden mit colorizeOptions versehen",
@@ -74,21 +74,20 @@
                 "es": "código reorganizado. agregó opacidad flexible a todos los widgets. agregó algunas opciones de colorizeOptions a algunos widgets",
                 "pl": "zreorganizowany kod. dodano elastyczne krycie do wszystkich widżetów. dodano kilka opcji colorizeOptions do niektórych widżetów",
                 "zh-cn": "重组代码。为所有小部件添加了灵活的不透明度。在一些小部件中添加了一些colorizeOptions"
-            },    
+            },
             "0.4.8": {
-                  "en": "bugfix for icons, added new widget valve",
-                  "de": "Bugfix für Symbole, neues Widget-Ventil hinzugefügt",
-                  "ru": "исправление ошибок для иконок, добавлен новый клапан виджета",
-                  "pt": "correção de bug para ícones, adição de nova válvula de widget",
-                  "nl": "bugfix voor pictogrammen, nieuwe widgetklep toegevoegd",
-                  "fr": "correction de bogue pour les icônes, ajout d'une nouvelle valve de widget",
-                  "it": "bugfix per icone, aggiunta nuova valvola widget",
-                  "es": "corrección de errores para iconos, nueva válvula de widget agregada",
-                  "pl": "naprawiono błąd ikon, dodano nowy zawór widżetu",
-                  "zh-cn": "图标的错误修正，添加了新的小部件阀门"
+                "en": "bugfix for icons, added new widget valve",
+                "de": "Bugfix für Symbole, neues Widget-Ventil hinzugefügt",
+                "ru": "исправление ошибок для иконок, добавлен новый клапан виджета",
+                "pt": "correção de bug para ícones, adição de nova válvula de widget",
+                "nl": "bugfix voor pictogrammen, nieuwe widgetklep toegevoegd",
+                "fr": "correction de bogue pour les icônes, ajout d'une nouvelle valve de widget",
+                "it": "bugfix per icone, aggiunta nuova valvola widget",
+                "es": "corrección de errores para iconos, nueva válvula de widget agregada",
+                "pl": "naprawiono błąd ikon, dodano nowy zawór widżetu",
+                "zh-cn": "图标的错误修正，添加了新的小部件阀门"
             },
             "0.4.3": {
-
                 "en": "added new widget Boolean",
                 "de": "neues Widget Boolean hinzugefügt",
                 "ru": "добавлен новый виджет Boolean",

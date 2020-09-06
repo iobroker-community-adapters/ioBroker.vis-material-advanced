@@ -26,130 +26,142 @@ if (vis.editMode) {
 $.extend(
     true,
     systemDictionary, {
-        "Instance": {
-            "en": "Instance",
-            "de": "Instanz",
-            "ru": "Инстанция"
-        },
-        "open": {
-            "en": "open",
-            "de": "offen",
-            "ru": "открыто"
-        },
-        "tilted": {
-            "en": "tilted",
-            "de": "gekippt",
-            "ru": "приоткрыто"
-        },
-        "closed": {
-            "en": "closed",
-            "de": "zu",
-            "ru": "закрыто"
-        },
-        "on": {
-            "en": "on",
-            "de": "an",
-            "ru": "вкл"
-        },
-        "off": {
-            "en": "off",
-            "de": "aus",
-            "ru": "выкл"
-        },
-        "motion": {
-            "en": "motion",
-            "de": "Bewegung",
-            "ru": "motion"
-        },
-        "nomotion": {
-            "en": "no motion",
-            "de": "Nein",
-            "ru": "na"
-        },
-        "Text-Color": {
-            "en": "Text Color",
-            "de": "Textfarbe",
-            "ru": "na"
-        },
-        "opac-white": {
-            "en": "white opacity",
-            "de": "Transparenz Weiss",
-            "ru": "na"
-        },
-        "opac-red": {
-            "en": "Red opacity",
-            "de": "Transparenz Rot",
-            "ru": "na"
-        },
-        "opac-blue": {
-            "en": "blue opacity",
-            "de": "Transparenz Blau",
-            "ru": "na"
-        },
-        "opac-purple": {
-            "en": "purple opacity",
-            "de": "Transparenz Lila",
-            "ru": "na"
-        },
-        "opac-green": {
-            "en": "green opacity",
-            "de": "Transparenz Grün",
-            "ru": "na"
-        },
-        "opacity-color": {
-            "en": "opacity color",
-            "de": "Transparenz Farbe",
-            "ru": "na"
-        },
-        "colorizeByValue": {
-            "en": "colorize By Value",
-            "de": "einfärben durch Wert",
-            "ru": "раскрасить по температуре",
-            "pt": "colorir por Temp",
-            "nl": "inkleuren door temp",
-            "fr": "coloriser par température",
-            "it": "colorize By Temp",
-            "es": "colorear por temperatura",
-            "pl": "koloruj według temp",
-            "zh-cn": "下面"
-        },
-        "normal": {
-            "en": "normal",
-            "de": "normal",
-            "ru": "нормальный",
-            "pt": "normal",
-            "nl": "normaal",
-            "fr": "Ordinaire",
-            "it": "normale",
-            "es": "normal",
-            "pl": "normalna",
-            "zh-cn": "正常"
-        },
-        "above": {
-            "en": "above",
-            "de": "über",
-            "ru": "выше",
-            "pt": "acima",
-            "nl": "bovenstaande",
-            "fr": "au dessus",
-            "it": "sopra",
-            "es": "encima",
-            "pl": "powyżej",
-            "zh-cn": "以上"
-        }
-    }
+    "Instance": {
+        "en": "Instance",
+        "de": "Instanz",
+        "ru": "Инстанция"
+    },
+    "open": {
+        "en": "open",
+        "de": "offen",
+        "ru": "открыто"
+    },
+    "tilted": {
+        "en": "tilted",
+        "de": "gekippt",
+        "ru": "приоткрыто"
+    },
+    "closed": {
+        "en": "closed",
+        "de": "zu",
+        "ru": "закрыто"
+    },
+    "on": {
+        "en": "on",
+        "de": "an",
+        "ru": "вкл"
+    },
+    "off": {
+        "en": "off",
+        "de": "aus",
+        "ru": "выкл"
+    },
+    "motion": {
+        "en": "motion",
+        "de": "Bewegung",
+        "ru": "motion"
+    },
+    "nomotion": {
+        "en": "no motion",
+        "de": "Nein",
+        "ru": "na"
+    },
+    "Text-Color": {
+        "en": "Text Color",
+        "de": "Textfarbe",
+        "ru": "na"
+    },
+    "opac-white": {
+        "en": "white opacity",
+        "de": "Transparenz Weiss",
+        "ru": "na"
+    },
+    "opac-red": {
+        "en": "Red opacity",
+        "de": "Transparenz Rot",
+        "ru": "na"
+    },
+    "opac-blue": {
+        "en": "blue opacity",
+        "de": "Transparenz Blau",
+        "ru": "na"
+    },
+    "opac-purple": {
+        "en": "purple opacity",
+        "de": "Transparenz Lila",
+        "ru": "na"
+    },
+    "opac-green": {
+        "en": "green opacity",
+        "de": "Transparenz Grün",
+        "ru": "na"
+    },
+    "opacity-color": {
+        "en": "opacity color",
+        "de": "Transparenz Farbe",
+        "ru": "na"
+    },
+    "colorizeByValue": {
+        "en": "colorize By Value",
+        "de": "einfärben durch Wert",
+        "ru": "раскрасить по температуре",
+        "pt": "colorir por Temp",
+        "nl": "inkleuren door temp",
+        "fr": "coloriser par température",
+        "it": "colorize By Temp",
+        "es": "colorear por temperatura",
+        "pl": "koloruj według temp",
+        "zh-cn": "下面"
+    },
+    "normal": {
+        "en": "normal",
+        "de": "normal",
+        "ru": "нормальный",
+        "pt": "normal",
+        "nl": "normaal",
+        "fr": "Ordinaire",
+        "it": "normale",
+        "es": "normal",
+        "pl": "normalna",
+        "zh-cn": "正常"
+    },
+    "above": {
+        "en": "above",
+        "de": "über",
+        "ru": "выше",
+        "pt": "acima",
+        "nl": "bovenstaande",
+        "fr": "au dessus",
+        "it": "sopra",
+        "es": "encima",
+        "pl": "powyżej",
+        "zh-cn": "以上"
+    },
+    "value-align": {
+        "en": "Text align",
+        "de": "Textausrichtung",
+        "ru": "Выровнять текст",
+        "pt": "Alinhamento de texto",
+        "nl": "Tekst uitlijnen",
+        "fr": "Aligner le texte",
+        "it": "Allineamento del testo",
+        "es": "Texto alineado",
+        "pl": "Wyrównaj tekst",
+        "zh-cn": "文字对齐"
+      }
+}
 );
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
     version: "0.3.3",
-    showVersion: function() {
+    showVersion: function () {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
             vis.binds["vis-material-advanced"].version = null;
         }
     },
-    tplMdListDoor: function(widgetID, view, data) {
+    tplMdListDoor: function (widgetID, view, data) {
         const srcOpen = data.attr('card-icon-closed');
         const srcClosed = data.attr('card-icon-open');
         const valOpen = _('open');
@@ -163,7 +175,7 @@ vis.binds["vis-material-advanced"] = {
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListDoor(widgetID, view, data);
             }, 100);
         }
@@ -174,17 +186,17 @@ vis.binds["vis-material-advanced"] = {
             $div.find('.mdw-list-value').html(value);
             $div.find('.mdw-list-icon').find('img').attr('src', src);
             if (colorize) {
-                if (state) {                 
-                    $div.find('.overlay').css('background-color', colorOpen);                                       
+                if (state) {
+                    $div.find('.overlay').css('background-color', colorOpen);
                 } else {
-                    $div.find('.overlay').css('background-color', colorClosed);   
+                    $div.find('.overlay').css('background-color', colorClosed);
                 }
             }
         }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -192,7 +204,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListWindow: function(widgetID, view, data) {
+    tplMdListWindow: function (widgetID, view, data) {
         const srcOpen = data.attr('card-icon-closed');
         const srcClosed = data.attr('card-icon-open');
         const valOpen = _('open');
@@ -205,7 +217,7 @@ vis.binds["vis-material-advanced"] = {
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListWindow(widgetID, view, data);
             }, 100);
         }
@@ -216,17 +228,17 @@ vis.binds["vis-material-advanced"] = {
             $div.find('.mdw-list-value').html(value);
             $div.find('.mdw-list-icon').find('img').attr('src', src);
             if (colorize) {
-                if (state) {                 
-                    $div.find('.overlay').css('background-color', colorOpen);                                       
+                if (state) {
+                    $div.find('.overlay').css('background-color', colorOpen);
                 } else {
-                    $div.find('.overlay').css('background-color', colorClosed);   
+                    $div.find('.overlay').css('background-color', colorClosed);
                 }
             }
         }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -234,7 +246,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListTemp: function(widgetID, view, data) {
+    tplMdListTemp: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
         const low = data.attr('below');
@@ -246,7 +258,7 @@ vis.binds["vis-material-advanced"] = {
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListTemp(widgetID, view, data);
             }, 100);
         }
@@ -264,12 +276,12 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.mdw-list-value').html(state.toFixed(1) + ' °C');
             }
             if (colorize) {
-                if (state <= low) {                 
-                    $div.find('.overlay').css('background-color', colorLow);                       
+                if (state <= low) {
+                    $div.find('.overlay').css('background-color', colorLow);
                 } else if (state >= high) {
-                    $div.find('.overlay').css('background-color', colorHigh);   
+                    $div.find('.overlay').css('background-color', colorHigh);
                 } else {
-                    $div.find('.overlay').css('background-color', original_class);   
+                    $div.find('.overlay').css('background-color', original_class);
                 }
             }
 
@@ -277,7 +289,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -285,7 +297,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListHumid: function(widgetID, view, data) {
+    tplMdListHumid: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
         const low = data.attr('below');
@@ -298,7 +310,7 @@ vis.binds["vis-material-advanced"] = {
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListHumid(widgetID, view, data);
             }, 100);
         }
@@ -316,19 +328,19 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.mdw-list-value').html(state.toFixed(1) + ' %');
             }
             if (colorize) {
-                if (state <= low) {                 
-                    $div.find('.overlay').css('background-color', colorLow);                       
+                if (state <= low) {
+                    $div.find('.overlay').css('background-color', colorLow);
                 } else if (state >= high) {
-                    $div.find('.overlay').css('background-color', colorHigh);   
+                    $div.find('.overlay').css('background-color', colorHigh);
                 } else {
-                    $div.find('.overlay').css('background-color', original_class);   
+                    $div.find('.overlay').css('background-color', original_class);
                 }
             }
         }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -336,7 +348,62 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListOccupancy: function(widgetID, view, data) {
+    tplMdListTempHumid: function (widgetID, view, data) {
+        var $div = $('#' + widgetID);
+        const colorize = data.attr('colorizeByValue');
+        const low = data.attr('below');
+        // const $normal = data.attr('normal');
+        const high = data.attr('above');
+        const original_class = data.attr('opacity-color');
+        const colorLow = data.attr('color-low');
+        const colorHigh = data.attr('color-high');
+
+        console.log('starting debug');
+        console.log(data);
+        console.log();
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListTempHumid(widgetID, view, data);
+            }, 100);
+        }
+
+        // grey out the value in case the last change is more than 24h ago
+        var curTime = new Date().getTime();
+        var lcTime = vis.states[data.oid + '.lc'];
+        var seconds = (curTime - lcTime) / 1000;
+        if (seconds > 86400) {
+            $div.find('.mdw-list-value').css('opacity', '0.5');
+        }
+
+        function update(state, state2) {
+            if (typeof state === 'number') {
+                $div.find('.mdw-list-value').html(state.toFixed(1) + ' °C');
+                $div.find('.mdw-list-value2').html(state2.toFixed(1) + ' %');
+            }
+            if (colorize) {
+                if (state <= low) {
+                    $div.find('.overlay').css('background-color', colorLow);
+                } else if (state >= high) {
+                    $div.find('.overlay').css('background-color', colorHigh);
+                } else {
+                    $div.find('.overlay').css('background-color', original_class);
+                }
+            }
+
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val'], vis.states[data.obj_hum + '.val']);
+        }
+    },
+    tplMdListOccupancy: function (widgetID, view, data) {
         const srcMotion = data.attr('iconMotion');
         const srcNoMotion = data.attr('iconNoMotion');
         const valMotion = _('motion');
@@ -349,7 +416,7 @@ vis.binds["vis-material-advanced"] = {
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListOccupancy(widgetID, view, data);
             }, 100);
         }
@@ -370,10 +437,10 @@ vis.binds["vis-material-advanced"] = {
             if (colorize) {
                 if (state) {
                     $div.find('.overlay').css('background-color', motionColor);
-                   
+
                 } else {
                     $div.find('.overlay').css('background-color', original_class);
-                   
+
                 }
             }
 
@@ -381,7 +448,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -389,14 +456,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListLight: function(widgetID, view, data) {
+    tplMdListLight: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-off');
         const srcOn = data.attr('card-icon-on');
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListLight(widgetID, view, data);
             }, 100);
         }
@@ -417,7 +484,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (!vis.editMode) {
             var $this = $('#' + widgetID + '_checkbox');
-            $this.change(function() {
+            $this.change(function () {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
@@ -425,7 +492,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -433,14 +500,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListLightDim: function(widgetID, view, data) {
-       /*  const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
-        const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png'; */
+    tplMdListLightDim: function (widgetID, view, data) {
+        /*  const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
+         const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png'; */
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListLightDim(widgetID, view, data);
             }, 100);
         }
@@ -454,11 +521,11 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.mdw-list-value').html(state + "%");
 
             }
-        }       
+        }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -466,14 +533,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListWindowShutter: function(widgetID, view, data) {
-      /*   const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
-        const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png'; */
+    tplMdListWindowShutter: function (widgetID, view, data) {
+        /*   const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
+          const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png'; */
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListWindowShutter(widgetID, view, data);
             }, 100);
         }
@@ -512,7 +579,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -520,7 +587,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListLightKelvin: function(widgetID, view, data) {
+    tplMdListLightKelvin: function (widgetID, view, data) {
         const srcCold = data.attr('card-icon-coldwhite');
         const srcMedium = data.attr('card-icon-medium');
         const srcWarm = data.attr('card-icon-warmwhite');
@@ -529,7 +596,7 @@ vis.binds["vis-material-advanced"] = {
         console.log('LightKelvin called');
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListLightKelvin(widgetID, view, data);
             }, 100);
         }
@@ -540,10 +607,10 @@ vis.binds["vis-material-advanced"] = {
             var cold = parseInt(data.attr('max')) - parseInt(drittel);
             var src;
             if (state >= data.attr('min') && state < medium) {
-              //  console.log('warmweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
+                //  console.log('warmweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcWarm;
             } else if (state >= medium && state < cold) {
-               // console.log('medium: min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
+                // console.log('medium: min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcMedium;
             } else if (state >= cold && state <= data.attr('max')) {
                 //console.log('kaltweiss: max -> ' + data.attr('max') + " state -> " + state + " cold ->" + cold);
@@ -570,7 +637,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -578,7 +645,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListVolume: function(widgetID, view, data) {
+    tplMdListVolume: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-low');
         const srcMedium = data.attr('card-icon-medium');
         const srcOn = data.attr('card-icon-high');
@@ -586,7 +653,7 @@ vis.binds["vis-material-advanced"] = {
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListVolume(widgetID, view, data);
             }, 100);
         }
@@ -619,7 +686,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -627,14 +694,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListGarage: function(widgetID, view, data) {
+    tplMdListGarage: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-closed');
         const srcOn = data.attr('card-icon-open');
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListGarage(widgetID, view, data);
             }, 100);
         }
@@ -648,7 +715,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (!vis.editMode) {
             var $this = $('#' + widgetID + '_checkbox');
-            $this.change(function() {
+            $this.change(function () {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
@@ -656,7 +723,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -664,7 +731,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListPressure: function(widgetID, view, data) {
+    tplMdListPressure: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
         const original_class = data.attr('opacity-color');
@@ -672,11 +739,11 @@ vis.binds["vis-material-advanced"] = {
         const high = data.attr('above');
 
         const colorLow = data.attr('color-low');
-        const colorHigh= data.attr('color-high');
+        const colorHigh = data.attr('color-high');
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListPressure(widgetID, view, data);
             }, 100);
         }
@@ -694,11 +761,11 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.mdw-list-value').html(state.toFixed(1) + ' hPa');
             }
             //$div.find('.overlay').css('background-color', data.attr('opacity2'));
-            
-            if ( colorize) {
-                if (state <= low) {                    
+
+            if (colorize) {
+                if (state <= low) {
                     $div.find('.overlay').css('background-color', colorLow);
-                } else if (state >= high) {                    
+                } else if (state >= high) {
                     $div.find('.overlay').css('background-color', colorHigh);
                 } else {
                     $div.find('.overlay').css('background-color', original_class);
@@ -709,7 +776,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -717,9 +784,9 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListBoolean: function(widgetID, view, data) {
+    tplMdListBoolean: function (widgetID, view, data) {
         const srcTrue = data.attr('card-icon-true');
-        const srcFalse =  data.attr('card-icon-false');
+        const srcFalse = data.attr('card-icon-false');
         const valTrue = data.attr('true');
         const valFalse = data.attr('false');
         const colorize = data.attr('colorizeByValue');
@@ -731,7 +798,7 @@ vis.binds["vis-material-advanced"] = {
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListBoolean(widgetID, view, data);
             }, 100);
         }
@@ -756,7 +823,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -764,7 +831,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListNumber: function(widgetID, view, data) {        
+    tplMdListNumber: function (widgetID, view, data) {
         const valLow = data.attr('low');
         const valHigh = data.attr('high');
         const colorize = data.attr('colorizeByValue');
@@ -776,35 +843,34 @@ vis.binds["vis-material-advanced"] = {
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListNumber(widgetID, view, data);
             }, 100);
         }
 
         function update(state) {
-            
-            $div.find('.mdw-text-field').html(state);
-            
+
+            $div.find('.mdw-number-field').html(state);
+
 
             if (colorize) {
                 if (state <= valLow) {
                     $div.find('.overlay').css('background-color', colLow);
-                } else if (state >= valHigh ) {
+                } else if (state >= valHigh) {
                     $div.find('.overlay').css('background-color', colHigh);
                 }
-                else
-                {
-                    $div.find('.overlay').css('background-color',original_class);    
+                else {
+                    $div.find('.overlay').css('background-color', original_class);
                 }
             } else {
-                $div.find('.overlay').css('background-color',original_class);
+                $div.find('.overlay').css('background-color', original_class);
             }
 
         }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -812,9 +878,9 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListText: function(widgetID, view, data) {                
+    tplMdListText: function (widgetID, view, data) {
         const valSearchString = data.attr('searchString');
-        const colorize = data.attr('colorizeByValue');        
+        const colorize = data.attr('colorizeByValue');
         const colStringFound = data.attr('stringFoundColor');
         const original_class = data.attr('opacity-color');
 
@@ -822,33 +888,32 @@ vis.binds["vis-material-advanced"] = {
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListText(widgetID, view, data);
             }, 100);
         }
 
         function update(state) {
-            
+
             $div.find('.mdw-text-field').html(state);
-            
+
 
             if (colorize) {
                 if (state == valSearchString) {
                     $div.find('.overlay').css('background-color', colStringFound);
-                } 
-                else
-                {
-                    $div.find('.overlay').css('background-color',original_class);    
+                }
+                else {
+                    $div.find('.overlay').css('background-color', original_class);
                 }
             } else {
-                $div.find('.overlay').css('background-color',original_class);
+                $div.find('.overlay').css('background-color', original_class);
             }
 
         }
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -856,21 +921,21 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListValve: function(widgetID, view, data) {
+    tplMdListValve: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
         const low = data.attr('below');
         // const $normal = data.attr('normal');
         const high = data.attr('above');
         const original_class = data.attr('opacity-color');
-        
+
         const colorMedium = data.attr('color-medium');
-        const colorHigh   = data.attr('color-high');
+        const colorHigh = data.attr('color-high');
 
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListValve(widgetID, view, data);
             }, 100);
         }
@@ -887,11 +952,11 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.mdw-list-value').html(state.toFixed(1) + ' %');
             }
-            
+
             if (colorize) {
-                if (state  <= low ) {                    
+                if (state <= low) {
                     $div.find('.overlay').css('background-color', original_class);
-                } else if (state <= high) {                    
+                } else if (state <= high) {
                     $div.find('.overlay').css('background-color', colorMedium);
                 } else {
                     $div.find('.overlay').css('background-color', colorHigh);
@@ -904,7 +969,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
@@ -912,14 +977,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListRadio: function(widgetID, view, data) {
+    tplMdListRadio: function (widgetID, view, data) {
         const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
         const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png';
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
-            return setTimeout(function() {
+            return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListRadio(widgetID, view, data);
             }, 100);
         }
@@ -933,7 +998,7 @@ vis.binds["vis-material-advanced"] = {
 
         if (!vis.editMode) {
             var $this = $('#' + widgetID + '_checkbox');
-            $this.change(function() {
+            $this.change(function () {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
@@ -941,13 +1006,144 @@ vis.binds["vis-material-advanced"] = {
 
         if (data.oid) {
             // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
 
             // set current value
             update(vis.states[data.oid + '.val']);
         }
+    },
+    tplMdListNew: function (widgetID, view, data) {
+        const srcOff = data.attr('card-icon-closed');
+        const srcOn = data.attr('card-icon-open');
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListNew(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            $div.find('.vma_picture').find('img').attr('src', src);
+            $div.find('.vma_value').html(state.toFixed(1) + ' %');
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        var $this = $('#' + widgetID);
+        //console.log($div.find('.vma_outer_div').css('height'));
+        var height = $this.innerHeight();
+       
+        if (height > 42) {
+            switch (data.attr('value-vertical')) {
+                case 'top': {
+                    break;
+                }
+                case 'center': {
+                    var top = height / 2 - 11;
+                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
+                    break;
+                }
+                case 'bottom': {
+                    var top = height - 11;
+                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
+                    break;
+                }
+            }
+        }
+        const radius = data.attr('border_radius');
+        $div.find('.vma_overlay').css('border-radius',radius + "px") ;
+        $div.find('.vma_outer_div').css('border-radius',radius + "px");
+        $div.find('.vma_inner_container_div').css('border-radius',radius + "px");
+       
+
+    },
+    tplMdListNew2: function (widgetID, view, data) {
+        const srcOff = data.attr('card-icon-closed');
+        const srcOn = data.attr('card-icon-open');
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListNew2(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state,state2) {
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            $div.find('.vma_picture').find('img').attr('src', src);
+            $div.find('.vma_value2_1').html(state.toFixed(1) + ' °C');
+            $div.find('.vma_value2_2').html(state2.toFixed(1) + ' %');
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
+        }
+        var $this = $('#' + widgetID);
+        //console.log($div.find('.vma_outer_div').css('height'));
+        var height = $this.innerHeight();
+       
+        if (height > 42) {
+            switch (data.attr('value-vertical')) {
+                case 'top': {
+                    break;
+                }
+                case 'center': {
+                    var top = height / 4 - 5;
+                    $div.find('.vma_vertical_topspacer').css('height', top + "px");                    
+                    break;
+                }
+                case 'bottom': {
+                    var top = height /2  - 11;
+                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
+                    break;
+                }
+            }
+        }
+        const radius = data.attr('border_radius');
+        $div.find('.vma_overlay').css('border-radius',radius + "px") ;
+        $div.find('.vma_outer_div').css('border-radius',radius + "px");
+        $div.find('.vma_inner_container_div').css('border-radius',radius + "px");
+       
+
     }
 
 };
