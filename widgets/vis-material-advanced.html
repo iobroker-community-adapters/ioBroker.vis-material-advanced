@@ -674,7 +674,13 @@
     data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[20]/number;above[40]/number;" 
     data-vis-attrs2="color-medium[darkyellow]/color;color-high[red]/color;"
     data-vis-set="vis-material-advanced" 
+    data-vis-type="val" 
     data-vis-type="val" Text'card-icon') %>">
+    data-vis-name="ListValve">
+    <div class="vis-widget <%==this.data.attr( 'class')  %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body my_child">
+            <div class="mdw-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
             </div>
             <div class="mdw-list-desc">
                 <div class="mdw-list-title mduiw-title " style="color: <%= this.data.attr('Text-color') %>;">

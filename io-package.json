@@ -3,6 +3,18 @@
         "name": "vis-material-advanced",
         "version": "0.5.7",
         "news": {
+            "0.5.7": {
+                "en": "bugfix number widget",
+                "de": "Bugfix Nummer Widget",
+                "ru": "виджет номера с исправлением ошибок",
+                "pt": "widget de número de correção de bug",
+                "nl": "bugfix nummer widget",
+                "fr": "widget de numéro de correction de bogue",
+                "it": "widget numero bugfix",
+                "es": "widget de número de corrección de errores",
+                "pl": "Widżet numeru poprawki",
+                "zh-cn": "错误修正号小部件"
+              },
             "0.5.6": {
                 "en": "bugfix in Volume Widget due to a typo",
                 "de": "Bugfix im Volume Widget aufgrund eines Tippfehlers",
