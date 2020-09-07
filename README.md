@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### 0.5.8
+### 0.6.0
 * added two new widgets with complete new css-classes. rounded corner, two value. 
 
 ### 0.5.7

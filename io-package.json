@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.5.8",
+        "version": "0.6.0",
         "news": {
-            "0.5.8":  {
+            "0.6.0":  {
                 "en": "added two new widgets with complete new css-classes. rounded corner, two value. ",
                 "de": "fügte zwei neue Widgets mit komplett neuen CSS-Klassen hinzu. abgerundete Ecke, zwei Werte.",
                 "ru": "добавлены два новых виджета с полностью новыми CSS-классами. закругленный угол, два значения.",
