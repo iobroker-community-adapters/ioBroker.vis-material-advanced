@@ -78,6 +78,13 @@ On left side choose vis-material-adapter and than all widgets are shown in previ
 thanks to @sigi234
 
 ## Changelog
+<!--
+    Placeholder
+    ### __WORK IN PROGRESS__
+-->
+
+### 0.5.8
+* added two new widgets with complete new css-classes. rounded corner, two value. 
 
 ### 0.5.7
 * bugfix number widget

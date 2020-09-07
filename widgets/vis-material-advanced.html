@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.3"
+    version: "0.5.8"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -9,10 +9,11 @@
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/style.css" />
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/vma.css" />
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/material.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 <!-- here you can include so many js-files as you want -->
 
 <!-- here you can include so many js-files as you want -->
-<script type="text/javascript" src="widgets/vis-material-advanced/js/vis-material-advanced.js"></script>
+<script type="text/javascript"   src="widgets/vis-material-advanced/js/vis-material-advanced.js"></script>
 
 
 <!-- the full description of format in data-vis-attrs can be found here:
@@ -20,7 +21,7 @@
 
     ----------------------------------------------------------
     Mandatory XML attributes:
-        id="tplVis-material-advancedWIDGETNAME"
+        id="tplVis-material-advancedWIDGETNAME" 
         type="text/ejs"
         class="vis-tpl"
 
@@ -738,7 +739,7 @@
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListGarage(this.data.wid, this.view, this.data);  %>
 </script>
-<!--
+
 <script 
     id="tplMaListNew" 
     type="text/ejs" 
@@ -770,15 +771,10 @@
                 <%= this.data.attr('subtitle') %>
             </div>
         </div>
-        <div id="cont" class="vma_value_container">
-            <div class="vma_vertical_topspacer">
-            </div>
+        <div id="cont" class="vma_value_container">            
             <div id="value"  class="vma_value" 
                 style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
-            </div>        
-            <div class="vma_vertical_bottomspacer">
-            </div>            
-            
+            </div>                   
         </div>
     <div id="overlay" class="vma_overlay"  onmouseover=""></div>
 </div>
@@ -786,24 +782,23 @@
 </script>
 
 <script 
-    id="tplMaListNew2" 
+    id="tplMaListNewDuo" 
     type="text/ejs" 
     class="vis-tpl" 
-    data-vis-prev='<div id="prev_tplVis-material-advancedListNew2" style="position: relative; text-align: initial;padding: 4px ">
+    data-vis-prev='<div id="prev_tplVis-material-advancedListNewDuo" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
-        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id;oid2/id;title[not working yet]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+        <img src="widgets/vis-material-advanced/img/temperature.png " style="width: 100px; height: 100px; "></div></div>' 
+    data-vis-attrs="oid/id,value.temperature;oid2/id,value.humidity;title[to be tested]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
     data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
     data-vis-attrs1="opacity-color[white]/color;" 
     data-vis-attrs2="border_radius[10]/number,1,20,1;"
     data-vis-attrs3="group.icons;"
-    data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
-    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/garage.png]/image;"
+    data-vis-attrs4="card-icon[widgets/vis-material-advanced/img/temperature.png]/image;"   
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"  
     data-vis-beta="true" 
-    data-vis-name="ListNew2"  >
-<div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
+    data-vis-name="ListNewDuo"  >  
+    <div  id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
     <div id="inner_container" class="vma_inner_container_div" > 
         <div id="bild" class="vma_picture">
             <img class="vma_icon" src="<%= this.data.attr('card-icon') %>">
@@ -811,27 +806,25 @@
         <div id="tunds" class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
             <div id="titel" class="vma_title">
                 <%= this.data.attr('title') %>
-            </div>
+            </div> 
             <div id="sub" class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
                 <%= this.data.attr('subtitle') %>
             </div>
         </div>
-        <div id="cont" class="vma_value_container">
-            <div class="vma_vertical_topspacer">
-            </div>
+        <div id="cont" class="vma_value_container">            
             <div id="value"  class="vma_value2_1" 
                 style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
             </div>        
             <div id="value"  class="vma_value2_2" 
             style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
             </div>        
-            <div class="vma_vertical_bottomspacer">
+            
             </div>            
             
         </div>
     <div id="overlay" class="vma_overlay"  onmouseover=""></div>
 </div>
-<% vis.binds['vis-material-advanced'].tplMdListNew2(this.data.wid, this.view, this.data);  %>
+<% vis.binds['vis-material-advanced'].tplMdListNewDuo(this.data.wid, this.view, this.data);  %>
 </script>
 
  <!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">

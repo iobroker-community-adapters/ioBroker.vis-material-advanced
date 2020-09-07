@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.3"
+    version: "0.5.8"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -1051,51 +1051,29 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        var $this = $('#' + widgetID);
-        //console.log($div.find('.vma_outer_div').css('height'));
-        var height = $this.innerHeight();
-       
-        if (height > 42) {
-            switch (data.attr('value-vertical')) {
-                case 'top': {
-                    break;
-                }
-                case 'center': {
-                    var top = height / 2 - 11;
-                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
-                    break;
-                }
-                case 'bottom': {
-                    var top = height - 11;
-                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
-                    break;
-                }
-            }
-        }
-        const radius = data.attr('border_radius');
-        $div.find('.vma_overlay').css('border-radius',radius + "px") ;
-        $div.find('.vma_outer_div').css('border-radius',radius + "px");
-        $div.find('.vma_inner_container_div').css('border-radius',radius + "px");
+        var $this = setPositionSingle($('#' + widgetID), data, $div);
+
+        setRadius(data, $div);
        
 
     },
-    tplMdListNew2: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-closed');
-        const srcOn = data.attr('card-icon-open');
+    tplMdListNewDuo: function (widgetID, view, data) {
+        const icon = data.attr('card-icon');
+       
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds['vis-material-advanced'].tplMdListNew2(widgetID, view, data);
+                vis.binds['vis-material-advanced'].tplMdListNewDuo(widgetID, view, data);
             }, 100);
         }
 
         function update(state,state2) {
-            var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
-            $tmp.prop('checked', state);
-            $div.find('.vma_picture').find('img').attr('src', src);
+         
+         
+         
+            $div.find('.vma_picture').find('img').attr('src', icon);
             $div.find('.vma_value2_1').html(state.toFixed(1) + ' °C');
             $div.find('.vma_value2_2').html(state2.toFixed(1) + ' %');
         }
@@ -1117,35 +1095,78 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
         }
-        var $this = $('#' + widgetID);
-        //console.log($div.find('.vma_outer_div').css('height'));
-        var height = $this.innerHeight();
-       
-        if (height > 42) {
-            switch (data.attr('value-vertical')) {
-                case 'top': {
-                    break;
-                }
-                case 'center': {
-                    var top = height / 4 - 5;
-                    $div.find('.vma_vertical_topspacer').css('height', top + "px");                    
-                    break;
-                }
-                case 'bottom': {
-                    var top = height /2  - 11;
-                    $div.find('.vma_vertical_topspacer').css('height', top + "px");
-                    break;
-                }
-            }
-        }
-        const radius = data.attr('border_radius');
-        $div.find('.vma_overlay').css('border-radius',radius + "px") ;
-        $div.find('.vma_outer_div').css('border-radius',radius + "px");
-        $div.find('.vma_inner_container_div').css('border-radius',radius + "px");
-       
+        
+        
+        setPosition($('#' + widgetID), data, $div);
 
+        setRadius(data, $div);       
+        console.log('');
     }
 
 };
 
 vis.binds["vis-material-advanced"].showVersion();
+
+function setRadius(data, $div) {
+    const radius = data.attr('border_radius');
+    $div.find('.vma_overlay').css('border-radius', radius + "px");
+    $div.find('.vma_outer_div').css('border-radius', radius + "px");
+    $div.find('.vma_inner_container_div').css('border-radius', radius + "px");
+    return true;
+}
+
+function setPositionSingle($this, data, $div) {   
+    //console.log($div.find('.vma_outer_div').css('height'));
+    var height = $this.innerHeight();
+    const value_height = $div.find('.vma_value').height();
+    const empty_space = height - value_height;
+    var top = 0;
+
+    if (height > 42) {
+        switch (data.attr('value-vertical')) {
+            case 'top': {
+                top = 4;
+                break;
+            }
+            case 'center': {
+                top = empty_space / 2 ;
+                break;
+            }
+            case 'bottom': {
+                top = empty_space - 4;                          
+                break;
+            }
+        }
+    }
+    $div.find('.vma_value').css('padding-top', top + "px");
+    return true;
+}
+
+function setPosition($this, data, $div) {
+    var height = $this.innerHeight();
+    
+    const value_height2 = $div.find('.vma_value2_1').outerHeight(true) + $div.find('.vma_value2_2').outerHeight(true);
+    
+    const empty_space = height - value_height2;
+
+    var top = 0;
+
+    if (empty_space >= 0) {
+        switch (data.attr('value-vertical')) {
+            case 'top': {
+                top = 4;
+                break;
+            }
+            case 'center': {
+                top = empty_space / 2 ;
+                break;
+            }
+            case 'bottom': {
+                top = empty_space - 4;                
+                break;
+            }
+        }
+    }
+    $div.find('.vma_value2_1').css('padding-top', top + "px");
+    return true;
+}
