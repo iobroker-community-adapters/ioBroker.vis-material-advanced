@@ -1,43 +1,43 @@
 {
-    "name": "iobroker.vis-material-advanced",
-    "version": "0.6.1",
-    "description": "This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets",
-    "author": "EdgarM73 <edgar.miller@gmail.com>",
-    "homepage": "https://github.com/EdgarM73/ioBroker.vis-material-advanced",
-    "license": "MIT",
-    "keywords": [
-        "vis",
-        "material",
-        "widget",
-        "ioBroker"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced.git"
-    },
-    "dependencies": {
-        "@iobroker/adapter-core": "^1.0.3",
-        "@material/button": "^7.0.0",
-        "@material/switch": "^7.0.0"
-    },
-    "devDependencies": {
-        "@alcalzone/release-script": "^1.8.0",
-        "@iobroker/testing": "^2.3.0",
-        "@types/gulp": "^4.0.6",
-        "axios": "^0.20.0",
-        "gulp": "^4.0.2"
-    },
-    "main": "widgets/vis-material-advanced.html",
-    "scripts": {
-        "test:package": "mocha test/package --exit",
-        "test": "npm run test:package",
-        "release": "release-script"
-    },
-    "bugs": {
-        "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced/issues"
-    },
-    "directories": {
-        "lib": "lib",
-        "test": "test"
-    }
+  "name": "iobroker.vis-material-advanced",
+  "version": "0.6.2",
+  "description": "This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets",
+  "author": "EdgarM73 <edgar.miller@gmail.com>",
+  "homepage": "https://github.com/EdgarM73/ioBroker.vis-material-advanced",
+  "license": "MIT",
+  "keywords": [
+    "vis",
+    "material",
+    "widget",
+    "ioBroker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced.git"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^1.0.3",
+    "@material/button": "^7.0.0",
+    "@material/switch": "^7.0.0"
+  },
+  "devDependencies": {
+    "@alcalzone/release-script": "^1.8.0",
+    "@iobroker/testing": "^2.3.0",
+    "@types/gulp": "^4.0.6",
+    "axios": "^0.20.0",
+    "gulp": "^4.0.2"
+  },
+  "main": "widgets/vis-material-advanced.html",
+  "scripts": {
+    "test:package": "mocha test/package --exit",
+    "test": "npm run test:package",
+    "release": "release-script"
+  },
+  "bugs": {
+    "url": "https://github.com/EdgarM73/ioBroker.vis-material-advanced/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
