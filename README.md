@@ -84,7 +84,7 @@ thanks to @sigi234
 -->
 
 
-### __WORK IN PROGRESS__
+### 0.6.3 (2020-09-08)
 * bugfix valve widget
 
 
