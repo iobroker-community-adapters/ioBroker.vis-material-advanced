@@ -82,7 +82,9 @@ thanks to @sigi234
     Placeholder
     ### __WORK IN PROGRESS__
 -->
-### 0.6.2 (2020-09-08)
+
+
+### __WORK IN PROGRESS__
 * bugfix valve widget
 
 

@@ -14,8 +14,8 @@
                 "es": "widget de válvula de corrección de errores",
                 "pl": "Widżet zaworu do naprawy błędów",
                 "zh-cn": "错误修正阀小部件"
-            },
-            "0.6.1": {
+              },
+            "0.6.1":  {
                 "en": "added two new widgets with complete new css-classes. rounded corner, two value. ",
                 "de": "fügte zwei neue Widgets mit komplett neuen CSS-Klassen hinzu. abgerundete Ecke, zwei Werte.",
                 "ru": "добавлены два новых виджета с полностью новыми CSS-классами. закругленный угол, два значения.",
@@ -25,8 +25,7 @@
                 "it": "aggiunti due nuovi widget con nuove classi CSS complete. angolo arrotondato, due valori.",
                 "es": "se agregaron dos nuevos widgets con clases CSS completamente nuevas. esquina redondeada, dos valores.",
                 "pl": "dodano dwa nowe widżety z kompletnymi nowymi klasami css. zaokrąglony róg, dwie wartości.",
-                "zh-cn": "添加了两个具有完整的CSS类的新小部件。圆角，两个值。"
-            },
+                "zh-cn": "添加了两个具有完整的CSS类的新小部件。圆角，两个值。"},
             "0.5.7": {
                 "en": "bugfix number widget",
                 "de": "Bugfix Nummer Widget",
@@ -38,7 +37,7 @@
                 "es": "widget de número de corrección de errores",
                 "pl": "Widżet numeru poprawki",
                 "zh-cn": "错误修正号小部件"
-            },
+              },
             "0.5.6": {
                 "en": "bugfix in Volume Widget due to a typo",
                 "de": "Bugfix im Volume Widget aufgrund eines Tippfehlers",
