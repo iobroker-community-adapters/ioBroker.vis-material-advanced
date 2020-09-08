@@ -1164,9 +1164,9 @@ zeigt und so bedienbar ist.
 
 .mduiw-switch {
     z-index: 2;
-    xheight: 36px;
+    /* xheight: 36px;
     xwidth: 48px;
-    xpadding: 6px;
+    xpadding: 6px; */
 }
 
 .mduiw-switch input[type="checkbox"] {
@@ -2386,7 +2386,7 @@ zeigt und so bedienbar ist.
 .mduiw-amber-bg.mduiw-tnav,
 .mduiw-amber-bg.mduiw-bnav,
 .mduiw-amber-bg.mduiw-abar {
-    xbackground: #FF6F00 !important;
+    /* xbackground: #FF6F00 !important; */
     background: hsl(45, 50%, 50%) !important;
 }
 
@@ -2411,7 +2411,7 @@ zeigt und so bedienbar ist.
 .mduiw-red-bg.mduiw-tnav,
 .mduiw-red-bg.mduiw-bnav,
 .mduiw-red-bg.mduiw-abar {
-    xbackground: #B71C1C !important;
+    /* xbackground: #B71C1C !important; */
     background: hsl(0, 50%, 40%) !important;
 }
 
@@ -2424,7 +2424,7 @@ zeigt und so bedienbar ist.
 .mduiw-yellow-bg.mduiw-tnav,
 .mduiw-yellow-bg.mduiw-bnav,
 .mduiw-yellow-bg.mduiw-abar {
-    xbackground: #F57F17 !important;
+    /* xbackground: #F57F17 !important; */
     background: hsl(60, 50%, 40%) !important;
 }
 
