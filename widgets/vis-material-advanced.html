@@ -760,24 +760,24 @@
     data-vis-beta="true" 
     data-vis-name="ListNew">
 <div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
-    <div id="inner_container" class="vma_inner_container_div" > 
-        <div id="bild" class="vma_picture">
+    <div class="vma_inner_container_div" > 
+        <div class="vma_picture">
             <img class="vma_icon" src="<%= this.data.attr('card-icon') %>">
         </div>
-        <div id="tunds" class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
-            <div id="titel" class="vma_title">
+        <div class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
+            <div  class="vma_title">
                 <%= this.data.attr('title') %>
             </div>
-            <div id="sub" class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
+            <div  class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
                 <%= this.data.attr('subtitle') %>
             </div>
         </div>
-        <div id="cont" class="vma_value_container">            
-            <div id="value"  class="vma_value" 
+        <div  class="vma_value_container">            
+            <div class="vma_value" 
                 style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
             </div>                   
         </div>
-    <div id="overlay" class="vma_overlay"  onmouseover=""></div>
+    <div class="vma_overlay"  onmouseover=""></div>
 </div>
 <% vis.binds['vis-material-advanced'].tplMdListNew(this.data.wid, this.view, this.data);  %>
 </script>
@@ -800,30 +800,30 @@
     data-vis-beta="true" 
     data-vis-name="ListNewDuo"  >  
     <div  id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
-    <div id="inner_container" class="vma_inner_container_div" > 
-        <div id="bild" class="vma_picture">
+    <div  class="vma_inner_container_div" > 
+        <div  class="vma_picture">
             <img class="vma_icon" src="<%= this.data.attr('card-icon') %>">
         </div>
-        <div id="tunds" class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
-            <div id="titel" class="vma_title">
+        <div  class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
+            <div class="vma_title">
                 <%= this.data.attr('title') %>
             </div> 
-            <div id="sub" class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
+            <div class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
                 <%= this.data.attr('subtitle') %>
             </div>
         </div>
-        <div id="cont" class="vma_value_container">            
-            <div id="value"  class="vma_value2_1" 
+        <div class="vma_value_container">            
+            <div class="vma_value2_1" 
                 style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
             </div>        
-            <div id="value"  class="vma_value2_2" 
+            <div class="vma_value2_2" 
             style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
             </div>        
             
             </div>            
             
         </div>
-    <div id="overlay" class="vma_overlay"  onmouseover=""></div>
+    <div class="vma_overlay"  onmouseover=""></div>
 </div>
 <% vis.binds['vis-material-advanced'].tplMdListNewDuo(this.data.wid, this.view, this.data);  %>
 </script>
