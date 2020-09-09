@@ -204,6 +204,60 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
     },
+    tplMdListDoor2: function (widgetID, view, data) {
+        const srcOpen = data.attr('card-icon-closed');
+        const srcClosed = data.attr('card-icon-open');
+        const valOpen = _('open');
+        const valClosed = _('closed');
+        const border = data.attr('border');
+
+        const colorize = data.attr('colorizeByValue');
+        const colorOpen = data.attr('color-open');
+        const colorClosed = data.attr('opacity-color');
+
+        var $div = $('#' + widgetID);
+        
+        if ( border )
+        {
+            $div.find('.vma_inner_container_div').css('border','1px solid white' );
+        }
+
+       
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListDoor2(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+            var value = (state) ? valOpen : valClosed;
+            var src = (state) ? srcOpen : srcClosed;
+            $div.find('.vma_value').html(value);
+            $div.find('.vma_picture').find('img').attr('src', src);
+
+            if (colorize) {
+                if (state) {
+                    $div.find('.vma_overlay').css('background-color', colorOpen);
+                } else {
+                    $div.find('.vma_overlay').css('background-color', colorClosed);
+                }
+            }
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);        
+        }
+        setPositionSingle($('#' + widgetID), data, $div);
+
+        setRadius(data, $div);       
+    },
     tplMdListWindow: function (widgetID, view, data) {
         const srcOpen = data.attr('card-icon-closed');
         const srcClosed = data.attr('card-icon-open');

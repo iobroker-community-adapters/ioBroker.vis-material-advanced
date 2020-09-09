@@ -141,6 +141,48 @@
 </script>
 
 <script 
+    id="tplMaListDoor2" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListDoor2" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/fts_door.png " style="width: 100px; height: 100px; "></div></div>' 
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;color-open[orange]/color;" 
+    data-vis-attrs2="border_radius[10]/number,0,20,1;border/checkbox;"
+    data-vis-attrs3="group.icons;"
+    data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/fts_door.png]/image;"
+    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/fts_door_open.png]/image;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"  
+    data-vis-beta="true" 
+    data-vis-name="ListDoor2" >
+    <div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> style="background-color:<%= this.data.attr('widget-background') %>;"">
+        <div class="vma_inner_container_div" > 
+            <div class="vma_picture">
+                <img class="vma_icon" src="<%= this.data.attr('card-icon-closed') %>">
+            </div>
+            <div class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
+                <div  class="vma_title">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div  class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div  class="vma_value_container">            
+                <div class="vma_value"   
+                    style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+                </div>                   
+            </div>
+            <div class="vma_overlay"  ></div>
+        </div>
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListDoor2(this.data.wid, this.view, this.data);  %>
+</script>
+
+<script 
     id="tplMaListWindow" 
     type="text/ejs" 
     class="vis-tpl" 
@@ -826,6 +868,8 @@
     </div>
 <% vis.binds['vis-material-advanced'].tplMdListNewDuo(this.data.wid, this.view, this.data);  %>
 </script>
+
+
 
  <!-- <script id="tplMaListRadio" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplVis-material-advancedListRadio" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212" > 

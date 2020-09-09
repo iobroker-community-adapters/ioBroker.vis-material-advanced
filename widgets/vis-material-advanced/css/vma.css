@@ -17,13 +17,11 @@
 .vma_inner_container_div {
     width: calc(100% - 2px);
     height: calc(100% - 2px);
-    min-height: 50px;
-    /* border: 1px solid green; */
+    min-height: 50px;    
     position: absolute;
-    background-color: #121212;
-    border-radius: 2px;
+    background-color: #121212;    
     border-radius: 8px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .vma_picture {
