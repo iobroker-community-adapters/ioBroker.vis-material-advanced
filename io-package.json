@@ -283,8 +283,8 @@
         "main": "main.js",
         "icon": "vis-material-advanced.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/EdgarM73/ioBroker.vis-material-advanced/master/admin/vis-material-advanced.png",
-        "readme": "https://github.com/EdgarM73/ioBroker.vis-material-advanced/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-material-advanced/master/admin/vis-material-advanced.png",
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced/blob/master/README.md",
         "loglevel": "info",
         "restartAdapters": [
             "vis"

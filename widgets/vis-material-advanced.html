@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/style.css" />
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/vma.css" />
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/material.css" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> -->
 <!-- here you can include so many js-files as you want -->
 
 <!-- here you can include so many js-files as you want -->
@@ -120,7 +120,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val" 
     data-vis-name="ListDoor">
-    <div class="vis-widget  <%== this.data.attr('class') %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;" >
+    <div class="vis_widget  <%== this.data.attr('class') %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;" >
         <div class="vis-widget-body my_child">
             <div class="mdw-list-icon">
                 <img src="<%= this.data.attr('card-icon') %>">
@@ -145,8 +145,8 @@
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListDoor2" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
-        <img src="widgets/vis-material-advanced/img/fts_door.png " style="width: 100px; height: 100px; "></div></div>' 
+        <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/fts_door.png " style="width: 100px; height: 100px;"></div></div>' 
     data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
     data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
     data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;color-open[orange]/color;" 
@@ -155,11 +155,10 @@
     data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/fts_door.png]/image;"
     data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/fts_door_open.png]/image;"
     data-vis-set="vis-material-advanced" 
-    data-vis-type="val"  
-    data-vis-beta="true" 
-    data-vis-name="ListDoor2" >
-    <div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> style="background-color:<%= this.data.attr('widget-background') %>;"">
-        <div class="vma_inner_container_div" > 
+    data-vis-type="val"      
+    data-vis-name="ListDoor2"   >
+    <div class="vis_widget mdw_list vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body vma_inner_container_div" > 
             <div class="vma_picture">
                 <img class="vma_icon" src="<%= this.data.attr('card-icon-closed') %>">
             </div>
@@ -176,7 +175,7 @@
                     style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
                 </div>                   
             </div>
-            <div class="vma_overlay"  ></div>
+            <div class="vma_overlay ms-button-op vis-widget-body"  ></div>
         </div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListDoor2(this.data.wid, this.view, this.data);  %>

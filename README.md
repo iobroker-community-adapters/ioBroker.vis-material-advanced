@@ -5,8 +5,8 @@
 [![Downloads](https://img.shields.io/npm/dm/iobroker.vis-material-advanced.svg)](https://www.npmjs.com/package/iobroker.vis-material-advanced)
 ![Number of Installations (latest)](http://iobroker.live/badges/vis-material-advanced-installed.svg)
 ![Number of Installations (stable)](http://iobroker.live/badges/vis-material-advanced-stable.svg)
-[![Dependency Status](https://img.shields.io/david/EdgarM73/iobroker.vis-material-advanced.svg)](https://david-dm.org/EdgarM73/iobroker.vis-material-advanced)
-[![Known Vulnerabilities](https://snyk.io/test/github/EdgarM73/ioBroker.vis-material-advanced/badge.svg)](https://snyk.io/test/github/EdgarM73/ioBroker.vis-material-advanced)
+[![Dependency Status](https://img.shields.io/david/EdgarM73/iobroker.vis-material-advanced.svg)](https://david-dm.org/iobroker-community-adapters/iobroker.vis-material-advanced)
+[![Known Vulnerabilities](https://snyk.io/test/github/EdgarM73/ioBroker.vis-material-advanced/badge.svg)](https://snyk.io/test/github/iobroker-community-adapters/ioBroker.vis-material-advanced)
 
 [![NPM](https://nodei.co/npm/iobroker.vis-material-advanced.png?downloads=true)](https://nodei.co/npm/iobroker.vis-material-advanced/)
 
