@@ -85,7 +85,10 @@ thanks to @sigi234
 
 ### __WORK IN PROGRESS__
 * bugfix new widgets
-* adding heatingcontrol widget
+* All widgets moved to new CSS Style
+* rounded widget possible
+* should not interfere with other Adapters anymore
+  
 
 ### 0.6.3 (2020-09-08)
 * bugfix valve widget

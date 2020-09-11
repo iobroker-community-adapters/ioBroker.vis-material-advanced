@@ -1,7 +1,7 @@
 /* Style your widget here */
 
 .vma_outer_div {
-    width: 150px;
+    width: 350px;
     min-width: 275px;
     min-height: 50px;
     height:50px;
@@ -84,6 +84,11 @@
     min-height: 24px;
 }
 
+.vma-slider {
+    overflow: hidden;
+    
+}
+
 
 .vma_overlay {
     width: 100%;
@@ -94,4 +99,178 @@
     opacity: 0.2;
     border-radius: 8px;
 
+}
+
+
+
+.vma-slider .ui-slider {
+    border: none !important;
+    z-index: 2;
+    padding: 0px !important;
+    margin: 0px !important;
+    background: none !important;
+}
+
+.vma-slider .ui-slider-horizontal {
+    top: calc(50% - 8px);
+    height: 16px !important;
+    width: calc(100% - 16px) !important;
+    left: 0px !important;
+}
+
+.vma-slider .ui-slider-horizontal:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0px;
+    width: calc(100% + 20px);
+    height: 4px;
+    background: #ffffff !important;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.vma-slider .ui-slider-vertical {
+    left: calc(50% - 8px) !important;
+    width: 16px !important;
+    height: calc(100% - 16px) !important;
+    top: 16px !important;
+}
+
+.vma-slider .ui-slider-vertical:before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 2px);
+    top: -16px;
+    width: 4px;
+    height: calc(100% + 16px);
+    background: #ffffff !important;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.vma-slider .ui-slider-handle {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 16px !important;
+    height: 16px !important;
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.27), 0 2px 2px 0 rgba(0, 0, 0, 0.27), 0 1px 5px 0 rgba(0, 0, 0, 0.54);
+}
+
+.vma-slider .ui-slider-handle:focus {
+    outline: none;
+}
+
+.ui-notouch .vma-slider .ui-slider-handle:focus {
+    box-shadow: 0 0 4px 2px rgba(33, 150, 243, 0.39), 0 10px 20px rgba(33, 150, 243, 0.39), 0 6px 6px rgba(33, 150, 243, 0.43);
+}
+
+.vma-slider .ui-slider-horizontal .ui-slider-handle:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 100%;
+    width: 1000px;
+    height: 4px;
+    background: rgba(0, 0, 0, .5) !important;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.vma-slider .ui-slider-vertical .ui-slider-handle:before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 2px);
+    top: -1000px;
+    width: 4px;
+    height: 1000px;
+    background: rgba(0, 0, 0, .7) !important;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.vma-slider .ui-slider-horizontal .ui-slider-handle {
+    top: calc(50% - 8px) !important;
+}
+
+.vma-slider .ui-slider-vertical .ui-slider-handle {
+    left: calc(50% - 8px) !important;
+}
+
+.vma-runtime.vma-notouch .vma-slider:hover {
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.2) inset;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+.vma-switch {
+    z-index: 2;
+    /* xheight: 36px;
+    xwidth: 48px;
+    xpadding: 6px; */
+}
+
+.vma-switch input[type="checkbox"] {
+    display: none;
+}
+
+.vma-switch input[type="checkbox"]~label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.vma-switch input[type="checkbox"]~label:before,
+.vma-switch input[type="checkbox"]~label:after {
+    content: "";
+    position: absolute;
+    outline: 0;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.vma-switch input[type="checkbox"]~label:before {
+    left: 0px;
+    width: 48px;
+    height: 16px;
+    background-color: #808080;
+    border-radius: 100px;
+}
+
+.vma-switch input[type="checkbox"]~label:after {
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.27), 0 2px 2px 0 rgba(0, 0, 0, 0.27), 0 1px 5px 0 rgba(0, 0, 0, 0.54);
+}
+
+.mduiw-runtime.mduiw-notouch .vma-switch:hover {
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.2) inset;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.vma-switch input[type="checkbox"]:checked~label:before {
+    background-color: #1E88E5;
+}
+
+.vma-switch input[type="checkbox"]:checked~label:after {
+    background-color: #2196F3;
+    -ms-transform: translate(100%, -50%);
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
 }
