@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.7.0-beta.0",
+        "version": "0.8.0-0",
         "news": {
+            "0.8.0-0": {
+                "en": "remove test widgets\nrelease",
+                "de": "Entfernen Sie Test-Widgets\nFreisetzung",
+                "ru": "удалить тестовые виджеты\nрелиз",
+                "pt": "remover widgets de teste\nliberação",
+                "nl": "verwijder testwidgets\nvrijlating",
+                "fr": "supprimer les widgets de test\nLibération",
+                "it": "rimuovere i widget di prova\npubblicazione",
+                "es": "eliminar widgets de prueba\nlanzamiento",
+                "pl": "usuń widżety testowe\nwydanie",
+                "zh-cn": "删除测试小部件\n释放"
+            },
             "0.7.0-beta.0": {
                 "en": "bugfix new widgets\nAll widgets moved to new CSS Style\nrounded widget possible\nshould not interfere with other Adapters anymore",
                 "de": "Bugfix neue Widgets\nAlle Widgets wurden in den neuen CSS-Stil verschoben\nabgerundetes Widget möglich\nsollte andere Adapter nicht mehr stören",
@@ -230,18 +242,6 @@
                 "es": "elementos renombrados",
                 "pl": "zmieniono nazwy elementów",
                 "zh-cn": "重命名元素"
-            },
-            "0.1.0": {
-                "en": "all current functionality copied from vis-material original git",
-                "de": "Alle aktuellen Funktionen wurden von vis-material original git kopiert",
-                "ru": "все текущие функции скопированы из исходного материала vis-material оригинального git",
-                "pt": "todas as funcionalidades atuais copiadas do git original vis-material",
-                "nl": "alle huidige functionaliteit gekopieerd van vis-materiaal originele git",
-                "fr": "toutes les fonctionnalités actuelles copiées à partir du git original vis-material",
-                "it": "tutte le funzionalità correnti copiate da git originale di vis-material",
-                "es": "toda la funcionalidad actual copiada de vis-material original git",
-                "pl": "wszystkie obecne funkcje skopiowane z oryginalnego git vis-material",
-                "zh-cn": "从视觉原始git复制的所有当前功能"
             }
         },
         "title": "Material Advanced",

@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.0-0 (2020-09-11)
 * remove test widgets
 * release 
 
@@ -103,9 +103,6 @@ thanks to @sigi234
 
 ### 0.5.7
 * bugfix number widget
-
-### 0.5.6
-* type in volume
 
 ## License
 MIT License
