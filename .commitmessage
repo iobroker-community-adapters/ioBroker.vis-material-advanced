@@ -1,3 +1,6 @@
-chore: release v0.6.3
+chore: release v0.7.0-beta.0
 
-bugfix valve widget
+bugfix new widgets
+All widgets moved to new CSS Style
+rounded widget possible
+should not interfere with other Adapters anymore

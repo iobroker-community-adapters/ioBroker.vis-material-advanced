@@ -811,48 +811,49 @@
     <% vis.binds['vis-material-advanced'].tplMdListValve(this.data.wid, this.view, this.data,'pressure'); %>
 </script>
 
-
-
 <script 
     id="tplMaListGarage" 
     type="text/ejs" 
     class="vis-tpl" 
     data-vis-prev='<div id="prev_tplVis-material-advancedListGarage" style="position: relative; text-align: initial;padding: 4px ">
-        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
-        <img src="widgets/vis-material-advanced/img/garage.png " style="width: 100px; height: 100px; "></div></div>' 
-    data-vis-attrs="oid/id;title[not working yet]/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
-    data-vis-attrs0="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
-    data-vis-attrs1="card-icon-open[widgets/vis-material-advanced/img/garage.png]/image;"
-    data-vis-attrs2="oid2/id;opacity-color[white]/color;" 
-    data-vis-set="vis-material-advanced" 
-    data-vis-type="val"  
-    data-vis-beta="true" 
-    data-vis-name="ListGarage">
-    <div class="vis-widget <%==this.data.attr( 'class') %> mdw-list" id="<%= this.data.attr('wid') %>" style="background-color:<%= this.data.attr('widget-background') %>;">
-        <div class="vis-widget-body my_child ">
-            <div class="mdw-list-icon">
-                <img src="<%= this.data.attr('card-icon') %>">
+        <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/garage_open.png " style="width: 100px; height: 100px;"></div></div>' 
+    data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
+    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;color-open[orange]/color;" 
+    data-vis-attrs2="border_radius[10]/number,0,20,1;border/checkbox;"
+    data-vis-attrs3="group.icons;"
+    data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
+    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/garage_open.png]/image;"
+    data-vis-set="vis-material-advanced"  
+    data-vis-type="val"      
+    data-vis-update-style="true"
+    data-vis-name="ListGarage"  >
+    <div class="vis-widget mdw-list vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
+        <div class="vis-widget-body vma_inner_container_div" > 
+            <div class="vma_picture"> 
+                <img class="vma_icon" src="<%= this.data.attr('card-icon-closed') %>">
             </div>
-            <div class="mdw-list-desc">
-                <div class="mdw-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
-                    <%= this.data.attr('title') %>
+            <div class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;"> 
+                <div  class="vma_title">
+                    <%= this.data.attr('title') %> 
                 </div>
-                <div class=" mdw-list-subtitle mduiw-subtitle " style="color: <%=this.data.attr( 'Text-color') %>;">
+                <div  class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;" >
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class="mdw-list-value" style="color: <%= this.data.attr('Text-color') %>;">
-                <div class=" mduiw-switch ">
-                    <input type="checkbox" name="<%=this.data.attr( 'wid') %>_checkbox" id="<%= this.data.attr('wid') %>_checkbox" data-oid="<%= this.data.attr('oid') %>" />
-                    <label for="<%= this.data.attr('wid') %>_checkbox"><label>
-                </div>
+            <div  class="vma_value_container">            
+                <div class="vma_value"   
+                    style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+                </div>                   
             </div>
+            <div class="vma_overlay ms-button-op vis-widget-body" ></div>
         </div>
-        <div class="vis-widget-body ms-button-op my_child overlay opac-template8" style="background-color:<%= this.data.attr('opacity-color') %>" ></div>
     </div>
-    <% vis.binds['vis-material-advanced'].tplMdListGarage(this.data.wid, this.view, this.data);  %>
+    <% vis.binds['vis-material-advanced'].tplMdListOpenClose(this.data.wid, this.view, this.data);  %>
 </script>
 
+<!--
 <script 
     id="tplMaListNew" 
     type="text/ejs" 

@@ -83,6 +83,10 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
+### __WORK IN PROGRESS__
+* remove test widgets
+* release 
+
 ### 0.7.0-beta.0 (2020-09-11)
 * bugfix new widgets
 * All widgets moved to new CSS Style
