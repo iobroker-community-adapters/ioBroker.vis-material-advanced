@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.6.4",
+        "version": "0.7.0-beta.0",
         "news": {
+            "0.7.0-beta.0": {
+                "en": "bugfix new widgets\nAll widgets moved to new CSS Style\nrounded widget possible\nshould not interfere with other Adapters anymore",
+                "de": "Bugfix neue Widgets\nAlle Widgets wurden in den neuen CSS-Stil verschoben\nabgerundetes Widget möglich\nsollte andere Adapter nicht mehr stören",
+                "ru": "исправление ошибок новых виджетов\nВсе виджеты перенесены в новый стиль CSS\nвозможен закругленный виджет\nне должны больше мешать другим адаптерам",
+                "pt": "bug corrigir novos widgets\nTodos os widgets foram movidos para o novo estilo CSS\nwidget arredondado possível\nnão deve interferir mais com outros adaptadores",
+                "nl": "bugfix nieuwe widgets\nAlle widgets zijn verplaatst naar de nieuwe CSS-stijl\nafgeronde widget mogelijk\nniet meer interfereren met andere adapters",
+                "fr": "bugfix nouveaux widgets\nTous les widgets ont été déplacés vers un nouveau style CSS\nwidget arrondi possible\nne devrait plus interférer avec les autres adaptateurs",
+                "it": "bugfix nuovi widget\nTutti i widget sono stati spostati nel nuovo stile CSS\nwidget arrotondato possibile\nnon dovrebbe più interferire con altri adattatori",
+                "es": "corrección de errores nuevos widgets\nTodos los widgets se movieron al nuevo estilo CSS\nwidget redondeado posible\nya no debería interferir con otros adaptadores",
+                "pl": "naprawa nowych widżetów\nWszystkie widżety zostały przeniesione do nowego stylu CSS\nmożliwy zaokrąglony widżet\nnie powinien już kolidować z innymi adapterami",
+                "zh-cn": "修正新的小部件\n所有小部件均移至新的CSS样式\n舍入小部件\n不应再干扰其他适配器"
+            },
             "0.6.3": {
                 "en": "bugfix valve widget",
                 "de": "Bugfix Ventil Widget",
@@ -230,18 +242,6 @@
                 "es": "toda la funcionalidad actual copiada de vis-material original git",
                 "pl": "wszystkie obecne funkcje skopiowane z oryginalnego git vis-material",
                 "zh-cn": "从视觉原始git复制的所有当前功能"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版"
             }
         },
         "title": "Material Advanced",

@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.7.0-beta.0 (2020-09-11)
 * bugfix new widgets
 * All widgets moved to new CSS Style
 * rounded widget possible
@@ -102,9 +102,6 @@ thanks to @sigi234
 
 ### 0.5.6
 * type in volume
-
-### 0.5.5
-* no icons anymore for text and number
 
 ## License
 MIT License
