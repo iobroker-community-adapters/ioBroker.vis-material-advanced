@@ -82,6 +82,10 @@ thanks to @sigi234
     Placeholder
     ### __WORK IN PROGRESS__
 -->
+### __WORK IN PROGRESS__
+* bugfix for smaller widgets
+* new style for switch item
+* removed text-align for slider
 
 ### 0.8.0-0 (2020-09-11)
 * remove test widgets
