@@ -1,4 +1,7 @@
 
+## 0.5.7
+* bugfix number widget
+
 ## 0.5.6
 * type in volume
 

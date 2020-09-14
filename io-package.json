@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.0-0",
+        "version": "0.8.0",
         "news": {
+            "0.8.0": {
+                "en": "bugfix for smaller widgets\nnew style for switch item\nremoved text-align for slider",
+                "de": "Bugfix für kleinere Widgets\nneuer Stil für Schalterelement\nTextausrichtung für Schieberegler entfernt",
+                "ru": "исправление для небольших виджетов\nновый стиль для переключателя\nубрано выравнивание текста для слайдера",
+                "pt": "correção de bug para widgets menores\nnovo estilo para item de troca\nremoveu o alinhamento de texto do controle deslizante",
+                "nl": "bugfix voor kleinere widgets\nnieuwe stijl voor schakelaaritem\nverwijderd text-align voor slider",
+                "fr": "correction de bogue pour les petits widgets\nnouveau style pour l'élément de commutation\nsuppression de l'alignement du texte pour le curseur",
+                "it": "bugfix per widget più piccoli\nnuovo stile per l'elemento di commutazione\nrimosso l'allineamento del testo per il dispositivo di scorrimento",
+                "es": "corrección de errores para widgets más pequeños\nnuevo estilo para el elemento de cambio\nalineación de texto eliminada para el control deslizante",
+                "pl": "poprawka dla mniejszych widżetów\nnowy styl elementu przełącznika\nusunięto wyrównanie tekstu dla suwaka",
+                "zh-cn": "较小的小部件的错误修正\n开关项目的新样式\n删除了文本对齐滑块"
+            },
             "0.8.0-0": {
                 "en": "remove test widgets\nrelease",
                 "de": "Entfernen Sie Test-Widgets\nFreisetzung",
@@ -230,18 +242,6 @@
                 "es": "convención de nomenclatura de corrección de errores, widget de volumen agregado, widget beta de Garaga",
                 "pl": "konwencja nazewnictwa poprawek, dodany widget głośności, widget beta Garaga",
                 "zh-cn": "bugfix命名约定，添加了Volume Widget，beta Garaga Widget"
-            },
-            "0.3.1": {
-                "en": "renamed elements ",
-                "de": "umbenannte Elemente",
-                "ru": "переименованные элементы",
-                "pt": "elementos renomeados",
-                "nl": "hernoemde elementen",
-                "fr": "éléments renommés",
-                "it": "elementi rinominati",
-                "es": "elementos renombrados",
-                "pl": "zmieniono nazwy elementów",
-                "zh-cn": "重命名元素"
             }
         },
         "title": "Material Advanced",

@@ -82,7 +82,7 @@ thanks to @sigi234
     Placeholder
     ### __WORK IN PROGRESS__
 -->
-### __WORK IN PROGRESS__
+### 0.8.0 (2020-09-14)
 * bugfix for smaller widgets
 * new style for switch item
 * removed text-align for slider
@@ -104,9 +104,6 @@ thanks to @sigi234
 
 ### 0.6.1
 * added two new widgets with complete new css-classes. rounded corner, two value. 
-
-### 0.5.7
-* bugfix number widget
 
 ## License
 MIT License
