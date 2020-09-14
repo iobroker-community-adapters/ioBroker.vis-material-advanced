@@ -82,6 +82,11 @@ thanks to @sigi234
     Placeholder
     ### __WORK IN PROGRESS__
 -->
+
+### __WORK IN PROGRESS__
+* new version number
+
+s
 ### 0.8.0 (2020-09-14)
 * bugfix for smaller widgets
 * new style for switch item
