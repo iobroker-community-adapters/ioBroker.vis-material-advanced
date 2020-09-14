@@ -1,7 +1,7 @@
 <!--
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.5.8"
+    version: "0.8.1"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 -->
@@ -240,7 +240,7 @@
         <img src="widgets/vis-material-advanced/img/humid_humidity.png " style="width: 100px; height: 100px;"></div></div>' 
     data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
     data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
-    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[18]/number;above[24]/number;color-low[blue]/color;color-high[red]/color;" 
+    data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;below[40]/number;above[60]/number;color-low[blue]/color;color-high[red]/color;" 
     data-vis-attrs2="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs3="group.icons;"
     data-vis-attrs4="card-icon-closed[widgets/vis-material-advanced/img/humid_humidity.png]/image;"    
@@ -419,33 +419,37 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
-    data-vis-name="ListLight"  >
-    <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
-        <div class="vis-widget-body vma_inner_container_div" > 
+    data-vis-name="ListLight"        >
+    <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>; " >
+        <div class="vis-widget-body vma_inner_container_div"  > 
             <div class="vma_picture"> 
                 <img class="vma_icon" src="<%= this.data.attr('card-icon-on') %>">
             </div>
             <div class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
-                <div  class="vma_title">
+                <div  class="vma_title" >
                     <%= this.data.attr('title') %>
                 </div> 
-                <div  class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;" > 
+                <div  class="vma_subtitle" style=" color:  <%= this.data.attr('Text-color') %>;" > 
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
             <div  class="vma_value_container ">            
-                <div class="vma_value vma-switch "   
+                <div class="vma_value  "   
                     style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
                     <% if(!this.data.readOnly) { %>
-                        <input type="checkbox" name="<%=this.data.attr( 'wid') %>_checkbox" id="<%= this.data.attr('wid') %>_checkbox" data-oid="<%= this.data.attr('oid') %>" />
-                        <label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                       
+                        <label class="vma-switch">
+                                <input type="checkbox" checked="" name="<%=this.data.attr( 'wid') %>_checkbox" id="<%= this.data.attr('wid') %>_checkbox"  data-oid="<%= this.data.attr('oid') %>">   
+                                 <span class="vma-slider-switch round"></span>                             
+                        </label>
+                           
                     <% } %>
                 </div>                   
             </div>
-            <div class="vma_overlay ms-button-op vis-widget-body" ></div>
+            <div class="vma_overlay ms-button-op vis-widget-body"></div>
         </div>
     </div>
-    <% vis.binds['vis-material-advanced'].tplMdListLight(this.data.wid, this.view, this.data,'pressure'); %>
+    <% vis.binds['vis-material-advanced'].tplMdListLight(this.data.wid, this.view, this.data,'pressure');  %>
 </script>
 
 <script 
@@ -456,7 +460,7 @@
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/light_light_dim_100.png " style="width: 100px; height: 100px;"></div></div>' 
     data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
-    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs0="value-vertical[center]/select,top,center,bottom;"
     data-vis-attrs1="opacity-color[white]/color;colorizeByValue/checkbox;lightOnColor[yellow]/color;" 
     data-vis-attrs2="border_radius[10]/number,0,20,1;border/checkbox;readOnly/checkbox;"
     data-vis-attrs3="group.icons;"
@@ -465,7 +469,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
-    data-vis-name="ListLightDim"  >
+    data-vis-name="ListLightDim" >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
         <div class="vis-widget-body vma_inner_container_div" > 
             <div class="vma_picture"> 
@@ -475,18 +479,19 @@
                 <div  class="vma_title">
                     <%= this.data.attr('title') %>
                 </div> 
-                <div  class="vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;"  > 
+                <div  class=" vma_subtitle" style=" color: <%= this.data.attr('Text-color') %>;"  > 
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
             <div  class="vma_value_container ">            
                 <div class="vma_value vma-slider"   
-                    style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >
+                    style="color:   <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('value-align') %>; vertical-align:<%= this.data.attr('value-vertical') %>;" >                
                     <% if(!this.data.readOnly) { %>
                         <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" 
                             data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  ,
-                            data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> />
+                            data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /> 
                         </div><label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                        
                     <% } %>
                 </div>                   
             </div>
@@ -505,7 +510,7 @@
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png " style="width: 100px; height: 100px;"></div></div>' 
     data-vis-attrs="oid/id;title/text;subtitle/text;widget-background[#121212]/color;Text-color[white]/color;"     
-    data-vis-attrs0="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs0="value-vertical[center]/select,top,center,bottom;"
     data-vis-attrs1="opacity-color[white]/color;min[2700]/number;max[6500]/number;" 
     data-vis-attrs2="border_radius[10]/number,0,20,1;border/checkbox;readOnly/checkbox;"
     data-vis-attrs3="group.icons;"

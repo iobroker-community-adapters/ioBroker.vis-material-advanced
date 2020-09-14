@@ -1,9 +1,13 @@
-/* Style your widget here */
-
+:root {
+    --min-outer_width: 200px;
+    --title-text-size: x-small;
+    --subtitle-text-size: xx-small;
+    --value-text-size: x-small;
+}
 .vma_outer_div {
     width: 350px;
-    min-width: 275px;
-    min-height: 50px;
+    /* min-width: 275px; */
+    min-height: 48px;
     height:50px;
     position: absolute;
     top: 100px;
@@ -17,7 +21,7 @@
 .vma_inner_container_div {
     width: calc(100% - 2px);
     height: calc(100% - 2px);
-    min-height: 50px;    
+    /* min-height: 50px;     */
     position: absolute;
     background-color: #121212;    
     border-radius: 8px;
@@ -25,32 +29,31 @@
 }
 
 .vma_picture {
-    width: 48px; 
-    min-height: 48px;
+    width: 48px;     
     float: left;   
 }
 
 .vma_icon {
-    width:48px;
+    width:48px;    
 }
 
 .vma_title {    
     width: 100%;
     height: 60%;
     min-height: 29px;
-    font-size: 16px;
+    font-size: var(--title-text-size);
     /* border: 1px solid yellow; */
 }
 .vma_subtitle {
     width: 100%;
     height: 40%;
     min-height: 19px;
-    font-size: 12px;
+    font-size: var(--subtitle-text-size);
     /* border: 1px solid red; */
 }
 
 .vma_title_subtitle_container {
-    width: 33%;
+    width: 25%;
     height: calc(100% - 4px);
     min-height: 46px;
     float:left;
@@ -59,28 +62,31 @@
 
 .vma_value_container {
     float: left;
-    width: calc(100% - 33% - 48px - 18px - 10px);
+    width: calc(100% - 25% - 48px - 18px - 10px);
     height: calc(100% - 2px);
     min-height: 48px;
-    min-width: 108px;
+    /* min-width: 74px; */
     padding-left: 16px;
     padding-right: 10px;
 }
 
 .vma_value {
     vertical-align: middle;
+    font-size: var(--value-text-size);
     min-height: 24px;
     
 }
 
 .vma_value2_1 {
     vertical-align: middle;
+    font-size: var(--value-text-size);
     min-height: 24px;
 }
 
 
 .vma_value2_2 {    
     vertical-align: middle;
+    font-size: var(--value-text-size);
     min-height: 24px;
 }
 
@@ -206,71 +212,125 @@
     transition: all 0.3s ease;
 }
 
+/* 
+
+
+
+
+.vma2_slidecontainer {
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .vma2_slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    z-index: 2;
+  }
+  
+  .vma2_slider:hover {
+    opacity: 1;
+  }
+  
+  .vma2_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .vma2_slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+/*
+
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 .vma-switch {
-    z-index: 2;
-    /* xheight: 36px;
-    xwidth: 48px;
-    xpadding: 6px; */
-}
-
-.vma-switch input[type="checkbox"] {
-    display: none;
-}
-
-.vma-switch input[type="checkbox"]~label {
     position: relative;
     display: inline-block;
+    width: 60px;
+    height: 24px;
+    z-index: 2;
+  }
+  
+  .vma-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .vma-slider-switch {
+    position: absolute;
     cursor: pointer;
     z-index: 2;
-    height: 100%;
-    width: 100%;
-}
-
-.vma-switch input[type="checkbox"]~label:before,
-.vma-switch input[type="checkbox"]~label:after {
-    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #121212;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .vma-slider-switch:before {
     position: absolute;
-    outline: 0;
-    top: 50%;
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.vma-switch input[type="checkbox"]~label:before {
-    left: 0px;
-    width: 48px;
-    height: 16px;
-    background-color: #808080;
-    border-radius: 100px;
-}
-
-.vma-switch input[type="checkbox"]~label:after {
-    left: 0px;
-    width: 24px;
-    height: 24px;
-    background-color: #c0c0c0;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .vma-slider-switch {
+    background-color: #ccc;
+  }
+  
+  input:focus + .vma-slider-switch {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .vma-slider-switch:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .vma-slider-switch.round {
+    border-radius: 27px;
+  }
+  
+  .vma-slider-switch.round:before {
     border-radius: 50%;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.27), 0 2px 2px 0 rgba(0, 0, 0, 0.27), 0 1px 5px 0 rgba(0, 0, 0, 0.54);
-}
-
-.mduiw-runtime.mduiw-notouch .vma-switch:hover {
-    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.2) inset;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.vma-switch input[type="checkbox"]:checked~label:before {
-    background-color: #1E88E5;
-}
-
-.vma-switch input[type="checkbox"]:checked~label:after {
-    background-color: #2196F3;
-    -ms-transform: translate(100%, -50%);
-    -webkit-transform: translate(100%, -50%);
-    transform: translate(100%, -50%);
-}
+  }
