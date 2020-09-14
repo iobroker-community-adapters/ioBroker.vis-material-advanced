@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.1 (2020-09-14)
 * new version number
 
 s
@@ -106,9 +106,6 @@ s
 ### 0.6.3 (2020-09-08)
 * bugfix valve widget
 
-
-### 0.6.1
-* added two new widgets with complete new css-classes. rounded corner, two value. 
 
 ## License
 MIT License

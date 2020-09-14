@@ -1,4 +1,7 @@
 
+## 0.6.1
+* added two new widgets with complete new css-classes. rounded corner, two value. 
+
 ## 0.5.7
 * bugfix number widget
 
