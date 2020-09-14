@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.2 (2020-09-14)
 * width of title can be changed now overall. add $("html").attr("style","--title-width:20%");  into global javascript. Standard now at 30%
 * text-size removed from css. now you can set it again from outside
 
@@ -107,10 +107,6 @@ s
 * rounded widget possible
 * should not interfere with other Adapters anymore
   
-
-### 0.6.3 (2020-09-08)
-* bugfix valve widget
-
 
 ## License
 MIT License

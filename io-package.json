@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.1",
+        "version": "0.8.2",
         "news": {
+            "0.8.2": {
+                "en": "width of title can be changed now overall. add $(\"html\").attr(\"style\",\"--title-width:20%\");  into global javascript. Standard now at 30%\ntext-size removed from css. now you can set it again from outside",
+                "de": "Die Breite des Titels kann jetzt insgesamt geändert werden. add $ (\"html\"). attr (\"style\", \"- Titelbreite: 20%\"); in globales Javascript. Standard jetzt bei 30%\nTextgröße aus CSS entfernt. Jetzt können Sie es von außen wieder einstellen",
+                "ru": "ширину заголовка теперь можно изменять в целом. добавить $ (\"html\"). attr (\"style\", \"- title-width: 20%\"); в глобальный javascript. Стандарт сейчас на 30%\nразмер текста удален из CSS. теперь вы можете снова установить его снаружи",
+                "pt": "largura do título pode ser alterada agora em geral. adicione $ (\"html\"). attr (\"estilo\", \"- largura do título: 20%\"); em javascript global. Padrão agora em 30%\ntamanho do texto removido do css. agora você pode configurá-lo novamente de fora",
+                "nl": "de breedte van de titel kan nu in het algemeen worden gewijzigd. add $ (\"html\"). attr (\"style\", \"- title-width: 20%\"); naar globaal javascript. Standaard nu op 30%\ntekstgrootte verwijderd uit css. nu kunt u het van buitenaf weer instellen",
+                "fr": "la largeur du titre peut être modifiée maintenant globalement. add $ (\"html\"). attr (\"style\", \"- largeur du titre: 20%\"); en javascript global. Standard maintenant à 30%\ntaille du texte supprimée du css. maintenant vous pouvez le régler à nouveau de l'extérieur",
+                "it": "ora è possibile modificare la larghezza del titolo in generale. aggiungi $ (\"html\"). attr (\"style\", \"- title-width: 20%\"); in javascript globale. Standard ora al 30%\ndimensione del testo rimossa dal css. ora puoi impostarlo di nuovo dall'esterno",
+                "es": "el ancho del título se puede cambiar ahora en general. agregar $ (\"html\"). attr (\"estilo\", \"- título-ancho: 20%\"); en javascript global. Estándar ahora al 30%\ntamaño de texto eliminado de css. ahora puedes configurarlo de nuevo desde afuera",
+                "pl": "można teraz ogólnie zmienić szerokość tytułu. dodaj $ (\"html\"). attr (\"styl\", \"- szerokość tytułu: 20%\"); do globalnego javascript. Standard teraz na 30%\nrozmiar tekstu usunięty z css. teraz możesz ustawić go ponownie z zewnątrz",
+                "zh-cn": "现在整体上可以更改标题的宽度。添加$（“ html”）。attr（“ style”，“-title-width：20％”）;进入全球javascript。现在标准为30％\n从CSS移除文字大小。现在您可以从外面重新设置"
+            },
             "0.8.1": {
                 "en": "* new version number\n\ns",
                 "de": "* neue Versionsnummer\n\ns",
@@ -230,18 +242,6 @@
                 "es": "nueva funcionalidad readOnly widgets",
                 "pl": "nowa funkcjonalność readOnly widżety",
                 "zh-cn": "新功能readOnly小部件"
-            },
-            "0.3.3": {
-                "en": "added air pressure widget",
-                "de": "Luftdruck-Widget hinzugefügt",
-                "ru": "добавлен виджет давления воздуха",
-                "pt": "adicionado widget de pressão de ar",
-                "nl": "toegevoegde luchtdruk widget",
-                "fr": "widget de pression d'air ajouté",
-                "it": "aggiunto widget di pressione dell'aria",
-                "es": "widget de presión de aire añadido",
-                "pl": "dodano widżet ciśnienia powietrza",
-                "zh-cn": "添加气压小部件"
             }
         },
         "title": "Material Advanced",

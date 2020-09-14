@@ -1,4 +1,8 @@
 
+## 0.6.3 (2020-09-08)
+* bugfix valve widget
+
+
 ## 0.6.1
 * added two new widgets with complete new css-classes. rounded corner, two value. 
 
