@@ -83,6 +83,11 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
+### __WORK IN PROGRESS__
+* width of title can be changed now overall. add $("html").attr("style","--title-width:20%");  into global javascript. Standard now at 30%
+* text-size removed from css. now you can set it again from outside
+
+
 ### 0.8.1 (2020-09-14)
 * new version number
 
