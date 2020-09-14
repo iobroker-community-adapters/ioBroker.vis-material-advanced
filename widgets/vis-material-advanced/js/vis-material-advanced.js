@@ -243,23 +243,13 @@ vis.binds["vis-material-advanced"] = {
             }, 100);
         }
 
-        function update(state,state2) {
-         
-         
-         
+        function update(state,state2) { 
             $div.find('.vma_picture').find('img').attr('src', icon);
             $div.find('.vma_value2_1').html(state.toFixed(1) + valtype1);
             $div.find('.vma_value2_2').html(state2.toFixed(1) + valtype2);
         }
 
-        if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        }
-
+ 
         if (data.oid) {
             // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
@@ -417,13 +407,6 @@ vis.binds["vis-material-advanced"] = {
             }
         }
 
-        /* if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_slider');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        } */
 
         if (data.oid) {
             // subscribe on updates of value
@@ -478,13 +461,6 @@ vis.binds["vis-material-advanced"] = {
             }
         }
 
-        /* if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_slider');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        } */
 
         if (data.oid) {
             // subscribe on updates of value
@@ -531,14 +507,6 @@ vis.binds["vis-material-advanced"] = {
 
             }            
         }
-
-        /* if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_slider');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        } */
 
         if (data.oid) {
             // subscribe on updates of value
@@ -855,10 +823,19 @@ vis.binds["vis-material-advanced"] = {
         }
         setPositionSingle($('#' + widgetID), data, $div);    
     },
-    tplMdListRadio: function (widgetID, view, data) {
-        const srcOff = 'widgets/vis-material-advanced/img/light_light_dim_00.png';
-        const srcOn = 'widgets/vis-material-advanced/img/light_light_dim_100.png';
+    tplMdListRadio: function (widgetID, view, data) {       
+        //const src = data.attr('card-icon');
+        const border = data.attr('border');
+
+        const colorize = data.attr('colorizeByValue');
+        const onColor = data.attr('lightOnColor');
+        
+        const original_class = data.attr('opacity-color');
+
         var $div = $('#' + widgetID);
+
+        setBorderAndOpacColor(border, $div, original_class);
+
 
         // if nothing found => wait
         if (!$div.length) {
@@ -868,10 +845,27 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var src = (state) ? srcOn : srcOff;
+          //  var src = (state) ? srcOn : srcOff;
             var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
-            //$div.find('.mdw-list-icon').find('img').attr('src', data.attr('oid'));
+          //  $div.find('.vma-picture').find('img').attr('src', src);
+           
+            if (data.attr('readOnly')) {
+                if (state) {
+                    $div.find('.vma_value').html("on");
+                } else {
+                    $div.find('.vma_value').html("off");
+                }
+            }
+            if (colorize) {
+                if (state) {
+                    $div.find('.vma_overlay').css('background-color', onColor);
+                }
+                else
+                {
+                    $div.find('.vma_overlay').css('background-color', original_class);
+                }
+            }
         }
 
         if (!vis.editMode) {
@@ -891,6 +885,7 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
+        setPositionSingle($('#' + widgetID), data, $div);        
     },
     tplMdListOpenClose: function (widgetID, view, data) {
         const srcClosed = data.attr('card-icon-closed');
