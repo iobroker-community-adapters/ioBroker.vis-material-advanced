@@ -5,6 +5,7 @@
     --value-text-size: x-small; */
     --title-width:30%;
 }
+
 .vma_outer_div {
     width: 350px;
     /* min-width: 275px; */
@@ -49,6 +50,7 @@
     width: 100%;
     height: 40%;
     min-height: 19px;
+    font-size: small;
     /* font-size: var(--subtitle-text-size); */
     /* border: 1px solid red; */
 }

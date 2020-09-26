@@ -1,7 +1,7 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: "0.8.1"
+    version: \"0.8.1"
 
     Copyright 2020 EdgarM73 edgar.miller@gmail.com
 */
@@ -21,6 +21,7 @@ if (vis.editMode) {
         }
     });
 }
+
 
 // add translations for edit mode
 $.extend(
@@ -148,7 +149,20 @@ $.extend(
         "es": "Texto alineado",
         "pl": "Wyrównaj tekst",
         "zh-cn": "文字对齐"
+      },
+      "BoxStyle": {
+          "en": "Design of widget",
+          "de": "Widget Design",
+          "ru": "Выровнять текст",
+        "pt": "Alinhamento de texto",
+        "nl": "Tekst uitlijnen",
+        "fr": "Aligner le texte",
+        "it": "Allineamento del testo",
+        "es": "Texto alineado",
+        "pl": "Wyrównaj tekst",
+        "zh-cn": "文字对齐"
       }
+
 }
 );
 
@@ -1132,15 +1146,87 @@ vis.binds["vis-material-advanced"] = {
         }
         
         
+        
         setPosition($('#' + widgetID), data, $div);
 
        
         console.log('');
+    },
+    tplMdListDiv: function (widgetID, view, data) {
+        const srcOff = data.attr('card-icon-closed');
+        const srcOn = data.attr('card-icon-open');        
+        const colorize = data.attr('colorizeByValue');
+        const opacity = data.attr('opacity-color'); 
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListDiv(widgetID, view, data);
+            }, 100);
+        }
+
+        $div.find('.vma_overlay').css('background-color', opacity);
+       // $(' script ').find('tplMaListDiv').attr('data-vis-attrs11','susi/text;');
+        function update(state) {
+            // var src = (state) ? srcOn : srcOff;
+            // var $tmp = $('#' + widgetID + '_checkbox');
+            // $tmp.prop('checked', state);
+            // $div.find('.vma_picture').find('img').attr('src', src);
+            $div.find('.vma_value').html(state+ ' %');
+
+            // if (colorize) {
+            //     if (state <= valLow) {
+            //         $div.find('.overlay').css('background-color', colLow);
+            //     } else if (state >= valHigh) {
+            //         $div.find('.overlay').css('background-color', colHigh);
+            //     }
+            //     else {
+            //         $div.find('.overlay').css('background-color', original_class);
+            //     }
+            // }
+            // else {
+            //     $div.find('.vma_overlay').css('background-color', opacity);
+            // }
+        }
+
+        
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+            $div.click(function() {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'),'sieben');
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        
+        }
+        var $this = setPositionSingle($('#' + widgetID), data, $div);
+
+        
+       
+
     }
+    
+
 
 };
 
 vis.binds["vis-material-advanced"].showVersion();
+
+
 
 function grayOutWhenInactive(data, $div) {
     var curTime = new Date().getTime();
@@ -1246,3 +1332,14 @@ function setPosition($this, data, $div) {
     setRadius(data,$div);
     return true;
 }
+
+// function genTitleContainer($title,$subtitle,$text_color,$title_size,$subtitle_size)
+// {
+//     let divList = [];
+//     divList.push =  '<div class="vma_title_subtitle_container" style="color:'+ $text_color +'; "></div>';
+//     divList.push = '<div  class="vma_title" style="font-size: '+$title_size +';">';
+//     divList.push = $title;
+//     divList.push = '</div><div  class="vma_subtitle" style=" color: '+$text_color+';font-size: '+$subtitle_size+' ">';
+//     divList.push = $subtitle +'</div></div>';
+//     return {widget: divList.join('')}
+// }

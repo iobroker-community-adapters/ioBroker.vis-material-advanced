@@ -59,12 +59,15 @@ not yet final:
     following options are available in most of the widgets:
     
     - text-color
-    - cord-icon ( does not yet make sense everywhere, e.g. dimmer )
+    - card-icon ( does not yet make sense everywhere, e.g. dimmer )
     - opacity color ( the standard opacity color )
     - colorizeByValue ( depending on some values the opacity color can be changed e.g. if it is too hot make it red, to cold blue )
-    - below,above, min, max ( the values for colorieByValue )
+    - below,above, min, max ( the values for colorizeByValue )
     - color-low/high,medium... ( the color to use if border is raised)
     - read-only ( some widgets can be set to read only mode for display only)
+    - border-radius to enable and change the round corner
+    - value-align Align the Value field left,center or right
+    - value-vetical Align the Value field top,botton or middle
 
 
 ### Getting started
@@ -82,6 +85,12 @@ thanks to @sigi234
     Placeholder
     ### __WORK IN PROGRESS__
 -->
+
+### __WORK IN PROGRESS__
+* refactoring js
+* refactoring html
+* added possibility to change Title and Subtitle size
+* minor bugfixes
 
 ### 0.8.2 (2020-09-14)
 * width of title can be changed now overall. add $("html").attr("style","--title-width:20%");  into global javascript. Standard now at 30%
