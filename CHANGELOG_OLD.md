@@ -1,4 +1,11 @@
 
+## 0.7.0-beta.0 (2020-09-11)
+* bugfix new widgets
+* All widgets moved to new CSS Style
+* rounded widget possible
+* should not interfere with other Adapters anymore
+  
+
 ## 0.6.3 (2020-09-08)
 * bugfix valve widget
 

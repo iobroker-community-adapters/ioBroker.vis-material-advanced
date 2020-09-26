@@ -86,7 +86,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.3 (2020-09-26)
 * refactoring js
 * refactoring html
 * added possibility to change Title and Subtitle size
@@ -109,13 +109,6 @@ s
 ### 0.8.0-0 (2020-09-11)
 * remove test widgets
 * release 
-
-### 0.7.0-beta.0 (2020-09-11)
-* bugfix new widgets
-* All widgets moved to new CSS Style
-* rounded widget possible
-* should not interfere with other Adapters anymore
-  
 
 ## License
 MIT License
