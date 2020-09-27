@@ -279,6 +279,52 @@ vis.binds["vis-material-advanced"] = {
         setPosition($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
+    tplMdListThermostat: function (widgetID, view, data,type1) {
+        const icon = data.attr('cardIcon');
+       
+        var $div = $('#' + widgetID);
+
+        const original_class = data.attr('opacityColor');
+        const border = data.attr('border');
+
+        const valtype1 = getPostFix(type1);
+       
+
+
+        setBorderAndOpacColor(border, $div, original_class);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListThermostat(widgetID, view, data,type1);
+            }, 100);
+        }
+
+        function update(state) { 
+            $div.find('.vma_picture').find('img').attr('src', icon);
+           
+            if (data.attr('readOnly')) {
+
+                $div.find('.vma_value').html(state + valtype1);              
+
+            }
+        }
+
+ 
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        
+        
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
+    },
     tplMdListLight: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconOff');
         const srcOn = data.attr('cardIconOn');
@@ -1357,6 +1403,10 @@ function getPostFix(val_type) {
         }
         case 'pressure': {
             type = ' hPa';
+            break;
+        }
+        case 'valve': {
+            type = ' %';
             break;
         }
         default: {

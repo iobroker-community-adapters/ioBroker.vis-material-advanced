@@ -86,6 +86,9 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
     * 
 -->
+### __WORK IN PROGRESS__
+* added new widget thermostat, first try
+
 
 ### 0.8.6 (2020-09-27)
 * All properties are now without - sign

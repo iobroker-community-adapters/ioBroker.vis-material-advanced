@@ -28,6 +28,7 @@
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListLightKelvin/listLightKelvin.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListWindowShutter/listWindowShutter.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListVolume/listVolume.js></script>
+<script type=text/javascript    src=widgets/vis-material-advanced/js/ListThermostat/listThermostat.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListBoolean/listBoolean.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListNumber/listNumber.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListText/listText.js></script>
@@ -520,6 +521,49 @@
         </div>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListLightKelvin(this.data.wid, this.view, this.data,'pressure'); %>
+</script>
+
+
+
+<script 
+    id="tplMaListThermostat" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListThermostat" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/sani_heating_temp.svg " style="width: 100px; height: 100px; "></div></div>'      
+    data-vis-attrs="oid/id,level.temperature;title/text;subtitle/text;showTitle[checked]/checkbox;"
+    data-vis-attrs0="group.BoxStyle;"
+    data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
+    data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
+    data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
+    data-vis-attrs4="valueAlign[right]/select,left,center,right;valueVertical[center]/select,top,center,bottom;"
+    data-vis-attrs5="opacityColor[white]/color;min[14]/number;max[30]/number;"
+    data-vis-attrs6="borderRadius[10]/number,1,20,1;border/checkbox;readOnly/checkbox;"
+    data-vis-attrs7="group.icons;"
+    data-vis-attrs8="cardIcon[widgets/vis-material-advanced/img/sani_heating_temp.svg]/image;"   
+    data-vis-attrs9="showIcon[checked]/checkbox;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"  
+    data-vis-name="ListThermostat"    >  
+    <div  id="<%= this.data.attr('wid') %>"  class="vis-widget vma_outer_div  <%=this.data.attr( 'class') %> ">
+        <%   let init = genListThermostat(this.data);  %>
+        <%== init.widget %>    
+        <div  class="vma_value_container ">            
+            <div class="vma_value vma-slider"   
+                style="color:    <%= this.data.attr('TextColor') %>; text-align:<%= this.data.attr('valueAlign') %>; vertical-align:<%= this.data.attr('valueVertical') %>;" >
+                <% if(!this.data.readOnly) { %>
+                    <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" 
+                        data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  ,
+                        data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min),max:parseFloat(data.max),step:0.5,inverted:false}) %> />
+                    </div><label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                <% } %>
+            </div>                   
+        </div>
+        <div class="vma_overlay ms-button-op vis-widget-body" ></div>
+    </div>
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListThermostat(this.data.wid,  this.view, this.data,'temp');  %>
 </script>
 
 <script 
