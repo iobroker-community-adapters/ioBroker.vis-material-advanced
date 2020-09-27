@@ -1270,20 +1270,60 @@ vis.binds["vis-material-advanced"].showVersion();
 
 
 function hideIconInWidget(data, $div) {
-    if (!data.attr('showIcon')) {
-        $div.find('.vma_picture').attr('hidden', true);
-        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container');
-        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container_without_icon');
-        $div.find('.vma_value_id').removeClass('vma_value_container');
-        $div.find('.vma_value_id').addClass('vma_value_container_without_icon');
 
-    }
-    else if (data.attr('showIcon')) {
+    if ( data.attr('showIcon')  && data.attr('showTitle') ) {
+        // show Icon AND show Title Container
         $div.find('.vma_picture').removeAttr('hidden');
+        $div.find('.vma_title_subtitle_id').removeAttr('hidden');
+       
         $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container');
         $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
-        $div.find('.vma_value_id').addClass('vma_value_container');
+       
         $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
+        $div.find('.vma_value_id').addClass('vma_value_container');
+    }
+    else if ( !data.attr('showIcon') && data.attr('showTitle') ) {
+        // hide Icon AND show Title Container
+        $div.find('.vma_picture').attr('hidden', true);
+        $div.find('.vma_title_subtitle_id').removeAttr('hidden');
+        
+        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container');
+        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container_without_icon');
+                
+        $div.find('.vma_value_id').addClass('vma_value_container_without_icon');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container');
+    }
+    else if (data.attr('showIcon') && ! data.attr('showTitle') ) {
+        // show Icon AND hide Title Container
+        $div.find('.vma_picture').removeAttr('hidden');
+        $div.find('.vma_title_subtitle_id').attr('hidden',true);
+        
+        $div.find('.vma_title_subtitle_id').addClass('vma_hidden');
+        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
+
+        
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
+        $div.find('.vma_value_id').addClass('vma_value_container_without_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container');
+    }
+    else if ( ! data.attr('showIcon') && ! data.attr('showTitle') ) {
+        // hide Icon AND hide Title Container
+        $div.find('.vma_picture').attr('hidden',true);
+        $div.find('.vma_title_subtitle_id').attr('hidden',true);
+        
+        $div.find('.vma_title_subtitle_id').addClass('vma_hidden');
+        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
+
+        
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
+        $div.find('.vma_value_id').addClass('vma_value_container_without_icon_and_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
+        $div.find('.vma_value_id').removeClass('vma_value_container');
     }
 }
 

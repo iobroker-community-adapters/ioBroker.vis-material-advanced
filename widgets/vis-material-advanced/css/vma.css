@@ -58,6 +58,7 @@
 .vma_hidden {
 visibility: hidden;
 }
+
 .vma_title_subtitle_container {
     width: var(--title-width);
     height: calc(100% - 4px);
@@ -88,6 +89,26 @@ visibility: hidden;
 .vma_value_container_without_icon {
     float: left;
     width: calc(100% - 50% - 16px - 10px - 2px);
+    height: calc(100% - 2px);
+    min-height: 48px;
+    /* min-width: 74px; */
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.vma_value_container_without_icon_and_title {
+    float: left;
+    width: calc(100% - 16px - 10px - 2px);
+    height: calc(100% - 2px);
+    min-height: 48px;
+    /* min-width: 74px; */
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.vma_value_container_without_title {
+    float: left;
+    width: calc(100% - 48px - 16px - 10px - 2px);
     height: calc(100% - 2px);
     min-height: 48px;
     /* min-width: 74px; */
