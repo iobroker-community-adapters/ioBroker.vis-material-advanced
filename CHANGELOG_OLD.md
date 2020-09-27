@@ -1,4 +1,9 @@
 
+## 0.8.0 (2020-09-14)
+* bugfix for smaller widgets
+* new style for switch item
+* removed text-align for slider
+
 ## 0.8.0-0 (2020-09-11)
 * remove test widgets
 * release 

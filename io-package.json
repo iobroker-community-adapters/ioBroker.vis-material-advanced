@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.4",
+        "version": "0.8.5",
         "news": {
+            "0.8.5": {
+                "en": "Also Title can be hidden now",
+                "de": "Auch Titel kann jetzt ausgeblendet werden",
+                "ru": "Также заголовок теперь можно скрыть",
+                "pt": "Também o título pode ser escondido agora",
+                "nl": "Ook de titel kan nu worden verborgen",
+                "fr": "Le titre peut également être masqué maintenant",
+                "it": "Anche il titolo può essere nascosto ora",
+                "es": "También el título se puede ocultar ahora",
+                "pl": "Również tytuł można teraz ukryć",
+                "zh-cn": "另外标题现在可以隐藏"
+            },
             "0.8.4": {
                 "en": "added possibility to hide the icon in each widget\nminor bugfixes\nrefactoring again",
                 "de": "Möglichkeit hinzugefügt, das Symbol in jedem Widget auszublenden\nkleinere Bugfixes\nwieder umgestalten",
@@ -230,18 +242,6 @@
                 "es": "agregado nuevo widget booleano",
                 "pl": "dodano nowy widget Boolean",
                 "zh-cn": "添加了新的小部件布尔"
-            },
-            "0.4.2": {
-                "en": "new version for latest repo",
-                "de": "neue Version für das latest Repo",
-                "ru": "новая версия для последнего репо",
-                "pt": "nova versão para o repo mais recente",
-                "nl": "nieuwe versie voor de nieuwste opslagplaats",
-                "fr": "nouvelle version pour le dernier dépôt",
-                "it": "nuova versione per l'ultimo repo",
-                "es": "nueva versión para el último repositorio",
-                "pl": "nowa wersja najnowszego repozytorium",
-                "zh-cn": "最新版本的最新版本"
             }
         },
         "title": "Material Advanced",

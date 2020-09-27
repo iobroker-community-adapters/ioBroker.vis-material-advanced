@@ -86,7 +86,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
     * 
 -->
-### __WORK IN PROGRESS__
+### 0.8.5 (2020-09-27)
 * Also Title can be hidden now
  
 ### 0.8.4 (2020-09-27)
@@ -110,11 +110,6 @@ thanks to @sigi234
 * new version number
 
 s
-### 0.8.0 (2020-09-14)
-* bugfix for smaller widgets
-* new style for switch item
-* removed text-align for slider
-
 ## License
 MIT License
 
