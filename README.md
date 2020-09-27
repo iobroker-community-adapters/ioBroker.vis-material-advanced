@@ -86,7 +86,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.4 (2020-09-27)
 * added possibility to hide the icon in each widget
 * minor bugfixes
 * refactoring again
@@ -111,10 +111,6 @@ s
 * bugfix for smaller widgets
 * new style for switch item
 * removed text-align for slider
-
-### 0.8.0-0 (2020-09-11)
-* remove test widgets
-* release 
 
 ## License
 MIT License

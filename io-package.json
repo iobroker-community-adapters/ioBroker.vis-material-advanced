@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.3",
+        "version": "0.8.4",
         "news": {
+            "0.8.4": {
+                "en": "added possibility to hide the icon in each widget\nminor bugfixes\nrefactoring again",
+                "de": "Möglichkeit hinzugefügt, das Symbol in jedem Widget auszublenden\nkleinere Bugfixes\nwieder umgestalten",
+                "ru": "добавлена возможность скрыть иконку в каждом виджете\nустранение небольших багов\nснова рефакторинг",
+                "pt": "possibilidade adicional de ocultar o ícone em cada widget\npequenas correções de bugs\nrefatorando novamente",
+                "nl": "mogelijkheid toegevoegd om het pictogram in elke widget te verbergen\nkleine bugfixes\nrefactoring opnieuw",
+                "fr": "ajout de la possibilité de masquer l'icône dans chaque widget\ncorrections de bugs mineurs\nrefactoring à nouveau",
+                "it": "aggiunta la possibilità di nascondere l'icona in ogni widget\ncorrezioni di bug minori\nrefactoring di nuovo",
+                "es": "posibilidad añadida de ocultar el icono en cada widget\ncorrecciones de errores menores\nrefactorizando de nuevo",
+                "pl": "dodano możliwość ukrycia ikony w każdym widżecie\nnaprawy niewielkich błędów\nrefaktoryzacja ponownie",
+                "zh-cn": "增加了隐藏每个小部件中图标的可能性\n修正了一些小错误\n再次重构"
+            },
             "0.8.3": {
                 "en": "refactoring js\nrefactoring html\nadded possibility to change Title and Subtitle size\nminor bugfixes",
                 "de": "Refactoring js\nHTML umgestalten\nMöglichkeit hinzugefügt, Titel- und Untertitelgröße zu ändern\nkleinere Bugfixes",
@@ -230,18 +242,6 @@
                 "es": "nueva versión para el último repositorio",
                 "pl": "nowa wersja najnowszego repozytorium",
                 "zh-cn": "最新版本的最新版本"
-            },
-            "0.3.5": {
-                "en": "testing customizable opacity color",
-                "de": "Testen der anpassbaren Deckkraftfarbe",
-                "ru": "тестирование настраиваемого цвета непрозрачности",
-                "pt": "testando cor de opacidade personalizável",
-                "nl": "aanpasbare dekkingskleur testen",
-                "fr": "test de la couleur d'opacité personnalisable",
-                "it": "testare il colore dell'opacità personalizzabile",
-                "es": "prueba de color de opacidad personalizable",
-                "pl": "testowanie dostosowywanego koloru krycia",
-                "zh-cn": "测试可定制的不透明颜色"
             }
         },
         "title": "Material Advanced",
