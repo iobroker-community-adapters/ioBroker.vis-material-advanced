@@ -1,4 +1,10 @@
 
+## 0.8.3 (2020-09-26)
+* refactoring js
+* refactoring html
+* added possibility to change Title and Subtitle size
+* minor bugfixes
+
 ## 0.8.2 (2020-09-14)
 * width of title can be changed now overall. add $("html").attr("style","--title-width:20%");  into global javascript. Standard now at 30%
 * text-size removed from css. now you can set it again from outside

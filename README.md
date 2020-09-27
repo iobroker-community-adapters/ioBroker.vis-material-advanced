@@ -87,7 +87,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.8 (2020-09-27)
 * added Unit to ListNumber
 
 
@@ -108,12 +108,6 @@ thanks to @sigi234
 * minor bugfixes
 * refactoring again
 
-
-### 0.8.3 (2020-09-26)
-* refactoring js
-* refactoring html
-* added possibility to change Title and Subtitle size
-* minor bugfixes
 
 ## License
 MIT License

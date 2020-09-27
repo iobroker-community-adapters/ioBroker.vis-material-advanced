@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.7",
+        "version": "0.8.8",
         "news": {
+            "0.8.8": {
+                "en": "added Unit to ListNumber",
+                "de": "Unit zu ListNumber hinzugefügt",
+                "ru": "добавлен объект в ListNumber",
+                "pt": "unidade adicionada a ListNumber",
+                "nl": "Unit toegevoegd aan ListNumber",
+                "fr": "a ajouté Unit à ListNumber",
+                "it": "aggiunta di unità a ListNumber",
+                "es": "Unidad agregada a ListNumber",
+                "pl": "dodano Unit do ListNumber",
+                "zh-cn": "将单位添加到ListNumber"
+            },
             "0.8.7": {
                 "en": "added new widget thermostat, first try",
                 "de": "neuer Widget-Thermostat hinzugefügt, erster Versuch",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores: todos los widgets tienen ahora el color de fondo predeterminado # 121212, pero se pueden cambiar en la configuración. nuevo número de widgets y texto",
                 "pl": "poprawka: wszystkie widżety mają teraz domyślny kolor tła # 121212, ale można je zmienić w ustawieniach. nowy numer i tekst widżetów",
                 "zh-cn": "错误修正：所有小部件现在都具有默认的背景色＃121212，但可以在设置中进行更改。新的小部件编号和文本"
-            },
-            "0.5.0": {
-                "en": "reorganized code. added flexible opacity to all widgets. added some colorizeOptions to some widgets",
-                "de": "reorganisierter Code. allen Widgets wurde eine flexible Deckkraft hinzugefügt. Einige Widgets wurden mit colorizeOptions versehen",
-                "ru": "реорганизованный код. добавлена гибкая непрозрачность для всех виджетов. добавлены опции colorizeOptions для некоторых виджетов",
-                "pt": "código reorganizado. adicionou opacidade flexível a todos os widgets. adicionou algumas opções de colorize a alguns widgets",
-                "nl": "gereorganiseerde code. flexibele dekking toegevoegd aan alle widgets. enkele colorizeOptions toegevoegd aan sommige widgets",
-                "fr": "code réorganisé. ajout d'une opacité flexible à tous les widgets. ajouté des options colorize à certains widgets",
-                "it": "codice riorganizzato. aggiunta un'opacità flessibile a tutti i widget. ha aggiunto alcune colorizeOptions ad alcuni widget",
-                "es": "código reorganizado. agregó opacidad flexible a todos los widgets. agregó algunas opciones de colorizeOptions a algunos widgets",
-                "pl": "zreorganizowany kod. dodano elastyczne krycie do wszystkich widżetów. dodano kilka opcji colorizeOptions do niektórych widżetów",
-                "zh-cn": "重组代码。为所有小部件添加了灵活的不透明度。在一些小部件中添加了一些colorizeOptions"
             }
         },
         "title": "Material Advanced",
