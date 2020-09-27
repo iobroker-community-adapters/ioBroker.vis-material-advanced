@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.6",
+        "version": "0.8.7",
         "news": {
+            "0.8.7": {
+                "en": "added new widget thermostat, first try",
+                "de": "neuer Widget-Thermostat hinzugefügt, erster Versuch",
+                "ru": "добавлен новый виджет термостата, сначала попробуйте",
+                "pt": "adicionado novo termostato de widget, primeira tentativa",
+                "nl": "nieuwe widget-thermostaat toegevoegd, probeer het eerst",
+                "fr": "ajout d'un nouveau thermostat de widget, premier essai",
+                "it": "aggiunto un nuovo termostato widget, primo tentativo",
+                "es": "nuevo termostato de widget agregado, primer intento",
+                "pl": "dodano nowy termostat widżetu, najpierw spróbuj",
+                "zh-cn": "添加了新的小部件恒温器，请先尝试"
+            },
             "0.8.6": {
                 "en": "All properties are now without - sign\nbugfix background-color issue, if corners were round there was different color beneath",
                 "de": "Alle Eigenschaften sind jetzt ohne Vorzeichen\nBugfix Hintergrundfarbe Problem, wenn Ecken rund waren, gab es eine andere Farbe darunter",
@@ -230,18 +242,6 @@
                 "es": "código reorganizado. agregó opacidad flexible a todos los widgets. agregó algunas opciones de colorizeOptions a algunos widgets",
                 "pl": "zreorganizowany kod. dodano elastyczne krycie do wszystkich widżetów. dodano kilka opcji colorizeOptions do niektórych widżetów",
                 "zh-cn": "重组代码。为所有小部件添加了灵活的不透明度。在一些小部件中添加了一些colorizeOptions"
-            },
-            "0.4.8": {
-                "en": "bugfix for icons, added new widget valve",
-                "de": "Bugfix für Symbole, neues Widget-Ventil hinzugefügt",
-                "ru": "исправление ошибок для иконок, добавлен новый клапан виджета",
-                "pt": "correção de bug para ícones, adição de nova válvula de widget",
-                "nl": "bugfix voor pictogrammen, nieuwe widgetklep toegevoegd",
-                "fr": "correction de bogue pour les icônes, ajout d'une nouvelle valve de widget",
-                "it": "bugfix per icone, aggiunta nuova valvola widget",
-                "es": "corrección de errores para iconos, nueva válvula de widget agregada",
-                "pl": "naprawiono błąd ikon, dodano nowy zawór widżetu",
-                "zh-cn": "图标的错误修正，添加了新的小部件阀门"
             }
         },
         "title": "Material Advanced",
