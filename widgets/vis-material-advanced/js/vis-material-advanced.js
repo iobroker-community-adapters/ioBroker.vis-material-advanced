@@ -755,7 +755,14 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            $div.find('.vma_value').html(state);
+            if ( data.unit != "" )
+            {
+                var unit = getPostFix(data.unit.trim());
+                $div.find('.vma_value').html(state+ ' '+ unit);
+            }
+            else {
+                $div.find('.vma_value').html(state);
+            }
 
 
             if (colorize) {
@@ -1393,11 +1400,18 @@ function setBorderAndOpacColor(border, $div, original_class) {
 function getPostFix(val_type) {
     var type;
     switch (val_type) {
-        case 'temp': {
+        case 'temp': 
+        case 'Celsius': {
             type = ' °C';
             break;
         }
-        case 'humid': {
+        case 'Fahrenheit': {
+            type = ' °F';
+            break;
+        }
+        case 'humid': 
+        case 'valve': 
+        case 'percent': {
             type = ' %';
             break;
         }
@@ -1405,12 +1419,8 @@ function getPostFix(val_type) {
             type = ' hPa';
             break;
         }
-        case 'valve': {
-            type = ' %';
-            break;
-        }
         default: {
-            type = '';
+            type = val_type;
         }
     }
     return type;

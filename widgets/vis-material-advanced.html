@@ -696,15 +696,15 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListNumber" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/123.png " style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;unit[]/select,,percent,Celsius,Fahrenheit,kmh,mph;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
     data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
     data-vis-attrs4="valueAlign[right]/select,left,center,right;valueVertical[center]/select,top,center,bottom;"
     data-vis-attrs5="opacityColor[white]/color;"
-    data-vis-attrs6="low/number;high/number;" 
-    data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;"
+    data-vis-attrs6="borderRadius[10]/number,0,20,1;border/checkbox;"
+    data-vis-attrs7="low/number;high/number;" 
     data-vis-attrs8="colorizeByValue/checkbox;color-low/color;color-high/color;"
     data-vis-attrs9="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
@@ -712,7 +712,7 @@
     data-vis-update-style="true"
     data-vis-name="ListNumber"    >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >       
-            <%   let init = genListNumber(this.data);   %>
+            <%   let init = genListNumber(this.data);      %>
             <%== init.widget %>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListNumber(this.data.wid, this.view, this.data);  %>
