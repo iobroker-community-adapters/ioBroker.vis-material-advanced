@@ -83,14 +83,12 @@ thanks to @sigi234
 ## Changelog
 <!--
     Placeholder
-### __WORK IN PROGRESS__
+    ### __WORK IN PROGRESS__
 * 
 -->
 
 ### __WORK IN PROGRESS__
 * added Unit to ListNumber
-
-
 
 
 ### 0.8.7 (2020-09-27)
