@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.5",
+        "version": "0.8.6",
         "news": {
+            "0.8.6": {
+                "en": "All properties are now without - sign\nbugfix background-color issue, if corners were round there was different color beneath",
+                "de": "Alle Eigenschaften sind jetzt ohne Vorzeichen\nBugfix Hintergrundfarbe Problem, wenn Ecken rund waren, gab es eine andere Farbe darunter",
+                "ru": "Все объекты теперь без - подписать\nисправление проблемы с цветом фона, если углы были круглыми, под ними был другой цвет",
+                "pt": "Todas as propriedades agora estão sem - sinal\nbug corrigido problema de cor de fundo, se os cantos eram arredondados, havia uma cor diferente abaixo",
+                "nl": "Alle eigendommen zijn nu zonder - teken\nbugfix probleem met achtergrondkleur, als hoeken rond waren, was er een andere kleur onder",
+                "fr": "Toutes les propriétés sont désormais sans signe -\ncorrection d'un problème de couleur d'arrière-plan, si les coins étaient ronds, il y avait une couleur différente en dessous",
+                "it": "Tutte le proprietà sono ora senza segno\nbugfix problema di colore di sfondo, se gli angoli erano rotondi c'era un colore diverso sotto",
+                "es": "Todas las propiedades están ahora sin - signo\ncorrección de errores problema de color de fondo, si las esquinas eran redondas, había un color diferente debajo",
+                "pl": "Wszystkie nieruchomości są teraz bez znaku -\nnaprawiono błąd koloru tła, jeśli rogi były zaokrąglone, pod spodem był inny kolor",
+                "zh-cn": "现在所有属性均不带-号\n错误修正背景颜色问题，如果角落是圆的，下面有不同的颜色"
+            },
             "0.8.5": {
                 "en": "Also Title can be hidden now",
                 "de": "Auch Titel kann jetzt ausgeblendet werden",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores para iconos, nueva válvula de widget agregada",
                 "pl": "naprawiono błąd ikon, dodano nowy zawór widżetu",
                 "zh-cn": "图标的错误修正，添加了新的小部件阀门"
-            },
-            "0.4.3": {
-                "en": "added new widget Boolean",
-                "de": "neues Widget Boolean hinzugefügt",
-                "ru": "добавлен новый виджет Boolean",
-                "pt": "adicionado novo widget booleano",
-                "nl": "nieuwe widget Boolean toegevoegd",
-                "fr": "ajout d'un nouveau widget booléen",
-                "it": "aggiunto nuovo widget Boolean",
-                "es": "agregado nuevo widget booleano",
-                "pl": "dodano nowy widget Boolean",
-                "zh-cn": "添加了新的小部件布尔"
             }
         },
         "title": "Material Advanced",

@@ -1,4 +1,8 @@
 
+## 0.8.1 (2020-09-14)
+* new version number
+
+s
 ## 0.8.0 (2020-09-14)
 * bugfix for smaller widgets
 * new style for switch item

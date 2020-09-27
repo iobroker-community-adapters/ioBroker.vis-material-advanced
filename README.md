@@ -87,7 +87,7 @@ thanks to @sigi234
     * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.6 (2020-09-27)
 * All properties are now without - sign
 * bugfix background-color issue, if corners were round there was different color beneath
 
@@ -112,10 +112,6 @@ thanks to @sigi234
 * text-size removed from css. now you can set it again from outside
 
 
-### 0.8.1 (2020-09-14)
-* new version number
-
-s
 ## License
 MIT License
 
