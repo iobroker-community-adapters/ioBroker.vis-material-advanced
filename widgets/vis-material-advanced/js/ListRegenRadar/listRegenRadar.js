@@ -1,7 +1,7 @@
 function genListRegenRadar(data) {
     let divList = [];
     startSkeleton(divList,data);
-    //genIcon(divList,data.attr('card-icon'));
+    //genIcon(divList,data.attr('cardIcon'));
     //genTitleContainer(divList,data);
     genSingleImageValue(divList,data);
     endSkeleton(divList);

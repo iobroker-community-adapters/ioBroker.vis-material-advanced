@@ -1,7 +1,7 @@
 {
     "BoxStyle": "Diseño de widget",
     "Instance": "Instancia",
-    "card-icon-open": "Abrir icono",
+    "cardIconOpen": "Abrir icono",
     "extraAttr": "extraAttr",
     "group_extraMyset": "extraMyset",
     "htmlText": "htmlText",

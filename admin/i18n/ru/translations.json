@@ -1,7 +1,7 @@
 {
     "BoxStyle": "Дизайн виджета",
     "Instance": "Инстанция",
-    "card-icon-open": "Открыть значок",
+    "cardIconOpen": "Открыть значок",
     "extraAttr": "extraAttr",
     "group_extraMyset": "extraMyset",
     "htmlText": "htmlText",

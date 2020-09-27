@@ -1,7 +1,7 @@
 {
     "BoxStyle": "小部件设计",
     "Instance": "例",
-    "card-icon-open": "开启图示",
+    "cardIconOpen": "开启图示",
     "extraAttr": "extraAttr",
     "group_extraMyset": "extraMyset",
     "htmlText": "htmlText",

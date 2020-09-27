@@ -97,7 +97,7 @@ $.extend(
         "de": "Transparenz Grün",
         "ru": "na"
     },
-    "opacity-color": {
+    "opacityColor": {
         "en": "opacity color",
         "de": "Transparenz Farbe",
         "ru": "na"
@@ -138,7 +138,7 @@ $.extend(
         "pl": "powyżej",
         "zh-cn": "以上"
     },
-    "value-align": {
+    "valueAlign": {
         "en": "Text align",
         "de": "Textausrichtung",
         "ru": "Выровнять текст",
@@ -187,7 +187,7 @@ vis.binds["vis-material-advanced"] = {
         const colorLow = data.attr('color-low');
         const colorHigh = data.attr('color-high');
 
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
         var type;
 
         type = getPostFix(val_type);
@@ -238,11 +238,11 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdListTempHumid: function (widgetID, view, data,type1,type2) {
-        const icon = data.attr('card-icon');
+        const icon = data.attr('cardIcon');
        
         var $div = $('#' + widgetID);
 
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
         const border = data.attr('border');
 
         const valtype1 = getPostFix(type1);
@@ -280,14 +280,14 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdListLight: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-off');
-        const srcOn = data.attr('card-icon-on');
+        const srcOff = data.attr('cardIconOff');
+        const srcOn = data.attr('cardIconOn');
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
         
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
@@ -351,7 +351,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
         
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
@@ -389,7 +389,7 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListWindowShutter: function (widgetID, view, data) {
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -440,12 +440,12 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);   
     },
     tplMdListLightKelvin: function (widgetID, view, data) {
-        const srcCold = data.attr('card-icon-coldwhite');
-        const srcMedium = data.attr('card-icon-medium');
-        const srcWarm = data.attr('card-icon-warmwhite');
+        const srcCold = data.attr('cardIcon-coldwhite');
+        const srcMedium = data.attr('cardIcon-medium');
+        const srcWarm = data.attr('cardIcon-warmwhite');
         
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -494,12 +494,12 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);    
     },
     tplMdListVolume: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-low');
-        const srcMedium = data.attr('card-icon-medium');
-        const srcOn = data.attr('card-icon-high');
+        const srcOff = data.attr('cardIcon-low');
+        const srcMedium = data.attr('cardIcon-medium');
+        const srcOn = data.attr('cardIcon-high');
        
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -541,8 +541,8 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);  
     },
     tplMdListGarage: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-closed');
-        const srcOn = data.attr('card-icon-open');
+        const srcOff = data.attr('cardIconClosed');
+        const srcOn = data.attr('cardIconOpen');
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -582,7 +582,7 @@ vis.binds["vis-material-advanced"] = {
     tplMdListPressure: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
         const low = data.attr('below');
         const high = data.attr('above');
 
@@ -635,8 +635,8 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdListBoolean: function (widgetID, view, data) {
-        const srcTrue = data.attr('card-icon-true');
-        const srcFalse = data.attr('card-icon-false');
+        const srcTrue = data.attr('cardIconTrue');
+        const srcFalse = data.attr('cardIconFalse');
         const valTrue = data.attr('true');
         const valFalse = data.attr('false');
         const colorize = data.attr('colorizeByValue');
@@ -644,7 +644,7 @@ vis.binds["vis-material-advanced"] = {
         const colFalse = data.attr('color-false');
       
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -695,7 +695,7 @@ vis.binds["vis-material-advanced"] = {
         const colHigh = data.attr('color-high');
        
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -746,7 +746,7 @@ vis.binds["vis-material-advanced"] = {
         const colStringFound = data.attr('stringFoundColor');
         
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -799,7 +799,7 @@ vis.binds["vis-material-advanced"] = {
         const colorHigh = data.attr('color-high');
       
         const border = data.attr('border');
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
@@ -853,13 +853,13 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);  
     },
     tplMdListRadio: function (widgetID, view, data) {       
-        //const src = data.attr('card-icon');
+        //const src = data.attr('cardIcon');
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
         
-        const original_class = data.attr('opacity-color');
+        const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
@@ -918,15 +918,15 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);     
     },
     tplMdListOpenClose: function (widgetID, view, data) {
-        const srcClosed = data.attr('card-icon-closed');
-        const srcOpen = data.attr('card-icon-open');  
+        const srcClosed = data.attr('cardIconClosed');
+        const srcOpen = data.attr('cardIconOpen');  
         const valOpen = _('open');
         const valClosed = _('closed');
         
         const border = data.attr('border');      
         
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacity-color'); 
+        const opacity = data.attr('opacityColor'); 
 
         var $div = $('#' + widgetID);
 
@@ -942,7 +942,7 @@ vis.binds["vis-material-advanced"] = {
         function update(state) {
             var value = (state) ? valOpen : valClosed;
             var src = (state) ? srcOpen : srcClosed;
-            var color= (state) ? data.attr('color-open') : opacity;
+            var color= (state) ? data.attr('colorOpen') : opacity;
                         
             $div.find('.vma_picture').find('img').attr('src', src);            
             $div.find('.vma_value').html(value);
@@ -996,7 +996,7 @@ vis.binds["vis-material-advanced"] = {
         
         const colorize = data.attr('colorizeByValue');
         const motionColor = data.attr('motionColor')
-        const opacity = data.attr('opacity-color'); 
+        const opacity = data.attr('opacityColor'); 
 
         var $div = $('#' + widgetID);
 
@@ -1012,7 +1012,7 @@ vis.binds["vis-material-advanced"] = {
         function update(state) {
             var value = (state) ? valMotion : valNoMotion;
             var src = (state) ? srcOpen : srcClosed;
-            var color= (state) ? data.attr('color-open') : opacity;
+            var color= (state) ? data.attr('colorOpen') : opacity;
                         
             $div.find('.vma_picture').find('img').attr('src', src);            
             $div.find('.vma_value').html(value);
@@ -1064,10 +1064,10 @@ vis.binds["vis-material-advanced"] = {
 
     },
     tplMdListNew: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-closed');
-        const srcOn = data.attr('card-icon-open');        
+        const srcOff = data.attr('cardIconClosed');
+        const srcOn = data.attr('cardIconOpen');        
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacity-color'); 
+        const opacity = data.attr('opacityColor'); 
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -1126,7 +1126,7 @@ vis.binds["vis-material-advanced"] = {
 
     },
     tplMdListNewDuo: function (widgetID, view, data) {
-        const icon = data.attr('card-icon');
+        const icon = data.attr('cardIcon');
        
         var $div = $('#' + widgetID);
 
@@ -1194,10 +1194,10 @@ vis.binds["vis-material-advanced"] = {
         }
     },
     tplMdListDiv: function (widgetID, view, data) {
-        const srcOff = data.attr('card-icon-closed');
-        const srcOn = data.attr('card-icon-open');        
+        const srcOff = data.attr('cardIconClosed');
+        const srcOn = data.attr('cardIconOpen');        
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacity-color'); 
+        const opacity = data.attr('opacityColor'); 
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -1367,7 +1367,7 @@ function getPostFix(val_type) {
 }
 
 function setRadius(data, $div) {
-    const radius = data.attr('border_radius');
+    const radius = data.attr('borderRadius');
     $div.find('.vma_overlay').css('border-radius', radius + "px");
     $div.find('.vma_outer_div').css('border-radius', radius + "px");
     $div.find('.vma_inner_container_div').css('border-radius', radius + "px");
@@ -1382,7 +1382,7 @@ function setPositionSingle($this, data, $div) {
     var top = 0;
 
     if (height > 42) {
-        switch (data.attr('value-vertical')) {
+        switch (data.attr('valueVertical')) {
             case 'top': {
                 top = 4;
                 break;
@@ -1412,7 +1412,7 @@ function setPosition($this, data, $div) {
     var top = 0;
 
     if (empty_space >= 0) {
-        switch (data.attr('value-vertical')) {
+        switch (data.attr('valueVertical')) {
             case 'top': {
                 top = 4;
                 break;

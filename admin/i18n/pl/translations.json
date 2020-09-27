@@ -1,7 +1,7 @@
 {
     "BoxStyle": "Projekt widżetu",
     "Instance": "Instancja",
-    "card-icon-open": "Otwórz ikonę",
+    "cardIconOpen": "Otwórz ikonę",
     "extraAttr": "extraAttr",
     "group_extraMyset": "extraMyset",
     "htmlText": "htmlText",

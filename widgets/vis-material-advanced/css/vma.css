@@ -25,7 +25,7 @@
     height: calc(100% - 2px);
     /* min-height: 50px;     */
     position: absolute;
-    background-color: #121212;    
+    /* background-color: #121212;     */
     border-radius: 8px;
     /* border: 1px solid white; */
 }

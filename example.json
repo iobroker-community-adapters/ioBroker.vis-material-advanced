@@ -1101,8 +1101,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/volume-high.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/volume-high.png",
+        "opacityColor": "blue",
         "Min": "0",
         "Max": "100",
         "signals-cond-0": "==",
@@ -1152,7 +1152,7 @@
         "subtitle": "Büro {alexa2.0.Echo-Devices.G090LF1182231CD6.Player.volume} %",
         "step": "10",
         "readOnly": false,
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -1187,8 +1187,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/volume-high.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/volume-high.png",
+        "opacityColor": "blue",
         "Min": "0",
         "Max": "100",
         "signals-cond-0": "==",
@@ -1237,7 +1237,7 @@
         "title": "Alexa Dot",
         "subtitle": "EZ {alexa2.0.Echo-Devices.G090U50784350DKU.Player.volume} %",
         "step": "10",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -1272,8 +1272,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/volume-high.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/volume-high.png",
+        "opacityColor": "blue",
         "Min": "0",
         "Max": "100",
         "signals-cond-0": "==",
@@ -1322,7 +1322,7 @@
         "title": "Alexa Dot",
         "subtitle": "Küche {alexa2.0.Echo-Devices.G090LF11804214T6.Player.volume} %",
         "step": "10",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -1357,8 +1357,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/volume-high.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/volume-high.png",
+        "opacityColor": "blue",
         "Min": "0",
         "Max": "100",
         "signals-cond-0": "==",
@@ -1407,7 +1407,7 @@
         "title": "Alexa Dot",
         "subtitle": "SZ {alexa2.0.Echo-Devices.G090LF09643501XG.Player.volume} %",
         "step": "10",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -1442,8 +1442,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/volume-high.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/volume-high.png",
+        "opacityColor": "blue",
         "Min": "0",
         "Max": "100",
         "signals-cond-0": "==",
@@ -1492,7 +1492,7 @@
         "title": "Show 5",
         "subtitle": "WZ {alexa2.0.Echo-Devices.G0913L0592570PHD.Player.volume} %",
         "step": "10",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -1527,8 +1527,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/pressure.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/pressure.png",
+        "opacityColor": "white",
         "colorizeByValue": true,
         "below": "920",
         "above": "1000",
@@ -1578,7 +1578,7 @@
         "title": "Outdoor",
         "subtitle": "Luftdruck",
         "opacity2": "#fa35fd",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -1898,8 +1898,8 @@
         "visibility-groups-action": "hide",
         "title": "test",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/garage.png",
-        "opacity-color": "opac-blue",
+        "cardIcon": "widgets/vis-material-advanced/img/garage.png",
+        "opacityColor": "opac-blue",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -1942,7 +1942,7 @@
         "lc-border-color": "",
         "lc-border-radius": 10,
         "lc-zindex": 0,
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -1978,8 +1978,8 @@
         "visibility-groups-action": "hide",
         "title": "test",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/garage.png",
-        "opacity-color": "opac-blue",
+        "cardIcon": "widgets/vis-material-advanced/img/garage.png",
+        "opacityColor": "opac-blue",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -2022,7 +2022,7 @@
         "lc-border-color": "",
         "lc-border-radius": 10,
         "lc-zindex": 0,
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -2420,8 +2420,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/temp_temperature.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/temp_temperature.png",
+        "opacityColor": "blue",
         "colorizeByValue": "true",
         "below": "18",
         "above": "24",
@@ -2474,7 +2474,7 @@
         "signals-oid-1": "info.0.sysinfo.cpu.temperature.main",
         "color-low": "blue",
         "color-high": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -2508,8 +2508,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/temp_temperature.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/temp_temperature.png",
+        "opacityColor": "blue",
         "colorizeByValue": "true",
         "below": "18",
         "above": "24",
@@ -2560,7 +2560,7 @@
         "subtitle": "Indoor",
         "signals-oid-0": "hm-rpc.0.OEQ0670648.1.TEMPERATURE",
         "signals-oid-1": "hm-rpc.0.OEQ0670648.1.TEMPERATURE",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -2594,8 +2594,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/temp_temperature.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/temp_temperature.png",
+        "opacityColor": "blue",
         "colorizeByValue": "true",
         "below": "18",
         "above": "24",
@@ -2648,7 +2648,7 @@
         "signals-oid-1": "hue.0.Philips_hue.Hue_temperature_sensor_1.temperature",
         "color-low": "blue",
         "color-high": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -2682,8 +2682,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/temp_temperature.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/temp_temperature.png",
+        "opacityColor": "blue",
         "colorizeByValue": "true",
         "below": "18",
         "above": "24",
@@ -2736,7 +2736,7 @@
         "signals-oid-1": "hm-rpc.0.OEQ0655913.4.ACTUAL_TEMPERATURE",
         "color-low": "blue",
         "color-high": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -2770,8 +2770,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/temp_temperature.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/temp_temperature.png",
+        "opacityColor": "blue",
         "colorizeByValue": "true",
         "below": "18",
         "above": "24",
@@ -2822,7 +2822,7 @@
         "subtitle": "Garten",
         "signals-oid-0": "openweathermap.0.forecast.current.temperature",
         "signals-oid-1": "openweathermap.0.forecast.current.temperature",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -2856,8 +2856,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "#ffffff",
-        "card-icon": "widgets/vis-material-advanced/img/fts_door.png",
-        "opacity-color": "green",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_door.png",
+        "opacityColor": "green",
         "signals-cond-0": "==",
         "signals-val-0": "false",
         "signals-icon-0": "/icons-icons8/others/green/Lock.png",
@@ -2906,8 +2906,8 @@
         "signals-oid-0": "hm-rpc.0.NEQ1818500.1.STATE",
         "signals-oid-1": "hm-rpc.0.NEQ1818500.1.STATE",
         "colorizeByValue": "false",
-        "color-open": "orange",
-        "widget-background": "#121212"
+        "colorOpen": "orange",
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -2941,8 +2941,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "#ffffff",
-        "card-icon": "widgets/vis-material-advanced/img/fts_door.png",
-        "opacity-color": "green",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_door.png",
+        "opacityColor": "green",
         "signals-cond-0": "==",
         "signals-val-0": "false",
         "signals-icon-0": "/icons-icons8/others/green/Lock.png",
@@ -2991,8 +2991,8 @@
         "signals-oid-0": "hm-rpc.0.NEQ1826414.1.STATE",
         "signals-oid-1": "hm-rpc.0.NEQ1826414.1.STATE",
         "colorizeByValue": "false",
-        "color-open": "orange",
-        "widget-background": "#121212"
+        "colorOpen": "orange",
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -3026,8 +3026,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "#ffffff",
-        "card-icon": "widgets/vis-material-advanced/img/fts_door.png",
-        "opacity-color": "green",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_door.png",
+        "opacityColor": "green",
         "signals-cond-0": "==",
         "signals-val-0": "false",
         "signals-icon-0": "/icons-icons8/others/green/Lock.png",
@@ -3075,7 +3075,7 @@
         "subtitle": "Bad",
         "signals-oid-0": "hm-rpc.0.OEQ0926852.1.STATE",
         "signals-oid-1": "hm-rpc.0.OEQ0926852.1.STATE",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -3109,8 +3109,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "#ffffff",
-        "card-icon": "widgets/vis-material-advanced/img/fts_door.png",
-        "opacity-color": "green",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_door.png",
+        "opacityColor": "green",
         "signals-cond-0": "==",
         "signals-val-0": "false",
         "signals-icon-0": "/icons-icons8/others/green/Lock.png",
@@ -3159,8 +3159,8 @@
         "signals-oid-0": "hm-rpc.0.NEQ1818500.1.STATE",
         "signals-oid-1": "hm-rpc.0.NEQ1818500.1.STATE",
         "colorizeByValue": "false",
-        "color-open": "orange",
-        "widget-background": "#121212"
+        "colorOpen": "orange",
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -3194,8 +3194,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "#ffffff",
-        "card-icon": "widgets/vis-material-advanced/img/fts_door.png",
-        "opacity-color": "green",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_door.png",
+        "opacityColor": "green",
         "signals-cond-0": "==",
         "signals-val-0": "false",
         "signals-icon-0": "/icons-icons8/others/green/Lock.png",
@@ -3244,8 +3244,8 @@
         "signals-oid-0": "hm-rpc.0.NEQ1826414.1.STATE",
         "signals-oid-1": "hm-rpc.0.NEQ1826414.1.STATE",
         "colorizeByValue": "false",
-        "color-open": "orange",
-        "widget-background": "#121212"
+        "colorOpen": "orange",
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -3281,7 +3281,7 @@
         "Text-color": "white",
         "iconMotion": "widgets/vis-material-advanced/img/motion.png",
         "iconNoMotion": "widgets/vis-material-advanced/img/no-motion.png",
-        "opacity-color": "red",
+        "opacityColor": "red",
         "colorizeByValue": "false",
         "motionColor": "yellow",
         "signals-cond-0": "==",
@@ -3329,7 +3329,7 @@
         "oid": "hue.0.Philips_hue.Küche_Sensor.presence",
         "title": "Küche",
         "subtitle": "Bewegung",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -3365,7 +3365,7 @@
         "Text-color": "white",
         "iconMotion": "widgets/vis-material-advanced/img/motion.png",
         "iconNoMotion": "widgets/vis-material-advanced/img/no-motion.png",
-        "opacity-color": "red",
+        "opacityColor": "red",
         "colorizeByValue": "false",
         "motionColor": "yellow",
         "signals-cond-0": "==",
@@ -3413,7 +3413,7 @@
         "oid": "hm-rpc.1.00091A49A082FC.1.MOTION",
         "title": "Vorraum",
         "subtitle": "Bewegung",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -3449,7 +3449,7 @@
         "Text-color": "white",
         "iconMotion": "widgets/vis-material-advanced/img/motion.png",
         "iconNoMotion": "widgets/vis-material-advanced/img/no-motion.png",
-        "opacity-color": "red",
+        "opacityColor": "red",
         "colorizeByValue": "false",
         "motionColor": "yellow",
         "signals-cond-0": "==",
@@ -3497,7 +3497,7 @@
         "oid": "hue.0.Philips_hue.Küche_Sensor.presence",
         "title": "Küche",
         "subtitle": "Bewegung",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -3533,7 +3533,7 @@
         "Text-color": "white",
         "iconMotion": "widgets/vis-material-advanced/img/motion.png",
         "iconNoMotion": "widgets/vis-material-advanced/img/no-motion.png",
-        "opacity-color": "red",
+        "opacityColor": "red",
         "colorizeByValue": "false",
         "motionColor": "yellow",
         "signals-cond-0": "==",
@@ -3581,7 +3581,7 @@
         "oid": "hm-rpc.1.00091A49A082FC.1.MOTION",
         "title": "Vorraum",
         "subtitle": "Bewegung",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -3617,7 +3617,7 @@
         "Text-color": "white",
         "iconMotion": "widgets/vis-material-advanced/img/motion.png",
         "iconNoMotion": "widgets/vis-material-advanced/img/no-motion.png",
-        "opacity-color": "red",
+        "opacityColor": "red",
         "colorizeByValue": "false",
         "motionColor": "yellow",
         "signals-cond-0": "==",
@@ -3665,7 +3665,7 @@
         "oid": "hue.0.Philips_hue.Küche_Sensor.presence",
         "title": "Küche",
         "subtitle": "Bewegung",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -3699,8 +3699,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/humid_humidity.png",
-        "opacity-color": "#ffffff",
+        "cardIcon": "widgets/vis-material-advanced/img/humid_humidity.png",
+        "opacityColor": "#ffffff",
         "colorizeByValue": true,
         "below": "60",
         "above": "70",
@@ -3751,7 +3751,7 @@
         "subtitle": "Luftfeuchte",
         "color-low": "blue",
         "color-high": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -3785,8 +3785,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/humid_humidity.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/humid_humidity.png",
+        "opacityColor": "white",
         "colorizeByValue": "true",
         "below": "40",
         "above": "60",
@@ -3835,7 +3835,7 @@
         "oid": "openweathermap.0.forecast.current.humidity",
         "title": "Outdoor",
         "subtitle": "Luftfeuchte",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -3869,8 +3869,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/humid_humidity.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/humid_humidity.png",
+        "opacityColor": "white",
         "colorizeByValue": "true",
         "below": "40",
         "above": "60",
@@ -3919,7 +3919,7 @@
         "oid": "hm-rpc.0.OEQ0670648.1.HUMIDITY",
         "title": "Bad",
         "subtitle": "Luftfeuchte",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -3953,8 +3953,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/humid_humidity.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/humid_humidity.png",
+        "opacityColor": "white",
         "colorizeByValue": "true",
         "below": "40",
         "above": "60",
@@ -4003,7 +4003,7 @@
         "oid": "openweathermap.0.forecast.current.humidity",
         "title": "Outdoor",
         "subtitle": "Luftfeuchte",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "820px",
@@ -4037,8 +4037,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4084,7 +4084,7 @@
         "oid": "hm-rpc.0.OEQ0473764.1.STATE",
         "title": "Vorraum",
         "subtitle": "HM Licht",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -4118,8 +4118,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4165,7 +4165,7 @@
         "oid": "hue.0.Philips_hue.Bad.on",
         "title": "Bad",
         "subtitle": "Hue Licht",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -4199,8 +4199,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4246,7 +4246,7 @@
         "oid": "hue.0.Philips_hue.Büro.on",
         "title": "Büro",
         "subtitle": "Hue Licht",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -4280,8 +4280,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4327,7 +4327,7 @@
         "oid": "hue.0.Hue_Schlafzimmer.on",
         "title": "Schlafzimmer",
         "subtitle": "Hue Licht",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -4361,8 +4361,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4408,7 +4408,7 @@
         "oid": "meross.0.1811161726216929086534298f17edb7.0",
         "title": "Esszimmer",
         "subtitle": "Stehlampe",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "20px",
@@ -4442,8 +4442,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -4489,7 +4489,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.on",
         "title": "Küche",
         "subtitle": "Led Stripes+",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "21px",
@@ -4523,8 +4523,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4573,7 +4573,7 @@
         "subtitle": "",
         "title": "Küche",
         "readOnly": false,
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -4607,8 +4607,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4656,7 +4656,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.ct",
         "subtitle": "",
         "title": "Bad",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -4690,8 +4690,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4739,7 +4739,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.ct",
         "subtitle": "",
         "title": "SZ",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -4773,8 +4773,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4822,7 +4822,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.ct",
         "subtitle": "",
         "title": "Büro",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -4856,8 +4856,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4905,7 +4905,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.ct",
         "subtitle": "",
         "title": "Vorraum",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -4939,8 +4939,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png",
+        "opacityColor": "white",
         "min": "2700",
         "max": "6500",
         "signals-cond-0": "==",
@@ -4988,7 +4988,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.ct",
         "subtitle": "",
         "title": "EZ",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "286px",
@@ -5022,8 +5022,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -5069,7 +5069,7 @@
         "oid": "hue.0.Philips_hue.Hue_lightstrip_Küche.level",
         "subtitle": "{hue.0.Philips_hue.Hue_lightstrip_Küche.level}",
         "title": "Küche",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -5103,8 +5103,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -5150,7 +5150,7 @@
         "oid": "hue.0.Philips_hue.Bad.level",
         "subtitle": "{hue.0.Philips_hue.Bad.level}",
         "title": "Bad",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -5184,8 +5184,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
+        "opacityColor": "blue",
         "inverted": "true",
         "signals-cond-0": "==",
         "signals-val-0": true,
@@ -5230,7 +5230,7 @@
         "lc-border-radius": 10,
         "lc-zindex": 0,
         "title": "Test",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5264,8 +5264,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
+        "opacityColor": "blue",
         "inverted": "true",
         "signals-cond-0": "==",
         "signals-val-0": true,
@@ -5310,7 +5310,7 @@
         "lc-border-radius": 10,
         "lc-zindex": 0,
         "title": "Test",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5344,8 +5344,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
+        "opacityColor": "blue",
         "inverted": "true",
         "signals-cond-0": "==",
         "signals-val-0": true,
@@ -5390,7 +5390,7 @@
         "lc-border-radius": 10,
         "lc-zindex": 0,
         "title": "Test",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5424,8 +5424,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
+        "opacityColor": "blue",
         "inverted": "true",
         "signals-cond-0": "==",
         "signals-val-0": true,
@@ -5470,7 +5470,7 @@
         "lc-border-radius": 10,
         "lc-zindex": 0,
         "title": "Test",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5504,8 +5504,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
-        "opacity-color": "blue",
+        "cardIcon": "widgets/vis-material-advanced/img/fts_shutter_100.png",
+        "opacityColor": "blue",
         "inverted": "true",
         "signals-cond-0": "==",
         "signals-val-0": true,
@@ -5550,7 +5550,7 @@
         "lc-border-radius": 10,
         "lc-zindex": 0,
         "title": "Test",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5584,8 +5584,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "#b1b5b0",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "#b1b5b0",
         "true": "Anwesend",
         "false": "Abwesend",
         "colorizeByValue": false,
@@ -5634,7 +5634,7 @@
         "oid": "fb-checkpresence.0.Ilse.presence",
         "title": "Ilse",
         "subtitle": "Speed {fb-checkpresence.0.Ilse.speed}",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -5668,8 +5668,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "#b1b5b0",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "#b1b5b0",
         "true": "Anwesend",
         "false": "Abwesend",
         "colorizeByValue": false,
@@ -5718,7 +5718,7 @@
         "oid": "fb-checkpresence.0.Sigi.presence",
         "title": "Sigi",
         "subtitle": "Speed {fb-checkpresence.0.Sigi.speed}",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -5752,8 +5752,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "#b1b5b0",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "#b1b5b0",
         "true": "Anwesend",
         "false": "Abwesend",
         "colorizeByValue": false,
@@ -5802,7 +5802,7 @@
         "oid": "fb-checkpresence.0.Sarah.presence",
         "title": "Sarah",
         "subtitle": "Speed {fb-checkpresence.0.Sarah.speed}",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1085px",
@@ -5836,8 +5836,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "",
         "true": "Eingeschaltet",
         "false": "Standby",
         "colorizeByValue": true,
@@ -5888,7 +5888,7 @@
         "subtitle": "{fb-checkpresence.0.fb-devices.Yamaha.ipaddress}",
         "color-true": "green",
         "color-false": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -5922,8 +5922,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "#b1b5b0",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "#b1b5b0",
         "true": "Läuft",
         "false": "Standby",
         "colorizeByValue": true,
@@ -5974,7 +5974,7 @@
         "subtitle": "{fb-checkpresence.0.fb-devices.LG-TV-Wohnzimmer.ipaddress}",
         "color-true": "green",
         "color-false": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -6008,8 +6008,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
-        "opacity-color": "#b1b5b0",
+        "cardIcon": "widgets/vis-material-advanced/img/ma_checKüchecked.png",
+        "opacityColor": "#b1b5b0",
         "true": "Online",
         "false": "Offline",
         "colorizeByValue": true,
@@ -6060,7 +6060,7 @@
         "subtitle": "{fb-checkpresence.0.fb-devices.Medion-PC.ipaddress}",
         "color-true": "green",
         "color-false": "red",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "1349px",
@@ -6094,8 +6094,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/valve.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/valve.png",
+        "opacityColor": "white",
         "colorizeByValue": true,
         "below": "30",
         "above": "60",
@@ -6146,7 +6146,7 @@
         "oid": "hm-rpc.0.OEQ0655913.4.VALVE_STATE",
         "title": "Heizkörper",
         "subtitle": "EZ {hm-rpc.0.OEQ0655913.4.ACTUAL_TEMPERATURE} Â°C\n",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -6602,8 +6602,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/valve.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/valve.png",
+        "opacityColor": "white",
         "colorizeByValue": true,
         "below": "30",
         "above": "60",
@@ -6654,7 +6654,7 @@
         "oid": "hm-rpc.0.OEQ0655913.4.VALVE_STATE",
         "title": "Heizkörper",
         "subtitle": "EZ {hm-rpc.0.OEQ0655913.4.ACTUAL_TEMPERATURE} Â°C\n",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "552px",
@@ -6829,10 +6829,10 @@
         "visibility-cond": "==",
         "visibility-val": 1,
         "visibility-groups-action": "hide",
-        "widget-background": "#000000",
+        "widgetBackground": "#000000",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/123.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/123.png",
+        "opacityColor": "white",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -6910,8 +6910,8 @@
         "visibility-val": 1,
         "visibility-groups-action": "hide",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
-        "opacity-color": "purple",
+        "cardIcon": "widgets/vis-material-advanced/img/light_light_dim_100.png",
+        "opacityColor": "purple",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -6957,7 +6957,7 @@
         "oid": "hue.0.Philips_hue.Büro.level",
         "subtitle": "{hue.0.Philips_hue.Büro.level}",
         "title": "Büro",
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "553px",
@@ -6992,8 +6992,8 @@
         "visibility-groups-action": "hide",
         "title": "test",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/garage.png",
-        "opacity-color": "opac-blue",
+        "cardIcon": "widgets/vis-material-advanced/img/garage.png",
+        "opacityColor": "opac-blue",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -7036,7 +7036,7 @@
         "lc-border-color": "",
         "lc-border-radius": 10,
         "lc-zindex": 0,
-        "widget-background": "#121212"
+        "widgetBackground": "#121212"
       },
       "style": {
         "left": "821px",
@@ -7070,10 +7070,10 @@
         "visibility-cond": "==",
         "visibility-val": 1,
         "visibility-groups-action": "hide",
-        "widget-background": "#000000",
+        "widgetBackground": "#000000",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/123.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/123.png",
+        "opacityColor": "white",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -7434,10 +7434,10 @@
         "visibility-cond": "==",
         "visibility-val": 1,
         "visibility-groups-action": "hide",
-        "widget-background": "#000000",
+        "widgetBackground": "#000000",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/abc.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/abc.png",
+        "opacityColor": "white",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -7514,10 +7514,10 @@
         "visibility-cond": "==",
         "visibility-val": 1,
         "visibility-groups-action": "hide",
-        "widget-background": "#000000",
+        "widgetBackground": "#000000",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/abc.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/abc.png",
+        "opacityColor": "white",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -7594,10 +7594,10 @@
         "visibility-cond": "==",
         "visibility-val": 1,
         "visibility-groups-action": "hide",
-        "widget-background": "#000000",
+        "widgetBackground": "#000000",
         "Text-color": "white",
-        "card-icon": "widgets/vis-material-advanced/img/abc.png",
-        "opacity-color": "white",
+        "cardIcon": "widgets/vis-material-advanced/img/abc.png",
+        "opacityColor": "white",
         "signals-cond-0": "==",
         "signals-val-0": true,
         "signals-icon-0": "/vis/signals/lowbattery.png",

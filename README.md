@@ -24,7 +24,7 @@ Several bugfixes and lots of new widgets added
 
 ## Attention, old widgets ( < 0.5.0 will be corrupted a little bit)
     you can repair them manually in vis or export them, edit them, and import them again.
-    for manual : replace "opacity-color": "opac-<somecolor>" with "opacity-color": "<somecolor>". replace colorizeByTemp with colorizeByValue
+    for manual : replace "opacityColor": "opac-<somecolor>" with "opacityColor": "<somecolor>". replace colorizeByTemp with colorizeByValue
 
     Example from sigi234 ( example.json ) and my example2.json are in the github for everybody who wants to test them
 
@@ -59,14 +59,14 @@ not yet final:
     following options are available in most of the widgets:
     
     - text-color
-    - card-icon ( does not yet make sense everywhere, e.g. dimmer )
+    - cardIcon ( does not yet make sense everywhere, e.g. dimmer )
     - opacity color ( the standard opacity color )
     - colorizeByValue ( depending on some values the opacity color can be changed e.g. if it is too hot make it red, to cold blue )
     - below,above, min, max ( the values for colorizeByValue )
     - color-low/high,medium... ( the color to use if border is raised)
     - read-only ( some widgets can be set to read only mode for display only)
     - border-radius to enable and change the round corner
-    - value-align Align the Value field left,center or right
+    - valueAlign Align the Value field left,center or right
     - value-vetical Align the Value field top,botton or middle
 
 
@@ -86,6 +86,12 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
     * 
 -->
+
+### __WORK IN PROGRESS__
+* All properties are now without - sign
+* bugfix background-color issue, if corners were round there was different color beneath
+
+
 ### 0.8.5 (2020-09-27)
 * Also Title can be hidden now
  

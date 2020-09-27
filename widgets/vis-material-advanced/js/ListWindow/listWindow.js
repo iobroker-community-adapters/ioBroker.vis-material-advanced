@@ -1,7 +1,7 @@
 function genListWindow(data) {
     let divList = [];
     startSkeleton(divList,data);
-    genIcon(divList,data.attr('card-icon-closed'));
+    genIcon(divList,data.attr('cardIconClosed'));
     genTitleContainer(divList,data);
     genSingleValue(divList,data);
     endSkeleton(divList);
