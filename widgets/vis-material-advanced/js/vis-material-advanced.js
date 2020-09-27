@@ -235,6 +235,7 @@ vis.binds["vis-material-advanced"] = {
         }
 
         setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListTempHumid: function (widgetID, view, data,type1,type2) {
         const icon = data.attr('card-icon');
@@ -276,6 +277,7 @@ vis.binds["vis-material-advanced"] = {
         
         
         setPosition($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListLight: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-off');
@@ -341,6 +343,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
         setPositionSingle($('#' + widgetID), data, $div);        
+        hideIconInWidget(data, $div);
     },
     tplMdListLightDim: function (widgetID, view, data) {
         const border = data.attr('border');
@@ -381,7 +384,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);        
+        setPositionSingle($('#' + widgetID), data, $div);    
+        hideIconInWidget(data, $div);    
     },
     tplMdListWindowShutter: function (widgetID, view, data) {
         const border = data.attr('border');
@@ -432,7 +436,8 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
 
-        setPositionSingle($('#' + widgetID), data, $div);     
+        setPositionSingle($('#' + widgetID), data, $div);  
+        hideIconInWidget(data, $div);   
     },
     tplMdListLightKelvin: function (widgetID, view, data) {
         const srcCold = data.attr('card-icon-coldwhite');
@@ -485,7 +490,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);        
+        setPositionSingle($('#' + widgetID), data, $div);    
+        hideIconInWidget(data, $div);    
     },
     tplMdListVolume: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-low');
@@ -531,7 +537,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);        
+        setPositionSingle($('#' + widgetID), data, $div);      
+        hideIconInWidget(data, $div);  
     },
     tplMdListGarage: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-closed');
@@ -569,6 +576,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListPressure: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
@@ -622,6 +631,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListBoolean: function (widgetID, view, data) {
         const srcTrue = data.attr('card-icon-true');
@@ -673,7 +684,8 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
 
-        setPositionSingle($('#' + widgetID), data, $div);     
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListNumber: function (widgetID, view, data) {
         const valLow = data.attr('low');
@@ -712,6 +724,8 @@ vis.binds["vis-material-advanced"] = {
             } else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
+
+            hideIconInWidget(data, $div);
 
         }
 
@@ -760,7 +774,7 @@ vis.binds["vis-material-advanced"] = {
             } else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
-
+            hideIconInWidget(data, $div);
         }
 
         if (data.oid) {
@@ -835,7 +849,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value 
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);    
+        setPositionSingle($('#' + widgetID), data, $div);  
+        hideIconInWidget(data, $div);  
     },
     tplMdListRadio: function (widgetID, view, data) {       
         //const src = data.attr('card-icon');
@@ -899,7 +914,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);        
+        setPositionSingle($('#' + widgetID), data, $div);   
+        hideIconInWidget(data, $div);     
     },
     tplMdListOpenClose: function (widgetID, view, data) {
         const srcClosed = data.attr('card-icon-closed');
@@ -964,6 +980,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
        setPositionSingle($('#' + widgetID), data, $div);
+       hideIconInWidget(data, $div);
      
     },
     tplMdListOccupancy: function (widgetID, view, data) {
@@ -1039,7 +1056,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        var $this = setPositionSingle($('#' + widgetID), data, $div);
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
 
       
        
@@ -1100,7 +1118,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        var $this = setPositionSingle($('#' + widgetID), data, $div);
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
 
         
        
@@ -1148,9 +1167,31 @@ vis.binds["vis-material-advanced"] = {
         
         
         setPosition($('#' + widgetID), data, $div);
-
+        hideIconInWidget(data, $div);
        
         console.log('');
+    },
+    tplMdListRegenRadarDWD: function (widgetID,view,data) {
+        var $div = $('#' + widgetID);
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListRegenRadarDWD(widgetID, view, data);
+            }, 100);
+        }
+        function update(state) {
+            $div.find('.vma_value').html(state);
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        
+        }
     },
     tplMdListDiv: function (widgetID, view, data) {
         const srcOff = data.attr('card-icon-closed');
@@ -1213,8 +1254,8 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         
         }
-        var $this = setPositionSingle($('#' + widgetID), data, $div);
-
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
         
        
 
@@ -1227,6 +1268,24 @@ vis.binds["vis-material-advanced"] = {
 vis.binds["vis-material-advanced"].showVersion();
 
 
+
+function hideIconInWidget(data, $div) {
+    if (!data.attr('showIcon')) {
+        $div.find('.vma_picture').attr('hidden', true);
+        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container');
+        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container_without_icon');
+        $div.find('.vma_value_id').removeClass('vma_value_container');
+        $div.find('.vma_value_id').addClass('vma_value_container_without_icon');
+
+    }
+    else if (data.attr('showIcon')) {
+        $div.find('.vma_picture').removeAttr('hidden');
+        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container');
+        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
+        $div.find('.vma_value_id').addClass('vma_value_container');
+        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
+    }
+}
 
 function grayOutWhenInactive(data, $div) {
     var curTime = new Date().getTime();

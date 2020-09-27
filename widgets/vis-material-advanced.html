@@ -14,7 +14,8 @@
 
 <!-- here you can include so many js-files as you want -->
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/list.js"></script>
-<script type="text/javascript"    src="widgets/vis-material-advanced/js/ListDiv/listDiv.js"></script>
+<!-- <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListDiv/listDiv.js"></script> -->
+<!-- <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListRegenRadar/listRegenRadar.js"></script> -->
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListDoor/listDoor.js"></script>
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListWindow/listWindow.js"></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListTemp/listTemp.js></script>
@@ -159,6 +160,32 @@
     <% vis.binds['vis-material-advanced'].tplMdListDiv(this.data.wid, this.view, this.data);  %>
 </script> -->
 
+<!-- <script 
+    id="tplMaListRegenRadarDWD" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-RegenRadarDWD" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/fts_door.png " style="width: 100px; height: 100px;"></div></div>' 
+    data-vis-attrs="oid/id;title/text;subtitle/text;"    
+    data-vis-attrs0="group.BoxStyle;"
+    data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
+    data-vis-attrs2="widget-background[#121212]/color;TextColor[white]/color;"
+    data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
+    data-vis-attrs4="value-align[right]/select,left,center,right;value-vertical[center]/select,top,center,bottom;"
+    data-vis-attrs5="opacity-color[white]/color;"
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"      
+    data-vis-update-style= "true"
+    data-vis-name="ListRegenRadarDWD"     >
+    <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
+        <%   let init = genListRegenRadar(this.data);           %>
+        <%== init.widget %>  
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListRegenRadarDWD(this.data.wid, this.view, this.data);   %>
+</script> -->
+
+
 <script 
     id="tplMaListDoor" 
     type="text/ejs" 
@@ -177,10 +204,11 @@
     data-vis-attrs7="group.icons;"
     data-vis-attrs8="card-icon-closed[widgets/vis-material-advanced/img/fts_door.png]/image;"
     data-vis-attrs9="card-icon-open[widgets/vis-material-advanced/img/fts_door_open.png]/image;"
+    data-vis-attrs10="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style= "true"
-    data-vis-name="ListDoor"  >
+    data-vis-name="ListDoor"   >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
         <%   let init = genListDoor(this.data);    %>
         <%== init.widget %>            
@@ -207,6 +235,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon-closed[widgets/vis-material-advanced/img/fts_window_2w.png]/image;"
     data-vis-attrs10="card-icon-open[widgets/vis-material-advanced/img/fts_window_2w_open.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -236,6 +265,7 @@
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon[widgets/vis-material-advanced/img/temp_temperature.png]/image;"    
+    data-vis-attrs10="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -265,6 +295,7 @@
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon[widgets/vis-material-advanced/img/humid_humidity.png]/image;"    
+    data-vis-attrs10="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -294,7 +325,8 @@
     data-vis-attrs6="colorizeByValue/checkbox;below[18]/number;above[24]/number;color-low[blue]/color;color-high[red]/color;" 
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
-    data-vis-attrs9="card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"    
+    data-vis-attrs9="card-icon[widgets/vis-material-advanced/img/pressure.png]/image;"  
+    data-vis-attrs10="showIcon[checked]/checkbox;"  
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -324,6 +356,7 @@
     data-vis-attrs6="border_radius[10]/number,1,20,1;border/checkbox;"
     data-vis-attrs7="group.icons;"
     data-vis-attrs8="card-icon[widgets/vis-material-advanced/img/temperature.png]/image;"   
+    data-vis-attrs9="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"  
     data-vis-name="ListTemperatureHumid"  >  
@@ -355,6 +388,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="iconMotion[widgets/vis-material-advanced/img/motion.png]/image;"
     data-vis-attrs10="iconNoMotion[widgets/vis-material-advanced/img/no-motion.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -386,6 +420,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon-on[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
     data-vis-attrs10="card-icon-off[widgets/vis-material-advanced/img/light_light_dim_00.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
@@ -416,6 +451,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon-on[widgets/vis-material-advanced/img/light_light_dim_100.png]/image;"
     data-vis-attrs10="card-icon-off[widgets/vis-material-advanced/img/light_light_dim_00.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer"      
     data-vis-update-style="true"
@@ -461,6 +497,7 @@
     data-vis-attrs9="card-icon-warmwhite[widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png]/image;" 
     data-vis-attrs10="card-icon-medium[widgets/vis-material-advanced/img/fts_kelvin_mittel.png]/image;" 
     data-vis-attrs11="card-icon-coldwhite[widgets/vis-material-advanced/img/fts_kelvin_kaltweiss.png]/image;" 
+    data-vis-attrs12="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer,ctrl"      
     data-vis-update-style="true"
@@ -501,6 +538,7 @@
     data-vis-attrs5="opacity-color[white]/color;"
     data-vis-attrs6="inverted[checked]/checkbox;" 
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;readOnly/checkbox;"    
+    data-vis-attrs8="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
@@ -547,6 +585,7 @@
     data-vis-attrs9="card-icon-high[widgets/vis-material-advanced/img/volume-high.png]/image;" 
     data-vis-attrs10="card-icon-medium[widgets/vis-material-advanced/img/volume-medium.png]/image;" 
     data-vis-attrs11="card-icon-low[widgets/vis-material-advanced/img/volume-low.png]/image;" 
+    data-vis-attrs12="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
@@ -592,6 +631,7 @@
     data-vis-attrs9="group.icons;"
     data-vis-attrs10="card-icon-true[widgets/vis-material-advanced/img/checked.png]/image;" 
     data-vis-attrs11="card-icon-false[widgets/vis-material-advanced/img/unchecked.png]/image;" 
+    data-vis-attrs12="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,button"      
     data-vis-update-style="true"
@@ -622,6 +662,7 @@
     data-vis-attrs6="low/number;high/number;" 
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="colorizeByValue/checkbox;color-low/color;color-high/color;"
+    data-vis-attrs9="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -650,6 +691,7 @@
     data-vis-attrs5="opacity-color[white]/color;"
     data-vis-attrs6="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs7="colorizeByValue/checkbox;searchString/text;stringFoundColor/color;"    
+    data-vis-attrs8="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -680,6 +722,7 @@
     data-vis-attrs8="border_radius[10]/number,0,20,1;border/checkbox;"    
     data-vis-attrs9="group.icons;"
     data-vis-attrs10="card-icon[widgets/vis-material-advanced/img/valve.png]/image;" 
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -709,13 +752,14 @@
     data-vis-attrs7="border_radius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="card-icon-closed[widgets/vis-material-advanced/img/garage_closed.png]/image;"
-    data-vis-attrs5="card-icon-open[widgets/vis-material-advanced/img/garage_open.png]/image;"
+    data-vis-attrs10="card-icon-open[widgets/vis-material-advanced/img/garage_open.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced"  
     data-vis-type="val,switch"      
     data-vis-update-style="true"
     data-vis-name="ListGarage"  >
     <div class="vis-widget mdw-list vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" style="background-color: <%= this.data.attr('widget-background') %>;">
-        <%   let init = genListGarage(this.data);   %>
+        <%   let init = genListGarage(this.data);  %>
         <%== init.widget %>
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListOpenClose(this.data.wid, this.view, this.data);  %>

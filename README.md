@@ -86,6 +86,12 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 -->
 
+### __WORK IN PROGRESS__
+* added possibility to hide the icon in each widget
+* minor bugfixes
+* refactoring again
+
+
 ### 0.8.3 (2020-09-26)
 * refactoring js
 * refactoring html

@@ -1,7 +1,7 @@
 function genListText(data) {
     let divList = [];
     startSkeleton(divList,data);
- //   genIcon(divList,data.attr('card-icon-closed'));
+  genIcon(divList,'widgets/vis-material-advanced/img/abc.png');
  
     genTitleContainer(divList,data);
     genSingleValue(divList,data);
