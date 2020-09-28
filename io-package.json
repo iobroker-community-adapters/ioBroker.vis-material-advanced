@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.8",
+        "version": "0.8.9",
         "news": {
+            "0.8.9": {
+                "en": "added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them\nsome icons are missing there, so local icons are still used as well.\n! If you do not install the adapter, the icons on the left side in edit vis will stay empty\nnew units added to number widget",
+                "de": "Die Abhängigkeit zu icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg) wurde hinzugefügt, sodass die Symbole besser aussehen und nicht mehr bereitgestellt werden müssen\nEinige Symbole fehlen dort, daher werden auch weiterhin lokale Symbole verwendet.\n! Wenn Sie den Adapter nicht installieren, bleiben die Symbole auf der linken Seite in edit vis leer\nNeue Einheiten zum Nummern-Widget hinzugefügt",
+                "ru": "добавлена зависимость для icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), поэтому значки выглядят лучше и не нужно их доставлять\nнекоторые значки там отсутствуют, поэтому локальные значки все еще используются.\n! Если вы не установите адаптер, значки в левой части окна редактирования останутся пустыми.\nновые единицы добавлены в виджет номеров",
+                "pt": "adicionou dependeny a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), para que os ícones fiquem mais bonitos e não haja necessidade de entregá-los\nalguns ícones estão faltando lá, portanto, os ícones locais também são usados.\n! Se você não instalar o adaptador, os ícones do lado esquerdo em edit vis ficarão vazios\nnovas unidades adicionadas ao widget de número",
+                "nl": "afhankelijkheid toegevoegd aan icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), zodat de pictogrammen er mooier uitzien en ze niet hoeven te worden afgeleverd\nsommige pictogrammen ontbreken daar, dus lokale pictogrammen worden ook nog steeds gebruikt.\n! Als u de adapter niet installeert, blijven de pictogrammen aan de linkerkant in edit vis leeg\nnieuwe eenheden toegevoegd aan nummerwidget",
+                "fr": "Ajout de la dépendance à icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), de sorte que les icônes sont plus jolies et pas besoin de les fournir\ncertaines icônes sont absentes, donc les icônes locales sont toujours utilisées.\n! Si vous n'installez pas l'adaptateur, les icônes sur le côté gauche dans edit vis resteront vides\nnouvelles unités ajoutées au widget numérique",
+                "it": "aggiunta la dipendenza a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), quindi le icone hanno un aspetto più gradevole e non è necessario fornirle\nmancano alcune icone, quindi vengono ancora utilizzate anche le icone locali.\n! Se non si installa l'adattatore, le icone sul lato sinistro nella visualizzazione di modifica rimarranno vuote\nnuove unità aggiunte al widget numero",
+                "es": "dependencia agregada a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), por lo que los íconos se ven mejor y no es necesario entregarlos\nfaltan algunos iconos, por lo que los iconos locales también se siguen utilizando.\n! Si no instala el adaptador, los iconos del lado izquierdo en la vista de edición permanecerán vacíos\nnuevas unidades agregadas al widget numérico",
+                "pl": "dodano zależność do icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), dzięki czemu ikony wyglądają ładniej i nie trzeba ich dostarczać\nbrakuje tam niektórych ikon, więc nadal są używane również ikony lokalne.\n! Jeśli nie zainstalujesz adaptera, ikony po lewej stronie w oknie edycji pozostaną puste\nnowe jednostki dodane do widżetu numerycznego",
+                "zh-cn": "在icons-mfd-svg（https://github.com/ioBroker/ioBroker.icons-mfd-svg）中添加了dependeny，因此图标看起来更好，不需要交付它们\n那里缺少一些图标，因此仍然使用本地图标。\n！如果您未安装适配器，则“编辑可见”左侧的图标将保持空白\n新单位添加到数字小部件"
+            },
             "0.8.8": {
                 "en": "added Unit to ListNumber",
                 "de": "Unit zu ListNumber hinzugefügt",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores por interferencia de estilo con widgets de diseño de materiales. Todos los iconos ahora se pueden cambiar excepto el atenuador",
                 "pl": "poprawka dotycząca ingerencji stylu w widżety Material Design. Wszystkie ikony z wyjątkiem ściemniacza można teraz zmieniać",
                 "zh-cn": "修正了材料设计小部件的样式错误。除调光器外，所有图标现在均可更改"
-            },
-            "0.5.1": {
-                "en": "bugfix: all widgets have now default background-color #121212 but can be changed in settings. new widgets number and text",
-                "de": "Bugfix: Alle Widgets haben jetzt die Standard-Hintergrundfarbe # 121212, können aber in den Einstellungen geändert werden. neue Widgets Nummer und Text",
-                "ru": "исправление: теперь все виджеты имеют цвет фона по умолчанию # 121212, но его можно изменить в настройках. количество новых виджетов и текст",
-                "pt": "correção de bug: todos os widgets agora têm a cor de fundo padrão # 121212, mas podem ser alterados nas configurações. número e texto de novos widgets",
-                "nl": "bugfix: alle widgets hebben nu standaard achtergrondkleur # 121212 maar kunnen worden gewijzigd in instellingen. nieuwe widgets nummer en tekst",
-                "fr": "correction de bogue: tous les widgets ont maintenant la couleur d'arrière-plan par défaut # 121212 mais peuvent être modifiés dans les paramètres. nouveau nombre de widgets et texte",
-                "it": "bugfix: tutti i widget hanno ora il colore di sfondo predefinito # 121212 ma possono essere modificati nelle impostazioni. nuovo numero di widget e testo",
-                "es": "corrección de errores: todos los widgets tienen ahora el color de fondo predeterminado # 121212, pero se pueden cambiar en la configuración. nuevo número de widgets y texto",
-                "pl": "poprawka: wszystkie widżety mają teraz domyślny kolor tła # 121212, ale można je zmienić w ustawieniach. nowy numer i tekst widżetów",
-                "zh-cn": "错误修正：所有小部件现在都具有默认的背景色＃121212，但可以在设置中进行更改。新的小部件编号和文本"
             }
         },
         "title": "Material Advanced",
