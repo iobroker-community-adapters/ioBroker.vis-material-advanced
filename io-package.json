@@ -296,7 +296,8 @@
         "type": "visualization-widgets",
         "mode": "once",
         "dependencies": [
-            "vis"
+            "vis",
+            "icons-mfd-svg"
         ]
     },
     "native": {

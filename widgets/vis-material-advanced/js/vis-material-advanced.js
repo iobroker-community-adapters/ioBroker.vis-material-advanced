@@ -412,7 +412,7 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            var src = 'widgets/vis-material-advanced/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
+            var src = '/icons-mfd-svg/light_light_dim_' + Math.ceil(state / 10) + '0.svg';
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {
 
@@ -461,7 +461,11 @@ vis.binds["vis-material-advanced"] = {
                 name = percent;
             }
 
-            var src = 'widgets/vis-material-advanced/img/fts_shutter_' + name + '0.png';
+            var src = '/icons-mfd-svg/fts_shutter_' + name + '0.svg';
+            if ( name == 0 )
+            {
+                var src = '/icons-mfd-svg/fts_window_2w.svg';
+            }
             // console.log(' name : ' + name + " Icon : " + src);
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {

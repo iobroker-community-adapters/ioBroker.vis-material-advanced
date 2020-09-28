@@ -21,8 +21,8 @@
 }
 
 .vma_inner_container_div {
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
     /* min-height: 50px;     */
     position: absolute;
     /* background-color: #121212;     */
@@ -61,7 +61,7 @@ visibility: hidden;
 
 .vma_title_subtitle_container {
     width: var(--title-width);
-    height: calc(100% - 4px);
+    height: calc(100% - 6px);
     min-height: 46px;
     float:left;
     /* border: 1px solid pink; */
@@ -70,7 +70,7 @@ visibility: hidden;
 .vma_title_subtitle_container_without_icon {
     width: calc(50% - 10px);
     padding-left: 10px;
-    height: calc(100% - 4px);
+    height: calc(100% - 6px);
     min-height: 46px;
     float:left;
     /* border: 1px solid pink; */
@@ -79,7 +79,7 @@ visibility: hidden;
 .vma_value_container {
     float: left;
     width: calc(100% - var(--title-width) - 48px - 18px - 10px);
-    height: calc(100% - 2px);
+    height: calc(100% - 6px);
     min-height: 48px;
     /* min-width: 74px; */
     padding-left: 16px;
@@ -88,7 +88,7 @@ visibility: hidden;
 
 .vma_value_container_without_icon {
     float: left;
-    width: calc(100% - 50% - 16px - 10px - 2px);
+    width: calc(100% - 50% - 16px - 10px - 6px);
     height: calc(100% - 2px);
     min-height: 48px;
     /* min-width: 74px; */
@@ -98,7 +98,7 @@ visibility: hidden;
 
 .vma_value_container_without_icon_and_title {
     float: left;
-    width: calc(100% - 16px - 10px - 2px);
+    width: calc(100% - 16px - 10px - 6px);
     height: calc(100% - 2px);
     min-height: 48px;
     /* min-width: 74px; */
@@ -108,7 +108,7 @@ visibility: hidden;
 
 .vma_value_container_without_title {
     float: left;
-    width: calc(100% - 48px - 16px - 10px - 2px);
+    width: calc(100% - 48px - 16px - 10px - 6px);
     height: calc(100% - 2px);
     min-height: 48px;
     /* min-width: 74px; */
