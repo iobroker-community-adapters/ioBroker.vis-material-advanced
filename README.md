@@ -86,6 +86,9 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+### __WORK IN PROGRESS__
+* bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
+
 
 ### 0.8.10 (2020-09-30)
 * rebase to iobroker-ocmmunity-adapter
