@@ -87,7 +87,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.10 (2020-09-30)
 * rebase to iobroker-ocmmunity-adapter
 * added option to center Icon
 * added option to have ONLY Title and no subtitle
@@ -113,9 +113,6 @@ thanks to @sigi234
 * bugfix background-color issue, if corners were round there was different color beneath
 
 
-### 0.8.5 (2020-09-27)
-* Also Title can be hidden now
- 
 ## License
 MIT License
 

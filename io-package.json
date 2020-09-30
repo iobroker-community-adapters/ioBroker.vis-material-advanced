@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.9",
+        "version": "0.8.10",
         "news": {
+            "0.8.10": {
+                "en": "rebase to iobroker-ocmmunity-adapter\nadded option to center Icon\nadded option to have ONLY Title and no subtitle",
+                "de": "Rebase zum iobroker-ocmmunity-Adapter\nOption zum mittleren Symbol hinzugefügt\nOption hinzugefügt, um NUR Titel und keinen Untertitel zu haben",
+                "ru": "переустановить на iobroker-ocmmunity-adapter\nдобавлена возможность центрировать иконку\nдобавлена возможность иметь ТОЛЬКО заголовок и без субтитров",
+                "pt": "rebase para iobroker-ocmmunity-adapter\nopção adicionada ao ícone do centro\nopção adicionada para ter APENAS título e nenhum subtítulo",
+                "nl": "rebase naar iobroker-ocmmunity-adapter\noptie toegevoegd om pictogram te centreren\noptie toegevoegd om ALLEEN titel en geen ondertitel te hebben",
+                "fr": "rebase vers iobroker-ocmmunity-adapter\noption ajoutée pour centrer l'icône\noption ajoutée pour avoir UNIQUEMENT titre et pas de sous-titre",
+                "it": "rebase a iobroker-ocmmunity-adapter\naggiunta un'opzione all'icona centrale\naggiunta l'opzione per avere SOLO titolo e nessun sottotitolo",
+                "es": "rebase a iobroker-ocmmunity-adapter\nopción agregada al icono central\nopción agregada para tener SOLO título y sin subtítulo",
+                "pl": "rebase na iobroker-ocmmunity-adapter\ndodano opcję do ikony środkowej\ndodana opcja posiadania TYLKO tytułu i bez podtytułu",
+                "zh-cn": "改用iobroker-ocmununity-adapter\n向中心图标添加了选项\n添加选项以仅具有标题而没有字幕"
+            },
             "0.8.9": {
                 "en": "added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them\nsome icons are missing there, so local icons are still used as well.\n! If you do not install the adapter, the icons on the left side in edit vis will stay empty\nnew units added to number widget",
                 "de": "Die Abhängigkeit zu icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg) wurde hinzugefügt, sodass die Symbole besser aussehen und nicht mehr bereitgestellt werden müssen\nEinige Symbole fehlen dort, daher werden auch weiterhin lokale Symbole verwendet.\n! Wenn Sie den Adapter nicht installieren, bleiben die Symbole auf der linken Seite in edit vis leer\nNeue Einheiten zum Nummern-Widget hinzugefügt",
@@ -230,18 +242,6 @@
                 "es": "Los widgets de números y texto ahora son mejores de usar, ya no hay íconos",
                 "pl": "Widżety numeryczne i tekstowe są teraz lepsze w użyciu, nie ma już ikon",
                 "zh-cn": "数字和文本小部件现在更易于使用，不再有图标"
-            },
-            "0.5.2": {
-                "en": "bugfix for style interference with material design widgets. All icons are now changable except dimmer",
-                "de": "Bugfix für Stilstörungen bei Materialdesign-Widgets. Alle Symbole außer Dimmer können jetzt geändert werden",
-                "ru": "исправление ошибок стиля в виджетах материального дизайна. Изменены все значки, кроме диммера.",
-                "pt": "correção de bug para interferência de estilo com widgets de design de material. Todos os ícones agora podem ser alterados, exceto dimmer",
-                "nl": "bugfix voor stijlinterferentie met widgets voor materiaalontwerp. Alle pictogrammen zijn nu veranderlijk behalve dimmer",
-                "fr": "correction de bogue pour l'interférence de style avec les widgets de conception matérielle. Toutes les icônes sont désormais modifiables sauf le gradateur",
-                "it": "bugfix per l'interferenza di stile con i widget di material design. Tutte le icone sono ora modificabili tranne il dimmer",
-                "es": "corrección de errores por interferencia de estilo con widgets de diseño de materiales. Todos los iconos ahora se pueden cambiar excepto el atenuador",
-                "pl": "poprawka dotycząca ingerencji stylu w widżety Material Design. Wszystkie ikony z wyjątkiem ściemniacza można teraz zmieniać",
-                "zh-cn": "修正了材料设计小部件的样式错误。除调光器外，所有图标现在均可更改"
             }
         },
         "title": "Material Advanced",

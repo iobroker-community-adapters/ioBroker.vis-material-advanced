@@ -1,4 +1,7 @@
 
+## 0.8.5 (2020-09-27)
+* Also Title can be hidden now
+ 
 ## 0.8.4 (2020-09-27)
 * added possibility to hide the icon in each widget
 * minor bugfixes
