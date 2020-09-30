@@ -455,11 +455,11 @@
     data-vis-attrs11="showIcon[checked]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer"      
-    data-vis-update-style="true"
-    data-vis-name="ListLightDim" >
+    data-vis-update-style="true" 
+    data-vis-name="ListLightDim"    >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >
-        <%   let init = genListLightDim(this.data);   %>
-        <%== init.widget  %>   
+        <%   let init = genListLightDim(this.data);     %>
+        <%== init.widget    %>   
         <div  class="vma_value_container ">            
             <div class="vma_value vma-slider"   
                 style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('valueAlign') %>; vertical-align:<%= this.data.attr('valueVertical') %>;" >

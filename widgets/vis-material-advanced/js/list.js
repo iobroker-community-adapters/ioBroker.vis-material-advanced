@@ -25,7 +25,7 @@ function genSingleValue(divList, data) {
     divList.push('<div  class="vma_value_container vma_value_id">  ');
     divList.push('<div  class="vma_value"   style="color:  ' + data.TextColor + '; text-align:' + data.attr('valueAlign') + '; vertical-align:' + data.attr('valueVertical') + ';" >');
     divList.push('</div></div>');
-    divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
+    //divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
     //return {widget: divList.join('')}
 }
 
@@ -90,8 +90,13 @@ function startSkeleton(divList, data) {
 
 function endSkeleton(divList) {
     divList.push('</div>');
+    divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
 }
 function endSkeletonSlider() {
     divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
     divList.push('</div>');
 }
+/*filter: invert(1);
+transform: scaleX(1) rotateZ(0deg);
+animation: blink 0s infinite;
+}*/
