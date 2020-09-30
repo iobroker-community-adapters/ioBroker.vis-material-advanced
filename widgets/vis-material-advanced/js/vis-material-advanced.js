@@ -1462,6 +1462,15 @@ function setPositionSingle($this, data, $div) {
         }
     }
     $div.find('.vma_value').css('padding-top', top + "px");
+    if ( data.onlyTitle )
+    {
+        $div.find('.vma_only_title').css('padding-top', top + "px");
+        
+    }
+    if ( data.centerIcon )
+    {
+        $div.find('.vma_picture').css('padding-top', top - 14 + "px");
+    }
     setRadius(data,$div);
     return true;
 }

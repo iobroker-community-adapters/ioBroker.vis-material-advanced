@@ -194,7 +194,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListDoor2" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/fts_door.svg " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"     
@@ -205,7 +205,7 @@
     data-vis-attrs7="group.icons;"
     data-vis-attrs8="cardIconClosed[/icons-mfd-svg/fts_door.svg]/image;"
     data-vis-attrs9="cardIconOpen[/icons-mfd-svg/fts_door_open.svg]/image;"
-    data-vis-attrs10="showIcon[checked]/checkbox;"
+    data-vis-attrs10="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style= "true"
@@ -224,7 +224,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListWindow" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/fts_window_2w.svg " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -236,11 +236,11 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIconClosed[/icons-mfd-svg/fts_window_2w.svg]/image;"
     data-vis-attrs10="cardIconOpen[/icons-mfd-svg/fts_window_2w_open.svg]/image;"
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
-    data-vis-name="ListWindow" >
+    data-vis-name="ListWindow"  >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >        
         <%   let init = genListWindow(this.data);   %>
         <%== init.widget %>    
@@ -255,7 +255,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListTemp" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/temp_temperature.svg " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -266,7 +266,7 @@
     data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIcon[/icons-mfd-svg/temp_temperature.svg]/image;"    
-    data-vis-attrs10="showIcon[checked]/checkbox;"
+    data-vis-attrs10="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -285,7 +285,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListHumid" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/weather_humidity_rel.svg " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -296,7 +296,7 @@
     data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIcon[/icons-mfd-svg/weather_humidity_rel.svg]/image;"    
-    data-vis-attrs10="showIcon[checked]/checkbox;"
+    data-vis-attrs10="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -316,7 +316,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListPressure" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/weather_barometric_pressure.svg " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -327,7 +327,7 @@
     data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIcon[/icons-mfd-svg/weather_barometric_pressure.svg]/image;"  
-    data-vis-attrs10="showIcon[checked]/checkbox;"  
+    data-vis-attrs10="showIcon[checked]/checkbox;centerIcon[]/checkbox;"  
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -347,7 +347,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListTempHumid" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/temperature.png " style="width: 100px; height: 100px; "></div></div>'      
-    data-vis-attrs="oid/id,value.temperature;oid2/id,value.humidity;title/text;subtitle/text;showTitle[checked]/checkbox;"
+    data-vis-attrs="oid/id,value.temperature;oid2/id,value.humidity;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -357,7 +357,7 @@
     data-vis-attrs6="borderRadius[10]/number,1,20,1;border/checkbox;"
     data-vis-attrs7="group.icons;"
     data-vis-attrs8="cardIcon[widgets/vis-material-advanced/img/temperature.png]/image;"   
-    data-vis-attrs9="showIcon[checked]/checkbox;"
+    data-vis-attrs9="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"  
     data-vis-name="ListTemperatureHumid"  >  
@@ -377,7 +377,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListOccupancy" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/message_presence_active.svg " style="width: 100px; height: 100px;"></div></div>' 
-    data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+    data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -389,7 +389,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="iconMotion[/icons-mfd-svg/message_presence_active.svg]/image;"
     data-vis-attrs10="iconNoMotion[/icons-mfd-svg/message_presence_inactive.svg]/image;"
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -409,7 +409,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListLight" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/light_light_dim_100.svg" style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -421,7 +421,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIconOn[/icons-mfd-svg/light_light_dim_100.svg]/image;"
     data-vis-attrs10="cardIconOff[/icons-mfd-svg/light_light_dim_00.svg]/image;"
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
@@ -440,7 +440,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListLightDim" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/light_control.svg " style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -452,7 +452,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIconOn[/icons-mfd-svg/light_light_dim_100.svg]/image;"
     data-vis-attrs10="cardIconOff[/icons-mfd-svg/light_light_dim_00.svg]/image;"
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer"      
     data-vis-update-style="true" 
@@ -485,7 +485,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListLightKelvin" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -498,7 +498,7 @@
     data-vis-attrs9="cardIcon-warmwhite[widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png]/image;" 
     data-vis-attrs10="cardIcon-medium[widgets/vis-material-advanced/img/fts_kelvin_mittel.png]/image;" 
     data-vis-attrs11="cardIcon-coldwhite[widgets/vis-material-advanced/img/fts_kelvin_kaltweiss.png]/image;" 
-    data-vis-attrs12="showIcon[checked]/checkbox;"
+    data-vis-attrs12="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer,ctrl"      
     data-vis-update-style="true"
@@ -532,7 +532,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListThermostat" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/sani_heating_temp.svg " style="width: 100px; height: 100px; "></div></div>'      
-    data-vis-attrs="oid/id,level.temperature;title/text;subtitle/text;showTitle[checked]/checkbox;"
+    data-vis-attrs="oid/id,level.temperature;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -542,7 +542,7 @@
     data-vis-attrs6="borderRadius[10]/number,1,20,1;border/checkbox;readOnly/checkbox;"
     data-vis-attrs7="group.icons;"
     data-vis-attrs8="cardIcon[/icons-mfd-svg/sani_heating_temp.svg]/image;"   
-    data-vis-attrs9="showIcon[checked]/checkbox;"
+    data-vis-attrs9="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"  
     data-vis-name="ListThermostat"    >  
@@ -573,7 +573,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListWindowShutter" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/fts_shutter_manual.svg" style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -582,14 +582,14 @@
     data-vis-attrs5="opacityColor[white]/color;"
     data-vis-attrs6="inverted[checked]/checkbox;" 
     data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;readOnly/checkbox;"    
-    data-vis-attrs8="showIcon[checked]/checkbox;"
+    data-vis-attrs8="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
-    data-vis-name="ListWindowShutter"  >
+    data-vis-name="ListWindowShutter"      >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >
         <%   let init = genListWindowShutter(this.data);   %>
-        <%== init.widget  %>   
+        <%== init.widget  %>    
             <div  class="vma_value_container ">            
                 <div class="vma_value vma-slider"   
                     style="color:    <%= this.data.attr('Text-color') %>; text-align:<%= this.data.attr('valueAlign') %>; vertical-align:<%= this.data.attr('valueVertical') %>;" >
@@ -601,8 +601,9 @@
                     <% } %>
                 </div>                   
             </div>
-            <div class="vma_overlay ms-button-op vis-widget-body" ></div>
         </div>
+            <div class="vma_overlay ms-button-op vis-widget-body" ></div>
+       
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListWindowShutter(this.data.wid, this.view, this.data); %>
 </script>
@@ -616,7 +617,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListVolume" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/audio_volume_low.svg " style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -629,7 +630,7 @@
     data-vis-attrs9="cardIcon-high[/icons-mfd-svg/audio_volume_high.svg]/image;" 
     data-vis-attrs10="cardIcon-medium[/icons-mfd-svg/audio_volume_mid.svg]/image;" 
     data-vis-attrs11="cardIcon-low[/icons-mfd-svg/audio_volume_mute.svg]/image;" 
-    data-vis-attrs12="showIcon[checked]/checkbox;"
+    data-vis-attrs12="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,ctrl"      
     data-vis-update-style="true"
@@ -662,7 +663,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListBoolean" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/checked.png " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -675,7 +676,7 @@
     data-vis-attrs9="group.icons;"
     data-vis-attrs10="cardIconTrue[/icons-mfd-svg/status_light_low.svg]/image;" 
     data-vis-attrs11="cardIconFalse[/icons-mfd-svg/status_light_off.svg]/image;" 
-    data-vis-attrs12="showIcon[checked]/checkbox;"
+    data-vis-attrs12="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,button"      
     data-vis-update-style="true"
@@ -696,7 +697,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListNumber" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/123.png " style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;unit[]/select,,percent,Celsius,Fahrenheit,kmh,mph,mm,m,mb,GB,Wh,V,Hz,mA;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;unit[]/select,,percent,Celsius,Fahrenheit,kmh,mph,mm,m,mb,GB,Wh,V,Hz,mA;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -706,7 +707,7 @@
     data-vis-attrs6="borderRadius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs7="low/number;high/number;" 
     data-vis-attrs8="colorizeByValue/checkbox;color-low/color;color-high/color;"
-    data-vis-attrs9="showIcon[checked]/checkbox;"
+    data-vis-attrs9="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -726,7 +727,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListText" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/abc.png " style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -735,7 +736,7 @@
     data-vis-attrs5="opacityColor[white]/color;"
     data-vis-attrs6="borderRadius[10]/number,0,20,1;border/checkbox;"
     data-vis-attrs7="colorizeByValue/checkbox;searchString/text;stringFoundColor/color;"    
-    data-vis-attrs8="showIcon[checked]/checkbox;"
+    data-vis-attrs8="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -754,7 +755,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListValve" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/sani_valve_50.svg" style="width: 100px; height: 100px;"></div></div>'     
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -766,7 +767,7 @@
     data-vis-attrs8="borderRadius[10]/number,0,20,1;border/checkbox;"    
     data-vis-attrs9="group.icons;"
     data-vis-attrs10="cardIcon[/icons-mfd-svg/sani_valve_50.svg]/image;" 
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
@@ -785,7 +786,7 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListGarage" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/fts_garage_door_100.svg" style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
     data-vis-attrs0="group.BoxStyle;"
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
@@ -797,7 +798,7 @@
     data-vis-attrs8="group.icons;"
     data-vis-attrs9="cardIconClosed[/icons-mfd-svg/fts_garage_door_100.svg]/image;"
     data-vis-attrs10="cardIconOpen[/icons-mfd-svg/fts_garage.svg]/image;"
-    data-vis-attrs11="showIcon[checked]/checkbox;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced"  
     data-vis-type="val,switch"      
     data-vis-update-style="true"

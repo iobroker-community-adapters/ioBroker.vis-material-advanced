@@ -8,15 +8,40 @@ function genIcon(divList, icon) {
 function genTitleContainer(divList, data) {
 
     divList.push('<div class="vma_title_subtitle_container vma_title_subtitle_id" style="color:' + data.TextColor + '; ">');
-    divList.push('<div  class="vma_title" style="font-size: ' + data.titleSize + ';">');
-    divList.push(data.title);
-    divList.push('</div><div  class="vma_subtitle" style=" color: ' + data.TextColor + ';font-size: ' + data.subtitleSize + '; ">');
-    if (typeof data.subtitle == 'undefined') {
-        divList.push('</div></div>');
+    if (data.onlyTitle) {
+        divList.push('<div  class="vma_title vma_only_title" style="font-size: ' + data.titleSize + ';">');
     }
     else {
-        divList.push(data.subtitle + '</div></div>');
+        divList.push('<div  class="vma_title" style="font-size: ' + data.titleSize + ';">');
     }
+    divList.push(data.title);
+
+    if (data.onlyTitle) {
+        divList.push('</div>');
+
+        divList.push('</div>');
+    }
+    else {
+        divList.push('</div><div  class="vma_subtitle " style=" color: ' + data.TextColor + ';font-size: ' + data.subtitleSize + '; ">');
+        if (typeof data.subtitle == 'undefined') {
+            divList.push('</div></div>');
+        }
+        else {
+            divList.push(data.subtitle + '</div></div>');
+        }
+    }
+    return { widget: divList.join('') }
+}
+
+function genSingleTitleContainer(divList, data) {
+
+    divList.push('<div class="vma_title_subtitle_container vma_title_subtitle_id" style="color:' + data.TextColor + '; ">');
+    divList.push('<div  class="vma_title vma_only_title" style="font-size: ' + data.titleSize + ';">');
+    divList.push(data.title);
+    divList.push('</div>');
+
+    divList.push('</div>');
+
     return { widget: divList.join('') }
 }
 
@@ -85,7 +110,7 @@ function genButtonValue(divList, data) {
 function startSkeleton(divList, data) {
     // divList.push('<div class="vis-widget susi mdw-list vma_outer_div '+ data.attr( 'class') +'" id="'+ data.attr('wid') +'" ');
     // divList.push('style="background-color:'+ data.attr('widgetBackground') +';"></div>');
-    divList.push('<div class="vis-widget-body vma_inner_container_div" style="background-color: '+ data.attr('widgetBackground')+';" > ');
+    divList.push('<div class="vis-widget-body vma_inner_container_div" style="background-color: ' + data.attr('widgetBackground') + ';" > ');
 }
 
 function endSkeleton(divList) {
