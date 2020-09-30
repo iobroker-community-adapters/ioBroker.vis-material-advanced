@@ -1,4 +1,9 @@
 
+## 0.8.6 (2020-09-27)
+* All properties are now without - sign
+* bugfix background-color issue, if corners were round there was different color beneath
+
+
 ## 0.8.5 (2020-09-27)
 * Also Title can be hidden now
  

@@ -86,7 +86,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 0.8.11 (2020-09-30)
 * bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
 
 
@@ -109,11 +109,6 @@ thanks to @sigi234
 
 ### 0.8.7 (2020-09-27)
 * added new widget thermostat, first try
-
-
-### 0.8.6 (2020-09-27)
-* All properties are now without - sign
-* bugfix background-color issue, if corners were round there was different color beneath
 
 
 ## License

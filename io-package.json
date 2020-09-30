@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.10",
+        "version": "0.8.11",
         "news": {
+            "0.8.11": {
+                "en": "bugfix fo rwrong htm lin Shutter Widget, thx Sigi234",
+                "de": "Bugfix für falsches htm lin Shutter Widget, thx Sigi234",
+                "ru": "исправление ошибки для виджета затвора htm lin, спасибо Sigi234",
+                "pt": "correção de bug para widget do obturador htm lin rwrong, thx Sigi234",
+                "nl": "bugfix voor verkeerde htm lin Shutter Widget, thx Sigi234",
+                "fr": "correction de bogue pour le widget d'obturation htm lin, thx Sigi234",
+                "it": "bugfix per htm lin Shutter Widget errato, grazie a Sigi234",
+                "es": "corrección de errores para el widget del obturador rwrong htm lin, gracias Sigi234",
+                "pl": "Poprawka błędu rwrong htm lin Shutter Widget, thx Sigi234",
+                "zh-cn": "错误的htm lin快门小部件的修正，thgi Sigi234"
+            },
             "0.8.10": {
                 "en": "rebase to iobroker-ocmmunity-adapter\nadded option to center Icon\nadded option to have ONLY Title and no subtitle",
                 "de": "Rebase zum iobroker-ocmmunity-Adapter\nOption zum mittleren Symbol hinzugefügt\nOption hinzugefügt, um NUR Titel und keinen Untertitel zu haben",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores, cambio de clase incorrecta",
                 "pl": "poprawka, zmieniono złą klasę",
                 "zh-cn": "错误修正，更改了错误的类"
-            },
-            "0.5.3": {
-                "en": "Number and Text Widgets now better to use, no icon anymore",
-                "de": "Zahlen- und Text-Widgets sind jetzt besser zu verwenden, kein Symbol mehr",
-                "ru": "Числовые и текстовые виджеты теперь лучше использовать, иконки больше нет",
-                "pt": "Widgets de número e texto agora melhores de usar, sem ícone mais",
-                "nl": "Nummer- en tekstwidgets nu beter te gebruiken, geen pictogram meer",
-                "fr": "Les widgets numériques et texte sont désormais plus faciles à utiliser, plus d'icône",
-                "it": "I widget numerici e di testo ora sono migliori da usare, nessuna icona più",
-                "es": "Los widgets de números y texto ahora son mejores de usar, ya no hay íconos",
-                "pl": "Widżety numeryczne i tekstowe są teraz lepsze w użyciu, nie ma już ikon",
-                "zh-cn": "数字和文本小部件现在更易于使用，不再有图标"
             }
         },
         "title": "Material Advanced",
