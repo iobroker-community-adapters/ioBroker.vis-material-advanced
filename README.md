@@ -86,6 +86,11 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* Value font-size can be changed now
+
+
 ### 0.8.11 (2020-09-30)
 * bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
 

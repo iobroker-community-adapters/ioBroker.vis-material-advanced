@@ -1469,7 +1469,21 @@ function setPositionSingle($this, data, $div) {
     }
     if ( data.centerIcon )
     {
-        $div.find('.vma_picture').css('padding-top', top - 14 + "px");
+        $div.find('.vma_picture').css('padding-top', top - 14 + "px");        
+    }
+    if ( ( data.onlyTitle || ! data.showTitle) && ! data.showIcon )
+    {
+        document.documentElement.style.setProperty('--min-height-50','30px');
+        document.documentElement.style.setProperty('--min-height-46','28px');
+        document.documentElement.style.setProperty('--min-height-29','19px');
+        document.documentElement.style.setProperty('--min-height-24','16px');
+        document.documentElement.style.setProperty('--min-height-19','13px');
+        // $div.find('.vma_inner_container_div').css('min-height', '30px');        
+        // $div.find('.vma_title_subtitle_container').css('min-height', '30px');         
+        // $div.find('.vma_title_subtitle_container_without_icon').css('min-height', '30px');        
+        // $div.find('.vma_value_container_without_icon').css('min-height', '30px');        
+        // $div.find('.vma_value_container_without_icon_and_title').css('min-height', '30px');        
+        // $div.find('.vma_value_container_without_icon_and_title').css('min-height', '30px');        
     }
     setRadius(data,$div);
     return true;
