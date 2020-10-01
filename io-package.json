@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.11",
+        "version": "0.8.12",
         "news": {
+            "0.8.12": {
+                "en": "Value font-size can be changed now",
+                "de": "Der Wert der Schriftgröße kann jetzt geändert werden",
+                "ru": "Значение font-size теперь можно изменить",
+                "pt": "O valor do tamanho da fonte pode ser alterado agora",
+                "nl": "De lettergrootte van de waarde kan nu worden gewijzigd",
+                "fr": "La valeur de la taille de police peut être modifiée maintenant",
+                "it": "Ora è possibile modificare la dimensione del carattere del valore",
+                "es": "El tamaño de fuente del valor se puede cambiar ahora",
+                "pl": "Wartość rozmiaru czcionki można teraz zmienić",
+                "zh-cn": "值字体大小可以立即更改"
+            },
             "0.8.11": {
                 "en": "bugfix fo rwrong htm lin Shutter Widget, thx Sigi234",
                 "de": "Bugfix für falsches htm lin Shutter Widget, thx Sigi234",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores en el widget de volumen debido a un error tipográfico",
                 "pl": "poprawka w Volume Widget z powodu literówki",
                 "zh-cn": "由于拼写错误，在体积小部件中的错误修正"
-            },
-            "0.5.5": {
-                "en": "bugfix, changed wrong class",
-                "de": "Bugfix, falsche Klasse geändert",
-                "ru": "исправление, неверный класс изменен",
-                "pt": "correção de bug, classe errada alterada",
-                "nl": "bugfix, verkeerde klasse gewijzigd",
-                "fr": "correction de bogue, mauvaise classe modifiée",
-                "it": "bugfix, cambiato classe sbagliata",
-                "es": "corrección de errores, cambio de clase incorrecta",
-                "pl": "poprawka, zmieniono złą klasę",
-                "zh-cn": "错误修正，更改了错误的类"
             }
         },
         "title": "Material Advanced",

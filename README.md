@@ -87,7 +87,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.12 (2020-10-01)
 * Value font-size can be changed now
 
 
@@ -110,10 +110,6 @@ thanks to @sigi234
 
 ### 0.8.8 (2020-09-27)
 * added Unit to ListNumber
-
-
-### 0.8.7 (2020-09-27)
-* added new widget thermostat, first try
 
 
 ## License
