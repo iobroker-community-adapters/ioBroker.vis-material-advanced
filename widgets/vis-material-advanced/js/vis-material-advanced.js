@@ -351,7 +351,7 @@ vis.binds["vis-material-advanced"] = {
             var src = (state) ? srcOn : srcOff;
             var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
-            $div.find('.vma-picture').find('img').attr('src', src);
+            $div.find('.vma_picture').find('img').attr('src', src);
            
             if (data.attr('readOnly')) {
                 if (state) {
@@ -586,6 +586,10 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
+        }
+        else
+        {
+            $div.find('.vma_picture').find('img').attr('src', srcOff);
         }
         setPositionSingle($('#' + widgetID), data, $div);      
         hideIconInWidget(data, $div);  

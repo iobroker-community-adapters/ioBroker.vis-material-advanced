@@ -22,31 +22,28 @@ but rewritten in 90%
 
 Several bugfixes and lots of new widgets added 
 
-## Attention, old widgets ( < 0.5.0 will be corrupted a little bit)
-    you can repair them manually in vis or export them, edit them, and import them again.
-    for manual : replace "opacityColor": "opac-<somecolor>" with "opacityColor": "<somecolor>". replace colorizeByTemp with colorizeByValue
-
-    Example from sigi234 ( example.json ) and my example2.json are in the github for everybody who wants to test them
-
-    Sorry for the inconveniance, but these changes were neccessary to keep code clean and understandable.
-
-    this should not happen very often any more :)
 
 ## following widgets are present right now:
 
 ### current
- - Temperature
- - Humidity
  - Door
  - Window
- - Occupacy
- - Volume
- - Shutter
+ - Temperature
+ - Humidity
+ - Pressure
+ - Temp&Humidity
+ - Occupancy
  - Light
  - Dimmer
  - Light-temperature
+ - Shutter
+ - Volume
+ - Thermostat
  - Boolean
-
+ - Number
+ - Text
+ - Valve
+ 
 ### in progress
 not yet final:
  - Garagedoor
@@ -86,6 +83,10 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* bugfix LightIcon not switching
+* bugfix Volume Icon not shown if no object is set
 
 ### 0.8.12 (2020-10-01)
 * Value font-size can be changed now

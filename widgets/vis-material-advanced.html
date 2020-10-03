@@ -43,8 +43,8 @@
     ----------------------------------------------------------
     Mandatory XML attributes:
         id="tplVis-material-advancedWIDGETNAME" 
-        type="text/ejs"
-        class="vis-tpl"
+        type="text/ejs" 
+        class="vis-tpl"  
 
         "type" and "class" are always the same. "id" is unique and must start with "tplSETNAME" and ends with widget name. Use camel-case for it.
 
@@ -494,8 +494,8 @@
     data-vis-prev='<div id="prev_tplVis-material-advancedListLightKelvin" style="position: relative; text-align: initial;padding: 4px ">
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="widgets/vis-material-advanced/img/fts_kelvin_warmweiss.png " style="width: 100px; height: 100px;"></div></div>' 
-        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
-    data-vis-attrs0="group.BoxStyle;"
+        data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;" 
+    data-vis-attrs0="group.BoxStyle;" 
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
     data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
@@ -512,7 +512,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val,dimmer,ctrl"      
     data-vis-update-style="true"
-    data-vis-name="ListLightKelvin"  >
+    data-vis-name="ListLightKelvin"       >
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >
         <%   let init = genListLightKelvin(this.data);   %>
         <%== init.widget  %>   
