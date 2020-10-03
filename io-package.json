@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.12",
+        "version": "0.8.13",
         "news": {
+            "0.8.13": {
+                "en": "bugfix LightIcon not switching\nbugfix Volume Icon not shown if no object is set",
+                "de": "Bugfix LightIcon wechselt nicht\nBugfix Volume Icon wird nicht angezeigt, wenn kein Objekt festgelegt ist",
+                "ru": "исправление ошибки LightIcon не переключается\nbugfix Значок громкости не отображается, если объект не установлен",
+                "pt": "bugfix LightIcon não muda\ncorreção de bug O ícone de volume não é mostrado se nenhum objeto for definido",
+                "nl": "bugfix LightIcon schakelt niet over\nbugfix Volumepictogram niet weergegeven als er geen object is ingesteld",
+                "fr": "bugfix LightIcon ne bascule pas\nbugfix Icône de volume non affichée si aucun objet n'est défini",
+                "it": "bugfix LightIcon non cambia\nbugfix L'icona del volume non viene visualizzata se non è impostato alcun oggetto",
+                "es": "corrección de errores LightIcon no cambia\ncorrección de errores El icono de volumen no se muestra si no se establece ningún objeto",
+                "pl": "bugfix LightIcon się nie przełącza\nbugfix Ikona głośności nie jest wyświetlana, jeśli żaden obiekt nie jest ustawiony",
+                "zh-cn": "错误修正LightIcon无法切换\n如果未设置任何对象，则不显示错误修正卷图标"
+            },
             "0.8.12": {
                 "en": "Value font-size can be changed now",
                 "de": "Der Wert der Schriftgröße kann jetzt geändert werden",
@@ -230,18 +242,6 @@
                 "es": "widget de número de corrección de errores",
                 "pl": "Widżet numeru poprawki",
                 "zh-cn": "错误修正号小部件"
-            },
-            "0.5.6": {
-                "en": "bugfix in Volume Widget due to a typo",
-                "de": "Bugfix im Volume Widget aufgrund eines Tippfehlers",
-                "ru": "исправление ошибки в Volume Widget из-за опечатки",
-                "pt": "correção de bug no Volume Widget devido a um erro de digitação",
-                "nl": "bugfix in Volume Widget vanwege een typefout",
-                "fr": "correction de bogue dans Volume Widget en raison d'une faute de frappe",
-                "it": "bugfix in Volume Widget a causa di un errore di battitura",
-                "es": "corrección de errores en el widget de volumen debido a un error tipográfico",
-                "pl": "poprawka w Volume Widget z powodu literówki",
-                "zh-cn": "由于拼写错误，在体积小部件中的错误修正"
             }
         },
         "title": "Material Advanced",

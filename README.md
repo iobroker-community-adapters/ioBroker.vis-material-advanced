@@ -84,7 +84,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.8.13 (2020-10-03)
 * bugfix LightIcon not switching
 * bugfix Volume Icon not shown if no object is set
 
@@ -108,10 +108,6 @@ thanks to @sigi234
 * some icons are missing there, so local icons are still used as well.
 * ! If you do not install the adapter, the icons on the left side in edit vis will stay empty
 * new units added to number widget
-
-### 0.8.8 (2020-09-27)
-* added Unit to ListNumber
-
 
 ## License
 MIT License
