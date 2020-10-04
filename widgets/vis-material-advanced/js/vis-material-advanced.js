@@ -1386,6 +1386,16 @@ function hideIconInWidget(data, $div) {
         $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
         $div.find('.vma_value_id').removeClass('vma_value_container');
     }
+    if ( data.showIcon ) {
+        var currentTextSize =  parseInt($div.find('.vma_title').css('font-size'));
+        if ( currentTextSize <= 16 )
+        {
+            $div.find('.vma_outer_div').css('min-height','30px');
+            $div.find('.vma_inner_container_div').css('min-height','30px');
+            $div.find('.vms_title').css('min-height','19px');
+            $div.find('.vma_only_title').css('min-height','19px');
+        }
+    }
 }
 
 function grayOutWhenInactive(data, $div) {

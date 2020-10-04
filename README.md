@@ -84,6 +84,9 @@ thanks to @sigi234
 * 
 -->
 
+ ### __WORK IN PROGRESS__
+* border-fix due to changes in css
+
 ### 0.8.13 (2020-10-03)
 * bugfix LightIcon not switching
 * bugfix Volume Icon not shown if no object is set
