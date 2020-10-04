@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.13",
+        "version": "0.8.14",
         "news": {
+            "0.8.14": {
+                "en": "border-fix due to changes in css",
+                "de": "Border-Fix aufgrund von Änderungen in CSS",
+                "ru": "border-fix из-за изменений в css",
+                "pt": "border-fix devido a mudanças no css",
+                "nl": "border-fix vanwege wijzigingen in css",
+                "fr": "border-fix en raison de changements dans le css",
+                "it": "correzione del confine a causa di modifiche in css",
+                "es": "border-fix debido a cambios en css",
+                "pl": "border-fix z powodu zmian w css",
+                "zh-cn": "由于CSS更改而导致的边界修复"
+            },
             "0.8.13": {
                 "en": "bugfix LightIcon not switching\nbugfix Volume Icon not shown if no object is set",
                 "de": "Bugfix LightIcon wechselt nicht\nBugfix Volume Icon wird nicht angezeigt, wenn kein Objekt festgelegt ist",
@@ -230,18 +242,6 @@
                 "es": "se agregaron dos nuevos widgets con clases CSS completamente nuevas. esquina redondeada, dos valores.",
                 "pl": "dodano dwa nowe widżety z kompletnymi nowymi klasami css. zaokrąglony róg, dwie wartości.",
                 "zh-cn": "添加了两个具有完整的CSS类的新小部件。圆角，两个值。"
-            },
-            "0.5.7": {
-                "en": "bugfix number widget",
-                "de": "Bugfix Nummer Widget",
-                "ru": "виджет номера с исправлением ошибок",
-                "pt": "widget de número de correção de bug",
-                "nl": "bugfix nummer widget",
-                "fr": "widget de numéro de correction de bogue",
-                "it": "widget numero bugfix",
-                "es": "widget de número de corrección de errores",
-                "pl": "Widżet numeru poprawki",
-                "zh-cn": "错误修正号小部件"
             }
         },
         "title": "Material Advanced",

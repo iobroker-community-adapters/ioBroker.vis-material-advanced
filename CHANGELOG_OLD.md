@@ -1,4 +1,10 @@
 
+## 0.8.9 (2020-09-28)
+* added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them
+* some icons are missing there, so local icons are still used as well.
+* ! If you do not install the adapter, the icons on the left side in edit vis will stay empty
+* new units added to number widget
+
 ## 0.8.8 (2020-09-27)
 * added Unit to ListNumber
 
