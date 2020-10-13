@@ -84,7 +84,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 0.9.0 (2020-10-13)
 * bugfix for ListNumber and ListText, Icon should never been shown
 
 ### 0.8.15 (2020-10-13)
@@ -99,10 +99,6 @@ thanks to @sigi234
 
 ### 0.8.12 (2020-10-01)
 * Value font-size can be changed now
-
-
-### 0.8.11 (2020-09-30)
-* bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
 
 
 ## License

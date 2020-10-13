@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.15",
+        "version": "0.9.0",
         "news": {
+            "0.9.0": {
+                "en": "bugfix for ListNumber and ListText, Icon should never been shown",
+                "de": "Bugfix für ListNumber und ListText, Icon sollte niemals angezeigt werden",
+                "ru": "исправление для ListNumber и ListText, значок никогда не должен отображаться",
+                "pt": "correção de bug para ListNumber e ListText, o ícone nunca deve ser mostrado",
+                "nl": "bugfix voor ListNumber en ListText, Icon mag nooit getoond worden",
+                "fr": "correction de bogue pour ListNumber et ListText, l'icône ne devrait jamais être affichée",
+                "it": "bugfix per ListNumber e ListText, Icon non dovrebbe mai essere mostrato",
+                "es": "corrección de errores para ListNumber y ListText, el icono nunca debería mostrarse",
+                "pl": "poprawka dla ListNumber i ListText, ikona nigdy nie powinna być pokazywana",
+                "zh-cn": "ListNumber和ListText，图标的错误修正永远不应该显示"
+            },
             "0.8.15": {
                 "en": "position of Elements and min - height finally? fixed :)",
                 "de": "Position der Elemente und Mindesthöhe endlich? Fest :)",
@@ -220,18 +232,6 @@
                 "zh-cn": "修正新的小部件\n所有小部件均移至新的CSS样式\n舍入小部件\n不应再干扰其他适配器"
             },
             "0.6.3": {
-                "en": "bugfix valve widget",
-                "de": "Bugfix Ventil Widget",
-                "ru": "bugfix виджет клапана",
-                "pt": "widget de válvula de correção de bug",
-                "nl": "bugfix klep widget",
-                "fr": "widget de valve de correction de bogue",
-                "it": "widget valvola bugfix",
-                "es": "widget de válvula de corrección de errores",
-                "pl": "Widżet zaworu do naprawy błędów",
-                "zh-cn": "错误修正阀小部件"
-            },
-            "0.6.2": {
                 "en": "bugfix valve widget",
                 "de": "Bugfix Ventil Widget",
                 "ru": "bugfix виджет клапана",
