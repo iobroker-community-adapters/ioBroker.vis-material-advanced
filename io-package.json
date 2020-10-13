@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.8.14",
+        "version": "0.8.15",
         "news": {
+            "0.8.15": {
+                "en": "position of Elements and min - height finally? fixed :)",
+                "de": "Position der Elemente und Mindesthöhe endlich? Fest :)",
+                "ru": "положение элементов и min - высота наконец? фиксированный :)",
+                "pt": "posição dos elementos e min - altura finalmente? corrigido :)",
+                "nl": "positie van elementen en min - hoogte eindelijk? gemaakt :)",
+                "fr": "position des éléments et min - hauteur enfin? corrigé :)",
+                "it": "posizione degli elementi e min - altezza finalmente? risolto :)",
+                "es": "posición de los elementos y altura mínima finalmente? arreglado :)",
+                "pl": "pozycja elementów i wreszcie min - wysokość? naprawiony :)",
+                "zh-cn": "元素的位置和最小-高度最终是多少？固定的:)"
+            },
             "0.8.14": {
                 "en": "border-fix due to changes in css",
                 "de": "Border-Fix aufgrund von Änderungen in CSS",
@@ -230,18 +242,6 @@
                 "es": "widget de válvula de corrección de errores",
                 "pl": "Widżet zaworu do naprawy błędów",
                 "zh-cn": "错误修正阀小部件"
-            },
-            "0.6.1": {
-                "en": "added two new widgets with complete new css-classes. rounded corner, two value. ",
-                "de": "fügte zwei neue Widgets mit komplett neuen CSS-Klassen hinzu. abgerundete Ecke, zwei Werte.",
-                "ru": "добавлены два новых виджета с полностью новыми CSS-классами. закругленный угол, два значения.",
-                "pt": "adicionou dois novos widgets com novas classes css completas. canto arredondado, dois valores.",
-                "nl": "twee nieuwe widgets toegevoegd met compleet nieuwe css-klassen. afgeronde hoek, twee waarden.",
-                "fr": "ajouté deux nouveaux widgets avec de nouvelles classes css complètes. coin arrondi, deux valeur.",
-                "it": "aggiunti due nuovi widget con nuove classi CSS complete. angolo arrotondato, due valori.",
-                "es": "se agregaron dos nuevos widgets con clases CSS completamente nuevas. esquina redondeada, dos valores.",
-                "pl": "dodano dwa nowe widżety z kompletnymi nowymi klasami css. zaokrąglony róg, dwie wartości.",
-                "zh-cn": "添加了两个具有完整的CSS类的新小部件。圆角，两个值。"
             }
         },
         "title": "Material Advanced",

@@ -1,4 +1,11 @@
 
+## 0.8.10 (2020-09-30)
+* rebase to iobroker-ocmmunity-adapter
+* added option to center Icon
+* added option to have ONLY Title and no subtitle
+
+
+
 ## 0.8.9 (2020-09-28)
 * added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them
 * some icons are missing there, so local icons are still used as well.

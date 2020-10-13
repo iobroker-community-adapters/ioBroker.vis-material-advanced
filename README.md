@@ -83,7 +83,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 0.8.15 (2020-10-13)
 * position of Elements and min - height finally? fixed :)
 
 ### 0.8.14 (2020-10-04)
@@ -99,13 +99,6 @@ thanks to @sigi234
 
 ### 0.8.11 (2020-09-30)
 * bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
-
-
-### 0.8.10 (2020-09-30)
-* rebase to iobroker-ocmmunity-adapter
-* added option to center Icon
-* added option to have ONLY Title and no subtitle
-
 
 
 ## License
