@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "0.9.0",
+        "version": "0.9.1",
         "news": {
+            "0.9.1": {
+                "en": "some colorizeByValue options did not work",
+                "de": "Einige colorizeByValue-Optionen funktionierten nicht",
+                "ru": "некоторые параметры colorizeByValue не работали",
+                "pt": "algumas opções colorizeByValue não funcionaram",
+                "nl": "sommige colorizeByValue-opties werkten niet",
+                "fr": "certaines options colorizeByValue ne fonctionnaient pas",
+                "it": "alcune opzioni colorizeByValue non funzionavano",
+                "es": "algunas opciones de colorizeByValue no funcionaron",
+                "pl": "niektóre opcje colorizeByValue nie działały",
+                "zh-cn": "一些colorizeByValue选项不起作用"
+            },
             "0.9.0": {
                 "en": "bugfix for ListNumber and ListText, Icon should never been shown",
                 "de": "Bugfix für ListNumber und ListText, Icon sollte niemals angezeigt werden",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores nuevos widgets\nTodos los widgets se movieron al nuevo estilo CSS\nwidget redondeado posible\nya no debería interferir con otros adaptadores",
                 "pl": "naprawa nowych widżetów\nWszystkie widżety zostały przeniesione do nowego stylu CSS\nmożliwy zaokrąglony widżet\nnie powinien już kolidować z innymi adapterami",
                 "zh-cn": "修正新的小部件\n所有小部件均移至新的CSS样式\n舍入小部件\n不应再干扰其他适配器"
-            },
-            "0.6.3": {
-                "en": "bugfix valve widget",
-                "de": "Bugfix Ventil Widget",
-                "ru": "bugfix виджет клапана",
-                "pt": "widget de válvula de correção de bug",
-                "nl": "bugfix klep widget",
-                "fr": "widget de valve de correction de bogue",
-                "it": "widget valvola bugfix",
-                "es": "widget de válvula de corrección de errores",
-                "pl": "Widżet zaworu do naprawy błędów",
-                "zh-cn": "错误修正阀小部件"
             }
         },
         "title": "Material Advanced",
