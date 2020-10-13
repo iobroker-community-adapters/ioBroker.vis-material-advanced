@@ -843,6 +843,7 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
         setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListValve: function (widgetID, view, data) {
 

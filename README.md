@@ -83,6 +83,10 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* bugfix for ListNumber and ListText, Icon should never been shown
+
 ### 0.8.15 (2020-10-13)
 * position of Elements and min - height finally? fixed :)
 
