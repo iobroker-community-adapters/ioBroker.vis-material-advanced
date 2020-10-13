@@ -391,9 +391,17 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListLightDim: function (widgetID, view, data) {
         const border = data.attr('border');
+        
+        const colorLow    = data.lightLowColor;
+        const colorMedium = data.lightMediumColor;
+        const colorHigh   = data.lightHighColor;
+
+        const low    = data.low;
+        const medium = data.medium;
+        const high   = data.high;
 
         const colorize = data.attr('colorizeByValue');
-        const onColor = data.attr('lightOnColor');
+        
 
         const original_class = data.attr('opacityColor');
 
@@ -416,6 +424,18 @@ vis.binds["vis-material-advanced"] = {
 
                 $div.find('.vma_value').html(state + " %");
 
+            }
+            if (colorize) {
+                if (state <= low) {
+                    $div.find('.vma_overlay').css('background-color', colorLow);
+                } else if (state >= high) {
+                    $div.find('.vma_overlay').css('background-color', colorHigh);
+                } else {
+                    $div.find('.vma_overlay').css('background-color', colorMedium);
+                }
+            }
+            else {
+                $div.find('.vma_overlay').css('background-color', original_class);
             }
         }
 
@@ -658,15 +678,15 @@ vis.binds["vis-material-advanced"] = {
             if (typeof state === 'number') {
                 $div.find('.mdw-list-value').html(state.toFixed(1) + ' hPa');
             }
-            //$div.find('.overlay').css('background-color', data.attr('opacity2'));
+            //$div.find('.vma_overlay').css('background-color', data.attr('opacity2'));
 
             if (colorize) {
                 if (state <= low) {
-                    $div.find('.overlay').css('background-color', colorLow);
+                    $div.find('.vma_overlay').css('background-color', colorLow);
                 } else if (state >= high) {
-                    $div.find('.overlay').css('background-color', colorHigh);
+                    $div.find('.vma_overlay').css('background-color', colorHigh);
                 } else {
-                    $div.find('.overlay').css('background-color', original_class);
+                    $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
 
@@ -1138,12 +1158,12 @@ vis.binds["vis-material-advanced"] = {
 
             if (colorize) {
                 if (state <= valLow) {
-                    $div.find('.overlay').css('background-color', colLow);
+                    $div.find('.vma_overlay').css('background-color', colLow);
                 } else if (state >= valHigh) {
-                    $div.find('.overlay').css('background-color', colHigh);
+                    $div.find('.vma_overlay').css('background-color', colHigh);
                 }
                 else {
-                    $div.find('.overlay').css('background-color', original_class);
+                    $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
             else {
@@ -1268,12 +1288,12 @@ vis.binds["vis-material-advanced"] = {
 
             // if (colorize) {
             //     if (state <= valLow) {
-            //         $div.find('.overlay').css('background-color', colLow);
+            //         $div.find('.vma_overlay').css('background-color', colLow);
             //     } else if (state >= valHigh) {
-            //         $div.find('.overlay').css('background-color', colHigh);
+            //         $div.find('.vma_overlay').css('background-color', colHigh);
             //     }
             //     else {
-            //         $div.find('.overlay').css('background-color', original_class);
+            //         $div.find('.vma_overlay').css('background-color', original_class);
             //     }
             // }
             // else {
