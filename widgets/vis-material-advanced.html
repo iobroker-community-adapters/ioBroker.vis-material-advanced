@@ -11,9 +11,10 @@
 <link rel="stylesheet" href="widgets/vis-material-advanced/css/material.css" />
 <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> -->
 <!-- here you can include so many js-files as you want -->
-
+ 
 <!-- here you can include so many js-files as you want -->
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/list.js"></script>
+<script type="text/javascript"    src="widgets/vis-material-advanced/js/base.js"></script>
 <!-- <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListDiv/listDiv.js"></script> -->
 <!-- <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListRegenRadar/listRegenRadar.js"></script> -->
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/ListDoor/listDoor.js"></script>
@@ -195,7 +196,7 @@
         <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
         <img src="/icons-mfd-svg/fts_door.svg " style="width: 100px; height: 100px;"></div></div>' 
         data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
-    data-vis-attrs0="group.BoxStyle;"
+    data-vis-attrs0="group.BoxStyle;"  
     data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
     data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"     
     data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
@@ -203,14 +204,14 @@
     data-vis-attrs5="valueSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
     data-vis-attrs6="opacityColor[white]/color;colorizeByValue/checkbox;colorOpen[orange]/color;" 
     data-vis-attrs7="borderRadius[10]/number,0,20,1;border/checkbox;"
-    data-vis-attrs8="group.icons;"
+    data-vis-attrs8="group.icons;" 
     data-vis-attrs9="cardIconClosed[/icons-mfd-svg/fts_door.svg]/image;"
     data-vis-attrs10="cardIconOpen[/icons-mfd-svg/fts_door_open.svg]/image;"
     data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style= "true"
-    data-vis-name="ListDoor"  >
+    data-vis-name="ListDoor" >           
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >
         <%   let init = genListDoor(this.data);    %>
         <%== init.widget %>            
@@ -273,7 +274,7 @@
     data-vis-set="vis-material-advanced" 
     data-vis-type="val"      
     data-vis-update-style="true"
-    data-vis-name="ListTemp" >
+    data-vis-name="ListTemp" >   
     <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >        
         <%   let init = genListTemperature(this.data);   %>
         <%== init.widget %>                    

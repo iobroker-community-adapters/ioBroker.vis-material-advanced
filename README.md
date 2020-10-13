@@ -83,6 +83,8 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+### __WORK IN PROGRESS__
+* position of Elements and min - height finally? fixed :)
 
 ### 0.8.14 (2020-10-04)
 * border-fix due to changes in css

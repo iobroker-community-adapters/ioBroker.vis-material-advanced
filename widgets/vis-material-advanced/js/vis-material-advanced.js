@@ -149,11 +149,11 @@ $.extend(
         "es": "Texto alineado",
         "pl": "Wyrównaj tekst",
         "zh-cn": "文字对齐"
-      },
-      "BoxStyle": {
-          "en": "Design of widget",
-          "de": "Widget Design",
-          "ru": "Выровнять текст",
+    },
+    "BoxStyle": {
+        "en": "Design of widget",
+        "de": "Widget Design",
+        "ru": "Выровнять текст",
         "pt": "Alinhamento de texto",
         "nl": "Tekst uitlijnen",
         "fr": "Aligner le texte",
@@ -161,7 +161,7 @@ $.extend(
         "es": "Texto alineado",
         "pl": "Wyrównaj tekst",
         "zh-cn": "文字对齐"
-      }
+    }
 
 }
 );
@@ -177,12 +177,12 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListVal: function (widgetID, view, data, val_type) {
         var $div = $('#' + widgetID);
-        
+
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
-        
-        const low = data.attr('below');        
+
+        const low = data.attr('below');
         const high = data.attr('above');
         const colorLow = data.attr('color-low');
         const colorHigh = data.attr('color-high');
@@ -191,13 +191,13 @@ vis.binds["vis-material-advanced"] = {
         var type;
 
         type = getPostFix(val_type);
-        
+
         setBorderAndOpacColor(border, $div, original_class);
-        
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds['vis-material-advanced'].tplMdListVal(widgetID, view, data,val_type);
+                vis.binds['vis-material-advanced'].tplMdListVal(widgetID, view, data, val_type);
             }, 100);
         }
 
@@ -217,8 +217,7 @@ vis.binds["vis-material-advanced"] = {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
-            else
-            {
+            else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
 
@@ -237,9 +236,9 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
-    tplMdListTempHumid: function (widgetID, view, data,type1,type2) {
+    tplMdListTempHumid: function (widgetID, view, data, type1, type2) {
         const icon = data.attr('cardIcon');
-       
+
         var $div = $('#' + widgetID);
 
         const original_class = data.attr('opacityColor');
@@ -254,17 +253,17 @@ vis.binds["vis-material-advanced"] = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds['vis-material-advanced'].tplMdListTempHumid(widgetID, view, data,type1,type2);
+                vis.binds['vis-material-advanced'].tplMdListTempHumid(widgetID, view, data, type1, type2);
             }, 100);
         }
 
-        function update(state,state2) { 
+        function update(state, state2) {
             $div.find('.vma_picture').find('img').attr('src', icon);
             $div.find('.vma_value2_1').html(state.toFixed(1) + valtype1);
             $div.find('.vma_value2_2').html(state2.toFixed(1) + valtype2);
         }
 
- 
+
         if (data.oid) {
             // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
@@ -274,21 +273,21 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
         }
-        
-        
+
+
         setPosition($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
-    tplMdListThermostat: function (widgetID, view, data,type1) {
+    tplMdListThermostat: function (widgetID, view, data, type1) {
         const icon = data.attr('cardIcon');
-       
+
         var $div = $('#' + widgetID);
 
         const original_class = data.attr('opacityColor');
         const border = data.attr('border');
 
         const valtype1 = getPostFix(type1);
-       
+
 
 
         setBorderAndOpacColor(border, $div, original_class);
@@ -296,21 +295,21 @@ vis.binds["vis-material-advanced"] = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds['vis-material-advanced'].tplMdListThermostat(widgetID, view, data,type1);
+                vis.binds['vis-material-advanced'].tplMdListThermostat(widgetID, view, data, type1);
             }, 100);
         }
 
-        function update(state) { 
+        function update(state) {
             $div.find('.vma_picture').find('img').attr('src', icon);
-           
+
             if (data.attr('readOnly')) {
 
-                $div.find('.vma_value').html(state + valtype1);              
+                $div.find('.vma_value').html(state + valtype1);
 
             }
         }
 
- 
+
         if (data.oid) {
             // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
@@ -320,8 +319,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        
-        
+
+
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
@@ -332,7 +331,7 @@ vis.binds["vis-material-advanced"] = {
 
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
-        
+
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
@@ -352,7 +351,7 @@ vis.binds["vis-material-advanced"] = {
             var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
             $div.find('.vma_picture').find('img').attr('src', src);
-           
+
             if (data.attr('readOnly')) {
                 if (state) {
                     $div.find('.vma_value').html("on");
@@ -364,8 +363,7 @@ vis.binds["vis-material-advanced"] = {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', onColor);
                 }
-                else
-                {
+                else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
@@ -388,7 +386,7 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);        
+        setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
     tplMdListLightDim: function (widgetID, view, data) {
@@ -396,7 +394,7 @@ vis.binds["vis-material-advanced"] = {
 
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
-        
+
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
@@ -430,8 +428,8 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);    
-        hideIconInWidget(data, $div);    
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListWindowShutter: function (widgetID, view, data) {
         const border = data.attr('border');
@@ -462,8 +460,7 @@ vis.binds["vis-material-advanced"] = {
             }
 
             var src = '/icons-mfd-svg/fts_shutter_' + name + '0.svg';
-            if ( name == 0 )
-            {
+            if (name == 0) {
                 var src = '/icons-mfd-svg/fts_window_2w.svg';
             }
             // console.log(' name : ' + name + " Icon : " + src);
@@ -486,14 +483,14 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val']);
         }
 
-        setPositionSingle($('#' + widgetID), data, $div);  
-        hideIconInWidget(data, $div);   
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListLightKelvin: function (widgetID, view, data) {
         const srcCold = data.attr('cardIcon-coldwhite');
         const srcMedium = data.attr('cardIcon-medium');
         const srcWarm = data.attr('cardIcon-warmwhite');
-        
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
@@ -513,7 +510,7 @@ vis.binds["vis-material-advanced"] = {
             var cold = parseInt(data.attr('max')) - parseInt(drittel);
             var src;
             if (state >= data.attr('min') && state < medium) {
-                 src = srcWarm;
+                src = srcWarm;
             } else if (state >= medium && state < cold) {
                 src = srcMedium;
             } else if (state >= cold && state <= data.attr('max')) {
@@ -540,14 +537,14 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);    
-        hideIconInWidget(data, $div);    
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListVolume: function (widgetID, view, data) {
         const srcOff = data.attr('cardIcon-low');
         const srcMedium = data.attr('cardIcon-medium');
         const srcOn = data.attr('cardIcon-high');
-       
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
@@ -575,7 +572,7 @@ vis.binds["vis-material-advanced"] = {
 
                 $div.find('.vma_value').html(state);
 
-            }            
+            }
         }
 
         if (data.oid) {
@@ -587,12 +584,11 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        else
-        {
+        else {
             $div.find('.vma_picture').find('img').attr('src', srcOff);
         }
-        setPositionSingle($('#' + widgetID), data, $div);      
-        hideIconInWidget(data, $div);  
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListGarage: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
@@ -696,7 +692,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const colTrue = data.attr('color-true');
         const colFalse = data.attr('color-false');
-      
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
@@ -747,7 +743,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const colLow = data.attr('color-low');
         const colHigh = data.attr('color-high');
-       
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
@@ -763,10 +759,9 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            if ( data.unit != "" )
-            {
+            if (data.unit != "") {
                 var unit = getPostFix(data.unit.trim());
-                $div.find('.vma_value').html(state+ ' '+ unit);
+                $div.find('.vma_value').html(state + ' ' + unit);
             }
             else {
                 $div.find('.vma_value').html(state);
@@ -799,20 +794,20 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);     
+        setPositionSingle($('#' + widgetID), data, $div);
     },
     tplMdListText: function (widgetID, view, data) {
         const valSearchString = data.attr('searchString');
         const colorize = data.attr('colorizeByValue');
         const colStringFound = data.attr('stringFoundColor');
-        
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
         setBorderAndOpacColor(border, $div, original_class);
 
-        
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
@@ -847,18 +842,18 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);     
+        setPositionSingle($('#' + widgetID), data, $div);
     },
     tplMdListValve: function (widgetID, view, data) {
-      
+
         const colorize = data.attr('colorizeByValue');
         const low = data.attr('below');
         // const $normal = data.attr('normal');
         const high = data.attr('above');
-      
+
         const colorMedium = data.attr('color-medium');
         const colorHigh = data.attr('color-high');
-      
+
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
@@ -880,7 +875,7 @@ vis.binds["vis-material-advanced"] = {
         if (seconds > 86400) {
             $div.find('.vma_value').css('opacity', '0.5');
         }
-        
+
 
         function update(state) {
             if (typeof state === 'number') {
@@ -910,16 +905,16 @@ vis.binds["vis-material-advanced"] = {
             // set current value 
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);  
-        hideIconInWidget(data, $div);  
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
-    tplMdListRadio: function (widgetID, view, data) {       
+    tplMdListRadio: function (widgetID, view, data) {
         //const src = data.attr('cardIcon');
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
         const onColor = data.attr('lightOnColor');
-        
+
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
@@ -935,11 +930,11 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-          //  var src = (state) ? srcOn : srcOff;
+            //  var src = (state) ? srcOn : srcOff;
             var $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
-          //  $div.find('.vma-picture').find('img').attr('src', src);
-           
+            //  $div.find('.vma-picture').find('img').attr('src', src);
+
             if (data.attr('readOnly')) {
                 if (state) {
                     $div.find('.vma_value').html("on");
@@ -951,8 +946,7 @@ vis.binds["vis-material-advanced"] = {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', onColor);
                 }
-                else
-                {
+                else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
@@ -975,19 +969,19 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-        setPositionSingle($('#' + widgetID), data, $div);   
-        hideIconInWidget(data, $div);     
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
     },
     tplMdListOpenClose: function (widgetID, view, data) {
         const srcClosed = data.attr('cardIconClosed');
-        const srcOpen = data.attr('cardIconOpen');  
+        const srcOpen = data.attr('cardIconOpen');
         const valOpen = _('open');
         const valClosed = _('closed');
-        
-        const border = data.attr('border');      
-        
+
+        const border = data.attr('border');
+
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacityColor'); 
+        const opacity = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
@@ -1003,13 +997,12 @@ vis.binds["vis-material-advanced"] = {
         function update(state) {
             var value = (state) ? valOpen : valClosed;
             var src = (state) ? srcOpen : srcClosed;
-            var color= (state) ? data.attr('colorOpen') : opacity;
-                        
-            $div.find('.vma_picture').find('img').attr('src', src);            
+            var color = (state) ? data.attr('colorOpen') : opacity;
+
+            $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
 
-            if ( colorize)
-            {
+            if (colorize) {
                 $div.find('.vma_overlay').css('background-color', color);
             }
             else {
@@ -1031,33 +1024,32 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            if ( border )
-            {
-                $div.find('.vma_inner_container_div').css('border','1px solid white' );
+            if (border) {
+                $div.find('.vma_inner_container_div').css('border', '1px solid white');
             }
             $div.find('.vma_overlay').css('background-color', opacity);
-    
+
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-       setPositionSingle($('#' + widgetID), data, $div);
-       hideIconInWidget(data, $div);
-     
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
+
     },
     tplMdListOccupancy: function (widgetID, view, data) {
         const srcClosed = data.attr('iconNoMotion');
-        const srcOpen = data.attr('iconMotion');  
+        const srcOpen = data.attr('iconMotion');
         const valMotion = _('motion');
         const valNoMotion = _('nomotion');
-        
+
         const valOpen = _('open');
         const valClosed = _('closed');
-        
-        const border = data.attr('border');      
-        
+
+        const border = data.attr('border');
+
         const colorize = data.attr('colorizeByValue');
         const motionColor = data.attr('motionColor')
-        const opacity = data.attr('opacityColor'); 
+        const opacity = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
@@ -1073,20 +1065,17 @@ vis.binds["vis-material-advanced"] = {
         function update(state) {
             var value = (state) ? valMotion : valNoMotion;
             var src = (state) ? srcOpen : srcClosed;
-            var color= (state) ? data.attr('colorOpen') : opacity;
-                        
-            $div.find('.vma_picture').find('img').attr('src', src);            
+            var color = (state) ? data.attr('colorOpen') : opacity;
+
+            $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
 
-            if ( colorize)
-            {
-                if ( state )
-                {
-                $div.find('.vma_overlay').css('background-color', motionColor);
+            if (colorize) {
+                if (state) {
+                    $div.find('.vma_overlay').css('background-color', motionColor);
                 }
-                else
-                {
-                    $div.find('.vma_overlay').css('background-color', opacity);    
+                else {
+                    $div.find('.vma_overlay').css('background-color', opacity);
                 }
             }
             else {
@@ -1108,27 +1097,26 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            if ( border )
-            {
-                $div.find('.vma_inner_container_div').css('border','1px solid white' );
+            if (border) {
+                $div.find('.vma_inner_container_div').css('border', '1px solid white');
             }
             $div.find('.vma_overlay').css('background-color', opacity);
-    
+
             // set current value
             update(vis.states[data.oid + '.val']);
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-      
-       
+
+        // var height = setHeight(data,$div);
 
     },
     tplMdListNew: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
-        const srcOn = data.attr('cardIconOpen');        
+        const srcOn = data.attr('cardIconOpen');
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacityColor'); 
+        const opacity = data.attr('opacityColor');
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -1182,13 +1170,13 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-        
-       
+
+
 
     },
     tplMdListNewDuo: function (widgetID, view, data) {
         const icon = data.attr('cardIcon');
-       
+
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -1198,10 +1186,10 @@ vis.binds["vis-material-advanced"] = {
             }, 100);
         }
 
-        function update(state,state2) {
-         
-         
-         
+        function update(state, state2) {
+
+
+
             $div.find('.vma_picture').find('img').attr('src', icon);
             $div.find('.vma_value2_1').html(state.toFixed(1) + ' °C');
             $div.find('.vma_value2_2').html(state2.toFixed(1) + ' %');
@@ -1224,15 +1212,15 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
         }
-        
-        
-        
+
+
+
         setPosition($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
-       
+
         console.log('');
     },
-    tplMdListRegenRadarDWD: function (widgetID,view,data) {
+    tplMdListRegenRadarDWD: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         if (!$div.length) {
             return setTimeout(function () {
@@ -1251,14 +1239,14 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
-        
+
         }
     },
     tplMdListDiv: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
-        const srcOn = data.attr('cardIconOpen');        
+        const srcOn = data.attr('cardIconOpen');
         const colorize = data.attr('colorizeByValue');
-        const opacity = data.attr('opacityColor'); 
+        const opacity = data.attr('opacityColor');
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -1269,13 +1257,13 @@ vis.binds["vis-material-advanced"] = {
         }
 
         $div.find('.vma_overlay').css('background-color', opacity);
-       // $(' script ').find('tplMaListDiv').attr('data-vis-attrs11','susi/text;');
+        // $(' script ').find('tplMaListDiv').attr('data-vis-attrs11','susi/text;');
         function update(state) {
             // var src = (state) ? srcOn : srcOff;
             // var $tmp = $('#' + widgetID + '_checkbox');
             // $tmp.prop('checked', state);
             // $div.find('.vma_picture').find('img').attr('src', src);
-            $div.find('.vma_value').html(state+ ' %');
+            $div.find('.vma_value').html(state + ' %');
 
             // if (colorize) {
             //     if (state <= valLow) {
@@ -1292,16 +1280,16 @@ vis.binds["vis-material-advanced"] = {
             // }
         }
 
-        
+
         if (!vis.editMode) {
             var $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
                 var $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
-            $div.click(function() {
+            $div.click(function () {
                 var $this_ = $(this);
-                vis.setValue($this_.data('oid'),'sieben');
+                vis.setValue($this_.data('oid'), 'sieben');
             });
         }
 
@@ -1313,15 +1301,15 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
-        
+
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
-        
-       
+        // var height = setHeight(data,$div);
+
 
     }
-    
+
 
 
 };
@@ -1329,209 +1317,6 @@ vis.binds["vis-material-advanced"] = {
 vis.binds["vis-material-advanced"].showVersion();
 
 
-
-function hideIconInWidget(data, $div) {
-
-    if ( data.attr('showIcon')  && data.attr('showTitle') ) {
-        // show Icon AND show Title Container
-        $div.find('.vma_picture').removeAttr('hidden');
-        $div.find('.vma_title_subtitle_id').removeAttr('hidden');
-       
-        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container');
-        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
-       
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
-        $div.find('.vma_value_id').addClass('vma_value_container');
-    }
-    else if ( !data.attr('showIcon') && data.attr('showTitle') ) {
-        // hide Icon AND show Title Container
-        $div.find('.vma_picture').attr('hidden', true);
-        $div.find('.vma_title_subtitle_id').removeAttr('hidden');
-        
-        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container');
-        $div.find('.vma_title_subtitle_id').addClass('vma_title_subtitle_container_without_icon');
-                
-        $div.find('.vma_value_id').addClass('vma_value_container_without_icon');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container');
-    }
-    else if (data.attr('showIcon') && ! data.attr('showTitle') ) {
-        // show Icon AND hide Title Container
-        $div.find('.vma_picture').removeAttr('hidden');
-        $div.find('.vma_title_subtitle_id').attr('hidden',true);
-        
-        $div.find('.vma_title_subtitle_id').addClass('vma_hidden');
-        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
-
-        
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon_and_title');
-        $div.find('.vma_value_id').addClass('vma_value_container_without_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container');
-    }
-    else if ( ! data.attr('showIcon') && ! data.attr('showTitle') ) {
-        // hide Icon AND hide Title Container
-        $div.find('.vma_picture').attr('hidden',true);
-        $div.find('.vma_title_subtitle_id').attr('hidden',true);
-        
-        $div.find('.vma_title_subtitle_id').addClass('vma_hidden');
-        $div.find('.vma_title_subtitle_id').removeClass('vma_title_subtitle_container_without_icon');
-
-        
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_icon');
-        $div.find('.vma_value_id').addClass('vma_value_container_without_icon_and_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container_without_title');
-        $div.find('.vma_value_id').removeClass('vma_value_container');
-    }
-    if ( data.showIcon ) {
-        var currentTextSize =  parseInt($div.find('.vma_title').css('font-size'));
-        if ( currentTextSize <= 16 )
-        {
-            $div.find('.vma_outer_div').css('min-height','30px');
-            $div.find('.vma_inner_container_div').css('min-height','30px');
-            $div.find('.vms_title').css('min-height','19px');
-            $div.find('.vma_only_title').css('min-height','19px');
-        }
-    }
-}
-
-function grayOutWhenInactive(data, $div) {
-    var curTime = new Date().getTime();
-    var lcTime = vis.states[data.oid + '.lc'];
-    var seconds = (curTime - lcTime) / 1000;
-    if (seconds > 86400) {
-        $div.find('.vma_overlay').css('opacity', '0.5');
-    }
-}
-
-function setBorderAndOpacColor(border, $div, original_class) {
-    if (border) {
-        $div.find('.vma_inner_container_div').css('border', '1px solid white');
-    }
-
-    $div.find('.vma_overlay').css('background-color', original_class);
-}
-
-function getPostFix(val_type) {
-    var type;
-    switch (val_type) {
-        case 'temp': 
-        case 'Celsius': {
-            type = ' °C';
-            break;
-        }
-        case 'Fahrenheit': {
-            type = ' °F';
-            break;
-        }
-        case 'humid': 
-        case 'valve': 
-        case 'percent': {
-            type = ' %';
-            break;
-        }
-        case 'pressure': {
-            type = ' hPa';
-            break;
-        }
-        default: {
-            type = val_type;
-        }
-    }
-    return type;
-}
-
-function setRadius(data, $div) {
-    const radius = data.attr('borderRadius');
-    $div.find('.vma_overlay').css('border-radius', radius + "px");
-    $div.find('.vma_outer_div').css('border-radius', radius + "px");
-    $div.find('.vma_inner_container_div').css('border-radius', radius + "px");
-    return true;
-}
-
-function setPositionSingle($this, data, $div) {   
-    //console.log($div.find('.vma_outer_div').css('height'));
-    var height = $this.innerHeight();
-    const value_height = $div.find('.vma_value').height();
-    const empty_space = height - value_height;
-    var top = 0;
-
-    if (height > 42) {
-        switch (data.attr('valueVertical')) {
-            case 'top': {
-                top = 4;
-                break;
-            }
-            case 'center': {
-                top = empty_space / 2 ;
-                break;
-            }
-            case 'bottom': {
-                top = empty_space - 4;                          
-                break;
-            }
-        }
-    }
-    $div.find('.vma_value').css('padding-top', top + "px");
-    if ( data.onlyTitle )
-    {
-        $div.find('.vma_only_title').css('padding-top', top + "px");
-        
-    }
-    if ( data.centerIcon )
-    {
-        $div.find('.vma_picture').css('padding-top', top - 14 + "px");        
-    }
-    if ( ( data.onlyTitle || ! data.showTitle) && ! data.showIcon )
-    {
-        document.documentElement.style.setProperty('--min-height-50','30px');
-        document.documentElement.style.setProperty('--min-height-46','28px');
-        document.documentElement.style.setProperty('--min-height-29','19px');
-        document.documentElement.style.setProperty('--min-height-24','16px');
-        document.documentElement.style.setProperty('--min-height-19','13px');
-        // $div.find('.vma_inner_container_div').css('min-height', '30px');        
-        // $div.find('.vma_title_subtitle_container').css('min-height', '30px');         
-        // $div.find('.vma_title_subtitle_container_without_icon').css('min-height', '30px');        
-        // $div.find('.vma_value_container_without_icon').css('min-height', '30px');        
-        // $div.find('.vma_value_container_without_icon_and_title').css('min-height', '30px');        
-        // $div.find('.vma_value_container_without_icon_and_title').css('min-height', '30px');        
-    }
-    setRadius(data,$div);
-    return true;
-}
-
-function setPosition($this, data, $div) {
-    var height = $this.innerHeight();
-    
-    const value_height2 = $div.find('.vma_value2_1').outerHeight(true) + $div.find('.vma_value2_2').outerHeight(true);
-    
-    const empty_space = height - value_height2;
-
-    var top = 0;
-
-    if (empty_space >= 0) {
-        switch (data.attr('valueVertical')) {
-            case 'top': {
-                top = 4;
-                break;
-            }
-            case 'center': {
-                top = empty_space / 2 ;
-                break;
-            }
-            case 'bottom': {
-                top = empty_space - 4;                
-                break;
-            }
-        }
-    }
-    $div.find('.vma_value2_1').css('padding-top', top + "px");
-    setRadius(data,$div);
-    return true;
-}
 
 // function genTitleContainer($title,$subtitle,$text_color,$title_size,$subtitle_size)
 // {
