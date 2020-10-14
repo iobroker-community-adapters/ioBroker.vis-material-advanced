@@ -84,7 +84,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.0.0 (2020-10-14)
 * no changes, upgrading to 1.0
 
 ### 0.9.1 (2020-10-13)
@@ -98,10 +98,6 @@ thanks to @sigi234
 
 ### 0.8.14 (2020-10-04)
 * border-fix due to changes in css
-
-### 0.8.13 (2020-10-03)
-* bugfix LightIcon not switching
-* bugfix Volume Icon not shown if no object is set
 
 ## License
 MIT License

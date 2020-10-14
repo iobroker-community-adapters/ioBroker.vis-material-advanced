@@ -1,4 +1,8 @@
 
+## 0.8.13 (2020-10-03)
+* bugfix LightIcon not switching
+* bugfix Volume Icon not shown if no object is set
+
 ## 0.8.12 (2020-10-01)
 * Value font-size can be changed now
 
