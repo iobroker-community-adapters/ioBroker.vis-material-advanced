@@ -84,7 +84,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.1.0 (2020-10-15)
 * Travis changes
 
 ### 1.0.0 (2020-10-14)
@@ -98,9 +98,6 @@ thanks to @sigi234
 
 ### 0.8.15 (2020-10-13)
 * position of Elements and min - height finally? fixed :)
-
-### 0.8.14 (2020-10-04)
-* border-fix due to changes in css
 
 ## License
 MIT License

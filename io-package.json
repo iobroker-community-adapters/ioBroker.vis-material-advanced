@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "news": {
+            "1.1.0": {
+                "en": "Travis changes",
+                "de": "Travis ändert sich",
+                "ru": "Изменения Трэвиса",
+                "pt": "Mudanças de Travis",
+                "nl": "Travis verandert",
+                "fr": "Changements de Travis",
+                "it": "Travis cambia",
+                "es": "Travis cambia",
+                "pl": "Travis się zmienia",
+                "zh-cn": "特拉维斯的变化"
+            },
             "1.0.0": {
                 "en": "no changes, upgrading to 1.0",
                 "de": "Keine Änderungen, Upgrade auf 1.0",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores para widgets más pequeños\nnuevo estilo para el elemento de cambio\nalineación de texto eliminada para el control deslizante",
                 "pl": "poprawka dla mniejszych widżetów\nnowy styl elementu przełącznika\nusunięto wyrównanie tekstu dla suwaka",
                 "zh-cn": "较小的小部件的错误修正\n开关项目的新样式\n删除了文本对齐滑块"
-            },
-            "0.8.0-0": {
-                "en": "remove test widgets\nrelease",
-                "de": "Entfernen Sie Test-Widgets\nFreisetzung",
-                "ru": "удалить тестовые виджеты\nрелиз",
-                "pt": "remover widgets de teste\nliberação",
-                "nl": "verwijder testwidgets\nvrijlating",
-                "fr": "supprimer les widgets de test\nLibération",
-                "it": "rimuovere i widget di prova\npubblicazione",
-                "es": "eliminar widgets de prueba\nlanzamiento",
-                "pl": "usuń widżety testowe\nwydanie",
-                "zh-cn": "删除测试小部件\n释放"
             }
         },
         "title": "Material Advanced",
