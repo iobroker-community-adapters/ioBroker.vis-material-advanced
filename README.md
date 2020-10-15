@@ -84,6 +84,9 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* Travis changes
+
 ### 1.0.0 (2020-10-14)
 * no changes, upgrading to 1.0
 

@@ -34,8 +34,8 @@
   "scripts": {
     "test:package": "mocha test/package --exit",
     "test": "npm run test:package",
-    "release": "release-script"
-  }
+    "release": "release-script",    
+    "test-travis": "node node_modules/mocha/bin/mocha"
   
   },
   "bugs": {
