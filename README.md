@@ -84,6 +84,10 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* url wrong in package.json
+
+
 ### 1.1.0 (2020-10-15)
 * Travis changes
 
