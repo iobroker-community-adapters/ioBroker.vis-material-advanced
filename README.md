@@ -84,7 +84,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.1.1 (2020-10-18)
 * url wrong in package.json
 
 
@@ -99,9 +99,6 @@ thanks to @sigi234
 
 ### 0.9.0 (2020-10-13)
 * bugfix for ListNumber and ListText, Icon should never been shown
-
-### 0.8.15 (2020-10-13)
-* position of Elements and min - height finally? fixed :)
 
 ## License
 MIT License

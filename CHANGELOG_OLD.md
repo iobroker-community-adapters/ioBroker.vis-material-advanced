@@ -1,4 +1,7 @@
 
+## 0.8.15 (2020-10-13)
+* position of Elements and min - height finally? fixed :)
+
 ## 0.8.14 (2020-10-04)
 * border-fix due to changes in css
 

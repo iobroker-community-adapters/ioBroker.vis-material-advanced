@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "news": {
+            "1.1.1": {
+                "en": "url wrong in package.json",
+                "de": "URL falsch in package.json",
+                "ru": "неверный URL в package.json",
+                "pt": "url errado em package.json",
+                "nl": "url fout in package.json",
+                "fr": "URL incorrecte dans package.json",
+                "it": "URL errato in package.json",
+                "es": "URL incorrecta en package.json",
+                "pl": "adres URL nieprawidłowy w package.json",
+                "zh-cn": "package.json中的网址错误"
+            },
             "1.1.0": {
                 "en": "Travis changes",
                 "de": "Travis ändert sich",
@@ -230,18 +242,6 @@
                 "es": "* nuevo número de versión\n\ns",
                 "pl": "* numer nowej wersji\n\ns",
                 "zh-cn": "*新版本号\n\ns"
-            },
-            "0.8.0": {
-                "en": "bugfix for smaller widgets\nnew style for switch item\nremoved text-align for slider",
-                "de": "Bugfix für kleinere Widgets\nneuer Stil für Schalterelement\nTextausrichtung für Schieberegler entfernt",
-                "ru": "исправление для небольших виджетов\nновый стиль для переключателя\nубрано выравнивание текста для слайдера",
-                "pt": "correção de bug para widgets menores\nnovo estilo para item de troca\nremoveu o alinhamento de texto do controle deslizante",
-                "nl": "bugfix voor kleinere widgets\nnieuwe stijl voor schakelaaritem\nverwijderd text-align voor slider",
-                "fr": "correction de bogue pour les petits widgets\nnouveau style pour l'élément de commutation\nsuppression de l'alignement du texte pour le curseur",
-                "it": "bugfix per widget più piccoli\nnuovo stile per l'elemento di commutazione\nrimosso l'allineamento del testo per il dispositivo di scorrimento",
-                "es": "corrección de errores para widgets más pequeños\nnuevo estilo para el elemento de cambio\nalineación de texto eliminada para el control deslizante",
-                "pl": "poprawka dla mniejszych widżetów\nnowy styl elementu przełącznika\nusunięto wyrównanie tekstu dla suwaka",
-                "zh-cn": "较小的小部件的错误修正\n开关项目的新样式\n删除了文本对齐滑块"
             }
         },
         "title": "Material Advanced",
