@@ -74,6 +74,11 @@ On left side choose vis-material-adapter and than all widgets are shown in previ
 
 ............. lots of docu missing ......................
 
+**this is example2.png, import it and see it live**
+![](widgets/door_example.png)
+
+
+
 **you can import the example.json file into vis**
 thanks to @sigi234
 
@@ -83,6 +88,10 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+### __WORK IN PROGRESS__
+* added option to round every corner different/not 
+* added option to change color of border
+* added option for shadow and size of shadow
 
 ### 1.1.1 (2020-10-18)
 * url wrong in package.json

@@ -36,7 +36,7 @@
     position: absolute;
     /* background-color: #121212;     */
     border-radius: 8px;
-    /* border: 1px solid white; */
+    /* border: 1px solid white; */    
 }
 
 .vma_picture {
@@ -171,6 +171,8 @@ visibility: hidden;
     background-color: white;
     opacity: 0.2;
     border-radius: 8px;
+    padding-left: 1px;
+    padding-top: 1px;
 
 }
 

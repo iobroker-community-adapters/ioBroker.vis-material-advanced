@@ -192,7 +192,7 @@ vis.binds["vis-material-advanced"] = {
 
         type = getPostFix(val_type);
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -248,7 +248,7 @@ vis.binds["vis-material-advanced"] = {
         const valtype2 = getPostFix(type2);
 
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -290,7 +290,7 @@ vis.binds["vis-material-advanced"] = {
 
 
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -336,7 +336,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
 
         // if nothing found => wait
@@ -407,7 +407,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -454,9 +454,11 @@ vis.binds["vis-material-advanced"] = {
     tplMdListWindowShutter: function (widgetID, view, data) {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
+        
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        data.attr('neues Attr','5');
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -515,7 +517,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -569,7 +571,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
 
         // if nothing found => wait
@@ -717,7 +719,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -768,7 +770,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -825,7 +827,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
 
         // if nothing found => wait
@@ -879,7 +881,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
 
         // if nothing found => wait
@@ -940,7 +942,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(border, $div, original_class);
+        setBorderAndOpacColor(data,border, $div, original_class);
 
 
         // if nothing found => wait
@@ -1045,10 +1047,12 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            if (border) {
-                $div.find('.vma_inner_container_div').css('border', '1px solid white');
-            }
-            $div.find('.vma_overlay').css('background-color', opacity);
+            setBorderAndOpacColor(data,border, $div, opacity);
+            
+            // if (border) {
+            //     $div.find('.vma_inner_container_div').css('border', '1px solid white');
+            // }
+            // $div.find('.vma_overlay').css('background-color', opacity);
 
             // set current value
             update(vis.states[data.oid + '.val']);

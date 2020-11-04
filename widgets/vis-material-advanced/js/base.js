@@ -74,9 +74,14 @@ function grayOutWhenInactive(data, $div) {
     }
 }
 
-function setBorderAndOpacColor(border, $div, original_class) {
+function setBorderAndOpacColor(data,border, $div, original_class) {
     if (border) {
-        $div.find('.vma_inner_container_div').css('border', '1px solid white');
+        $div.find('.vma_inner_container_div').css('border', '1px solid '+ data.attr('borderColor'));
+    }
+    if ( data.attr('boxShadow'))
+    {
+        var size = data.attr('shadowWidth');
+        $div.find('.vma_inner_container_div').css('box-shadow', size+'px '+ size +'px '+ size +'px 0px rgba(0,0,0,1)') ;
     }
 
     $div.find('.vma_overlay').css('background-color', original_class);
@@ -113,10 +118,28 @@ function getPostFix(val_type) {
 
 function setRadius(data, $div) {
     const radius = data.attr('borderRadius');
+    const splittedRoundedValue = data.attr('useOverallRoundedValues');
+    if ( splittedRoundedValue ) {
     $div.find('.vma_overlay').css('border-radius', radius + "px");
     $div.find('.vma_outer_div').css('border-radius', radius + "px");
     $div.find('.vma_inner_container_div').css('border-radius', radius + "px");
+    }
+    else {
+        setRadiusCorner($div,'top-left',data.attr("roundLeftUp"));
+        setRadiusCorner($div,'bottom-left',data.attr("roundLeftBottom"));
+        setRadiusCorner($div,'top-right',data.attr("roundRightUp"));
+        setRadiusCorner($div,'bottom-right',data.attr("roundRightBottom"));
+    }
+    
+
+    
     return true;
+}
+
+function setRadiusCorner($div,position, radius) {
+    $div.find('.vma_overlay').css('border-'+position+'-radius', radius + "px");
+    $div.find('.vma_outer_div').css('border-'+position+'-radius', radius + "px");
+    $div.find('.vma_inner_container_div').css('border-'+position+'-radius', radius + "px");
 }
 
 function setPositionSingle($this, data, $div) {
