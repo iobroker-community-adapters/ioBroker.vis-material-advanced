@@ -1,4 +1,7 @@
 
+## 0.9.0 (2020-10-13)
+* bugfix for ListNumber and ListText, Icon should never been shown
+
 ## 0.8.15 (2020-10-13)
 * position of Elements and min - height finally? fixed :)
 

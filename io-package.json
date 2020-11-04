@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.1.1",
+        "version": "1.2.0",
         "news": {
+            "1.2.0": {
+                "en": "added option to round every corner different/not \nadded option to change color of border\nadded option for shadow and size of shadow",
+                "de": "Option hinzugefügt, um jede Ecke anders abzurunden / nicht\nOption zum Ändern der Rahmenfarbe hinzugefügt\nOption für Schatten und Schattengröße hinzugefügt",
+                "ru": "добавлена возможность закруглять каждый угол по-разному / нет\nдобавлена возможность изменить цвет границы\nдобавлена опция тени и размера тени",
+                "pt": "opção adicionada para contornar cada esquina diferente / não\nopção adicionada para mudar a cor da borda\nopção adicionada para sombra e tamanho da sombra",
+                "nl": "optie toegevoegd om elke hoek anders te maken / niet\ntoegevoegde optie om kleur van grens te veranderen\ntoegevoegde optie voor schaduw en grootte van schaduw",
+                "fr": "option ajoutée pour arrondir chaque coin différent / non\noption ajoutée pour changer la couleur de la bordure\noption ajoutée pour l'ombre et la taille de l'ombre",
+                "it": "aggiunta opzione per arrotondare ogni angolo diverso / non\naggiunta l'opzione per cambiare il colore del bordo\nopzione aggiunta per ombra e dimensione dell'ombra",
+                "es": "opción agregada para doblar cada esquina diferente / no\nopción agregada para cambiar el color del borde\nopción agregada para la sombra y el tamaño de la sombra",
+                "pl": "dodano opcję zaokrąglania każdego rogu inaczej / nie\ndodana opcja zmiany koloru obramowania\ndodano opcję cienia i rozmiaru cienia",
+                "zh-cn": "添加选项以使每个角都不同/不是\n添加了更改边框颜色的选项\n添加了阴影和阴影大小的选项"
+            },
             "1.1.1": {
                 "en": "url wrong in package.json",
                 "de": "URL falsch in package.json",
@@ -230,18 +242,6 @@
                 "es": "el ancho del título se puede cambiar ahora en general. agregar $ (\"html\"). attr (\"estilo\", \"- título-ancho: 20%\"); en javascript global. Estándar ahora al 30%\ntamaño de texto eliminado de css. ahora puedes configurarlo de nuevo desde afuera",
                 "pl": "można teraz ogólnie zmienić szerokość tytułu. dodaj $ (\"html\"). attr (\"styl\", \"- szerokość tytułu: 20%\"); do globalnego javascript. Standard teraz na 30%\nrozmiar tekstu usunięty z css. teraz możesz ustawić go ponownie z zewnątrz",
                 "zh-cn": "现在整体上可以更改标题的宽度。添加$（“ html”）。attr（“ style”，“-title-width：20％”）;进入全球javascript。现在标准为30％\n从CSS移除文字大小。现在您可以从外面重新设置"
-            },
-            "0.8.1": {
-                "en": "* new version number\n\ns",
-                "de": "* neue Versionsnummer\n\ns",
-                "ru": "* номер новой версии\n\ns",
-                "pt": "* novo número de versão\n\ns",
-                "nl": "* nieuw versienummer\n\ns",
-                "fr": "* nouveau numéro de version\n\ns",
-                "it": "* nuovo numero di versione\n\nS",
-                "es": "* nuevo número de versión\n\ns",
-                "pl": "* numer nowej wersji\n\ns",
-                "zh-cn": "*新版本号\n\ns"
             }
         },
         "title": "Material Advanced",

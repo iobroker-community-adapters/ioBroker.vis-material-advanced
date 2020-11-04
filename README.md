@@ -88,7 +88,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.2.0 (2020-11-04)
 * added option to round every corner different/not 
 * added option to change color of border
 * added option for shadow and size of shadow
@@ -105,9 +105,6 @@ thanks to @sigi234
 
 ### 0.9.1 (2020-10-13)
 * some colorizeByValue options did not work
-
-### 0.9.0 (2020-10-13)
-* bugfix for ListNumber and ListText, Icon should never been shown
 
 ## License
 MIT License
