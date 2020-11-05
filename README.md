@@ -65,6 +65,7 @@ not yet final:
     - border-radius to enable and change the round corner
     - valueAlign Align the Value field left,center or right
     - value-vetical Align the Value field top,botton or middle
+    - borderColor Color of the Border if activated
 
 
 ### Getting started
