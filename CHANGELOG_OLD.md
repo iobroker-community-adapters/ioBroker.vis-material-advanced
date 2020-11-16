@@ -1,4 +1,7 @@
 
+## 0.9.1 (2020-10-13)
+* some colorizeByValue options did not work
+
 ## 0.9.0 (2020-10-13)
 * bugfix for ListNumber and ListText, Icon should never been shown
 

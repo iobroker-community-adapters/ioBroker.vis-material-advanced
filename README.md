@@ -89,7 +89,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.2.1 (2020-11-16)
 * changed position of properties to be alomst same everywhere
 
 ### 1.2.0 (2020-11-04)
@@ -106,9 +106,6 @@ thanks to @sigi234
 
 ### 1.0.0 (2020-10-14)
 * no changes, upgrading to 1.0
-
-### 0.9.1 (2020-10-13)
-* some colorizeByValue options did not work
 
 ## License
 MIT License
