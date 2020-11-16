@@ -89,6 +89,11 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* released new version
+
+
 ### 1.2.1 (2020-11-16)
 * changed position of properties to be alomst same everywhere
 
