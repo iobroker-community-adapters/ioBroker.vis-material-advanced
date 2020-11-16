@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.3.0 (2020-11-16)
 * released new version
 
 
@@ -108,9 +108,6 @@ thanks to @sigi234
 
 ### 1.1.0 (2020-10-15)
 * Travis changes
-
-### 1.0.0 (2020-10-14)
-* no changes, upgrading to 1.0
 
 ## License
 MIT License

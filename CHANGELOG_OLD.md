@@ -1,4 +1,7 @@
 
+## 1.0.0 (2020-10-14)
+* no changes, upgrading to 1.0
+
 ## 0.9.1 (2020-10-13)
 * some colorizeByValue options did not work
 
