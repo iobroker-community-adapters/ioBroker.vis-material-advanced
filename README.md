@@ -89,6 +89,9 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+### __WORK IN PROGRESS__
+* changed position of properties to be alomst same everywhere
+
 ### 1.2.0 (2020-11-04)
 * added option to round every corner different/not 
 * added option to change color of border
