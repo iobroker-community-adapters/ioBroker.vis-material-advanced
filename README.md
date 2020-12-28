@@ -89,7 +89,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.3.1 (2020-12-28)
 * added possibility to show value instead of the subtitle
 * fixed a bug with weired slider behaviour, dont know how
 
@@ -110,9 +110,6 @@ thanks to @sigi234
 ### 1.1.1 (2020-10-18)
 * url wrong in package.json
 
-
-### 1.1.0 (2020-10-15)
-* Travis changes
 
 ## License
 MIT License
