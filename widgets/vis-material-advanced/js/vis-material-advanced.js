@@ -307,6 +307,11 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.vma_value').html(state + valtype1);
 
             }
+            console.log("Checkbox Value as Subtitle: " + data.attr('valueAsSubtitle'));
+
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' '+ valtype1);
+            }
         }
 
 
@@ -425,6 +430,9 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.vma_value').html(state + " %");
 
             }
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' %');
+            }
             if (colorize) {
                 if (state <= low) {
                     $div.find('.vma_overlay').css('background-color', colorLow);
@@ -487,6 +495,9 @@ vis.binds["vis-material-advanced"] = {
             }
             // console.log(' name : ' + name + " Icon : " + src);
             $div.find('.vma_picture').find('img').attr('src', src);
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' %');
+            }
             if (data.attr('readOnly')) {
 
                 $div.find('.vma_value').html(state + "%");
@@ -541,6 +552,9 @@ vis.binds["vis-material-advanced"] = {
                 console.log('Fehler');
                 src = 'Fehler';
             }
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' K');
+            }
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {
 
@@ -594,6 +608,9 @@ vis.binds["vis-material-advanced"] = {
 
                 $div.find('.vma_value').html(state);
 
+            }
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' %');
             }
         }
 
@@ -916,6 +933,9 @@ vis.binds["vis-material-advanced"] = {
             }
             else {
                 $div.find('.vma_overlay').css('background-color', original_class);
+            }
+            if ( data.attr('valueAsSubtitle') == true  ) {
+                $div.find('.vma_subtitle').html(state +' %');
             }
         }
 
