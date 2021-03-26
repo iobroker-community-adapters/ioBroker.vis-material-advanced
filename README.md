@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.4.0 (2021-03-26)
 * bugfix titel alignment for  number and text
 * add ppm as unit
 
@@ -111,10 +111,6 @@ thanks to @sigi234
 * added option to round every corner different/not 
 * added option to change color of border
 * added option for shadow and size of shadow
-
-### 1.1.1 (2020-10-18)
-* url wrong in package.json
-
 
 ## License
 MIT License
