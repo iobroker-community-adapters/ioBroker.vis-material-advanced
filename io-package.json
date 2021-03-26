@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.2",
+        "version": "1.4.3",
         "news": {
+            "1.4.3": {
+                "en": "update internal test-and-release script",
+                "de": "Aktualisieren Sie das interne Test- und Release-Skript",
+                "ru": "обновить внутренний сценарий тестирования и выпуска",
+                "pt": "atualizar o script interno de teste e lançamento",
+                "nl": "update intern test-en-release-script",
+                "fr": "mettre à jour le script de test et de publication interne",
+                "it": "aggiornare lo script interno di test e rilascio",
+                "es": "actualizar el script interno de prueba y lanzamiento",
+                "pl": "zaktualizować wewnętrzny skrypt testujący i udostępniający",
+                "zh-cn": "更新内部测试和发布脚本"
+            },
             "1.4.2": {
                 "en": "updated internal test-and-release script",
                 "de": "aktualisiertes internes Test- und Release-Skript",
@@ -230,18 +242,6 @@
                 "es": "dependencia agregada a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), por lo que los íconos se ven mejor y no es necesario entregarlos\nfaltan algunos iconos, por lo que los iconos locales también se siguen utilizando.\n! Si no instala el adaptador, los iconos del lado izquierdo en la vista de edición permanecerán vacíos\nnuevas unidades agregadas al widget numérico",
                 "pl": "dodano zależność do icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), dzięki czemu ikony wyglądają ładniej i nie trzeba ich dostarczać\nbrakuje tam niektórych ikon, więc nadal są używane również ikony lokalne.\n! Jeśli nie zainstalujesz adaptera, ikony po lewej stronie w oknie edycji pozostaną puste\nnowe jednostki dodane do widżetu numerycznego",
                 "zh-cn": "在icons-mfd-svg（https://github.com/ioBroker/ioBroker.icons-mfd-svg）中添加了dependeny，因此图标看起来更好，不需要交付它们\n那里缺少一些图标，因此仍然使用本地图标。\n！如果您未安装适配器，则“编辑可见”左侧的图标将保持空白\n新单位添加到数字小部件"
-            },
-            "0.8.8": {
-                "en": "added Unit to ListNumber",
-                "de": "Unit zu ListNumber hinzugefügt",
-                "ru": "добавлен объект в ListNumber",
-                "pt": "unidade adicionada a ListNumber",
-                "nl": "Unit toegevoegd aan ListNumber",
-                "fr": "a ajouté Unit à ListNumber",
-                "it": "aggiunta di unità a ListNumber",
-                "es": "Unidad agregada a ListNumber",
-                "pl": "dodano Unit do ListNumber",
-                "zh-cn": "将单位添加到ListNumber"
             }
         },
         "title": "Material Advanced",

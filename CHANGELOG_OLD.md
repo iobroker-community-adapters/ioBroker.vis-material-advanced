@@ -1,4 +1,8 @@
 
+## 1.3.0 (2020-11-16)
+* released new version
+
+
 ## 1.2.1 (2020-11-16)
 * changed position of properties to be alomst same everywhere
 

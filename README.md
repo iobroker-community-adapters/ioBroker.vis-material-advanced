@@ -89,7 +89,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.4.3 (2021-03-26)
 * update internal test-and-release script
 
 ### 1.4.2 (2021-03-26)
@@ -106,10 +106,6 @@ thanks to @sigi234
 * added possibility to show value instead of the subtitle
 * fixed a bug with weired slider behaviour, dont know how
 
-
-
-### 1.3.0 (2020-11-16)
-* released new version
 
 
 ## License
