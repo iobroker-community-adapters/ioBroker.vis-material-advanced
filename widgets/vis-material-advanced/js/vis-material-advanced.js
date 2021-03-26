@@ -74,7 +74,7 @@ $.extend(
     },
     "notpresent": {
         "en": "not present",
-        "de": "Abswesend",
+        "de": "Abwesend",
         "ru": "not present"
     },
     "Text-Color": {
@@ -1176,14 +1176,14 @@ vis.binds["vis-material-advanced"] = {
     tplMdListPresence: function (widgetID, view, data) {
         const srcClosed = data.attr('iconNotPresent');
         const srcOpen = data.attr('iconPresent');
-        const valMotion = _('present');
-        const valNoMotion = _('notpresent');
+        const valPresent = _('present');
+        const valNotPresent = _('notpresent');
 
         
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
-        const motionColor = data.attr('motionColor')
+        const presenceColor = data.attr('presenceColor')
         const opacity = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
@@ -1198,7 +1198,7 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var value = (state) ? valMotion : valNoMotion;
+            var value = (state) ? valPresent : valNotPresent;
             var src = (state) ? srcOpen : srcClosed;
             var color = (state) ? data.attr('colorOpen') : opacity;
 
@@ -1207,7 +1207,7 @@ vis.binds["vis-material-advanced"] = {
 
             if (colorize) {
                 if (state) {
-                    $div.find('.vma_overlay').css('background-color', motionColor);
+                    $div.find('.vma_overlay').css('background-color', presenceColor);
                 }
                 else {
                     $div.find('.vma_overlay').css('background-color', opacity);

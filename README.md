@@ -89,6 +89,10 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* new widget Presence
+
 ### 1.4.7 (2021-03-26)
 * removed unit test 
 
