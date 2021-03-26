@@ -1,4 +1,4 @@
-function genListOccupancy(data) {
+function genListPresence(data) {
     let divList = [];
     startSkeleton(divList,data);
     genIcon(divList,data.attr('iconMotion'));
