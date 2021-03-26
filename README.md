@@ -89,6 +89,9 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+### __WORK IN PROGRESS__
+* removed lint 
+
 ### 1.4.5 (2021-03-26)
 * update internal test-and-release script
 
