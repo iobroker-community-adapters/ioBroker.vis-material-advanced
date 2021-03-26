@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.4.2 (2021-03-26)
 * updated internal test-and-release script
 
 ### 1.4.1 (2021-03-26)
@@ -109,9 +109,6 @@ thanks to @sigi234
 ### 1.3.0 (2020-11-16)
 * released new version
 
-
-### 1.2.1 (2020-11-16)
-* changed position of properties to be alomst same everywhere
 
 ## License
 MIT License

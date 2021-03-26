@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.1",
+        "version": "1.4.2",
         "news": {
+            "1.4.2": {
+                "en": "updated internal test-and-release script",
+                "de": "aktualisiertes internes Test- und Release-Skript",
+                "ru": "обновленный внутренний скрипт тестирования и выпуска",
+                "pt": "script de teste e lançamento interno atualizado",
+                "nl": "bijgewerkt intern test-en-release-script",
+                "fr": "mise à jour du script interne de test et de publication",
+                "it": "script interno di test e rilascio aggiornato",
+                "es": "script interno actualizado de prueba y lanzamiento",
+                "pl": "zaktualizowany wewnętrzny skrypt testowania i wydania",
+                "zh-cn": "更新的内部测试和发布脚本"
+            },
             "1.4.1": {
                 "en": "updated internal test-and-release script",
                 "de": "aktualisiertes internes Test- und Release-Skript",
@@ -230,18 +242,6 @@
                 "es": "Unidad agregada a ListNumber",
                 "pl": "dodano Unit do ListNumber",
                 "zh-cn": "将单位添加到ListNumber"
-            },
-            "0.8.7": {
-                "en": "added new widget thermostat, first try",
-                "de": "neuer Widget-Thermostat hinzugefügt, erster Versuch",
-                "ru": "добавлен новый виджет термостата, сначала попробуйте",
-                "pt": "adicionado novo termostato de widget, primeira tentativa",
-                "nl": "nieuwe widget-thermostaat toegevoegd, probeer het eerst",
-                "fr": "ajout d'un nouveau thermostat de widget, premier essai",
-                "it": "aggiunto un nuovo termostato widget, primo tentativo",
-                "es": "nuevo termostato de widget agregado, primer intento",
-                "pl": "dodano nowy termostat widżetu, najpierw spróbuj",
-                "zh-cn": "添加了新的小部件恒温器，请先尝试"
             }
         },
         "title": "Material Advanced",
