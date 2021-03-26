@@ -678,6 +678,9 @@ vis.binds["vis-material-advanced"] = {
         const colorLow = data.attr('color-low');
         const colorHigh = data.attr('color-high');
 
+        var $div = $('#' + widgetID);
+        setBorderAndOpacColor(data,border, $div, original_class);
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {

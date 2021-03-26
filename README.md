@@ -89,6 +89,11 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+
+### __WORK IN PROGRESS__
+* bugfix titel alignment for  number and text
+* add ppm as unit
+
 ### 1.3.1 (2020-12-28)
 * added possibility to show value instead of the subtitle
 * fixed a bug with weired slider behaviour, dont know how
