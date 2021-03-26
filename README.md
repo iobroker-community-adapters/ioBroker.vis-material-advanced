@@ -89,7 +89,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.4.6 (2021-03-26)
 * removed lint 
 
 ### 1.4.5 (2021-03-26)
@@ -102,9 +102,6 @@ thanks to @sigi234
 * update internal test-and-release script
 
 ### 1.4.2 (2021-03-26)
-* updated internal test-and-release script
-
-### 1.4.1 (2021-03-26)
 * updated internal test-and-release script
 
 ## License

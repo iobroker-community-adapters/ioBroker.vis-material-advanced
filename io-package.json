@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.5",
+        "version": "1.4.6",
         "news": {
+            "1.4.6": {
+                "en": "removed lint",
+                "de": "Flusen entfernt",
+                "ru": "удален ворс",
+                "pt": "fiapo removido",
+                "nl": "verwijderde pluisjes",
+                "fr": "peluches enlevées",
+                "it": "pelucchi rimossi",
+                "es": "pelusa eliminada",
+                "pl": "usunięte kłaczki",
+                "zh-cn": "去除棉绒"
+            },
             "1.4.5": {
                 "en": "update internal test-and-release script",
                 "de": "Aktualisieren Sie das interne Test- und Release-Skript",
@@ -230,18 +242,6 @@
                 "es": "El tamaño de fuente del valor se puede cambiar ahora",
                 "pl": "Wartość rozmiaru czcionki można teraz zmienić",
                 "zh-cn": "值字体大小可以立即更改"
-            },
-            "0.8.11": {
-                "en": "bugfix fo rwrong htm lin Shutter Widget, thx Sigi234",
-                "de": "Bugfix für falsches htm lin Shutter Widget, thx Sigi234",
-                "ru": "исправление ошибки для виджета затвора htm lin, спасибо Sigi234",
-                "pt": "correção de bug para widget do obturador htm lin rwrong, thx Sigi234",
-                "nl": "bugfix voor verkeerde htm lin Shutter Widget, thx Sigi234",
-                "fr": "correction de bogue pour le widget d'obturation htm lin, thx Sigi234",
-                "it": "bugfix per htm lin Shutter Widget errato, grazie a Sigi234",
-                "es": "corrección de errores para el widget del obturador rwrong htm lin, gracias Sigi234",
-                "pl": "Poprawka błędu rwrong htm lin Shutter Widget, thx Sigi234",
-                "zh-cn": "错误的htm lin快门小部件的修正，thgi Sigi234"
             }
         },
         "title": "Material Advanced",

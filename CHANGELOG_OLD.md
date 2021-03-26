@@ -1,4 +1,7 @@
 
+## 1.4.1 (2021-03-26)
+* updated internal test-and-release script
+
 ## 1.4.0 (2021-03-26)
 * bugfix titel alignment for  number and text
 * add ppm as unit
