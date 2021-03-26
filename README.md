@@ -90,6 +90,9 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* updated internal test-and-release script
+
 ### 1.4.1 (2021-03-26)
 * updated internal test-and-release script
 
