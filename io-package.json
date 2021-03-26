@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.0",
+        "version": "1.4.1",
         "news": {
+            "1.4.1": {
+                "en": "updated internal test-and-release script",
+                "de": "aktualisiertes internes Test- und Release-Skript",
+                "ru": "обновленный внутренний скрипт тестирования и выпуска",
+                "pt": "script de teste e lançamento interno atualizado",
+                "nl": "bijgewerkt intern test-en-release-script",
+                "fr": "mise à jour du script interne de test et de publication",
+                "it": "script interno di test e rilascio aggiornato",
+                "es": "script interno actualizado de prueba y lanzamiento",
+                "pl": "zaktualizowany wewnętrzny skrypt testowania i wydania",
+                "zh-cn": "更新的内部测试和发布脚本"
+            },
             "1.4.0": {
                 "en": "bugfix titel alignment for  number and text\nadd ppm as unit",
                 "de": "Bugfix Titel Alignment für Nummer und Text\nppm als Einheit hinzufügen",
@@ -230,18 +242,6 @@
                 "es": "nuevo termostato de widget agregado, primer intento",
                 "pl": "dodano nowy termostat widżetu, najpierw spróbuj",
                 "zh-cn": "添加了新的小部件恒温器，请先尝试"
-            },
-            "0.8.6": {
-                "en": "All properties are now without - sign\nbugfix background-color issue, if corners were round there was different color beneath",
-                "de": "Alle Eigenschaften sind jetzt ohne Vorzeichen\nBugfix Hintergrundfarbe Problem, wenn Ecken rund waren, gab es eine andere Farbe darunter",
-                "ru": "Все объекты теперь без - подписать\nисправление проблемы с цветом фона, если углы были круглыми, под ними был другой цвет",
-                "pt": "Todas as propriedades agora estão sem - sinal\nbug corrigido problema de cor de fundo, se os cantos eram arredondados, havia uma cor diferente abaixo",
-                "nl": "Alle eigendommen zijn nu zonder - teken\nbugfix probleem met achtergrondkleur, als hoeken rond waren, was er een andere kleur onder",
-                "fr": "Toutes les propriétés sont désormais sans signe -\ncorrection d'un problème de couleur d'arrière-plan, si les coins étaient ronds, il y avait une couleur différente en dessous",
-                "it": "Tutte le proprietà sono ora senza segno\nbugfix problema di colore di sfondo, se gli angoli erano rotondi c'era un colore diverso sotto",
-                "es": "Todas las propiedades están ahora sin - signo\ncorrección de errores problema de color de fondo, si las esquinas eran redondas, había un color diferente debajo",
-                "pl": "Wszystkie nieruchomości są teraz bez znaku -\nnaprawiono błąd koloru tła, jeśli rogi były zaokrąglone, pod spodem był inny kolor",
-                "zh-cn": "现在所有属性均不带-号\n错误修正背景颜色问题，如果角落是圆的，下面有不同的颜色"
             }
         },
         "title": "Material Advanced",

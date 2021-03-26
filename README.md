@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.4.1 (2021-03-26)
 * updated internal test-and-release script
 
 ### 1.4.0 (2021-03-26)
@@ -109,11 +109,6 @@ thanks to @sigi234
 
 ### 1.2.1 (2020-11-16)
 * changed position of properties to be alomst same everywhere
-
-### 1.2.0 (2020-11-04)
-* added option to round every corner different/not 
-* added option to change color of border
-* added option for shadow and size of shadow
 
 ## License
 MIT License

@@ -1,4 +1,9 @@
 
+## 1.2.0 (2020-11-04)
+* added option to round every corner different/not 
+* added option to change color of border
+* added option for shadow and size of shadow
+
 ## 1.1.1 (2020-10-18)
 * url wrong in package.json
 
