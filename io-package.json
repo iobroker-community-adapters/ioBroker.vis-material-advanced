@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.7",
+        "version": "1.5.0",
         "news": {
+            "1.5.0": {
+                "en": "new widget Presence",
+                "de": "neues Widget Präsenz",
+                "ru": "присутствие нового виджета",
+                "pt": "nova presença de widget",
+                "nl": "nieuwe widget Aanwezigheid",
+                "fr": "nouveau widget Présence",
+                "it": "nuovo widget Presence",
+                "es": "Presencia de nuevo widget",
+                "pl": "nowy widżet Obecność",
+                "zh-cn": "新的小部件状态"
+            },
             "1.4.7": {
                 "en": "removed unit test",
                 "de": "Unit Test entfernt",
@@ -230,18 +242,6 @@
                 "es": "border-fix debido a cambios en css",
                 "pl": "border-fix z powodu zmian w css",
                 "zh-cn": "由于CSS更改而导致的边界修复"
-            },
-            "0.8.13": {
-                "en": "bugfix LightIcon not switching\nbugfix Volume Icon not shown if no object is set",
-                "de": "Bugfix LightIcon wechselt nicht\nBugfix Volume Icon wird nicht angezeigt, wenn kein Objekt festgelegt ist",
-                "ru": "исправление ошибки LightIcon не переключается\nbugfix Значок громкости не отображается, если объект не установлен",
-                "pt": "bugfix LightIcon não muda\ncorreção de bug O ícone de volume não é mostrado se nenhum objeto for definido",
-                "nl": "bugfix LightIcon schakelt niet over\nbugfix Volumepictogram niet weergegeven als er geen object is ingesteld",
-                "fr": "bugfix LightIcon ne bascule pas\nbugfix Icône de volume non affichée si aucun objet n'est défini",
-                "it": "bugfix LightIcon non cambia\nbugfix L'icona del volume non viene visualizzata se non è impostato alcun oggetto",
-                "es": "corrección de errores LightIcon no cambia\ncorrección de errores El icono de volumen no se muestra si no se establece ningún objeto",
-                "pl": "bugfix LightIcon się nie przełącza\nbugfix Ikona głośności nie jest wyświetlana, jeśli żaden obiekt nie jest ustawiony",
-                "zh-cn": "错误修正LightIcon无法切换\n如果未设置任何对象，则不显示错误修正卷图标"
             }
         },
         "title": "Material Advanced",
