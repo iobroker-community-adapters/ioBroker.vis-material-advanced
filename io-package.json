@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.4",
+        "version": "1.4.5",
         "news": {
+            "1.4.5": {
+                "en": "update internal test-and-release script",
+                "de": "Aktualisieren Sie das interne Test- und Release-Skript",
+                "ru": "обновить внутренний сценарий тестирования и выпуска",
+                "pt": "atualizar o script interno de teste e lançamento",
+                "nl": "update intern test-en-release-script",
+                "fr": "mettre à jour le script de test et de publication interne",
+                "it": "aggiornare lo script interno di test e rilascio",
+                "es": "actualizar el script interno de prueba y lanzamiento",
+                "pl": "zaktualizować wewnętrzny skrypt testujący i udostępniający",
+                "zh-cn": "更新内部测试和发布脚本"
+            },
             "1.4.4": {
                 "en": "update internal test-and-release script",
                 "de": "Aktualisieren Sie das interne Test- und Release-Skript",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores para el widget del obturador rwrong htm lin, gracias Sigi234",
                 "pl": "Poprawka błędu rwrong htm lin Shutter Widget, thx Sigi234",
                 "zh-cn": "错误的htm lin快门小部件的修正，thgi Sigi234"
-            },
-            "0.8.10": {
-                "en": "rebase to iobroker-ocmmunity-adapter\nadded option to center Icon\nadded option to have ONLY Title and no subtitle",
-                "de": "Rebase zum iobroker-ocmmunity-Adapter\nOption zum mittleren Symbol hinzugefügt\nOption hinzugefügt, um NUR Titel und keinen Untertitel zu haben",
-                "ru": "переустановить на iobroker-ocmmunity-adapter\nдобавлена возможность центрировать иконку\nдобавлена возможность иметь ТОЛЬКО заголовок и без субтитров",
-                "pt": "rebase para iobroker-ocmmunity-adapter\nopção adicionada ao ícone do centro\nopção adicionada para ter APENAS título e nenhum subtítulo",
-                "nl": "rebase naar iobroker-ocmmunity-adapter\noptie toegevoegd om pictogram te centreren\noptie toegevoegd om ALLEEN titel en geen ondertitel te hebben",
-                "fr": "rebase vers iobroker-ocmmunity-adapter\noption ajoutée pour centrer l'icône\noption ajoutée pour avoir UNIQUEMENT titre et pas de sous-titre",
-                "it": "rebase a iobroker-ocmmunity-adapter\naggiunta un'opzione all'icona centrale\naggiunta l'opzione per avere SOLO titolo e nessun sottotitolo",
-                "es": "rebase a iobroker-ocmmunity-adapter\nopción agregada al icono central\nopción agregada para tener SOLO título y sin subtítulo",
-                "pl": "rebase na iobroker-ocmmunity-adapter\ndodano opcję do ikony środkowej\ndodana opcja posiadania TYLKO tytułu i bez podtytułu",
-                "zh-cn": "改用iobroker-ocmununity-adapter\n向中心图标添加了选项\n添加选项以仅具有标题而没有字幕"
             }
         },
         "title": "Material Advanced",
