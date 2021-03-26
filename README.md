@@ -89,7 +89,7 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
-### __WORK IN PROGRESS__
+### 1.4.7 (2021-03-26)
 * removed unit test 
 
 
@@ -104,9 +104,6 @@ thanks to @sigi234
 
 ### 1.4.3 (2021-03-26)
 * update internal test-and-release script
-
-### 1.4.2 (2021-03-26)
-* updated internal test-and-release script
 
 ## License
 MIT License
