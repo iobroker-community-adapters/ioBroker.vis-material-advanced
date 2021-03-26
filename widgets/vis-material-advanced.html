@@ -393,7 +393,40 @@
 <% vis.binds['vis-material-advanced'].tplMdListTempHumid(this.data.wid,  this.view, this.data,'temp','humid');  %>
 </script>
 
-
+<script 
+    id="tplMaListPresence" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedListPresence" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="/widgets/vis-material-advanced/img/female_white.png " style="width: 100px; height: 100px;"></div></div>' 
+    data-vis-attrs="oid/id;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
+    data-vis-attrs0="group.BoxStyle;"
+    data-vis-attrs1="titleSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"
+    data-vis-attrs2="widgetBackground[#121212]/color;TextColor[white]/color;"
+    data-vis-attrs3="subtitleSize[x-small]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"     
+    data-vis-attrs4="valueAlign[right]/select,left,center,right;valueVertical[center]/select,top,center,bottom;"
+    data-vis-attrs5="valueSize[medium]/select, medium, xx-small, x-small, small, large, x-large, xx-large, smaller, larger;"   
+    data-vis-attrs6="opacityColor[white]/color;"
+    data-vis-attrs7="colorizeByValue/checkbox;motionColor[yellow]/color;"     
+    data-vis-attrs8="group.icons;"
+    data-vis-attrs9="iconPresent[/widgets/vis-material-advanced/img/female_white_star.png]/image;"
+    data-vis-attrs10="iconNotPresent[/widgets/vis-material-advanced/img/female_white.png]/image;"
+    data-vis-attrs11="showIcon[checked]/checkbox;centerIcon[]/checkbox;"
+    data-vis-attrs12="group.border;";
+    data-vis-attrs13="border/checkbox;borderColor[white]/color;borderRadius[10]/number,0,20,1;";    
+    data-vis-attrs14="useOverallRoundedValues[checked]/checkbox;roundLeftUp[10]/number,0,20,1;roundLeftBottom[0]/number,0,20,1;roundRightUp[0]/number,0,20,1;roundRightBottom[10]/number,0,20,1;"
+    data-vis-attrs15="boxShadow[unchecked]/checkbox;shadowWidth[2]/number,1,10,1"; 
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"      
+    data-vis-update-style="true"
+    data-vis-name="ListPresence"  >
+    <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %>" id="<%= this.data.attr('wid') %>" >
+        <%   let init = genListPresence(this.data);   %>
+        <%== init.widget %>    
+    </div>
+    <% vis.binds['vis-material-advanced'].tplMdListPresence(this.data.wid, this.view, this.data,'humid'); %>
+</script>
 
 <script 
     id="tplMaListOccupancy" 

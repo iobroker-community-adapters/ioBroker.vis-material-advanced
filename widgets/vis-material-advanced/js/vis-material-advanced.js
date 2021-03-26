@@ -67,6 +67,16 @@ $.extend(
         "de": "Nein",
         "ru": "na"
     },
+    "present": {
+        "en": "present",
+        "de": "Anwesend",
+        "ru": "present"
+    },
+    "notpresent": {
+        "en": "not present",
+        "de": "Abswesend",
+        "ru": "not present"
+    },
     "Text-Color": {
         "en": "Text Color",
         "de": "Textfarbe",
@@ -378,7 +388,10 @@ vis.binds["vis-material-advanced"] = {
             var $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
                 var $this_ = $(this);
+                
+               
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
+               
             });
         }
 
@@ -1105,6 +1118,80 @@ vis.binds["vis-material-advanced"] = {
         if (!$div.length) {
             return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListOccupancy(widgetID, view, data);
+            }, 100);
+        }
+
+        $div.find('.vma_overlay').css('background-color', opacity);
+
+        function update(state) {
+            var value = (state) ? valMotion : valNoMotion;
+            var src = (state) ? srcOpen : srcClosed;
+            var color = (state) ? data.attr('colorOpen') : opacity;
+
+            $div.find('.vma_picture').find('img').attr('src', src);
+            $div.find('.vma_value').html(value);
+
+            if (colorize) {
+                if (state) {
+                    $div.find('.vma_overlay').css('background-color', motionColor);
+                }
+                else {
+                    $div.find('.vma_overlay').css('background-color', opacity);
+                }
+            }
+            else {
+                $div.find('.vma_overlay').css('background-color', opacity);
+            }
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            if (border) {
+                $div.find('.vma_inner_container_div').css('border', '1px solid white');
+            }
+            $div.find('.vma_overlay').css('background-color', opacity);
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
+
+
+        // var height = setHeight(data,$div);
+
+    },
+    tplMdListPresence: function (widgetID, view, data) {
+        const srcClosed = data.attr('iconNotPresent');
+        const srcOpen = data.attr('iconPresent');
+        const valMotion = _('present');
+        const valNoMotion = _('notpresent');
+
+        
+        const border = data.attr('border');
+
+        const colorize = data.attr('colorizeByValue');
+        const motionColor = data.attr('motionColor')
+        const opacity = data.attr('opacityColor');
+
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListPresence(widgetID, view, data);
             }, 100);
         }
 
