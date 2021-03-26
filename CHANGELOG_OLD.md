@@ -1,4 +1,10 @@
 
+## 1.3.1 (2020-12-28)
+* added possibility to show value instead of the subtitle
+* fixed a bug with weired slider behaviour, dont know how
+
+
+
 ## 1.3.0 (2020-11-16)
 * released new version
 

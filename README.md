@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.4.4 (2021-03-26)
 * update internal test-and-release script
 
 ### 1.4.3 (2021-03-26)
@@ -105,12 +105,6 @@ thanks to @sigi234
 ### 1.4.0 (2021-03-26)
 * bugfix titel alignment for  number and text
 * add ppm as unit
-
-### 1.3.1 (2020-12-28)
-* added possibility to show value instead of the subtitle
-* fixed a bug with weired slider behaviour, dont know how
-
-
 
 ## License
 MIT License

@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.4.3",
+        "version": "1.4.4",
         "news": {
+            "1.4.4": {
+                "en": "update internal test-and-release script",
+                "de": "Aktualisieren Sie das interne Test- und Release-Skript",
+                "ru": "обновить внутренний сценарий тестирования и выпуска",
+                "pt": "atualizar o script interno de teste e lançamento",
+                "nl": "update intern test-en-release-script",
+                "fr": "mettre à jour le script de test et de publication interne",
+                "it": "aggiornare lo script interno di test e rilascio",
+                "es": "actualizar el script interno de prueba y lanzamiento",
+                "pl": "zaktualizować wewnętrzny skrypt testujący i udostępniający",
+                "zh-cn": "更新内部测试和发布脚本"
+            },
             "1.4.3": {
                 "en": "update internal test-and-release script",
                 "de": "Aktualisieren Sie das interne Test- und Release-Skript",
@@ -230,18 +242,6 @@
                 "es": "rebase a iobroker-ocmmunity-adapter\nopción agregada al icono central\nopción agregada para tener SOLO título y sin subtítulo",
                 "pl": "rebase na iobroker-ocmmunity-adapter\ndodano opcję do ikony środkowej\ndodana opcja posiadania TYLKO tytułu i bez podtytułu",
                 "zh-cn": "改用iobroker-ocmununity-adapter\n向中心图标添加了选项\n添加选项以仅具有标题而没有字幕"
-            },
-            "0.8.9": {
-                "en": "added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them\nsome icons are missing there, so local icons are still used as well.\n! If you do not install the adapter, the icons on the left side in edit vis will stay empty\nnew units added to number widget",
-                "de": "Die Abhängigkeit zu icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg) wurde hinzugefügt, sodass die Symbole besser aussehen und nicht mehr bereitgestellt werden müssen\nEinige Symbole fehlen dort, daher werden auch weiterhin lokale Symbole verwendet.\n! Wenn Sie den Adapter nicht installieren, bleiben die Symbole auf der linken Seite in edit vis leer\nNeue Einheiten zum Nummern-Widget hinzugefügt",
-                "ru": "добавлена зависимость для icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), поэтому значки выглядят лучше и не нужно их доставлять\nнекоторые значки там отсутствуют, поэтому локальные значки все еще используются.\n! Если вы не установите адаптер, значки в левой части окна редактирования останутся пустыми.\nновые единицы добавлены в виджет номеров",
-                "pt": "adicionou dependeny a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), para que os ícones fiquem mais bonitos e não haja necessidade de entregá-los\nalguns ícones estão faltando lá, portanto, os ícones locais também são usados.\n! Se você não instalar o adaptador, os ícones do lado esquerdo em edit vis ficarão vazios\nnovas unidades adicionadas ao widget de número",
-                "nl": "afhankelijkheid toegevoegd aan icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), zodat de pictogrammen er mooier uitzien en ze niet hoeven te worden afgeleverd\nsommige pictogrammen ontbreken daar, dus lokale pictogrammen worden ook nog steeds gebruikt.\n! Als u de adapter niet installeert, blijven de pictogrammen aan de linkerkant in edit vis leeg\nnieuwe eenheden toegevoegd aan nummerwidget",
-                "fr": "Ajout de la dépendance à icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), de sorte que les icônes sont plus jolies et pas besoin de les fournir\ncertaines icônes sont absentes, donc les icônes locales sont toujours utilisées.\n! Si vous n'installez pas l'adaptateur, les icônes sur le côté gauche dans edit vis resteront vides\nnouvelles unités ajoutées au widget numérique",
-                "it": "aggiunta la dipendenza a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), quindi le icone hanno un aspetto più gradevole e non è necessario fornirle\nmancano alcune icone, quindi vengono ancora utilizzate anche le icone locali.\n! Se non si installa l'adattatore, le icone sul lato sinistro nella visualizzazione di modifica rimarranno vuote\nnuove unità aggiunte al widget numero",
-                "es": "dependencia agregada a icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), por lo que los íconos se ven mejor y no es necesario entregarlos\nfaltan algunos iconos, por lo que los iconos locales también se siguen utilizando.\n! Si no instala el adaptador, los iconos del lado izquierdo en la vista de edición permanecerán vacíos\nnuevas unidades agregadas al widget numérico",
-                "pl": "dodano zależność do icons-mfd-svg (https://github.com/ioBroker/ioBroker.icons-mfd-svg), dzięki czemu ikony wyglądają ładniej i nie trzeba ich dostarczać\nbrakuje tam niektórych ikon, więc nadal są używane również ikony lokalne.\n! Jeśli nie zainstalujesz adaptera, ikony po lewej stronie w oknie edycji pozostaną puste\nnowe jednostki dodane do widżetu numerycznego",
-                "zh-cn": "在icons-mfd-svg（https://github.com/ioBroker/ioBroker.icons-mfd-svg）中添加了dependeny，因此图标看起来更好，不需要交付它们\n那里缺少一些图标，因此仍然使用本地图标。\n！如果您未安装适配器，则“编辑可见”左侧的图标将保持空白\n新单位添加到数字小部件"
             }
         },
         "title": "Material Advanced",
