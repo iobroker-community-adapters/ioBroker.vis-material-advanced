@@ -90,6 +90,10 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* replaced presence images with smaller ones
+
+
 ### 1.5.0 (2021-03-26)
 * new widget Presence
 
