@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.5.0",
+        "version": "1.5.1",
         "news": {
+            "1.5.1": {
+                "en": "replaced presence images with smaller ones",
+                "de": "Anwesenheitsbilder durch kleinere ersetzt",
+                "ru": "заменены изображения присутствия на более мелкие",
+                "pt": "substituiu imagens de presença por outras menores",
+                "nl": "aanwezigheidsafbeeldingen vervangen door kleinere",
+                "fr": "remplacé les images de présence par des images plus petites",
+                "it": "ha sostituito le immagini di presenza con altre più piccole",
+                "es": "reemplazó las imágenes de presencia con otras más pequeñas",
+                "pl": "zastąpiono obrazy obecności mniejszymi",
+                "zh-cn": "用较小的图像替换状态图像"
+            },
             "1.5.0": {
                 "en": "new widget Presence",
                 "de": "neues Widget Präsenz",
@@ -230,18 +242,6 @@
                 "es": "posición de los elementos y altura mínima finalmente? arreglado :)",
                 "pl": "pozycja elementów i wreszcie min - wysokość? naprawiony :)",
                 "zh-cn": "元素的位置和最小-高度最终是多少？固定的:)"
-            },
-            "0.8.14": {
-                "en": "border-fix due to changes in css",
-                "de": "Border-Fix aufgrund von Änderungen in CSS",
-                "ru": "border-fix из-за изменений в css",
-                "pt": "border-fix devido a mudanças no css",
-                "nl": "border-fix vanwege wijzigingen in css",
-                "fr": "border-fix en raison de changements dans le css",
-                "it": "correzione del confine a causa di modifiche in css",
-                "es": "border-fix debido a cambios en css",
-                "pl": "border-fix z powodu zmian w css",
-                "zh-cn": "由于CSS更改而导致的边界修复"
             }
         },
         "title": "Material Advanced",

@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.5.1 (2021-03-28)
 * replaced presence images with smaller ones
 
 
@@ -105,9 +105,6 @@ thanks to @sigi234
 * removed lint 
 
 ### 1.4.5 (2021-03-26)
-* update internal test-and-release script
-
-### 1.4.4 (2021-03-26)
 * update internal test-and-release script
 
 ## License
