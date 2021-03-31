@@ -259,7 +259,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(data,border, $div, original_class);
+        //setBorderAndOpacColor(data,border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
