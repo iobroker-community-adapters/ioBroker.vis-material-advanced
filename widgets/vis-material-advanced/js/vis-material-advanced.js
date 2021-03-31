@@ -246,6 +246,47 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
+    tplMdTempIcon: function (widgetID, view, data) {
+        
+        const min    = data.min;
+        const max = data.max;
+        
+
+        const colorize = data.attr('colorizeByValue');
+        
+
+        const original_class = data.attr('opacityColor');
+
+        var $div = $('#' + widgetID);
+
+        setBorderAndOpacColor(data,border, $div, original_class);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdTempIcon(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+
+            var src = '/img/temp_verlauf_' + Math.ceil(state / 10) + '0.svg';
+            $div.find('.vma_picture').find('img').attr('src', src);
+            
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        //setPositionSingle($('#' + widgetID), data, $div);
+        //hideIconInWidget(data, $div);
+    },
     tplMdListTempHumid: function (widgetID, view, data, type1, type2) {
         const icon = data.attr('cardIcon');
 
