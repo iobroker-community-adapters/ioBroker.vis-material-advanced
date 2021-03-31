@@ -1,7 +1,16 @@
+
 function genIcon(divList, icon) {
 
     divList.push('<div class="vma_picture"> ');
     divList.push('<img class="vma_icon" src="' + icon + '"></div>');
+
+}
+
+function genJustIcon(divList, icon) {
+
+    divList.push('<div class="vma_picture vis-widget-body"> ');
+    divList.push('<img class="vma_icon" src="' + icon + '"></div>');
+    divList.push('</div>');
 
 }
 

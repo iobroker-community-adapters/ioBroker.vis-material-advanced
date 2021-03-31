@@ -1,7 +1,7 @@
 function genTemperatureIcon(data) {
     let divList = [];
     //startSkeleton(divList,data);
-    genIcon(divList,data.attr('cardIcon'));
+    genJustIcon(divList,data.attr('cardIcon'));
     //genTitleContainer(divList,data);
     //genSingleValue(divList,data);
     //endSkeleton(divList);
