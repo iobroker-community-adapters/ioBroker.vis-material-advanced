@@ -288,7 +288,12 @@ vis.binds["vis-material-advanced"] = {
             {
                 name = 10;
             }
-            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.png';
+            var type = "png";
+            if ( data.IcontypeSVG )
+            {
+                type = "svg";
+            }
+            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.'+ type;
             $div.find('.vma_icon').find('img').attr('src', src);
             
         }
