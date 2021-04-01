@@ -270,7 +270,8 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            var tmp_step = Math.ceil((data.max - data.min ) /10);
+            //var tmp_step = Math.ceil((data.max - data.min ) /10);
+            var tmp_step = parseFloat((data.max-data.min)/10).toFixed(2) ;
             var name = "0";
             var i = Number(data.min);
             var j = 0;
