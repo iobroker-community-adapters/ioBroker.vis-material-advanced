@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.5.1",
+        "version": "1.6.0",
         "news": {
+            "1.6.0": {
+                "en": "new Temperature widget with ONLY an icon from blue to red depending on temperature setting",
+                "de": "neues Temperatur-Widget mit NUR einem Symbol von blau bis rot, abhängig von der Temperatureinstellung",
+                "ru": "новый виджет температуры с ТОЛЬКО значком от синего до красного в зависимости от настройки температуры",
+                "pt": "novo widget de temperatura com APENAS um ícone de azul a vermelho, dependendo da configuração de temperatura",
+                "nl": "nieuwe temperatuurwidget met ALLEEN een pictogram van blauw naar rood, afhankelijk van de temperatuurinstelling",
+                "fr": "nouveau widget de température avec UNIQUEMENT une icône du bleu au rouge en fonction du réglage de la température",
+                "it": "nuovo widget della temperatura con SOLO un'icona dal blu al rosso a seconda dell'impostazione della temperatura",
+                "es": "nuevo widget de temperatura con SÓLO un icono de azul a rojo según la configuración de temperatura",
+                "pl": "nowy Widżet temperatury z TYLKO ikoną od niebieskiej do czerwonej, w zależności od ustawienia temperatury",
+                "zh-cn": "新的温度小部件，仅取决于温度设置的图标从蓝色到红色"
+            },
             "1.5.1": {
                 "en": "replaced presence images with smaller ones",
                 "de": "Anwesenheitsbilder durch kleinere ersetzt",
@@ -230,18 +242,6 @@
                 "es": "corrección de errores para ListNumber y ListText, el icono nunca debería mostrarse",
                 "pl": "poprawka dla ListNumber i ListText, ikona nigdy nie powinna być pokazywana",
                 "zh-cn": "ListNumber和ListText，图标的错误修正永远不应该显示"
-            },
-            "0.8.15": {
-                "en": "position of Elements and min - height finally? fixed :)",
-                "de": "Position der Elemente und Mindesthöhe endlich? Fest :)",
-                "ru": "положение элементов и min - высота наконец? фиксированный :)",
-                "pt": "posição dos elementos e min - altura finalmente? corrigido :)",
-                "nl": "positie van elementen en min - hoogte eindelijk? gemaakt :)",
-                "fr": "position des éléments et min - hauteur enfin? corrigé :)",
-                "it": "posizione degli elementi e min - altezza finalmente? risolto :)",
-                "es": "posición de los elementos y altura mínima finalmente? arreglado :)",
-                "pl": "pozycja elementów i wreszcie min - wysokość? naprawiony :)",
-                "zh-cn": "元素的位置和最小-高度最终是多少？固定的:)"
             }
         },
         "title": "Material Advanced",
