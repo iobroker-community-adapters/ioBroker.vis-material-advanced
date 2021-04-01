@@ -278,6 +278,7 @@ vis.binds["vis-material-advanced"] = {
                 if ( state <= i )
                 {
                     name = j;
+                    break;
                 }
                 i = Math.ceil(i+tmp_step);
                 j = j + 1;
