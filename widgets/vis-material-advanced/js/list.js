@@ -8,8 +8,8 @@ function genIcon(divList, icon) {
 
 function genJustIcon(divList, icon) {
 
-    divList.push('<div class=" vis-widget-body just-icon"> ');
-    divList.push('<img class="vma_icon" src="' + icon + '"></div>');
+    divList.push('<div class=" vis-widget-body "> ');
+    divList.push('<img class="just-icon" src="' + icon + '"></div>');
     divList.push('</div>');
 
 }
