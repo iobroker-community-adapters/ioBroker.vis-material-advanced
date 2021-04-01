@@ -272,7 +272,7 @@ vis.binds["vis-material-advanced"] = {
 
             var tmp_step = Math.ceil((data.max - data.min ) /10);
             var name = "0";
-            var i = 0;
+            var i = data.min;
             var j = 0;
             while ( i <= data.max ){
                 if ( state <= i )
