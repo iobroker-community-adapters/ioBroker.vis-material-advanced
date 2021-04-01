@@ -90,6 +90,9 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* new Temperature widget with ONLY an icon from blue to red depending on temperature setting
+
 ### 1.5.1 (2021-03-28)
 * replaced presence images with smaller ones
 
