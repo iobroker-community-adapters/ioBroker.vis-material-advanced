@@ -270,7 +270,7 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + Math.ceil(state / 10) + '0.svg';
+            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + Math.ceil(state / 10) + '0.png';
             $div.find('.vma_picture').find('img').attr('src', src);
             
         }
