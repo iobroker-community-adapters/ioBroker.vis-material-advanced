@@ -342,7 +342,7 @@ vis.binds["vis-material-advanced"] = {
                
             }
             catch(err) {
-                console.log("unkown Error "+ err +" occured, setting value to NaN");
+                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state +"'");
                 st1 = "NaN";
                
             }
@@ -350,7 +350,7 @@ vis.binds["vis-material-advanced"] = {
                             st2 = state.toFixed(1);
             }
             catch(err) {
-                console.log("unkown Error "+ err +" occured, setting value to NaN");        
+                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state2 +"'");        
                 st2 = "NaN";
               }
             $div.find('.vma_value2_1').html(st1 + valtype1);
