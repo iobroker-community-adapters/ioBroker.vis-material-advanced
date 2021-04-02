@@ -336,8 +336,25 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state, state2) {
             $div.find('.vma_picture').find('img').attr('src', icon);
-            $div.find('.vma_value2_1').html(state.toFixed(1) + valtype1);
-            $div.find('.vma_value2_2').html(state2.toFixed(1) + valtype2);
+            var st1, st2;
+            try {
+                st1 = state.toFixed(1);
+               
+            }
+            catch(err) {
+                console.log("unkown Error "+ err +" occured, setting value to NaN");
+                st1 = "NaN";
+               
+            }
+            try {
+                            st2 = state.toFixed(1);
+            }
+            catch(err) {
+                console.log("unkown Error "+ err +" occured, setting value to NaN");        
+                st2 = "NaN";
+              }
+            $div.find('.vma_value2_1').html(st1 + valtype1);
+            $div.find('.vma_value2_2').html(st2 + valtype2);
         }
 
 
