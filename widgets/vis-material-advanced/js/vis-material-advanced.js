@@ -178,7 +178,7 @@ $.extend(
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
-    version: "0.6.5",
+    version: "1.6.0",
     showVersion: function () {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
@@ -1030,6 +1030,94 @@ vis.binds["vis-material-advanced"] = {
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
+    },
+    tplMdListOpenCloseTilted: function (widgetID, view, data) {
+        const srcClosed = data.attr('cardIconClosed');
+        const srcOpen = data.attr('cardIconOpen');
+        const srcTilted = data.attr('cardIconTilted');
+        const valOpen = _('open');
+        const valClosed = _('closed');
+        const valTilted = _('tilted');
+
+        const border = data.attr('border');
+
+        const colorize = data.attr('colorizeByValue');
+        const opacity = data.attr('opacityColor');
+
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdListOpenCloseTilted(widgetID, view, data);
+            }, 100);
+        }
+
+        $div.find('.vma_overlay').css('background-color', opacity);
+
+        function update(state) {
+            var value;
+            var src;
+            var color;
+            switch (state) {
+                case 0:
+                    value = valClosed;
+                    src   =  srcClosed;
+                    color = opacity;
+                    break;
+                case 1:
+                    value = valTilted;
+                    src   =  srcTilted;
+                    color = data.attr('colorTilted');
+                    break;
+                case 2:
+                    value = valOpen;
+                    src   =  srcOpen;
+                    color = data.attr('colorOpen');
+                    break;
+                default:
+                    console.log('unknown attribute send for OpenCloseTilted [0/1/2]:'. state);
+                    break;
+            }
+            
+            $div.find('.vma_picture').find('img').attr('src', src);
+            $div.find('.vma_value').html(value);
+
+            if (colorize) {
+                $div.find('.vma_overlay').css('background-color', color);
+            }
+            else {
+                $div.find('.vma_overlay').css('background-color', opacity);
+            }
+        }
+
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            setBorderAndOpacColor(data,border, $div, opacity);
+            
+            // if (border) {
+            //     $div.find('.vma_inner_container_div').css('border', '1px solid white');
+            // }
+            // $div.find('.vma_overlay').css('background-color', opacity);
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        setPositionSingle($('#' + widgetID), data, $div);
+        hideIconInWidget(data, $div);
+
     },
     tplMdListOpenClose: function (widgetID, view, data) {
         const srcClosed = data.attr('cardIconClosed');
