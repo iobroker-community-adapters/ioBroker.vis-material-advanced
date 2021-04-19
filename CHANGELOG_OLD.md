@@ -1,4 +1,7 @@
 
+## 1.4.5 (2021-03-26)
+* update internal test-and-release script
+
 ## 1.4.4 (2021-03-26)
 * update internal test-and-release script
 

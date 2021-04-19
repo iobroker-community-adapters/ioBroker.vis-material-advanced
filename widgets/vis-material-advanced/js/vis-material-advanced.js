@@ -246,6 +246,73 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
+    tplMdTempIcon: function (widgetID, view, data) {
+        
+        const min    = data.min;
+        const max = data.max;
+        
+
+        const colorize = data.attr('colorizeByValue');
+        
+
+        const original_class = data.attr('opacityColor');
+
+        var $div = $('#' + widgetID);
+
+        //setBorderAndOpacColor(data,border, $div, original_class);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds['vis-material-advanced'].tplMdTempIcon(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state) {
+
+            //var tmp_step = Math.ceil((data.max - data.min ) /10);
+            var min = Number(data.min);
+            var max = Number(data.max);
+            var tmp_step = Number(((max - min)/10).toFixed(2)) ;
+            var name = "0";
+            var i = Number(data.min);
+            var j = 0;
+            while ( i <= data.max ){
+                if ( state <= i )
+                {
+                    name = j;
+                    break;
+                }
+                i = Math.ceil(i+tmp_step);
+                j = j + 1;
+            }
+            
+            if ( state > data.max)
+            {
+                name = 10;
+            }
+            var type = "png";
+            if ( data.IcontypeSVG )
+            {
+                type = "svg";
+            }
+            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.'+ type;
+            $div.find('.vma_icon2').find('img').attr('src', src);
+            
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+        //setPositionSingle($('#' + widgetID), data, $div);
+        //hideIconInWidget(data, $div);
+    },
     tplMdListTempHumid: function (widgetID, view, data, type1, type2) {
         const icon = data.attr('cardIcon');
 
@@ -269,8 +336,25 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state, state2) {
             $div.find('.vma_picture').find('img').attr('src', icon);
-            $div.find('.vma_value2_1').html(state.toFixed(1) + valtype1);
-            $div.find('.vma_value2_2').html(state2.toFixed(1) + valtype2);
+            var st1, st2;
+            try {
+                st1 = state.toFixed(1);
+               
+            }
+            catch(err) {
+                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state +"'");
+                st1 = "NaN";
+               
+            }
+            try {
+                            st2 = state.toFixed(1);
+            }
+            catch(err) {
+                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state2 +"'");        
+                st2 = "NaN";
+              }
+            $div.find('.vma_value2_1').html(st1 + valtype1);
+            $div.find('.vma_value2_2').html(st2 + valtype2);
         }
 
 

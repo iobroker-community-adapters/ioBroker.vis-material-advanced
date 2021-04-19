@@ -36,6 +36,7 @@
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListText/listText.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListValve/listValve.js></script>
 <script type=text/javascript    src=widgets/vis-material-advanced/js/ListGarage/listGarage.js></script>
+<script type=text/javascript    src=widgets/vis-material-advanced/js/TempIcon/TempIcon.js></script>
 <script type="text/javascript"    src="widgets/vis-material-advanced/js/vis-material-advanced.js"></script>
 
 
@@ -326,6 +327,30 @@
         <%== init.widget %>                    
     </div>
     <% vis.binds['vis-material-advanced'].tplMdListVal(this.data.wid, this.view, this.data,'temp');  %>
+</script>
+
+<script 
+    id="tplMaTempIcon" 
+    type="text/ejs" 
+    class="vis-tpl" 
+    data-vis-prev='<div id="prev_tplVis-material-advancedTempIcon" style="position: relative; text-align: initial;padding: 4px ">
+        <div class="vis-widget_prev" style="width: 100px; height: 100px; padding:2px; background-color: #121212 " > 
+        <img src="widgets/vis-material-advanced/img/temp_verlauf_100.png " style="width: 100px; height: 100px;"></div></div>' 
+        data-vis-attrs="oid/id,value.temperature;title/text;subtitle/text;showTitle[checked]/checkbox;onlyTitle[]/checkbox;"
+    data-vis-attrs0="group.BoxStyle;"    
+    data-vis-attrs1="opacityColor[white]/color;"
+    data-vis-attrs2="colorizeByValue/checkbox;min/number;max/number;IcontypeSVG[]/checkbox;" 
+    data-vis-attrs3="group.icons;"
+    data-vis-attrs4="cardIcon[widgets/vis-material-advanced/img/temp_verlauf_100.png]/image;"            
+    data-vis-set="vis-material-advanced" 
+    data-vis-type="val"      
+    data-vis-update-style="true"
+    data-vis-name="TempIcon"    >   
+    <div class="vis-widget vma_outer_div <%= this.data.attr( 'class') %> icon-widget" id="<%= this.data.attr('wid') %>" >        
+        <%   let init = genTemperatureIcon(this.data);   %>
+        <%== init.widget %>                    
+    </div> 
+    <% vis.binds['vis-material-advanced'].tplMdTempIcon(this.data.wid, this.view, this.data,'temp');  %>
 </script>
 
 <script 
@@ -979,7 +1004,7 @@
 <div id="<%= this.data.attr('wid') %>" class=" vma_outer_div  <%==this.data.attr( 'class') %> ">
     <div class="vma_inner_container_div" > 
         <div class="vma_picture">
-            <img class="vma_icon" src="<%= this.data.attr('cardIcon') %>">
+            <img class="vma_icon"        src="<%= this.data.attr('cardIcon') %>">
         </div>
         <div class="vma_title_subtitle_container" style="color: <%= this.data.attr('Text-color') %>;">
             <div  class="vma_title">
