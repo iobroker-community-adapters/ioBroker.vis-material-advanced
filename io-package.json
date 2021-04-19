@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.6.0",
+        "version": "1.7.0",
         "news": {
+            "1.7.0": {
+                "en": "added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows",
+                "de": "Neues Widget-Fenster3 hinzugefügt für die Möglichkeit, offene / geneigte / geschlossene [0/1/2] Fenster anzuzeigen",
+                "ru": "добавлен новый виджет Window3 для возможности показа открытых / наклоненных / закрытых [0/1/2] окон",
+                "pt": "adicionou uma nova janela de widget 3 para a possibilidade de mostrar janelas abertas / inclinadas / fechadas [0/1/2]",
+                "nl": "nieuwe Widget Window3 toegevoegd voor het tonen van open / gekantelde / gesloten [0/1/2] vensters",
+                "fr": "Ajout d'une nouvelle fenêtre Widget3 pour la possibilité d'afficher des fenêtres ouvertes / inclinées / fermées [0/1/2]",
+                "it": "aggiunto il nuovo Widget Window3 per la possibilità di mostrare finestre aperte / inclinate / chiuse [0/1/2]",
+                "es": "Se agregó un nuevo widget Window3 para la posibilidad de mostrar ventanas abiertas / inclinadas / cerradas [0/1/2]",
+                "pl": "dodano nowe Widget Window3 z możliwością pokazywania otwartych / pochylonych / zamkniętych [0/1/2] okien",
+                "zh-cn": "添加了新的窗口小部件Window3以显示打开/倾斜/关闭的[0/1/2]窗口"
+            },
             "1.6.0": {
                 "en": "new Temperature widget with ONLY an icon from blue to red depending on temperature setting",
                 "de": "neues Temperatur-Widget mit NUR einem Symbol von blau bis rot, abhängig von der Temperatureinstellung",
@@ -230,18 +242,6 @@
                 "es": "algunas opciones de colorizeByValue no funcionaron",
                 "pl": "niektóre opcje colorizeByValue nie działały",
                 "zh-cn": "一些colorizeByValue选项不起作用"
-            },
-            "0.9.0": {
-                "en": "bugfix for ListNumber and ListText, Icon should never been shown",
-                "de": "Bugfix für ListNumber und ListText, Icon sollte niemals angezeigt werden",
-                "ru": "исправление для ListNumber и ListText, значок никогда не должен отображаться",
-                "pt": "correção de bug para ListNumber e ListText, o ícone nunca deve ser mostrado",
-                "nl": "bugfix voor ListNumber en ListText, Icon mag nooit getoond worden",
-                "fr": "correction de bogue pour ListNumber et ListText, l'icône ne devrait jamais être affichée",
-                "it": "bugfix per ListNumber e ListText, Icon non dovrebbe mai essere mostrato",
-                "es": "corrección de errores para ListNumber y ListText, el icono nunca debería mostrarse",
-                "pl": "poprawka dla ListNumber i ListText, ikona nigdy nie powinna być pokazywana",
-                "zh-cn": "ListNumber和ListText，图标的错误修正永远不应该显示"
             }
         },
         "title": "Material Advanced",
