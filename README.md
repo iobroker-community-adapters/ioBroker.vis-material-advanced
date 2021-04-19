@@ -90,6 +90,9 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows 
+
 ### 1.6.0 (2021-04-01)
 * new Temperature widget with ONLY an icon from blue to red depending on temperature setting
 
