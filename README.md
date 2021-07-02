@@ -90,6 +90,9 @@ thanks to @sigi234
 * 
 -->
 
+### __WORK IN PROGRESS__
+* bugfix for Temp Humidity
+
 ### 1.7.0 (2021-04-19)
 * added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows 
 
