@@ -89,6 +89,8 @@ thanks to @sigi234
     ### __WORK IN PROGRESS__
 * 
 -->
+ ### __WORK IN PROGRESS__
+* bugfix 2 Temp Humidity
 
 ### 1.7.1 (2021-07-02)
 * bugfix for Temp Humidity
