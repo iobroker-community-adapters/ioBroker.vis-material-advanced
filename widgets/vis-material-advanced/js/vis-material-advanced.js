@@ -347,7 +347,7 @@ vis.binds["vis-material-advanced"] = {
                
             }
             try {
-                            st2 = state.toFixed(1);
+                            st2 = state2.toFixed(1);
             }
             catch(err) {
                 console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state2 +"'");        
