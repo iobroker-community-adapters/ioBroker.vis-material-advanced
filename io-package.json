@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.7.0",
+        "version": "1.7.1",
         "news": {
+            "1.7.1": {
+                "en": "bugfix for Temp Humidity",
+                "de": "Bugfix für Temp. Luftfeuchtigkeit",
+                "ru": "исправление для Temp Humidity",
+                "pt": "correção de bug para umidade da temperatura",
+                "nl": "bugfix voor Temp Vochtigheid",
+                "fr": "correction de bugs pour l'humidité temporaire",
+                "it": "bugfix per l'umidità della temperatura",
+                "es": "corrección de errores para la humedad de temperatura",
+                "pl": "poprawka błędu dla Wilgotności Temp",
+                "zh-cn": "温度湿度的错误修正"
+            },
             "1.7.0": {
                 "en": "added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows",
                 "de": "Neues Widget-Fenster3 hinzugefügt für die Möglichkeit, offene / geneigte / geschlossene [0/1/2] Fenster anzuzeigen",
@@ -230,18 +242,6 @@
                 "es": "sin cambios, actualizando a 1.0",
                 "pl": "bez zmian, aktualizacja do 1.0",
                 "zh-cn": "无变化，升级到1.0"
-            },
-            "0.9.1": {
-                "en": "some colorizeByValue options did not work",
-                "de": "Einige colorizeByValue-Optionen funktionierten nicht",
-                "ru": "некоторые параметры colorizeByValue не работали",
-                "pt": "algumas opções colorizeByValue não funcionaram",
-                "nl": "sommige colorizeByValue-opties werkten niet",
-                "fr": "certaines options colorizeByValue ne fonctionnaient pas",
-                "it": "alcune opzioni colorizeByValue non funzionavano",
-                "es": "algunas opciones de colorizeByValue no funcionaron",
-                "pl": "niektóre opcje colorizeByValue nie działały",
-                "zh-cn": "一些colorizeByValue选项不起作用"
             }
         },
         "title": "Material Advanced",
