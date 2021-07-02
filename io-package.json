@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "vis-material-advanced",
-        "version": "1.7.1",
+        "version": "1.7.2",
         "news": {
+            "1.7.2": {
+                "en": "bugfix 2 Temp Humidity",
+                "de": "Bugfix 2 Temp. Luftfeuchtigkeit",
+                "ru": "bugfix 2 Темп. влажность",
+                "pt": "bugfix 2 Temp Humidade",
+                "nl": "bugfix 2 Temp Vochtigheid",
+                "fr": "correction de bug 2 Température Humidité",
+                "it": "bugfix 2 Temp Umidità",
+                "es": "corrección de error 2 Temp Humedad",
+                "pl": "poprawka błędu 2 Temperatura Wilgotność",
+                "zh-cn": "错误修正 2 温度湿度"
+            },
             "1.7.1": {
                 "en": "bugfix for Temp Humidity",
                 "de": "Bugfix für Temp. Luftfeuchtigkeit",
@@ -230,18 +242,6 @@
                 "es": "Travis cambia",
                 "pl": "Travis się zmienia",
                 "zh-cn": "特拉维斯的变化"
-            },
-            "1.0.0": {
-                "en": "no changes, upgrading to 1.0",
-                "de": "Keine Änderungen, Upgrade auf 1.0",
-                "ru": "без изменений, обновление до 1.0",
-                "pt": "sem alterações, atualizando para 1.0",
-                "nl": "geen wijzigingen, upgraden naar 1.0",
-                "fr": "aucun changement, mise à niveau vers 1.0",
-                "it": "nessuna modifica, aggiornamento alla 1.0",
-                "es": "sin cambios, actualizando a 1.0",
-                "pl": "bez zmian, aktualizacja do 1.0",
-                "zh-cn": "无变化，升级到1.0"
             }
         },
         "title": "Material Advanced",

@@ -1,4 +1,7 @@
 
+## 1.5.0 (2021-03-26)
+* new widget Presence
+
 ## 1.4.7 (2021-03-26)
 * removed unit test 
 

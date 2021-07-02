@@ -90,7 +90,7 @@ thanks to @sigi234
 * 
 -->
 
-### __WORK IN PROGRESS__
+### 1.7.2 (2021-07-02)
 * bugfix 2 Temp Humidity
 
 ### 1.7.1 (2021-07-02)
@@ -105,9 +105,6 @@ thanks to @sigi234
 ### 1.5.1 (2021-03-28)
 * replaced presence images with smaller ones
 
-
-### 1.5.0 (2021-03-26)
-* new widget Presence
 
 ## License
 MIT License
