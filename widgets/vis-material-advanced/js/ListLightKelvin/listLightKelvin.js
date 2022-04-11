@@ -3,7 +3,7 @@ function genListLightKelvin(data) {
     startSkeleton(divList,data);
     genIcon(divList,data.attr('cardIcon-warmwhite'));
     genTitleContainer(divList,data);
-    //genSliderValue(divList,data);
-    //endSkeleton(divList);
-    return  {widget: divList.join('')};
+    // genSliderValue(divList,data);
+    // endSkeleton(divList);
+    return {widget: divList.join('')};
 }

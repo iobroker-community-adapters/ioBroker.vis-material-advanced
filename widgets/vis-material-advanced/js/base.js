@@ -1,6 +1,4 @@
-
 function hideIconInWidget(data, $div) {
-
     if (data.attr('showIcon') && data.attr('showTitle')) {
         // show Icon AND show Title Container
         $div.find('.vma_picture').removeAttr('hidden');
@@ -78,8 +76,7 @@ function setBorderAndOpacColor(data,border, $div, original_class) {
     if (border) {
         $div.find('.vma_inner_container_div').css('border', '1px solid '+ data.attr('borderColor'));
     }
-    if ( data.attr('boxShadow'))
-    {
+    if ( data.attr('boxShadow')) {
         var size = data.attr('shadowWidth');
         $div.find('.vma_inner_container_div').css('box-shadow', size+'px '+ size +'px '+ size +'px 0px rgba(0,0,0,1)') ;
     }
@@ -118,21 +115,18 @@ function getPostFix(val_type) {
 
 function setRadius(data, $div) {
     const radius = data.attr('borderRadius');
-    const splittedRoundedValue = data.attr('useOverallRoundedValues');
-    if ( splittedRoundedValue ) {
-    $div.find('.vma_overlay').css('border-radius', radius + "px");
-    $div.find('.vma_outer_div').css('border-radius', radius + "px");
-    $div.find('.vma_inner_container_div').css('border-radius', radius + "px");
+    const dividedRoundedValue = data.attr('useOverallRoundedValues');
+    if (dividedRoundedValue) {
+        $div.find('.vma_overlay').css('border-radius', radius + 'px');
+        $div.find('.vma_outer_div').css('border-radius', radius + 'px');
+        $div.find('.vma_inner_container_div').css('border-radius', radius + 'px');
+    } else {
+        setRadiusCorner($div,'top-left',data.attr('roundLeftUp'));
+        setRadiusCorner($div,'bottom-left',data.attr('roundLeftBottom'));
+        setRadiusCorner($div,'top-right',data.attr('roundRightUp'));
+        setRadiusCorner($div,'bottom-right',data.attr('roundRightBottom'));
     }
-    else {
-        setRadiusCorner($div,'top-left',data.attr("roundLeftUp"));
-        setRadiusCorner($div,'bottom-left',data.attr("roundLeftBottom"));
-        setRadiusCorner($div,'top-right',data.attr("roundRightUp"));
-        setRadiusCorner($div,'bottom-right',data.attr("roundRightBottom"));
-    }
-    
 
-    
     return true;
 }
 
@@ -146,13 +140,13 @@ function setPositionSingle($this, data, $div) {
     //console.log($div.find('.vma_outer_div').css('height'));
     var height = $this.innerHeight();
     const value_height = $div.find('.vma_value').height();
-    const empty_space = height - value_height;
-    var top = 0;
+    /* const empty_space = height - value_height;
+    var top = 0; */
 
     posIconHeight($div, data.centerIcon);
     posTitleHeight($div, data.valueVertical);
     posValueHeight($div, data.valueVertical);
-    
+
     setRadius(data, $div);
     return true;
 }
@@ -190,7 +184,6 @@ function setPosition($this, data, $div) {
 function setHeight(data, $div) {
     var max_height = 0;
 
-
     var title_line_height = getTitleHeight($div);
     var subtitle_line_height = getSubTitleHeight($div);
     var value_line_height = getValueHeight($div, value_line_height);
@@ -216,8 +209,7 @@ function setHeight(data, $div) {
 function getValueHeight($div) {
     if ($div.find('.vma_value2_1').length) {
         value_line_height = parseInt($div.find('.vma_value2_1').css('font-size')) * 1.2 + parseInt($div.find('.vma_value2_2').css('font-size')) * 1.2;
-    }
-    else {
+    } else {
         value_line_height = parseInt($div.find('.vma_value').css('font-size')) * 1.2;
     }
     return value_line_height;
@@ -241,10 +233,11 @@ function getTitleHeight($div) {
     }
     return height;
 }
+
 function getCompleteTitleHeight($div) {
     var titleHeight = getTitleHeight($div);
     var subheight   = getSubTitleHeight($div);
-    return titleHeight + subheight; 
+    return titleHeight + subheight;
 }
 
 function getIconHeight($div) {
@@ -264,13 +257,9 @@ function posIconHeight($div, pos) {
 
     if (!pos) {
         $div.find('.vma_picture').css('padding-top', '2px');
-
-    }
-    else {
+    } else {
         $div.find('.vma_picture').css('padding-top', emptySpace / 2 + 1 + 'px');
-
     }
-
 }
 
 function posTitleHeight($div, pos) {
@@ -300,9 +289,7 @@ function posTitleHeight($div, pos) {
             break;
         }
     }
-
 }
-
 
 function posValueHeight($div, pos) {
     var valueHeight = getValueHeight($div);
@@ -328,7 +315,6 @@ function posValueHeight($div, pos) {
             break;
         }
     }
-
 }
 
 function setMinHeight(old, new_h) {

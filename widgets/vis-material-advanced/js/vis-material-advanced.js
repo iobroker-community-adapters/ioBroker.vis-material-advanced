@@ -1,9 +1,9 @@
 /*
     ioBroker.vis vis-material-advanced Widget-Set
 
-    version: \"0.8.1"
+    version: "1.7.3"
 
-    Copyright 2020 EdgarM73 edgar.miller@gmail.com
+    Copyright 2020-2022 EdgarM73 edgar.miller@gmail.com
 */
 "use strict";
 
@@ -27,158 +27,158 @@ if (vis.editMode) {
 $.extend(
     true,
     systemDictionary, {
-    "Instance": {
-        "en": "Instance",
-        "de": "Instanz",
-        "ru": "Инстанция"
-    },
-    "open": {
-        "en": "open",
-        "de": "offen",
-        "ru": "открыто"
-    },
-    "tilted": {
-        "en": "tilted",
-        "de": "gekippt",
-        "ru": "приоткрыто"
-    },
-    "closed": {
-        "en": "closed",
-        "de": "zu",
-        "ru": "закрыто"
-    },
-    "on": {
-        "en": "on",
-        "de": "an",
-        "ru": "вкл"
-    },
-    "off": {
-        "en": "off",
-        "de": "aus",
-        "ru": "выкл"
-    },
-    "motion": {
-        "en": "motion",
-        "de": "Bewegung",
-        "ru": "motion"
-    },
-    "nomotion": {
-        "en": "no motion",
-        "de": "Nein",
-        "ru": "na"
-    },
-    "present": {
-        "en": "present",
-        "de": "Anwesend",
-        "ru": "present"
-    },
-    "notpresent": {
-        "en": "not present",
-        "de": "Abwesend",
-        "ru": "not present"
-    },
-    "Text-Color": {
-        "en": "Text Color",
-        "de": "Textfarbe",
-        "ru": "na"
-    },
-    "opac-white": {
-        "en": "white opacity",
-        "de": "Transparenz Weiss",
-        "ru": "na"
-    },
-    "opac-red": {
-        "en": "Red opacity",
-        "de": "Transparenz Rot",
-        "ru": "na"
-    },
-    "opac-blue": {
-        "en": "blue opacity",
-        "de": "Transparenz Blau",
-        "ru": "na"
-    },
-    "opac-purple": {
-        "en": "purple opacity",
-        "de": "Transparenz Lila",
-        "ru": "na"
-    },
-    "opac-green": {
-        "en": "green opacity",
-        "de": "Transparenz Grün",
-        "ru": "na"
-    },
-    "opacityColor": {
-        "en": "opacity color",
-        "de": "Transparenz Farbe",
-        "ru": "na"
-    },
-    "colorizeByValue": {
-        "en": "colorize By Value",
-        "de": "einfärben durch Wert",
-        "ru": "раскрасить по температуре",
-        "pt": "colorir por Temp",
-        "nl": "inkleuren door temp",
-        "fr": "coloriser par température",
-        "it": "colorize By Temp",
-        "es": "colorear por temperatura",
-        "pl": "koloruj według temp",
-        "zh-cn": "下面"
-    },
-    "normal": {
-        "en": "normal",
-        "de": "normal",
-        "ru": "нормальный",
-        "pt": "normal",
-        "nl": "normaal",
-        "fr": "Ordinaire",
-        "it": "normale",
-        "es": "normal",
-        "pl": "normalna",
-        "zh-cn": "正常"
-    },
-    "above": {
-        "en": "above",
-        "de": "über",
-        "ru": "выше",
-        "pt": "acima",
-        "nl": "bovenstaande",
-        "fr": "au dessus",
-        "it": "sopra",
-        "es": "encima",
-        "pl": "powyżej",
-        "zh-cn": "以上"
-    },
-    "valueAlign": {
-        "en": "Text align",
-        "de": "Textausrichtung",
-        "ru": "Выровнять текст",
-        "pt": "Alinhamento de texto",
-        "nl": "Tekst uitlijnen",
-        "fr": "Aligner le texte",
-        "it": "Allineamento del testo",
-        "es": "Texto alineado",
-        "pl": "Wyrównaj tekst",
-        "zh-cn": "文字对齐"
-    },
-    "BoxStyle": {
-        "en": "Design of widget",
-        "de": "Widget Design",
-        "ru": "Выровнять текст",
-        "pt": "Alinhamento de texto",
-        "nl": "Tekst uitlijnen",
-        "fr": "Aligner le texte",
-        "it": "Allineamento del testo",
-        "es": "Texto alineado",
-        "pl": "Wyrównaj tekst",
-        "zh-cn": "文字对齐"
-    }
+        "Instance": {
+            "en": "Instance",
+            "de": "Instanz",
+            "ru": "Инстанция"
+        },
+        "open": {
+            "en": "open",
+            "de": "offen",
+            "ru": "открыто"
+        },
+        "tilted": {
+            "en": "tilted",
+            "de": "gekippt",
+            "ru": "приоткрыто"
+        },
+        "closed": {
+            "en": "closed",
+            "de": "zu",
+            "ru": "закрыто"
+        },
+        "on": {
+            "en": "on",
+            "de": "an",
+            "ru": "вкл"
+        },
+        "off": {
+            "en": "off",
+            "de": "aus",
+            "ru": "выкл"
+        },
+        "motion": {
+            "en": "motion",
+            "de": "Bewegung",
+            "ru": "motion"
+        },
+        "nomotion": {
+            "en": "no motion",
+            "de": "Nein",
+            "ru": "na"
+        },
+        "present": {
+            "en": "present",
+            "de": "Anwesend",
+            "ru": "present"
+        },
+        "notpresent": {
+            "en": "not present",
+            "de": "Abwesend",
+            "ru": "not present"
+        },
+        "Text-Color": {
+            "en": "Text Color",
+            "de": "Textfarbe",
+            "ru": "na"
+        },
+        "opac-white": {
+            "en": "white opacity",
+            "de": "Transparenz Weiss",
+            "ru": "na"
+        },
+        "opac-red": {
+            "en": "Red opacity",
+            "de": "Transparenz Rot",
+            "ru": "na"
+        },
+        "opac-blue": {
+            "en": "blue opacity",
+            "de": "Transparenz Blau",
+            "ru": "na"
+        },
+        "opac-purple": {
+            "en": "purple opacity",
+            "de": "Transparenz Lila",
+            "ru": "na"
+        },
+        "opac-green": {
+            "en": "green opacity",
+            "de": "Transparenz Grün",
+            "ru": "na"
+        },
+        "opacityColor": {
+            "en": "opacity color",
+            "de": "Transparenz Farbe",
+            "ru": "na"
+        },
+        "colorizeByValue": {
+            "en": "colorize By Value",
+            "de": "einfärben durch Wert",
+            "ru": "раскрасить по температуре",
+            "pt": "colorir por Temp",
+            "nl": "inkleuren door temp",
+            "fr": "coloriser par température",
+            "it": "colorize By Temp",
+            "es": "colorear por temperatura",
+            "pl": "koloruj według temp",
+            "zh-cn": "下面"
+        },
+        "normal": {
+            "en": "normal",
+            "de": "normal",
+            "ru": "нормальный",
+            "pt": "normal",
+            "nl": "normaal",
+            "fr": "Ordinaire",
+            "it": "normale",
+            "es": "normal",
+            "pl": "normalna",
+            "zh-cn": "正常"
+        },
+        "above": {
+            "en": "above",
+            "de": "über",
+            "ru": "выше",
+            "pt": "acima",
+            "nl": "bovenstaande",
+            "fr": "au dessus",
+            "it": "sopra",
+            "es": "encima",
+            "pl": "powyżej",
+            "zh-cn": "以上"
+        },
+        "valueAlign": {
+            "en": "Text align",
+            "de": "Textausrichtung",
+            "ru": "Выровнять текст",
+            "pt": "Alinhamento de texto",
+            "nl": "Tekst uitlijnen",
+            "fr": "Aligner le texte",
+            "it": "Allineamento del testo",
+            "es": "Texto alineado",
+            "pl": "Wyrównaj tekst",
+            "zh-cn": "文字对齐"
+        },
+        "BoxStyle": {
+            "en": "Design of widget",
+            "de": "Widget Design",
+            "ru": "Выровнять текст",
+            "pt": "Alinhamento de texto",
+            "nl": "Tekst uitlijnen",
+            "fr": "Aligner le texte",
+            "it": "Allineamento del testo",
+            "es": "Texto alineado",
+            "pl": "Wyrównaj tekst",
+            "zh-cn": "文字对齐"
+        }
 
-}
+    }
 );
 
 // this code can be placed directly in vis-material-advanced.html
 vis.binds["vis-material-advanced"] = {
-    version: "1.6.0",
+    version: "1.7.3",
     showVersion: function () {
         if (vis.binds["vis-material-advanced"].version) {
             console.log('Version vis-material-advanced: ' + vis.binds["vis-material-advanced"].version);
@@ -202,7 +202,7 @@ vis.binds["vis-material-advanced"] = {
 
         type = getPostFix(val_type);
 
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -226,8 +226,7 @@ vis.binds["vis-material-advanced"] = {
                 } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
 
@@ -247,15 +246,10 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdTempIcon: function (widgetID, view, data) {
-        
-        const min    = data.min;
+        /*const min = data.min;
         const max = data.max;
-        
-
         const colorize = data.attr('colorizeByValue');
-        
-
-        const original_class = data.attr('opacityColor');
+        const original_class = data.attr('opacityColor');*/
 
         var $div = $('#' + widgetID);
 
@@ -269,36 +263,31 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-
             //var tmp_step = Math.ceil((data.max - data.min ) /10);
             var min = Number(data.min);
             var max = Number(data.max);
-            var tmp_step = Number(((max - min)/10).toFixed(2)) ;
+            var tmp_step = Number(((max - min) / 10).toFixed(2));
             var name = "0";
             var i = Number(data.min);
             var j = 0;
-            while ( i <= data.max ){
-                if ( state <= i )
-                {
+            while (i <= data.max) {
+                if (state <= i) {
                     name = j;
                     break;
                 }
-                i = Math.ceil(i+tmp_step);
+                i = Math.ceil(i + tmp_step);
                 j = j + 1;
             }
-            
-            if ( state > data.max)
-            {
+
+            if (state > data.max) {
                 name = 10;
             }
             var type = "png";
-            if ( data.IcontypeSVG )
-            {
+            if (data.IcontypeSVG) {
                 type = "svg";
             }
-            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.'+ type;
+            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.' + type;
             $div.find('.vma_icon2').find('img').attr('src', src);
-            
         }
 
         if (data.oid) {
@@ -324,8 +313,7 @@ vis.binds["vis-material-advanced"] = {
         const valtype1 = getPostFix(type1);
         const valtype2 = getPostFix(type2);
 
-
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -339,20 +327,18 @@ vis.binds["vis-material-advanced"] = {
             var st1, st2;
             try {
                 st1 = state.toFixed(1);
-               
-            }
-            catch(err) {
-                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state +"'");
+
+            } catch (err) {
+                console.log("unkown Error " + err + " occured, setting value to NaN, original was : '" + state + "'");
                 st1 = "NaN";
-               
+
             }
             try {
-                            st2 = state2.toFixed(1);
-            }
-            catch(err) {
-                console.log("unkown Error "+ err +" occured, setting value to NaN, original was : '" + state2 +"'");        
+                st2 = state2.toFixed(1);
+            } catch (err) {
+                console.log("unkown Error " + err + " occured, setting value to NaN, original was : '" + state2 + "'");
                 st2 = "NaN";
-              }
+            }
             $div.find('.vma_value2_1').html(st1 + valtype1);
             $div.find('.vma_value2_2').html(st2 + valtype2);
         }
@@ -383,8 +369,7 @@ vis.binds["vis-material-advanced"] = {
         const valtype1 = getPostFix(type1);
 
 
-
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -403,8 +388,8 @@ vis.binds["vis-material-advanced"] = {
             }
             console.log("Checkbox Value as Subtitle: " + data.attr('valueAsSubtitle'));
 
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' '+ valtype1);
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' ' + valtype1);
             }
         }
 
@@ -435,7 +420,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
 
         // if nothing found => wait
@@ -461,8 +446,7 @@ vis.binds["vis-material-advanced"] = {
             if (colorize) {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', onColor);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
@@ -472,10 +456,8 @@ vis.binds["vis-material-advanced"] = {
             var $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
                 var $this_ = $(this);
-                
-               
+
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
-               
             });
         }
 
@@ -493,23 +475,22 @@ vis.binds["vis-material-advanced"] = {
     },
     tplMdListLightDim: function (widgetID, view, data) {
         const border = data.attr('border');
-        
-        const colorLow    = data.lightLowColor;
-        const colorMedium = data.lightMediumColor;
-        const colorHigh   = data.lightHighColor;
 
-        const low    = data.low;
+        const colorLow = data.lightLowColor;
+        const colorMedium = data.lightMediumColor;
+        const colorHigh = data.lightHighColor;
+
+        const low = data.low;
         const medium = data.medium;
-        const high   = data.high;
+        const high = data.high;
 
         const colorize = data.attr('colorizeByValue');
-        
 
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -523,12 +504,11 @@ vis.binds["vis-material-advanced"] = {
             var src = '/icons-mfd-svg/light_light_dim_' + Math.ceil(state / 10) + '0.svg';
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {
-
                 $div.find('.vma_value').html(state + " %");
-
             }
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' %');
+
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' %');
             }
             if (colorize) {
                 if (state <= low) {
@@ -538,8 +518,7 @@ vis.binds["vis-material-advanced"] = {
                 } else {
                     $div.find('.vma_overlay').css('background-color', colorMedium);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
         }
@@ -559,11 +538,10 @@ vis.binds["vis-material-advanced"] = {
     tplMdListWindowShutter: function (widgetID, view, data) {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
-        
 
         var $div = $('#' + widgetID);
-        data.attr('neues Attr','5');
-        setBorderAndOpacColor(data,border, $div, original_class);
+        data.attr('neues Attr', '5');
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -592,16 +570,14 @@ vis.binds["vis-material-advanced"] = {
             }
             // console.log(' name : ' + name + " Icon : " + src);
             $div.find('.vma_picture').find('img').attr('src', src);
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' %');
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' %');
             }
+
             if (data.attr('readOnly')) {
-
                 $div.find('.vma_value').html(state + "%");
-
             }
         }
-
 
         if (data.oid) {
             // subscribe on updates of value
@@ -625,7 +601,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -649,8 +625,8 @@ vis.binds["vis-material-advanced"] = {
                 console.log('Fehler');
                 src = 'Fehler';
             }
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' K');
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' K');
             }
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {
@@ -659,7 +635,6 @@ vis.binds["vis-material-advanced"] = {
 
             }
         }
-
 
         if (data.oid) {
             // subscribe on updates of value
@@ -682,8 +657,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
-
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -693,7 +667,6 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-
             if (state == 0) {
                 $div.find('.vma_picture').find('img').attr('src', srcOff);
             } else if (state >= 80 * data.attr('Max') / 100) {
@@ -706,8 +679,8 @@ vis.binds["vis-material-advanced"] = {
                 $div.find('.vma_value').html(state);
 
             }
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' %');
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' %');
             }
         }
 
@@ -719,8 +692,7 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
-        }
-        else {
+        } else {
             $div.find('.vma_picture').find('img').attr('src', srcOff);
         }
         setPositionSingle($('#' + widgetID), data, $div);
@@ -776,7 +748,7 @@ vis.binds["vis-material-advanced"] = {
         const colorHigh = data.attr('color-high');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -808,7 +780,6 @@ vis.binds["vis-material-advanced"] = {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
-
         }
 
         if (data.oid) {
@@ -836,7 +807,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -887,7 +858,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -901,8 +872,7 @@ vis.binds["vis-material-advanced"] = {
             if (data.unit != "") {
                 var unit = getPostFix(data.unit.trim());
                 $div.find('.vma_value').html(state + ' ' + unit);
-            }
-            else {
+            } else {
                 $div.find('.vma_value').html(state);
             }
 
@@ -912,8 +882,7 @@ vis.binds["vis-material-advanced"] = {
                     $div.find('.vma_overlay').css('background-color', colLow);
                 } else if (state >= valHigh) {
                     $div.find('.vma_overlay').css('background-color', colHigh);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             } else {
@@ -921,7 +890,6 @@ vis.binds["vis-material-advanced"] = {
             }
 
             hideIconInWidget(data, $div);
-
         }
 
         if (data.oid) {
@@ -944,8 +912,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
-
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -955,15 +922,12 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-
             $div.find('.vma_value').html(state);
-
 
             if (colorize) {
                 if (state == valSearchString) {
                     $div.find('.vma_overlay').css('background-color', colStringFound);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             } else {
@@ -985,7 +949,6 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdListValve: function (widgetID, view, data) {
-
         const colorize = data.attr('colorizeByValue');
         const low = data.attr('below');
         // const $normal = data.attr('normal');
@@ -998,8 +961,7 @@ vis.binds["vis-material-advanced"] = {
         const original_class = data.attr('opacityColor');
 
         var $div = $('#' + widgetID);
-        setBorderAndOpacColor(data,border, $div, original_class);
-
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1016,7 +978,6 @@ vis.binds["vis-material-advanced"] = {
             $div.find('.vma_value').css('opacity', '0.5');
         }
 
-
         function update(state) {
             if (typeof state === 'number') {
                 $div.find('.vma_value').html(state.toFixed(1) + ' %');
@@ -1030,12 +991,11 @@ vis.binds["vis-material-advanced"] = {
                 } else {
                     $div.find('.vma_overlay').css('background-color', colorHigh);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', original_class);
             }
-            if ( data.attr('valueAsSubtitle') == true  ) {
-                $div.find('.vma_subtitle').html(state +' %');
+            if (data.attr('valueAsSubtitle') == true) {
+                $div.find('.vma_subtitle').html(state + ' %');
             }
         }
 
@@ -1045,7 +1005,7 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            // set current value 
+            // set current value
             update(vis.states[data.oid + '.val']);
         }
         setPositionSingle($('#' + widgetID), data, $div);
@@ -1062,8 +1022,7 @@ vis.binds["vis-material-advanced"] = {
 
         var $div = $('#' + widgetID);
 
-        setBorderAndOpacColor(data,border, $div, original_class);
-
+        setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1088,8 +1047,7 @@ vis.binds["vis-material-advanced"] = {
             if (colorize) {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', onColor);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
             }
@@ -1146,31 +1104,30 @@ vis.binds["vis-material-advanced"] = {
             switch (state) {
                 case 0:
                     value = valClosed;
-                    src   =  srcClosed;
+                    src = srcClosed;
                     color = opacity;
                     break;
                 case 1:
                     value = valTilted;
-                    src   =  srcTilted;
+                    src = srcTilted;
                     color = data.attr('colorTilted');
                     break;
                 case 2:
                     value = valOpen;
-                    src   =  srcOpen;
+                    src = srcOpen;
                     color = data.attr('colorOpen');
                     break;
                 default:
-                    console.log('unknown attribute send for OpenCloseTilted [0/1/2]:'. state);
+                    console.log('unknown attribute send for OpenCloseTilted [0/1/2]:'.state);
                     break;
             }
-            
+
             $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
 
             if (colorize) {
                 $div.find('.vma_overlay').css('background-color', color);
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', opacity);
             }
         }
@@ -1189,8 +1146,8 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            setBorderAndOpacColor(data,border, $div, opacity);
-            
+            setBorderAndOpacColor(data, border, $div, opacity);
+
             // if (border) {
             //     $div.find('.vma_inner_container_div').css('border', '1px solid white');
             // }
@@ -1235,8 +1192,7 @@ vis.binds["vis-material-advanced"] = {
 
             if (colorize) {
                 $div.find('.vma_overlay').css('background-color', color);
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', opacity);
             }
         }
@@ -1255,8 +1211,8 @@ vis.binds["vis-material-advanced"] = {
                 update(newVal);
             });
 
-            setBorderAndOpacColor(data,border, $div, opacity);
-            
+            setBorderAndOpacColor(data, border, $div, opacity);
+
             // if (border) {
             //     $div.find('.vma_inner_container_div').css('border', '1px solid white');
             // }
@@ -1267,7 +1223,6 @@ vis.binds["vis-material-advanced"] = {
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
-
     },
     tplMdListOccupancy: function (widgetID, view, data) {
         const srcClosed = data.attr('iconNoMotion');
@@ -1306,12 +1261,10 @@ vis.binds["vis-material-advanced"] = {
             if (colorize) {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', motionColor);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', opacity);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', opacity);
             }
         }
@@ -1341,9 +1294,7 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-
         // var height = setHeight(data,$div);
-
     },
     tplMdListPresence: function (widgetID, view, data) {
         const srcClosed = data.attr('iconNotPresent');
@@ -1351,7 +1302,7 @@ vis.binds["vis-material-advanced"] = {
         const valPresent = _('present');
         const valNotPresent = _('notpresent');
 
-        
+
         const border = data.attr('border');
 
         const colorize = data.attr('colorizeByValue');
@@ -1380,12 +1331,10 @@ vis.binds["vis-material-advanced"] = {
             if (colorize) {
                 if (state) {
                     $div.find('.vma_overlay').css('background-color', presenceColor);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', opacity);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', opacity);
             }
         }
@@ -1415,9 +1364,7 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-
         // var height = setHeight(data,$div);
-
     },
     tplMdListNew: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
@@ -1447,12 +1394,10 @@ vis.binds["vis-material-advanced"] = {
                     $div.find('.vma_overlay').css('background-color', colLow);
                 } else if (state >= valHigh) {
                     $div.find('.vma_overlay').css('background-color', colHigh);
-                }
-                else {
+                } else {
                     $div.find('.vma_overlay').css('background-color', original_class);
                 }
-            }
-            else {
+            } else {
                 $div.find('.vma_overlay').css('background-color', opacity);
             }
         }
@@ -1476,10 +1421,6 @@ vis.binds["vis-material-advanced"] = {
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
-
-
-
-
     },
     tplMdListNewDuo: function (widgetID, view, data) {
         const icon = data.attr('cardIcon');
@@ -1494,9 +1435,6 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state, state2) {
-
-
-
             $div.find('.vma_picture').find('img').attr('src', icon);
             $div.find('.vma_value2_1').html(state.toFixed(1) + ' °C');
             $div.find('.vma_value2_2').html(state2.toFixed(1) + ' %');
@@ -1520,8 +1458,6 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
         }
 
-
-
         setPosition($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
@@ -1534,6 +1470,7 @@ vis.binds["vis-material-advanced"] = {
                 vis.binds['vis-material-advanced'].tplMdListRegenRadarDWD(widgetID, view, data);
             }, 100);
         }
+
         function update(state) {
             $div.find('.vma_value').html(state);
         }
@@ -1546,13 +1483,12 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
-
         }
     },
     tplMdListDiv: function (widgetID, view, data) {
-        const srcOff = data.attr('cardIconClosed');
+        /*const srcOff = data.attr('cardIconClosed');
         const srcOn = data.attr('cardIconOpen');
-        const colorize = data.attr('colorizeByValue');
+        const colorize = data.attr('colorizeByValue');*/
         const opacity = data.attr('opacityColor');
         var $div = $('#' + widgetID);
 
@@ -1564,6 +1500,7 @@ vis.binds["vis-material-advanced"] = {
         }
 
         $div.find('.vma_overlay').css('background-color', opacity);
+
         // $(' script ').find('tplMaListDiv').attr('data-vis-attrs11','susi/text;');
         function update(state) {
             // var src = (state) ? srcOn : srcOff;
@@ -1587,7 +1524,6 @@ vis.binds["vis-material-advanced"] = {
             // }
         }
 
-
         if (!vis.editMode) {
             var $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
@@ -1608,21 +1544,14 @@ vis.binds["vis-material-advanced"] = {
 
             // set current value
             update(vis.states[data.oid + '.val']);
-
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
         // var height = setHeight(data,$div);
-
-
     }
-
-
-
 };
 
-vis.binds["vis-material-advanced"].showVersion();
-
+vis.binds['vis-material-advanced'].showVersion();
 
 
 // function genTitleContainer($title,$subtitle,$text_color,$title_size,$subtitle_size)

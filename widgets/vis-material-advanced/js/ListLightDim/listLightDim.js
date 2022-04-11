@@ -3,7 +3,7 @@ function genListLightDim(data) {
     startSkeleton(divList,data);
     genIcon(divList,data.attr('cardIconOn'));
     genTitleContainer(divList,data);
-    //genSliderValue(divList,data);
-    //endSkeleton(divList);
+    // genSliderValue(divList,data);
+    // endSkeleton(divList);
     return  {widget: divList.join('')};
 }

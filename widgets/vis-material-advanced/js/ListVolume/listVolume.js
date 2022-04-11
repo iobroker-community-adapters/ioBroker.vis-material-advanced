@@ -5,5 +5,5 @@ function genListVolume(data) {
     genTitleContainer(divList,data);
     //genSliderValue(divList,data);
     //endSkeleton(divList);
-    return  {widget: divList.join('')};
+    return {widget: divList.join('')};
 }

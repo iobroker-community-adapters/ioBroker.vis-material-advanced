@@ -5,5 +5,5 @@ function genListLight(data) {
     genTitleContainer(divList,data);
     genButtonValue(divList,data);
     endSkeleton(divList);
-    return  {widget: divList.join('')};
+    return {widget: divList.join('')};
 }

@@ -5,5 +5,5 @@ function genListThermostat(data) {
     genTitleContainer(divList,data);
     // genDoubleValue(divList,data);
     // endSkeleton(divList);
-    return  {widget: divList.join('')};
+    return {widget: divList.join('')};
 }

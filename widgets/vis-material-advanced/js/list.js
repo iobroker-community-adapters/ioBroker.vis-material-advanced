@@ -1,26 +1,19 @@
-
 function genIcon(divList, icon) {
-
     divList.push('<div class="vma_picture"> ');
     divList.push('<img class="vma_icon" src="' + icon + '"></div>');
-
 }
 
 function genJustIcon(divList, icon) {
-
     divList.push('<div class=" vis-widget-body vma_icon2"> ');
     divList.push('<img class="just-icon" src="' + icon + '"></div>');
     divList.push('</div>');
-
 }
 
 function genTitleContainer(divList, data) {
-
     divList.push('<div class="vma_title_subtitle_container vma_title_subtitle_id" style="color:' + data.TextColor + '; ">');
     if (data.onlyTitle) {
         divList.push('<div  class="vma_title vma_only_title" style="font-size: ' + data.titleSize + ';">');
-    }
-    else {
+    } else {
         divList.push('<div  class="vma_title" style="font-size: ' + data.titleSize + ';">');
     }
     divList.push(data.title);
@@ -29,26 +22,23 @@ function genTitleContainer(divList, data) {
         divList.push('</div>');
 
         divList.push('</div>');
-    }
-    else {
+    } else {
         divList.push('</div><div  class="vma_subtitle " style=" color: ' + data.TextColor + ';font-size: ' + data.subtitleSize + '; ">');
         if (data.valueAsSubtitle == true ) {
             divList.push("VALUE"+ '</div></div>');
-        }
-        else {
+        } else {
             if (typeof data.subtitle == 'undefined') {
                 divList.push('</div></div>');
-            }
-            else {
+            } else {
                 divList.push(data.subtitle + '</div></div>');
             }
         }
     }
+
     return { widget: divList.join('') }
 }
 
 function genSingleTitleContainer(divList, data) {
-
     divList.push('<div class="vma_title_subtitle_container vma_title_subtitle_id" style="color:' + data.TextColor + '; ">');
     divList.push('<div  class="vma_title vma_only_title" style="font-size: ' + data.titleSize + ';">');
     divList.push(data.title);
@@ -59,7 +49,6 @@ function genSingleTitleContainer(divList, data) {
     return { widget: divList.join('') }
 }
 
-
 function genSingleValue(divList, data) {
     divList.push('<div  class="vma_value_container vma_value_id">  ');
     divList.push('<div  class="vma_value"   style="color:  ' + data.TextColor + '; text-align:' + data.attr('valueAlign') + '; vertical-align:' + data.attr('valueVertical') + ';font-size:' + data.valueSize + ';" >');
@@ -68,14 +57,12 @@ function genSingleValue(divList, data) {
     //return {widget: divList.join('')}
 }
 
-
 function genSingleImageValue(divList, data) {
     divList.push('<div  class="vma_value_container vma_value_id">  ');
     divList.push('<div  class="vma_value"   style="color:  ' + data.TextColor + '; text-align:' + data.attr('valueAlign') + '; vertical-align:' + data.attr('valueVertical') + ';font-size:' + data.valueSize + ';" >');
     if (typeof data.oid == "undefined") {
         divList.push('<img src="/vis/widgets/vis-material-advanced/img/123.png">');
-    }
-    else {
+    } else {
         divList.push('<iframe src="' + data.oid + '" width="100%" height="100%">');
     }
     divList.push('</div></div>');
@@ -131,6 +118,7 @@ function endSkeleton(divList) {
     divList.push('</div>');
     divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
 }
+
 function endSkeletonSlider() {
     divList.push('<div class="vma_overlay ms-button-op vis-widget-body" ></div>');
     divList.push('</div>');

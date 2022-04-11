@@ -5,7 +5,6 @@
 ## 1.4.7 (2021-03-26)
 * removed unit test 
 
-
 ## 1.4.6 (2021-03-26)
 * removed lint 
 
@@ -30,16 +29,13 @@
 
 ## 1.3.1 (2020-12-28)
 * added possibility to show value instead of the subtitle
-* fixed a bug with weired slider behaviour, dont know how
-
-
+* fixed a bug with weired slider behaviour, don't know how
 
 ## 1.3.0 (2020-11-16)
 * released new version
 
-
 ## 1.2.1 (2020-11-16)
-* changed position of properties to be alomst same everywhere
+* changed position of properties to be almost same everywhere
 
 ## 1.2.0 (2020-11-04)
 * added option to round every corner different/not 
@@ -48,7 +44,6 @@
 
 ## 1.1.1 (2020-10-18)
 * url wrong in package.json
-
 
 ## 1.1.0 (2020-10-15)
 * Travis changes
@@ -60,7 +55,7 @@
 * some colorizeByValue options did not work
 
 ## 0.9.0 (2020-10-13)
-* bugfix for ListNumber and ListText, Icon should never been shown
+* bugfix for ListNumber and ListText, Icon should never have been shown
 
 ## 0.8.15 (2020-10-13)
 * position of Elements and min - height finally? fixed :)
@@ -75,20 +70,16 @@
 ## 0.8.12 (2020-10-01)
 * Value font-size can be changed now
 
-
 ## 0.8.11 (2020-09-30)
-* bugfix fo rwrong htm lin Shutter Widget, thx Sigi234
-
+* bugfix fo wrong htm lin Shutter Widget, thx Sigi234
 
 ## 0.8.10 (2020-09-30)
-* rebase to iobroker-ocmmunity-adapter
+* rebase to iobroker-community-adapter
 * added option to center Icon
 * added option to have ONLY Title and no subtitle
 
-
-
 ## 0.8.9 (2020-09-28)
-* added dependeny to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them
+* added dependency to icons-mfd-svg ( https://github.com/ioBroker/ioBroker.icons-mfd-svg ),so the icons look nicer and no need to deliver them
 * some icons are missing there, so local icons are still used as well.
 * ! If you do not install the adapter, the icons on the left side in edit vis will stay empty
 * new units added to number widget
@@ -96,15 +87,12 @@
 ## 0.8.8 (2020-09-27)
 * added Unit to ListNumber
 
-
 ## 0.8.7 (2020-09-27)
 * added new widget thermostat, first try
-
 
 ## 0.8.6 (2020-09-27)
 * All properties are now without - sign
 * bugfix background-color issue, if corners were round there was different color beneath
-
 
 ## 0.8.5 (2020-09-27)
 * Also Title can be hidden now
@@ -113,7 +101,6 @@
 * added possibility to hide the icon in each widget
 * minor bugfixes
 * refactoring again
-
 
 ## 0.8.3 (2020-09-26)
 * refactoring js
@@ -125,11 +112,9 @@
 * width of title can be changed now overall. add $("html").attr("style","--title-width:20%");  into global javascript. Standard now at 30%
 * text-size removed from css. now you can set it again from outside
 
-
 ## 0.8.1 (2020-09-14)
 * new version number
 
-s
 ## 0.8.0 (2020-09-14)
 * bugfix for smaller widgets
 * new style for switch item
@@ -144,11 +129,9 @@ s
 * All widgets moved to new CSS Style
 * rounded widget possible
 * should not interfere with other Adapters anymore
-  
 
 ## 0.6.3 (2020-09-08)
 * bugfix valve widget
-
 
 ## 0.6.1
 * added two new widgets with complete new css-classes. rounded corner, two value. 
@@ -172,7 +155,6 @@ s
 * reorganized the settings to have some common order
 * new Number and Text Widget ( similar to boolean )
 
-
 ## 0.5.0
 * opacity now flexible
 * reorg code
@@ -195,7 +177,7 @@ s
 
 ## 0.3.2
 * npm ist erstellt, Pull Request für latest Repo gestellt
-* volume widget hinzugrfügt
+* volume widget hinzugefügt
 * erste Version vom Garagentor Widget ist erstellt, infos fehlen noch
 * migration von vis-material zu vis-material-advanced ist bestätigt 
     Wer es sich traut, hier eine "Anleitung" für den Umzug:
@@ -216,7 +198,6 @@ s
 * (EdgarM73) copied all functionality to new git and new Adapter
 ## 0.0.1
 * (EdgarM73) initial release
-
 
 ## 0.1.0
 * (EdgarM73) copied all functionality to new git and new Adapter

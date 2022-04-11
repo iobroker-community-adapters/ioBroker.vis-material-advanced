@@ -5,6 +5,6 @@ function genListWindow(data) {
     genTitleContainer(divList,data);
     genSingleValue(divList,data);
     endSkeleton(divList);
-    return  {widget: divList.join('')};
+    return {widget: divList.join('')};
 }
 
