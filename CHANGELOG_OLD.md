@@ -1,12 +1,14 @@
+## 1.5.1 (2021-03-28)
+* replaced presence images with smaller ones
 
 ## 1.5.0 (2021-03-26)
 * new widget Presence
 
 ## 1.4.7 (2021-03-26)
-* removed unit test 
+* removed unit test
 
 ## 1.4.6 (2021-03-26)
-* removed lint 
+* removed lint
 
 ## 1.4.5 (2021-03-26)
 * update internal test-and-release script
@@ -96,7 +98,7 @@
 
 ## 0.8.5 (2020-09-27)
 * Also Title can be hidden now
- 
+
 ## 0.8.4 (2020-09-27)
 * added possibility to hide the icon in each widget
 * minor bugfixes
@@ -122,7 +124,7 @@
 
 ## 0.8.0-0 (2020-09-11)
 * remove test widgets
-* release 
+* release
 
 ## 0.7.0-beta.0 (2020-09-11)
 * bugfix new widgets
@@ -134,7 +136,7 @@
 * bugfix valve widget
 
 ## 0.6.1
-* added two new widgets with complete new css-classes. rounded corner, two value. 
+* added two new widgets with complete new css-classes. rounded corner, two value.
 
 ## 0.5.7
 * bugfix number widget
@@ -196,11 +198,12 @@
 
 ## 0.1.0
 * (EdgarM73) copied all functionality to new git and new Adapter
+
 ## 0.0.1
 * (EdgarM73) initial release
 
 ## 0.1.0
 * (EdgarM73) copied all functionality to new git and new Adapter
+
 ## 0.0.1
 * (EdgarM73) initial release
-

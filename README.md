@@ -85,7 +85,7 @@ thanks to @sigi234
     Placeholder
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.7.3 (2022-04-11)
 * (bluefox) Removed erroneous chars from HTML
 
 ### 1.7.2 (2021-07-02)
@@ -95,13 +95,10 @@ thanks to @sigi234
 * bugfix for Temp Humidity
 
 ### 1.7.0 (2021-04-19)
-* added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows 
+* added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows
 
 ### 1.6.0 (2021-04-01)
 * new Temperature widget with ONLY an icon from blue to red depending on temperature setting
-
-### 1.5.1 (2021-03-28)
-* replaced presence images with smaller ones
 
 ## License
 MIT License
