@@ -345,9 +345,13 @@ vis.binds["vis-material-advanced"] = {
 
 
         if (data.oid) {
-            // subscribe on updates of value
+            // subscribe on updates of temperature value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
-                update(newVal);
+                update(newVal, vis.states[data.oid2 + '.val']);
+            });
+            // subscribe on updates of humidity value
+            vis.states.bind(data.oid2 + '.val', function (e, newVal, oldVal) {
+                update(vis.states[data.oid + '.val'], newVal);
             });
 
             // set current value
