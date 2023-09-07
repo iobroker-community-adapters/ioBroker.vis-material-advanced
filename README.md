@@ -22,7 +22,6 @@ but rewritten in 90%
 
 Several bugfixes and lots of new widgets added.
 
-
 ## Following widgets are present right now
 
 ### current
@@ -46,26 +45,24 @@ Several bugfixes and lots of new widgets added.
  
 ### in progress
 Not yet final:
- - Garagedoor
+ - Garage door
  - Radiostation 
  
  lot of widgets still in plan
 
 ## Options
-    following options are available in most of the widgets:
-    
+The following options are available in most of the widgets:
     - text-color
-    - cardIcon ( does not yet make sense everywhere, e.g. dimmer )
-    - opacity color ( the standard opacity color )
-    - colorizeByValue ( depending on some values the opacity color can be changed e.g. if it is too hot make it red, to cold blue )
-    - below,above, min, max ( the values for colorizeByValue )
-    - color-low/high,medium... ( the color to use if border is raised)
-    - read-only ( some widgets can be set to read only mode for display only)
+    - cardIcon (does not yet make sense everywhere, e.g. dimmer)
+    - opacity color (the standard opacity color)
+    - colorizeByValue (depending on some values, the opacity color can be changed e.g. if it is too hot make it red, to cold blue)
+    - below,above, min, max (the values for colorizeByValue)
+    - color-low/high,medium... (the color to use if border is raised)
+    - read-only (some widgets can be set to read only mode for display only)
     - border-radius to enable and change the round corner
     - valueAlign Align the Value field left,center or right
     - value-vertical Align the Value field top,bottom or middle
     - borderColor Color of the Border if activated
-
 
 ### Getting started
 
