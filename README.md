@@ -82,7 +82,7 @@ thanks to @sigi234
     Placeholder
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.7.4 (2023-09-07)
 * (DEV2DEV-DE) Subscribe to updates of both values (temperature, humidity)
 
 ### 1.7.3 (2022-04-11)
@@ -96,9 +96,6 @@ thanks to @sigi234
 
 ### 1.7.0 (2021-04-19)
 * added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows
-
-### 1.6.0 (2021-04-01)
-* new Temperature widget with ONLY an icon from blue to red depending on temperature setting
 
 ## License
 MIT License

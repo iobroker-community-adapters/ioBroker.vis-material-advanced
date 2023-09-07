@@ -1,5 +1,10 @@
 ## 1.5.1 (2021-03-28)
 * replaced presence images with smaller ones
+## 1.6.0 (2021-04-01)
+* new Temperature widget with ONLY an icon from blue to red depending on temperature setting
+
+## 1.5.1 (2021-03-28)
+* replaced presence images with smaller ones
 
 ## 1.5.0 (2021-03-26)
 * new widget Presence

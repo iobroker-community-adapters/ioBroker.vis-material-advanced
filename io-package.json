@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "vis-material-advanced",
-    "version": "1.7.3",
+    "version": "1.7.4",
     "news": {
+      "1.7.4": {
+        "en": "Subscribe to updates of both values (temperature, humidity)",
+        "de": "Abonnieren von Aktualisierungen beider Werte (Temperatur, Feuchtigkeit)",
+        "ru": "Подписаться на обновления обеих ценностей (температура, влажность)",
+        "pt": "Assinar atualizações de ambos os valores (temperatura, umidade)",
+        "nl": "Vertaling:",
+        "fr": "Abonnez-vous aux mises à jour des deux valeurs (température, humidité)",
+        "it": "Iscriviti agli aggiornamenti di entrambi i valori (temperatura, umidità)",
+        "es": "Suscríbete a las actualizaciones de ambos valores (temperatura, humedad)",
+        "pl": "Podpisany do aktualizacji obu wartości (temperatura, wilgotność)",
+        "uk": "Підпишіться на оновлення як значень (температура, вологість)",
+        "zh-cn": "禁止更新这两个价值观(预测、湿度)"
+      },
       "1.7.3": {
         "en": "Removed erroneous chars from HTML",
         "de": "Fehlerhafte Zeichen aus HTML entfernt",
@@ -74,18 +87,6 @@
         "es": "reemplazó las imágenes de presencia con otras más pequeñas",
         "pl": "zastąpiono obrazy obecności mniejszymi",
         "zh-cn": "用较小的图像替换状态图像"
-      },
-      "1.5.0": {
-        "en": "new widget Presence",
-        "de": "neues Widget Präsenz",
-        "ru": "присутствие нового виджета",
-        "pt": "nova presença de widget",
-        "nl": "nieuwe widget Aanwezigheid",
-        "fr": "nouveau widget Présence",
-        "it": "nuovo widget Presence",
-        "es": "Presencia de nuevo widget",
-        "pl": "nowy widżet Obecność",
-        "zh-cn": "新的小部件状态"
       }
     },
     "title": "Material Advanced",
@@ -147,8 +148,7 @@
       "icons-mfd-svg"
     ]
   },
-  "native": {
-  },
+  "native": {},
   "objects": [],
   "instanceObjects": []
 }
