@@ -70,7 +70,7 @@ Not yet final:
 ### Getting started
 
 install the Adapter and start VIS in Edit mode.
-On left side choose vis-material-adapter and then all widgets are shown in preview.
+On the left side, choose vis-material-adapter and then all widgets are shown in preview.
 
 ............. lots of docu missing ......................
 
@@ -85,6 +85,9 @@ thanks to @sigi234
     Placeholder
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (DEV2DEV-DE) Subscribe to updates of both values (temperature, humidity)
+
 ### 1.7.3 (2022-04-11)
 * (bluefox) Removed erroneous chars from HTML
 
@@ -103,7 +106,7 @@ thanks to @sigi234
 ## License
 MIT License
 
-Copyright (c) 2020-2022 EdgarM73 <edgar.miller@gmail.com>
+Copyright (c) 2020-2023 EdgarM73 <edgar.miller@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

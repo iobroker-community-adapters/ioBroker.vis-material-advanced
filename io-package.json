@@ -135,6 +135,9 @@
     ],
     "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
     "onlyWWW": true,
+    "adminUI": {
+      "config": "none"
+    },
     "noConfig": true,
     "singleton": true,
     "type": "visualization-widgets",
@@ -145,8 +148,6 @@
     ]
   },
   "native": {
-    "option1": true,
-    "option2": "42"
   },
   "objects": [],
   "instanceObjects": []

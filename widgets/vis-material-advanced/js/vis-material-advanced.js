@@ -3,7 +3,7 @@
 
     version: "1.7.3"
 
-    Copyright 2020-2022 EdgarM73 edgar.miller@gmail.com
+    Copyright 2020-2023 EdgarM73 edgar.miller@gmail.com
 */
 "use strict";
 
@@ -172,7 +172,6 @@ $.extend(
             "pl": "Wyrównaj tekst",
             "zh-cn": "文字对齐"
         }
-
     }
 );
 
@@ -186,7 +185,7 @@ vis.binds["vis-material-advanced"] = {
         }
     },
     tplMdListVal: function (widgetID, view, data, val_type) {
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         const border = data.attr('border');
 
@@ -198,7 +197,7 @@ vis.binds["vis-material-advanced"] = {
         const colorHigh = data.attr('color-high');
 
         const original_class = data.attr('opacityColor');
-        var type;
+        let type;
 
         type = getPostFix(val_type);
 
@@ -251,7 +250,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const original_class = data.attr('opacityColor');*/
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         //setBorderAndOpacColor(data,border, $div, original_class);
 
@@ -263,13 +262,13 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            //var tmp_step = Math.ceil((data.max - data.min ) /10);
-            var min = Number(data.min);
-            var max = Number(data.max);
-            var tmp_step = Number(((max - min) / 10).toFixed(2));
-            var name = "0";
-            var i = Number(data.min);
-            var j = 0;
+            //const tmp_step = Math.ceil((data.max - data.min ) /10);
+            const min = Number(data.min);
+            const max = Number(data.max);
+            const tmp_step = Number(((max - min) / 10).toFixed(2));
+            let name = "0";
+            let i = Number(data.min);
+            let j = 0;
             while (i <= data.max) {
                 if (state <= i) {
                     name = j;
@@ -282,11 +281,11 @@ vis.binds["vis-material-advanced"] = {
             if (state > data.max) {
                 name = 10;
             }
-            var type = "png";
+            let type = 'png';
             if (data.IcontypeSVG) {
-                type = "svg";
+                type = 'svg';
             }
-            var src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.' + type;
+            const src = 'widgets/vis-material-advanced/img/temp_verlauf_' + name + '0.' + type;
             $div.find('.vma_icon2').find('img').attr('src', src);
         }
 
@@ -305,7 +304,7 @@ vis.binds["vis-material-advanced"] = {
     tplMdListTempHumid: function (widgetID, view, data, type1, type2) {
         const icon = data.attr('cardIcon');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         const original_class = data.attr('opacityColor');
         const border = data.attr('border');
@@ -324,25 +323,24 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state, state2) {
             $div.find('.vma_picture').find('img').attr('src', icon);
-            var st1, st2;
+            let st1;
+            let st2;
             try {
                 st1 = state.toFixed(1);
-
             } catch (err) {
-                console.log("unkown Error " + err + " occured, setting value to NaN, original was : '" + state + "'");
-                st1 = "NaN";
-
+                console.log("unknown Error " + err + " occurred, setting value to NaN, original was : '" + state + "'");
+                st1 = 'NaN';
             }
+
             try {
                 st2 = state2.toFixed(1);
             } catch (err) {
-                console.log("unkown Error " + err + " occured, setting value to NaN, original was : '" + state2 + "'");
-                st2 = "NaN";
+                console.log("unknown Error " + err + " occurred, setting value to NaN, original was : '" + state2 + "'");
+                st2 = 'NaN';
             }
             $div.find('.vma_value2_1').html(st1 + valtype1);
             $div.find('.vma_value2_2').html(st2 + valtype2);
         }
-
 
         if (data.oid) {
             // subscribe on updates of temperature value
@@ -358,20 +356,18 @@ vis.binds["vis-material-advanced"] = {
             update(vis.states[data.oid + '.val'], vis.states[data.oid2 + '.val']);
         }
 
-
         setPosition($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
     },
     tplMdListThermostat: function (widgetID, view, data, type1) {
         const icon = data.attr('cardIcon');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         const original_class = data.attr('opacityColor');
         const border = data.attr('border');
 
         const valtype1 = getPostFix(type1);
-
 
         setBorderAndOpacColor(data, border, $div, original_class);
 
@@ -397,7 +393,6 @@ vis.binds["vis-material-advanced"] = {
             }
         }
 
-
         if (data.oid) {
             // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
@@ -407,7 +402,6 @@ vis.binds["vis-material-advanced"] = {
             // set current value
             update(vis.states[data.oid + '.val']);
         }
-
 
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
@@ -422,10 +416,9 @@ vis.binds["vis-material-advanced"] = {
 
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         setBorderAndOpacColor(data, border, $div, original_class);
-
 
         // if nothing found => wait
         if (!$div.length) {
@@ -435,8 +428,8 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
+            const src = (state) ? srcOn : srcOff;
+            const $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
             $div.find('.vma_picture').find('img').attr('src', src);
 
@@ -457,9 +450,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
 
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
@@ -492,7 +485,7 @@ vis.binds["vis-material-advanced"] = {
 
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         setBorderAndOpacColor(data, border, $div, original_class);
 
@@ -505,7 +498,7 @@ vis.binds["vis-material-advanced"] = {
 
         function update(state) {
 
-            var src = '/icons-mfd-svg/light_light_dim_' + Math.ceil(state / 10) + '0.svg';
+            const src = '/icons-mfd-svg/light_light_dim_' + Math.ceil(state / 10) + '0.svg';
             $div.find('.vma_picture').find('img').attr('src', src);
             if (data.attr('readOnly')) {
                 $div.find('.vma_value').html(state + " %");
@@ -543,7 +536,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         data.attr('neues Attr', '5');
         setBorderAndOpacColor(data, border, $div, original_class);
 
@@ -555,22 +548,21 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var percent = Math.ceil(state / 10);
-            var name;
+            const percent = Math.ceil(state / 10);
+            let name;
 
             console.log("Status: " + state);
 
             if (data.attr('inverted') == true) {
-
                 name = 10 - parseInt(percent);
                 console.log('Inverted -> name: ' + name);
             } else {
                 name = percent;
             }
 
-            var src = '/icons-mfd-svg/fts_shutter_' + name + '0.svg';
+            const src = '/icons-mfd-svg/fts_shutter_' + name + '0.svg';
             if (name == 0) {
-                var src = '/icons-mfd-svg/fts_window_2w.svg';
+                const src = '/icons-mfd-svg/fts_window_2w.svg';
             }
             // console.log(' name : ' + name + " Icon : " + src);
             $div.find('.vma_picture').find('img').attr('src', src);
@@ -604,7 +596,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -615,10 +607,10 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var drittel = (data.attr('max') - data.attr('min')) / 3;
-            var medium = parseInt(data.attr('min')) + parseInt(drittel);
-            var cold = parseInt(data.attr('max')) - parseInt(drittel);
-            var src;
+            const drittel = (data.attr('max') - data.attr('min')) / 3;
+            const medium = parseInt(data.attr('min')) + parseInt(drittel);
+            const cold = parseInt(data.attr('max')) - parseInt(drittel);
+            let src;
             if (state >= data.attr('min') && state < medium) {
                 src = srcWarm;
             } else if (state >= medium && state < cold) {
@@ -660,7 +652,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -705,7 +697,7 @@ vis.binds["vis-material-advanced"] = {
     tplMdListGarage: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
         const srcOn = data.attr('cardIconOpen');
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -715,16 +707,16 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
+            const src = (state) ? srcOn : srcOff;
+            const $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
             $div.find('.mdw-list-icon').find('img').attr('src', src);
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -742,7 +734,6 @@ vis.binds["vis-material-advanced"] = {
         hideIconInWidget(data, $div);
     },
     tplMdListPressure: function (widgetID, view, data) {
-        var $div = $('#' + widgetID);
         const colorize = data.attr('colorizeByValue');
         const original_class = data.attr('opacityColor');
         const low = data.attr('below');
@@ -751,7 +742,7 @@ vis.binds["vis-material-advanced"] = {
         const colorLow = data.attr('color-low');
         const colorHigh = data.attr('color-high');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -762,9 +753,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         // grey out the value in case the last change is more than 24h ago
-        var curTime = new Date().getTime();
-        var lcTime = vis.states[data.oid + '.lc'];
-        var seconds = (curTime - lcTime) / 1000;
+        const curTime = new Date().getTime();
+        const lcTime = vis.states[data.oid + '.lc'];
+        const seconds = (curTime - lcTime) / 1000;
         if (seconds > 86400) {
             $div.find('.mdw-list-value').css('opacity', '0.5');
         }
@@ -810,7 +801,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -821,8 +812,8 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            var value = (state) ? valTrue : valFalse;
-            var src = (state) ? srcTrue : srcFalse;
+            const value = (state) ? valTrue : valFalse;
+            const src = (state) ? srcTrue : srcFalse;
             $div.find('.vma_value').html(value);
             $div.find('.vma_picture').find('img').attr('src', src);
 
@@ -861,7 +852,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -874,7 +865,7 @@ vis.binds["vis-material-advanced"] = {
         function update(state) {
 
             if (data.unit != "") {
-                var unit = getPostFix(data.unit.trim());
+                const unit = getPostFix(data.unit.trim());
                 $div.find('.vma_value').html(state + ' ' + unit);
             } else {
                 $div.find('.vma_value').html(state);
@@ -915,7 +906,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -964,7 +955,7 @@ vis.binds["vis-material-advanced"] = {
         const border = data.attr('border');
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         setBorderAndOpacColor(data, border, $div, original_class);
 
         // if nothing found => wait
@@ -975,9 +966,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         // grey out the value in case the last change is more than 24h ago
-        var curTime = new Date().getTime();
-        var lcTime = vis.states[data.oid + '.lc'];
-        var seconds = (curTime - lcTime) / 1000;
+        const curTime = new Date().getTime();
+        const lcTime = vis.states[data.oid + '.lc'];
+        const seconds = (curTime - lcTime) / 1000;
         if (seconds > 86400) {
             $div.find('.vma_value').css('opacity', '0.5');
         }
@@ -1024,7 +1015,7 @@ vis.binds["vis-material-advanced"] = {
 
         const original_class = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         setBorderAndOpacColor(data, border, $div, original_class);
 
@@ -1036,8 +1027,8 @@ vis.binds["vis-material-advanced"] = {
         }
 
         function update(state) {
-            //  var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
+            //  const src = (state) ? srcOn : srcOff;
+            const $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
             //  $div.find('.vma-picture').find('img').attr('src', src);
 
@@ -1058,9 +1049,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1090,7 +1081,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const opacity = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1102,9 +1093,9 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var value;
-            var src;
-            var color;
+            let value;
+            let src;
+            let color;
             switch (state) {
                 case 0:
                     value = valClosed;
@@ -1137,9 +1128,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1175,7 +1166,7 @@ vis.binds["vis-material-advanced"] = {
         const colorize = data.attr('colorizeByValue');
         const opacity = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1187,9 +1178,9 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var value = (state) ? valOpen : valClosed;
-            var src = (state) ? srcOpen : srcClosed;
-            var color = (state) ? data.attr('colorOpen') : opacity;
+            const value = (state) ? valOpen : valClosed;
+            const src = (state) ? srcOpen : srcClosed;
+            const color = (state) ? data.attr('colorOpen') : opacity;
 
             $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
@@ -1202,9 +1193,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1243,7 +1234,7 @@ vis.binds["vis-material-advanced"] = {
         const motionColor = data.attr('motionColor')
         const opacity = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1255,9 +1246,9 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var value = (state) ? valMotion : valNoMotion;
-            var src = (state) ? srcOpen : srcClosed;
-            var color = (state) ? data.attr('colorOpen') : opacity;
+            const value = (state) ? valMotion : valNoMotion;
+            const src = (state) ? srcOpen : srcClosed;
+            const color = (state) ? data.attr('colorOpen') : opacity;
 
             $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
@@ -1274,9 +1265,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1298,7 +1289,7 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-        // var height = setHeight(data,$div);
+        // const height = setHeight(data,$div);
     },
     tplMdListPresence: function (widgetID, view, data) {
         const srcClosed = data.attr('iconNotPresent');
@@ -1313,7 +1304,7 @@ vis.binds["vis-material-advanced"] = {
         const presenceColor = data.attr('presenceColor')
         const opacity = data.attr('opacityColor');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1325,9 +1316,9 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var value = (state) ? valPresent : valNotPresent;
-            var src = (state) ? srcOpen : srcClosed;
-            var color = (state) ? data.attr('colorOpen') : opacity;
+            const value = (state) ? valPresent : valNotPresent;
+            const src = (state) ? srcOpen : srcClosed;
+            const color = (state) ? data.attr('colorOpen') : opacity;
 
             $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(value);
@@ -1344,9 +1335,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1368,14 +1359,14 @@ vis.binds["vis-material-advanced"] = {
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
 
-        // var height = setHeight(data,$div);
+        // const height = setHeight(data,$div);
     },
     tplMdListNew: function (widgetID, view, data) {
         const srcOff = data.attr('cardIconClosed');
         const srcOn = data.attr('cardIconOpen');
         const colorize = data.attr('colorizeByValue');
         const opacity = data.attr('opacityColor');
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1387,8 +1378,8 @@ vis.binds["vis-material-advanced"] = {
         $div.find('.vma_overlay').css('background-color', opacity);
 
         function update(state) {
-            var src = (state) ? srcOn : srcOff;
-            var $tmp = $('#' + widgetID + '_checkbox');
+            const src = (state) ? srcOn : srcOff;
+            const $tmp = $('#' + widgetID + '_checkbox');
             $tmp.prop('checked', state);
             $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(state.toFixed(1) + ' %');
@@ -1407,9 +1398,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1429,7 +1420,7 @@ vis.binds["vis-material-advanced"] = {
     tplMdListNewDuo: function (widgetID, view, data) {
         const icon = data.attr('cardIcon');
 
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1445,9 +1436,9 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
         }
@@ -1468,7 +1459,7 @@ vis.binds["vis-material-advanced"] = {
         console.log('');
     },
     tplMdListRegenRadarDWD: function (widgetID, view, data) {
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
         if (!$div.length) {
             return setTimeout(function () {
                 vis.binds['vis-material-advanced'].tplMdListRegenRadarDWD(widgetID, view, data);
@@ -1494,7 +1485,7 @@ vis.binds["vis-material-advanced"] = {
         const srcOn = data.attr('cardIconOpen');
         const colorize = data.attr('colorizeByValue');*/
         const opacity = data.attr('opacityColor');
-        var $div = $('#' + widgetID);
+        const $div = $('#' + widgetID);
 
         // if nothing found => wait
         if (!$div.length) {
@@ -1507,8 +1498,8 @@ vis.binds["vis-material-advanced"] = {
 
         // $(' script ').find('tplMaListDiv').attr('data-vis-attrs11','susi/text;');
         function update(state) {
-            // var src = (state) ? srcOn : srcOff;
-            // var $tmp = $('#' + widgetID + '_checkbox');
+            // const src = (state) ? srcOn : srcOff;
+            // const $tmp = $('#' + widgetID + '_checkbox');
             // $tmp.prop('checked', state);
             // $div.find('.vma_picture').find('img').attr('src', src);
             $div.find('.vma_value').html(state + ' %');
@@ -1529,13 +1520,13 @@ vis.binds["vis-material-advanced"] = {
         }
 
         if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_checkbox');
+            const $this = $('#' + widgetID + '_checkbox');
             $this.change(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), $this_.prop('checked'));
             });
             $div.click(function () {
-                var $this_ = $(this);
+                const $this_ = $(this);
                 vis.setValue($this_.data('oid'), 'sieben');
             });
         }
@@ -1551,7 +1542,7 @@ vis.binds["vis-material-advanced"] = {
         }
         setPositionSingle($('#' + widgetID), data, $div);
         hideIconInWidget(data, $div);
-        // var height = setHeight(data,$div);
+        // const height = setHeight(data,$div);
     }
 };
 

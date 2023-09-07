@@ -80,7 +80,7 @@
                       html - dialog box with html editor
 
                 If type is "id", you can define filer for "Select ID Dialog", like "myID/id,level.temperature".
-                Additionally you can define callback(onChangeFunc), which will be called if this attribute was changed by user for different purposes: validate entry, fill other attributes, ...
+                Additionally, you can define callback(onChangeFunc), which will be called if this attribute was changed by user for different purposes: validate entry, fill other attributes, ...
 
         You can define additional data-vis-attrs line: data-vis-attrs0, data-vis-attrs1. Anyway data-vis-attrs must be there. You may not skip numbers.
         E.g. in "data-vis-attrs="A;" data-vis-attrs1="B" attribute B will be not parsed.
@@ -89,7 +89,7 @@
     data-vis-type
         Help information for user. Used for search.
         You can define more than one type divided by comma.
-        There are following common types, but you can use your own specific types:
+        There are the following common types, but you can use your own specific types:
             ctrl   - widget that can write some Object IDs
             val    - widget that shows some information from Object IDs
             static - widget do not read information from Object IDs or URL
@@ -104,7 +104,7 @@
 
     --------------------------------------------------------
     data-vis-prev
-        Html code used as preview of this widget. If widget is complex you can just use image as preview:
+        Html code used as a preview of this widget. If the widget is complex, you can just use image as preview:
         data-vis-prev='<img src="widgets/hqwidgets/img/prev/Prev_tplVis-material-advancedShowInstance.png"></img>'
         Of course the image must exist.
 
@@ -118,13 +118,13 @@
 
     --------------------------------------------------------
     data-vis-update-style="true"
-        Call redraw of widget if some of the CSS styles in editor for this widget was changed
+        Call redraw of widget if some of the CSS styles in the editor for this widget was changed
 
     You can read about Magic tags here: http://canjs.com/guides/EJS.html
     Following magic tags are exist:
         <% %> - execute javascript
-        <%= %> - place escaped result to HTML document
-        <%== %> - place unescaped result to HTML document
+        <%= %> - place escaped result to an HTML document
+        <%== %> - place unescaped result to an HTML document
 
     You can do "if" conditions and "for" cycles.
 
