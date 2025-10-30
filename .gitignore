@@ -19,3 +19,6 @@ widgets/.jsbeautifyrc
 widgets/widget.html
 widgets/vis-material-advanced/img/Logo.svg
 x.html
+
+#ignore .commitinfo created by ioBroker release script
+.commitinfo
