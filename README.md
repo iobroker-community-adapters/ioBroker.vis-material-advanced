@@ -82,6 +82,11 @@ thanks to @sigi234
     Placeholder
     ### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires js-controller >= 6.0.11 now
+- (copilot) Adapter requires admin >= 7.6.17 now
+
 ### 1.7.4 (2023-09-07)
 * (DEV2DEV-DE) Subscribe to updates of both values (temperature, humidity)
 
@@ -100,6 +105,8 @@ thanks to @sigi234
 ## License
 MIT License
 
+
+Copyright (c) 2026 iobroker-community-adapters <iobroker-community-adapters@gmx.de>  
 Copyright (c) 2020-2023 EdgarM73 <edgar.miller@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

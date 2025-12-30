@@ -3,6 +3,9 @@
   "version": "1.7.4",
   "description": "This Adapter provides standardized Widgets for vis in ioBroker. Lots of different predifined widgets",
   "author": "EdgarM73 <edgar.miller@gmail.com>",
+  "contributors": [
+    "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
+  ],
   "homepage": "https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced",
   "license": "MIT",
   "engines": {

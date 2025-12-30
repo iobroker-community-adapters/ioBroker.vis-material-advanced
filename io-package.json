@@ -115,7 +115,8 @@
       "zh-cn": "该适配器为ioBroker中的vis提供了标准化的小部件。"
     },
     "authors": [
-      "EdgarM73 <edgar.miller@gmail.com>"
+      "EdgarM73 <edgar.miller@gmail.com>",
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
     ],
     "keywords": [
       "vis",
@@ -145,7 +146,15 @@
     "mode": "once",
     "dependencies": [
       "vis",
-      "icons-mfd-svg"
+      "icons-mfd-svg",
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.17"
+      }
     ]
   },
   "native": {},
