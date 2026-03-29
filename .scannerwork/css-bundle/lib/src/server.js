@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.start = exports.setLogHandlersForTests = void 0;
 const express = require("express");
 const stylelint = require("stylelint");
-const fs = require("fs");
+const fs = require("node:fs");
 const bodyParser = require("body-parser");
 // for testing purposes
 let log = console.log;
