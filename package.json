@@ -9,7 +9,7 @@
   "homepage": "https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced",
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": ">=22"
   },
   "keywords": [
     "vis",

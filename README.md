@@ -82,6 +82,9 @@ thanks to @sigi234
     Placeholder
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
 ### 1.7.4 (2023-09-07)
 * (DEV2DEV-DE) Subscribe to updates of both values (temperature, humidity)
 
