@@ -78,6 +78,9 @@ On the left side, choose vis-material-adapter and then all widgets are shown in 
 thanks to @sigi234
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (iobroker-bot) Adapter requires node.js >= 20 now.
 <!--
     Placeholder
     ### **WORK IN PROGRESS**
