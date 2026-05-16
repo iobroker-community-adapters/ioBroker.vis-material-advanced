@@ -100,6 +100,8 @@ thanks to @sigi234
 ### 1.7.0 (2021-04-19)
 * added new Widget Window3 for possibility showing open/tilted/closed [0/1/2] windows
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
