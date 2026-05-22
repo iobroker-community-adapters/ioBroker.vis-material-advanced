@@ -140,7 +140,6 @@
     "adminUI": {
       "config": "none"
     },
-    "noConfig": true,
     "singleton": true,
     "type": "visualization-widgets",
     "mode": "once",
