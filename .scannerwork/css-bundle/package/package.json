@@ -6,6 +6,6 @@
   "author": "",
   "license": "LGPL-3.0",
   "dependencies": {
-    "run-node": "1.0.0"
+    "run-node": "3.0.0"
   }
 }
