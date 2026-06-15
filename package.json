@@ -30,7 +30,7 @@
     "@types/gulp": "^4.0.18",
     "axios": "^1.17.0",
     "chai": "^4.3.8",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "mocha": "^10.2.0"
   },
   "main": "widgets/vis-material-advanced.html",
