@@ -121,8 +121,7 @@
     "keywords": [
       "vis",
       "material",
-      "widget",
-      "iobroker"
+      "widget"
     ],
     "license": "MIT",
     "platform": "Javascript/Node.js",
