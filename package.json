@@ -28,7 +28,7 @@
     "@iobroker/testing": "^4.1.0",
     "@tsconfig/node20": "^20.1.9",
     "@types/gulp": "^4.0.18",
-    "axios": "^1.18.1",
+    "axios": "^1.19.0",
     "chai": "^4.3.8",
     "gulp": "^4.0.2",
     "mocha": "^10.2.0"
