@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-run-node@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/run-node/-/run-node-1.0.0.tgz#46b50b946a2aa2d4947ae1d886e9856fd9cabe5e"
-  integrity sha512-kc120TBlQ3mih1LSzdAJXo4xn/GWS2ec0l3S+syHDXP9uRr0JAT8Qd3mdMuyjqCzeZktgP3try92cEgf9Nks8A==
+run-node@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/run-node/-/run-node-3.0.0.tgz#2dc62dd481311d9b06d9dba6d4186f51a98f1525"
+  integrity sha512-MIO6fytrohsYGY5qzrTmI6Leh3Bh98jwWMabpZJTejbw68uJn+3QgqN0g4xQgrbn5216VrgyQiDGI6EXVwfwrw==
