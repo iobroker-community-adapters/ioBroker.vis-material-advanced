@@ -124,7 +124,11 @@
       "widget",
       "iobroker"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "tier": 3,
     "platform": "Javascript/Node.js",
     "main": "main.js",
     "icon": "vis-material-advanced.png",
@@ -135,7 +139,9 @@
     "restartAdapters": [
       "vis"
     ],
-    "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+    "localLinks": {
+      "_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
+    },
     "onlyWWW": true,
     "adminUI": {
       "config": "none"
