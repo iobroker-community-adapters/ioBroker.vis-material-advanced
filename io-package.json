@@ -129,7 +129,6 @@
     },
     "tier": 3,
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "vis-material-advanced.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-material-advanced/master/admin/vis-material-advanced.png",
