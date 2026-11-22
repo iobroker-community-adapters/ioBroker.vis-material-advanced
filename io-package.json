@@ -16,18 +16,6 @@
         "uk": "Підпишіться на оновлення як значень (температура, вологість)",
         "zh-cn": "禁止更新这两个价值观(预测、湿度)"
       },
-      "1.7.3": {
-        "en": "Removed erroneous chars from HTML",
-        "de": "Fehlerhafte Zeichen aus HTML entfernt",
-        "ru": "Удалены ошибочные символы из HTML",
-        "pt": "Removidos caracteres errados do HTML",
-        "nl": "Foutieve tekens uit HTML verwijderd",
-        "fr": "Suppression des caractères erronés du HTML",
-        "it": "Rimossi i caratteri errati dall'HTML",
-        "es": "Se eliminaron los caracteres erróneos de HTML",
-        "pl": "Usunięto błędne znaki z HTML",
-        "zh-cn": "从 HTML 中删除了错误的字符"
-      },
       "1.7.2": {
         "en": "bugfix 2 Temp Humidity",
         "de": "Bugfix 2 Temp. Luftfeuchtigkeit",
@@ -113,6 +101,9 @@
       "pl": "Ten adapter zapewnia ustandaryzowane widżety dla vis w ioBroker. ",
       "zh-cn": "该适配器为ioBroker中的vis提供了标准化的小部件。"
     },
+    "docs": {
+      "en": "https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced#readme"
+    },
     "authors": [
       "EdgarM73 <edgar.miller@gmail.com>",
       "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
@@ -133,9 +124,9 @@
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-material-advanced/master/admin/vis-material-advanced.png",
     "readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-material-advanced/blob/master/README.md",
     "loglevel": "info",
-    "tier": 3,
     "restartAdapters": [
-      "vis"
+      "vis",
+      "vis-2"
     ],
     "localLinks": {
       "_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
@@ -146,7 +137,7 @@
     },
     "singleton": true,
     "type": "visualization-widgets",
-    "mode": "once",
+    "mode": "none",
     "dependencies": [
       "vis",
       "icons-mfd-svg"
